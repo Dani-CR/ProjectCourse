@@ -1,0 +1,89 @@
+{
+  "testId": "Test 5254",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ogg]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [application/ogg;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ogg"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5254 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"Chuck Norris can compile syntax errors.\",\"id\":9,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Billy\",\"lastName\":\"Monahan\",\"address\":\"Suite 660 2755 Eloy Plaza, Charlesettaside, CT 09821-9356\",\"city\":\"North Jeri\",\"id\":5},\"name\":\"mvWkzkFw\",\"id\":4,\"birthDate\":\"2024-12-05T11:01:12.906937184Z\"},null],\"firstName\":\"Modesta\",\"lastName\":\"Ferry\",\"address\":\"0914 Vertie Flat, Mraztown, SC 60323\",\"city\":\"East Nicolette\",\"id\":1},\"name\":\"aFzupXMw\",\"id\":0,\"birthDate\":\"2024-12-05T11:01:12.904794344Z\"}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+    "timestamp": "Thu, 5 Dec 2024 12:01:17 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "application/ogg;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:17 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/ogg;charset=UTF-8"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

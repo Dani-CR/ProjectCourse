@@ -1,0 +1,114 @@
+{
+  "testId": "Test 766",
+  "scenario": "Send a 'happy' flow request with all fields and all headers",
+  "expectedResult": "Should return 2XX",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 766 - HappyPath)"
+      }
+    ],
+    "payload": "{\"ownerId\":7}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/owners/7",
+    "timestamp": "Thu, 5 Dec 2024 11:59:58 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "53",
+    "numberOfWordsInResponse": "3",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "224",
+    "jsonBody": {
+      "id": 7,
+      "firstName": "Jeff",
+      "lastName": "Black",
+      "address": "1450 Oak Blvd.",
+      "city": "Monona",
+      "telephone": "6085555387",
+      "pets": [
+        {
+          "id": 9,
+          "name": "Lucky",
+          "birthDate": "2011/08/06",
+          "type": {
+            "id": 5,
+            "name": "bird"
+          },
+          "owner": 7,
+          "visits": []
+        }
+      ]
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:59:58 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "HappyPath",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/7",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

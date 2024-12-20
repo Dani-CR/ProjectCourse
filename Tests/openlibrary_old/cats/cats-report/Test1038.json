@@ -1,0 +1,76 @@
+{
+  "testId": "Test 1038",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1038 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"details\":false}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//subjects/NOT_SET?details=false",
+    "timestamp": "Fri, 11 Oct 2024 17:47:01 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "103",
+    "numberOfWordsInResponse": "11",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "104",
+    "jsonBody": {
+      "key": "/subjects/not_set",
+      "name": "not set",
+      "subject_type": "subject",
+      "work_count": 0,
+      "works": []
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:47:01 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"SR 1 0.045 TT 0 0.046\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/subjects/{subject}.json",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080//subjects/NOT_SET?details=false",
+  "contractPath": "/subjects/{subject}.json",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,88 @@
+{
+  "testId": "Test 548",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [X-XSS-Protection=null, X-XSS-Protection=0]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 548 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+    "timestamp": "Tue, 3 Dec 2024 20:09:05 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "157",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:09:05.984+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/videos/list"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:05 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/list",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "contractPath": "/api/v1.0/videos/list",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

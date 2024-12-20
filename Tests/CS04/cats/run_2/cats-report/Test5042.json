@@ -1,0 +1,68 @@
+{
+  "testId": "Test 5042",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/visits/{visitId}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [PUT]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5042 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"Chuck Norris can compile syntax errors.\",\"id\":9,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Billy\",\"lastName\":\"Monahan\",\"address\":\"Suite 660 2755 Eloy Plaza, Charlesettaside, CT 09821-9356\",\"city\":\"North Jeri\",\"id\":5},\"name\":\"mvWkzkFw\",\"id\":4,\"birthDate\":\"2024-12-05T11:01:12.906937184Z\"},null],\"firstName\":\"Modesta\",\"lastName\":\"Ferry\",\"address\":\"0914 Vertie Flat, Mraztown, SC 60323\",\"city\":\"East Nicolette\",\"id\":1},\"name\":\"aFzupXMw\",\"id\":0,\"birthDate\":\"2024-12-05T11:01:12.904794344Z\"}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D/..%20;/",
+    "timestamp": "Thu, 5 Dec 2024 12:01:14 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "242",
+    "jsonBody": {
+      "timestamp": "2024-12-05T11:01:14.305+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/petclinic/api/visits/%7BvisitId%7D/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D/..%20;/",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

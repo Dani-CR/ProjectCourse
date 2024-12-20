@@ -1,0 +1,82 @@
+{
+  "testId": "Test 92",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/css]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/css"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 92 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"format\":\"json\",\"bibkeys\":\"NzOjLqAufj\",\"jscmd\":\"viewapi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+    "timestamp": "Fri, 11 Oct 2024 17:44:48 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {},
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:44:48 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/books",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+  "contractPath": "/api/books",
+  "server": "http://localhost:8080/"
+}

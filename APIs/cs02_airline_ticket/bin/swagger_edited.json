@@ -1,0 +1,55 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Issue Management API Reference"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "ticket-controller",
+      "description": "Ticket Controller"
+    },
+    {
+      "name": "company-controller",
+      "description": "Company Controller"
+    },
+    {
+      "name": "flight-controller",
+      "description": "Flight Controller"
+    },
+    {
+      "name": "plane-controller",
+      "description": "Plane Controller"
+    },
+    {
+      "name": "route-controller",
+      "description": "Route Controller"
+    },
+    {
+      "name": "airport-controller",
+      "description": "Airport Controller"
+    }
+  ],
+  "paths": {
+    "/api/airport": {
+      "get": {
+        "tags": [
+          "airport-controller"
+        ],
+        "summary": "Get All Operation",
+        "operationId": "getAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+      "post":

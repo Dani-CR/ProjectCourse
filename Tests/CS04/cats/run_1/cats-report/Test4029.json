@@ -1,0 +1,99 @@
+{
+  "testId": "Test 4029",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [X-XSS-Protection=null, X-XSS-Protection=0]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4029 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"vetId\":6}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/vets/6",
+    "timestamp": "Thu, 5 Dec 2024 11:54:04 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "67",
+    "jsonBody": {
+      "id": 6,
+      "firstName": "Sharon",
+      "lastName": "Jenkins",
+      "specialties": []
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:03 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets/{vetId}",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets/6",
+  "contractPath": "/api/vets/{vetId}",
+  "server": "http://localhost:9966/petclinic"
+}

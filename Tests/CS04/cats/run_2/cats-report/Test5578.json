@@ -1,0 +1,91 @@
+{
+  "testId": "Test 5578",
+  "scenario": "Send a 'happy' flow request with all fields and all headers",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5578 - HappyPath)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/error",
+    "timestamp": "Thu, 5 Dec 2024 12:01:20 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "3",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "105",
+    "jsonBody": {
+      "timestamp": "2024-12-05T11:01:20.427+0000",
+      "status": 999,
+      "error": "None",
+      "message": "No message available"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:20 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/error",
+  "fuzzer": "HappyPath",
+  "fullRequestPath": "http://localhost:9966/petclinic/error",
+  "contractPath": "/error",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4238",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [404, 400, 422], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4238 - RandomResources)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Brian\",\"lastName\":\"Kuvalis\",\"specialties\":[{\"name\":\"1IFRc5E\",\"id\":6},{\"name\":\"BpEo2\",\"id\":0}],\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/vets/4877422855748430849",
+    "timestamp": "Thu, 5 Dec 2024 11:54:09 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "277",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"4877422855748430849\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "277"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:09 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets/{vetId}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets/4877422855748430849",
+  "contractPath": "/api/vets/{vetId}",
+  "server": "http://localhost:9966/petclinic"
+}

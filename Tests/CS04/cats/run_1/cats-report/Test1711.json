@@ -1,0 +1,89 @@
+{
+  "testId": "Test 1711",
+  "scenario": "Send a happy flow request with undocumented HTTP method: POST",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 400",
+  "resultDetails": "Unexpected response code for http method [POST]: expected [405], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1711 - HttpMethods)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"UMfXPW\",\"id\":9,\"birthDate\":\"2024-12-05T10:53:06.590143354Z\"},null],\"firstName\":\"Janette\",\"lastName\":\"Klocko\",\"address\":\"Suite 159 23367 Nader Valleys, Sherryshire, VT 04405\",\"city\":\"Cruickshankberg\",\"id\":7},\"name\":\"VtwGSv\",\"id\":0,\"birthDate\":\"2024-12-05T10:53:06.589131904Z\"},null],\"firstName\":\"Ryan\",\"lastName\":\"Runolfsson\",\"address\":\"Suite 033 15742 Tremblay Bypass, Torpport, NM 39453-9237\",\"city\":\"Leschshire\",\"id\":3},\"name\":\"v0ARnjk\",\"id\":0,\"birthDate\":\"2024-12-05T10:53:06.587490879Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:53:08 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "26",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "128",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpRequestMethodNotSupportedException",
+      "exMessage": "Request method 'POST' not supported"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "128"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:08 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,84 @@
+{
+  "testId": "Test 5656",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/xhtml+xml]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/xhtml+xml"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5656 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "\"{}\"",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/error",
+    "timestamp": "Thu, 5 Dec 2024 12:01:22 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:22 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/error",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/error",
+  "contractPath": "/error",
+  "server": "http://localhost:9966/petclinic"
+}

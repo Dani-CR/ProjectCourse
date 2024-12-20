@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3319",
+  "scenario": "Send a 'happy' flow request with all fields and all headers and checks if the response headers match those declared in the contract",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3319 - ResponseHeadersMatchContractHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"bxVNP\",\"id\":5}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:53:47 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "34",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "271",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{specialtyId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "271"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:46 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/specialties/{specialtyId}",
+  "fuzzer": "ResponseHeadersMatchContractHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D",
+  "contractPath": "/api/specialties/{specialtyId}",
+  "server": "http://localhost:9966/petclinic"
+}

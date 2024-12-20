@@ -1,0 +1,89 @@
+{
+  "testId": "Test 431",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/x-icon]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [image/x-icon;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/x-icon"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 431 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Scottie\",\"lastName\":\"Wilkinson\",\"address\":\"777 Rau Vista, Port Averystad, OH 96859-5612\",\"city\":\"Beerburgh\",\"id\":2},\"name\":\"0rM67j\",\"id\":5,\"birthDate\":\"2024-12-05T10:59:43.874761391Z\"},null],\"firstName\":\"Pasquale\",\"lastName\":\"Reinger\",\"address\":\"Apt. 049 9615 Zieme Rue, Claytonport, IN 23753-7667\",\"city\":\"Conroyfurt\",\"id\":3},\"name\":\"qxoBVl\",\"id\":8,\"birthDate\":\"2024-12-05T10:59:43.873129823Z\"},null],\"firstName\":\"Christin\",\"lastName\":\"Legros\",\"address\":\"52343 Bruen Extension, New Mariella, NH 60083\",\"city\":\"Gordonmouth\",\"id\":3}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/owners",
+    "timestamp": "Thu, 5 Dec 2024 11:59:49 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "image/x-icon;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:59:48 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "image/x-icon;charset=UTF-8"
+  },
+  "path": "/api/owners",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners",
+  "contractPath": "/api/owners",
+  "server": "http://localhost:9966/petclinic"
+}

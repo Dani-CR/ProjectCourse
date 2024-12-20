@@ -1,0 +1,93 @@
+{
+  "testId": "Test 5522",
+  "scenario": "Send [zero-width characters] in request fields: field [visitId], value [INSERT with \\u202b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5522 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"visitId\":\"\\u202B6\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/api/visits/%E2%80%AB6",
+    "timestamp": "Thu, 5 Dec 2024 11:54:32 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "262",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"‫6\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "262"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:32 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%E2%80%AB6",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

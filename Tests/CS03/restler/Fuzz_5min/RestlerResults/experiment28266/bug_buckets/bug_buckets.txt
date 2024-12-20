@@ -1,0 +1,77 @@
+main_driver_500: 3
+PayloadBodyChecker_500: 12
+InvalidValueChecker_500: 3
+Total Buckets: 18
+-------------
+main_driver_500 - Bug was reproduced - main_driver_500_1.replay.txt
+Hash: main_driver_500_ea5e4e64977ee8fde955120b96f9422797064be2
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "created":2019-06-26T20:20:39+00:00,\n    "id":1,\n    "modified":2019-06-26T20:20:39+00:00,\n    "password":fuzzstring,\n    "username":fuzzstring,\n    "videos":\n    [\n        {\n            "created":2019-06-26T20:20:39+00:00,\n            "id":1,\n            "modified":2019-06-26T20:20:39+00:00,\n            "size":1.23,\n            "title":fuzzstring,\n            "url":fuzzstring\n        }\n    ]}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_2.replay.txt
+Hash: main_driver_500_762a1c9a0d78d523afdbfc78f864b6f15b64dfdc
+GET /api/v1.0/videos/download/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_3.replay.txt
+Hash: main_driver_500_58ea04056ec6e02b95cdf5de457791bfe70cd93c
+POST /api/v1.0/videos/upload?title=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.replay.txt
+Hash: PayloadBodyChecker_500_333ba07cac750f27aacf54fc490c81ac79ef8ef0
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"username":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.replay.txt
+Hash: PayloadBodyChecker_500_9ce1d9b00ea00d326b79828d4efe8e1a85b267d0
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"id":0}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.replay.txt
+Hash: PayloadBodyChecker_500_8304807cb2d55a25ce4a6d99522a65d69fc25c9a
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"url":"fuzzstring"}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.replay.txt
+Hash: PayloadBodyChecker_500_0b061f12c2a0f4252c137ca9445f0f0a566dc9b1
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"size":0}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.replay.txt
+Hash: PayloadBodyChecker_500_fecedda1f1171ab86b51ba1811d9c34094331fde
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"title":"fuzzstring"}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.replay.txt
+Hash: PayloadBodyChecker_500_8aceac908dd991c5ca4ddcc89659401f43ec6c70
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_7.replay.txt
+Hash: PayloadBodyChecker_500_accb2430d1e27b38578261d0424f50caf01b6fd9
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_8.replay.txt
+Hash: PayloadBodyChecker_500_6470335c2eb13c04d49ab41f6cd3e161e3e43f1f
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"modified":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_9.replay.txt
+Hash: PayloadBodyChecker_500_a1a360bb4073e59c4b6e735aa34cdcbfa66a1395
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"username":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_10.replay.txt
+Hash: PayloadBodyChecker_500_d8ad4e4d93457a089c984e46471d4457da3159c7
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"modified":0}]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_11.replay.txt
+Hash: PayloadBodyChecker_500_0a032f45b959c41a5670588cf0a738ec817b8599
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{ "fuzz" : false }]}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_12.replay.txt
+Hash: PayloadBodyChecker_500_ca20b95babf4bc7c7fa0fbcab75aee6df5149922
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"videos":[{"created":0}]}
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_1.replay.txt
+Hash: InvalidValueChecker_500_ea5e4e64977ee8fde955120b96f9422797064be2
+POST /api/v1.0/users/sign-up HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "created":2019-06-26T20:20:39+00:00,\n    "id":1,\n    "modified":2019-06-26T20:20:39+00:00,\n    "password":fuzzstring,\n    "username":fuzzstring,\n    "videos":\n    [\n        {\n            "created":2019-06-26T20:20:39+00:00,\n            "id":1,\n            "modified":2019-06-26T20:20:39+00:00,\n            "size":1.23,\n            "title":fuzzstring,\n            "url":fuzzstring\n        }\n    ]}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_2.replay.txt
+Hash: InvalidValueChecker_500_762a1c9a0d78d523afdbfc78f864b6f15b64dfdc
+GET /api/v1.0/videos/download/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_3.replay.txt
+Hash: InvalidValueChecker_500_58ea04056ec6e02b95cdf5de457791bfe70cd93c
+POST /api/v1.0/videos/upload?title=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------

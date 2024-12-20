@@ -1,0 +1,566 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "created",
+            "fullPath": {
+              "path": [
+                "created"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "created",
+        "AccessPathParts": {
+          "path": [
+            "created"
+          ]
+        },
+        "ResourceName": "created",
+        "ProducerParameterName": "created",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "modified",
+            "fullPath": {
+              "path": [
+                "modified"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "modified",
+        "AccessPathParts": {
+          "path": [
+            "modified"
+          ]
+        },
+        "ResourceName": "modified",
+        "ProducerParameterName": "modified",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "password",
+            "fullPath": {
+              "path": [
+                "password"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "password",
+        "AccessPathParts": {
+          "path": [
+            "password"
+          ]
+        },
+        "ResourceName": "password",
+        "ProducerParameterName": "password",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "username",
+            "fullPath": {
+              "path": [
+                "username"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "username",
+        "AccessPathParts": {
+          "path": [
+            "username"
+          ]
+        },
+        "ResourceName": "username",
+        "ProducerParameterName": "username",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "videos",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]"
+              ]
+            }
+          }
+        },
+        "ContainerName": "sign-up",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "sign__up"
+        ],
+        "AccessPath": "videos/[0]",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]"
+          ]
+        },
+        "ResourceName": "videos",
+        "ProducerParameterName": "videos",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "created",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "created"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/created",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "created"
+          ]
+        },
+        "ResourceName": "created",
+        "ProducerParameterName": "created",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/id",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "modified",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "modified"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/modified",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "modified"
+          ]
+        },
+        "ResourceName": "modified",
+        "ProducerParameterName": "modified",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "size",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "size"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/size",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "size"
+          ]
+        },
+        "ResourceName": "size",
+        "ProducerParameterName": "size",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Number"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "title",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "title"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/title",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "title"
+          ]
+        },
+        "ResourceName": "title",
+        "ProducerParameterName": "title",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/users/sign-up",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "url",
+            "fullPath": {
+              "path": [
+                "videos",
+                "[0]",
+                "url"
+              ]
+            }
+          }
+        },
+        "ContainerName": "videos",
+        "BodyContainerName": "videos",
+        "PathContainerName": "sign-up",
+        "CandidateTypeNames": [
+          "video"
+        ],
+        "AccessPath": "videos/[0]/url",
+        "AccessPathParts": {
+          "path": [
+            "videos",
+            "[0]",
+            "url"
+          ]
+        },
+        "ResourceName": "url",
+        "ProducerParameterName": "url",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/videos/download/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "v1.0",
+              "videos",
+              "download"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "download",
+        "PathContainerName": "download",
+        "CandidateTypeNames": [
+          "download"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/videos/get/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "v1.0",
+              "videos",
+              "get"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "get",
+        "PathContainerName": "get",
+        "CandidateTypeNames": [
+          "get"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/v1.0/videos/upload",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "title"
+        },
+        "ContainerName": "upload",
+        "PathContainerName": "upload",
+        "CandidateTypeNames": [
+          "upload"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "title",
+        "ProducerParameterName": "title",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  }
+]

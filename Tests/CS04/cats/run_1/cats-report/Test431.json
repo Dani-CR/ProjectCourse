@@ -1,0 +1,89 @@
+{
+  "testId": "Test 431",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/x-icon]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [image/x-icon;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/x-icon"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 431 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Roxana\",\"lastName\":\"Goodwin\",\"address\":\"Suite 436 304 Lynelle Isle, Pricillaside, WA 56321-3997\",\"city\":\"Brockshire\",\"id\":1},\"name\":\"MzR1dUv\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.080004883Z\"},null],\"firstName\":\"Marylou\",\"lastName\":\"Jacobs\",\"address\":\"787 Spinka Knolls, Kennethborough, WI 06064-1194\",\"city\":\"Yevetteshire\",\"id\":0},\"name\":\"wGwI2\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.07782338Z\"},null],\"firstName\":\"Jule\",\"lastName\":\"Kemmer\",\"address\":\"Apt. 957 57559 Georgia Route, Port Robertport, VT 98615\",\"city\":\"Port Teddy\",\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/owners",
+    "timestamp": "Thu, 5 Dec 2024 11:52:33 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "image/x-icon;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:32 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "image/x-icon;charset=UTF-8"
+  },
+  "path": "/api/owners",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners",
+  "contractPath": "/api/owners",
+  "server": "http://localhost:9966/petclinic"
+}

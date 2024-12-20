@@ -1,0 +1,68 @@
+{
+  "testId": "Test 462",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/v1.0/videos/get/{id}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [GET]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 462 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":8}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/8/..%20;/",
+    "timestamp": "Wed, 4 Dec 2024 10:42:22 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "245",
+    "jsonBody": {
+      "timestamp": "2024-12-04T09:42:22.731+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/swagger-ui.html/api/v1.0/videos/get/8/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Wed, 04 Dec 2024 09:42:21 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/get/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/8/..%20;/",
+  "contractPath": "/api/v1.0/videos/get/{id}",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

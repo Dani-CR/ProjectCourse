@@ -1,0 +1,60 @@
+{
+  "testId": "Test 593",
+  "scenario": "Send [zero-width characters] in request fields: field [olid], value [INSERT with \\u200b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 593 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"olid\":\"OL53\\u200B924W\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//books/OL53%E2%80%8B924W",
+    "timestamp": "Fri, 11 Oct 2024 17:46:45 +0200"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "20",
+    "numberOfWordsInResponse": "14",
+    "numberOfLinesInResponse": "9",
+    "contentLengthInBytes": "209",
+    "jsonBody": {
+      "notAJson": "<html>\n  <head>\n    <title>Bad Request</title>\n  </head>\n  <body>\n    <h1><p>Bad Request</p></h1>\n    Invalid HTTP Header: &quot;&#x27;http://localhost:8080/books/OL53\\\\u200b924W&#x27;&quot;\n  </body>\n</html>\n"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "209"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html"
+      }
+    ],
+    "responseContentType": "text/html"
+  },
+  "path": "/books/{olid}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080//books/OL53%E2%80%8B924W",
+  "contractPath": "/books/{olid}",
+  "server": "http://localhost:8080/"
+}

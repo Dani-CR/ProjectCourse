@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 5 Dec 2024 11:53:51 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 3518
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 3518</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 5 Dec 2024 11:53:51 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Send a happy flow request with a [dummy] Content-Type header, value [application/cats]</p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return 415</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-error">error</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Unexpected behaviour: expected [406, 415], actual [400]
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/users</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>DummyContentTypeHeaders</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:9966/petclinic/api/users</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-post details">post</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{&#10;  &quot;password&quot;: &quot;OyoAOOyoAOO&quot;,&#10;  &quot;roles&quot;: [&#10;    {&#10;      &quot;name&quot;: &quot;dvoiff&quot;,&#10;      &quot;id&quot;: 7&#10;    },&#10;    {&#10;      &quot;name&quot;: &quot;CdRDzbff&quot;,&#10;      &quot;id&quot;: 9&#10;    }&#10;  ],&#10;  &quot;enabled&quot;: false,&#10;  &quot;username&quot;: &quot;erik.wyman&quot;&#10;}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/cats&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 3518 - DummyContentTypeHeaders)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X POST \&#10;      -H &quot;Content-Type: application/cats&quot; -H &quot;Accept: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 3518 - DummyContentTypeHeaders)&quot; \&#10;      -d &#39;{&quot;password&quot;:&quot;OyoAOOyoAOO&quot;,&quot;roles&quot;:[{&quot;name&quot;:&quot;dvoiff&quot;,&quot;id&quot;:7},{&quot;name&quot;:&quot;CdRDzbff&quot;,&quot;id&quot;:9}],&quot;enabled&quot;:false,&quot;username&quot;:&quot;erik.wyman&quot;}&#39; \&#10;      http://localhost:9966/petclinic/api/users&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;POST&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;12&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;5&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;148&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;className&quot;: &quot;org.springframework.web.HttpMediaTypeNotSupportedException&quot;,&#10;    &quot;exMessage&quot;: &quot;Content type &#39;application/cats;charset&#61;UTF-8&#39; not supported&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;cache-control&quot;,&#10;      &quot;value&quot;: &quot;no-cache, no-store, max-age&#61;0, must-revalidate&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-length&quot;,&#10;      &quot;value&quot;: &quot;148&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 05 Dec 2024 10:53:50 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;expires&quot;,&#10;      &quot;value&quot;: &quot;0&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;pragma&quot;,&#10;      &quot;value&quot;: &quot;no-cache&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;vary&quot;,&#10;      &quot;value&quot;: &quot;Origin&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-content-type-options&quot;,&#10;      &quot;value&quot;: &quot;nosniff&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-frame-options&quot;,&#10;      &quot;value&quot;: &quot;DENY&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-xss-protection&quot;,&#10;      &quot;value&quot;: &quot;1; mode&#61;block&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test3518</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+{
+  "testId": "Test 2556",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/pettypes/{petTypeId}/?/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [204]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2556 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"petTypeId\":5}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/api/pettypes/5/?/",
+    "timestamp": "Thu, 5 Dec 2024 12:00:33 +0100"
+  },
+  "response": {
+    "responseCode": 204,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "41",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:33 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/pettypes/{petTypeId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes/5/?/",
+  "contractPath": "/api/pettypes/{petTypeId}",
+  "server": "http://localhost:9966/petclinic"
+}

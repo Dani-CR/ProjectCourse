@@ -1,0 +1,92 @@
+{
+  "testId": "Test 1883",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 404",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [404, 400, 422], actual [404], documented response codes: [200, 204, 401, 403]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1883 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"petId\": \"-5797\"\n}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/api/pets/-5797",
+    "timestamp": "Thu, 5 Dec 2024 11:53:12 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "37",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:11 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/-5797",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

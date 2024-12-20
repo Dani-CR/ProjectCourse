@@ -1,0 +1,88 @@
+{
+  "testId": "Test 11",
+  "scenario": "Send a happy flow request with undocumented HTTP method: VERIFY",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 404",
+  "resultDetails": "Unexpected response code for http method [VERIFY]: expected [405], actual [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 11 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "VERIFY",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Tue, 3 Dec 2024 20:08:53 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "VERIFY",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "159",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:08:53.430+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:08:53 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

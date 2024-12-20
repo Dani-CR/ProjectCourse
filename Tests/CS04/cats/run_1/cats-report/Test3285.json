@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3285",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [404, 400, 422], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3285 - RandomResources)"
+      }
+    ],
+    "payload": "{\"name\":\"bxVNP\",\"id\":5}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/specialties/HEcJvGcUb87YlMadmJrg6iAP83uRP",
+    "timestamp": "Thu, 5 Dec 2024 11:53:46 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "287",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"HEcJvGcUb87YlMadmJrg6iAP83uRP\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "287"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:46 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/specialties/{specialtyId}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/specialties/HEcJvGcUb87YlMadmJrg6iAP83uRP",
+  "contractPath": "/api/specialties/{specialtyId}",
+  "server": "http://localhost:9966/petclinic"
+}

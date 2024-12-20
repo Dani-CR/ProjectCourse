@@ -1,0 +1,109 @@
+{
+  "testId": "Test 2211",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [201]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2211 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"8j9cvemX\",\"id\":0}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 12:00:29 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "26",
+    "jsonBody": {
+      "id": 0,
+      "name": "8j9cvemX"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:28 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "location",
+        "value": "http://localhost:9966/petclinic/api/pettypes/0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes",
+  "contractPath": "/api/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

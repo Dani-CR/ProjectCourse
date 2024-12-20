@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3604",
+  "scenario": "Remove the following fields from request: [username]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3604 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"password\":\"OyoAOOyoAOO\",\"roles\":[{\"name\":\"dvoiff\",\"id\":7},{\"name\":\"CdRDzbff\",\"id\":9}],\"enabled\":false}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 11:53:54 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "379",
+    "jsonBody": {
+      "className": "org.springframework.orm.jpa.JpaSystemException",
+      "exMessage": "ids for this class must be manually assigned before calling save(): org.springframework.samples.petclinic.model.User; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): org.springframework.samples.petclinic.model.User"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "379"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:53 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/users",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

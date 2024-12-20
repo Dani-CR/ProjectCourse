@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1426",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [application/java-archive]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/java-archive"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1426 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"aNn1DuZo\",\"id\":4,\"birthDate\":\"2024-12-05T11:00:09.144262647Z\"},null],\"firstName\":\"Mirna\",\"lastName\":\"Heaney\",\"address\":\"Suite 681 5465 Ignacio Fort, Lowefort, AL 95634-0366\",\"city\":\"Lake Jonelle\",\"id\":6},\"name\":\"r7w5G\",\"id\":7,\"birthDate\":\"2024-12-05T11:00:09.143309805Z\"},null],\"firstName\":\"Kathryn\",\"lastName\":\"Schultz\",\"address\":\"Apt. 144 323 Blick Path, Lake Abdulshire, WY 01892-9105\",\"city\":\"Croninfort\",\"id\":8},\"name\":\"lGcRIR\",\"id\":3,\"birthDate\":\"2024-12-05T11:00:09.142366693Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pets",
+    "timestamp": "Thu, 5 Dec 2024 12:00:14 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "156",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotSupportedException",
+      "exMessage": "Content type 'application/java-archive;charset=UTF-8' not supported"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "156"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:13 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966/petclinic"
+}

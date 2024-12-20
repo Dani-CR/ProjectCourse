@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1256",
+  "scenario": "Insert invalid data {0.0} within a valid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1256 - InsertRandomValuesInBody)"
+      }
+    ],
+    "payload": "{{0.0},\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"aNn1DuZo\",\"id\":4,\"birthDate\":\"2024-12-05T11:00:09.144262647Z\"},null],\"firstName\":\"Mirna\",\"lastName\":\"Heaney\",\"address\":\"Suite 681 5465 Ignacio Fort, Lowefort, AL 95634-0366\",\"city\":\"Lake Jonelle\",\"id\":6},\"name\":\"r7w5G\",\"id\":7,\"birthDate\":\"2024-12-05T11:00:09.143309805Z\"},null],\"firstName\":\"Kathryn\",\"lastName\":\"Schultz\",\"address\":\"Apt. 144 323 Blick Path, Lake Abdulshire, WY 01892-9105\",\"city\":\"Croninfort\",\"id\":8},\"name\":\"lGcRIR\",\"id\":3,\"birthDate\":\"2024-12-05T11:00:09.142366693Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pets",
+    "timestamp": "Thu, 5 Dec 2024 12:00:11 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "25",
+    "numberOfWordsInResponse": "38",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "411",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "JSON parse error: Unexpected character ('{' (code 123)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('{' (code 123)): was expecting double-quote to start field name\n at [Source: (PushbackInputStream); line: 1, column: 3]"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "411"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:10 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets",
+  "fuzzer": "InsertRandomValuesInBody",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966/petclinic"
+}

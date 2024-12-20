@@ -1,0 +1,6508 @@
+{
+  "Requests": [
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Head"
+      },
+      "method": "Head",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Options"
+      },
+      "method": "Options",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "",
+        "method": "Patch"
+      },
+      "method": "Patch",
+      "basePath": "/petclinic",
+      "path": [],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "owner",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "address",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "city",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "firstName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "lastName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "pets",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "birthDate",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "DateTime",
+                                          "defaultValue": "2019-06-26T20:20:39+00:00"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "owner",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "type",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "name",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "visits",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "date",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring",
+                                                      "exampleValue": "yyyy/MM/dd"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "description",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "InternalNode": [
+                                                  {
+                                                    "name": "pet",
+                                                    "propertyType": "Property",
+                                                    "isRequired": false,
+                                                    "isReadOnly": false
+                                                  },
+                                                  [
+                                                    {
+                                                      "LeafNode": {
+                                                        "name": "",
+                                                        "payload": {
+                                                          "Fuzzable": {
+                                                            "primitiveType": "Object",
+                                                            "defaultValue": "{ }"
+                                                          }
+                                                        },
+                                                        "isRequired": false,
+                                                        "isReadOnly": false
+                                                      }
+                                                    }
+                                                  ]
+                                                ]
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "telephone",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/owners",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners/*/lastname/{lastName}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "*"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "lastname"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Fuzzable": {
+            "primitiveType": "String",
+            "defaultValue": "fuzzstring"
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners/{ownerId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_owners_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners/{ownerId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_owners_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "owner",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "address",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "city",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "firstName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "lastName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "pets",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "birthDate",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "DateTime",
+                                          "defaultValue": "2019-06-26T20:20:39+00:00"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "owner",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "type",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "name",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "visits",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "date",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring",
+                                                      "exampleValue": "yyyy/MM/dd"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "description",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "InternalNode": [
+                                                  {
+                                                    "name": "pet",
+                                                    "propertyType": "Property",
+                                                    "isRequired": false,
+                                                    "isReadOnly": false
+                                                  },
+                                                  [
+                                                    {
+                                                      "LeafNode": {
+                                                        "name": "",
+                                                        "payload": {
+                                                          "Fuzzable": {
+                                                            "primitiveType": "Object",
+                                                            "defaultValue": "{ }"
+                                                          }
+                                                        },
+                                                        "isRequired": false,
+                                                        "isReadOnly": false
+                                                      }
+                                                    }
+                                                  ]
+                                                ]
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "telephone",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/owners/{ownerId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "owners"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_owners_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "pet",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "birthDate",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "DateTime",
+                              "defaultValue": "2019-06-26T20:20:39+00:00"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "owner",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "address",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "city",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "firstName",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "lastName",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "pets",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "telephone",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "type",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "visits",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "date",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring",
+                                          "exampleValue": "yyyy/MM/dd"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "description",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "pet",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/pets",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets/pettypes",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets/{petId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets/{petId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "pet",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "birthDate",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "DateTime",
+                              "defaultValue": "2019-06-26T20:20:39+00:00"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "owner",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "address",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "city",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "firstName",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "lastName",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "pets",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "telephone",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "type",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "visits",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "date",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring",
+                                          "exampleValue": "yyyy/MM/dd"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "description",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "pet",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pets/{petId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pettypes",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pettypes",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "petType",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/pettypes",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pettypes/{petTypeId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pettypes_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pettypes/{petTypeId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pettypes_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "petType",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/pettypes/{petTypeId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "pettypes"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_pettypes_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/specialties",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "specialties"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/specialties",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "specialties"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "specialty",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/specialties",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/specialties/{specialtyId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "specialties"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_specialties_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/specialties/{specialtyId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "specialties"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_specialties_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "specialty",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "name",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/specialties/{specialtyId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "specialties"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_specialties_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/users",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "users"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "user",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "enabled",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Bool",
+                              "defaultValue": "true"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "password",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "roles",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "username",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/vets",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "vets"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/vets",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "vets"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "vet",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "firstName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "lastName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "specialties",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/vets",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/vets/{vetId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "vets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_vets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/vets/{vetId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "vets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_vets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "vet",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "firstName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "lastName",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "specialties",
+                            "propertyType": "Array",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/vets/{vetId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "vets"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_vets_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/visits",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "visits"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/visits",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "visits"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "visit",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "date",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring",
+                              "exampleValue": "yyyy/MM/dd"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "description",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "pet",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "birthDate",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "DateTime",
+                                          "defaultValue": "2019-06-26T20:20:39+00:00"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "owner",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "address",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "city",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "firstName",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "lastName",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "InternalNode": [
+                                                  {
+                                                    "name": "pets",
+                                                    "propertyType": "Array",
+                                                    "isRequired": false,
+                                                    "isReadOnly": false
+                                                  },
+                                                  [
+                                                    {
+                                                      "LeafNode": {
+                                                        "name": "",
+                                                        "payload": {
+                                                          "Fuzzable": {
+                                                            "primitiveType": "Object",
+                                                            "defaultValue": "{ }"
+                                                          }
+                                                        },
+                                                        "isRequired": false,
+                                                        "isReadOnly": false
+                                                      }
+                                                    }
+                                                  ]
+                                                ]
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "telephone",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "type",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "name",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "visits",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "dependencyData": {
+        "responseParser": {
+          "writerVariables": [
+            {
+              "requestId": {
+                "endpoint": "/api/visits",
+                "method": "Post"
+              },
+              "accessPathParts": {
+                "path": [
+                  "id"
+                ]
+              },
+              "primitiveType": "Int",
+              "kind": "BodyResponseProperty"
+            }
+          ],
+          "headerWriterVariables": []
+        },
+        "inputWriterVariables": [],
+        "orderingConstraintWriterVariables": [],
+        "orderingConstraintReaderVariables": []
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/visits/{visitId}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "visits"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_visits_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/visits/{visitId}",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "visits"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_visits_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              {
+                "name": "visit",
+                "payload": {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Object",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "LeafNode": {
+                          "name": "date",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring",
+                              "exampleValue": "yyyy/MM/dd"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "description",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "String",
+                              "defaultValue": "fuzzstring"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "id",
+                          "payload": {
+                            "Fuzzable": {
+                              "primitiveType": "Int",
+                              "defaultValue": "1"
+                            }
+                          },
+                          "isRequired": false,
+                          "isReadOnly": false
+                        }
+                      },
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "pet",
+                            "propertyType": "Property",
+                            "isRequired": false,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "InternalNode": [
+                                {
+                                  "name": "",
+                                  "propertyType": "Object",
+                                  "isRequired": false,
+                                  "isReadOnly": false
+                                },
+                                [
+                                  {
+                                    "LeafNode": {
+                                      "name": "birthDate",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "DateTime",
+                                          "defaultValue": "2019-06-26T20:20:39+00:00"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "id",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "Int",
+                                          "defaultValue": "1"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "LeafNode": {
+                                      "name": "name",
+                                      "payload": {
+                                        "Fuzzable": {
+                                          "primitiveType": "String",
+                                          "defaultValue": "fuzzstring"
+                                        }
+                                      },
+                                      "isRequired": false,
+                                      "isReadOnly": false
+                                    }
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "owner",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "address",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "city",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "firstName",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "lastName",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "InternalNode": [
+                                                  {
+                                                    "name": "pets",
+                                                    "propertyType": "Array",
+                                                    "isRequired": false,
+                                                    "isReadOnly": false
+                                                  },
+                                                  [
+                                                    {
+                                                      "LeafNode": {
+                                                        "name": "",
+                                                        "payload": {
+                                                          "Fuzzable": {
+                                                            "primitiveType": "Object",
+                                                            "defaultValue": "{ }"
+                                                          }
+                                                        },
+                                                        "isRequired": false,
+                                                        "isReadOnly": false
+                                                      }
+                                                    }
+                                                  ]
+                                                ]
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "telephone",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "type",
+                                        "propertyType": "Property",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "InternalNode": [
+                                            {
+                                              "name": "",
+                                              "propertyType": "Object",
+                                              "isRequired": false,
+                                              "isReadOnly": false
+                                            },
+                                            [
+                                              {
+                                                "LeafNode": {
+                                                  "name": "id",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "Int",
+                                                      "defaultValue": "1"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              },
+                                              {
+                                                "LeafNode": {
+                                                  "name": "name",
+                                                  "payload": {
+                                                    "Fuzzable": {
+                                                      "primitiveType": "String",
+                                                      "defaultValue": "fuzzstring"
+                                                    }
+                                                  },
+                                                  "isRequired": false,
+                                                  "isReadOnly": false
+                                                }
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "InternalNode": [
+                                      {
+                                        "name": "visits",
+                                        "propertyType": "Array",
+                                        "isRequired": false,
+                                        "isReadOnly": false
+                                      },
+                                      [
+                                        {
+                                          "LeafNode": {
+                                            "name": "",
+                                            "payload": {
+                                              "Fuzzable": {
+                                                "primitiveType": "Object",
+                                                "defaultValue": "{ }"
+                                              }
+                                            },
+                                            "isRequired": false,
+                                            "isReadOnly": false
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": [
+              {
+                "name": "Content-Type",
+                "payload": {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Constant": [
+                        "String",
+                        "application/json"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/api/visits/{visitId}",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "visits"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "DynamicObject": {
+            "primitiveType": "Int",
+            "variableName": "_api_visits_post_id",
+            "isWriter": false
+          }
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Get"
+      },
+      "method": "Get",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Head"
+      },
+      "method": "Head",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Post"
+      },
+      "method": "Post",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Put"
+      },
+      "method": "Put",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Delete"
+      },
+      "method": "Delete",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Options"
+      },
+      "method": "Options",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/error",
+        "method": "Patch"
+      },
+      "method": "Patch",
+      "basePath": "/petclinic",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "/"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "error"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "headerParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ],
+        [
+          "DictionaryCustomPayload",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "localhost:9966"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    }
+  ]
+}

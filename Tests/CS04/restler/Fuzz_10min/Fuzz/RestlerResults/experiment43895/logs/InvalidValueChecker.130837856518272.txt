@@ -1,0 +1,497 @@
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ HEAD
+Testing request: /petclinic/ POST
+Testing request: /petclinic/ PUT
+Testing request: /petclinic/ DELETE
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ PATCH
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners POST
+Found 16 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_string
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+Fuzzing request block 26, type: restler_fuzzable_datetime
+Fuzzing request block 28, type: restler_fuzzable_int
+Fuzzing request block 30, type: restler_fuzzable_string
+Fuzzing request block 32, type: restler_fuzzable_object
+Fuzzing request block 34, type: restler_fuzzable_int
+Fuzzing request block 36, type: restler_fuzzable_string
+Fuzzing request block 38, type: restler_fuzzable_string
+Fuzzing request block 40, type: restler_fuzzable_string
+Fuzzing request block 42, type: restler_fuzzable_int
+Fuzzing request block 44, type: restler_fuzzable_object
+Fuzzing request block 46, type: restler_fuzzable_string
+
+Suspect sequence: 500
+POST /petclinic/api/owners
+
+Suspect sequence: 500
+POST /petclinic/api/owners
+Tested 1600 combinations for request /petclinic/api/owners POST, combination 1
+Testing request: /petclinic/api/owners/*/lastname/fuzzstring GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 11, type: restler_fuzzable_string
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+Tested 100 combinations for request /petclinic/api/owners/*/lastname/fuzzstring GET, combination 1
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets POST
+Found 16 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_datetime
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_string
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int
+Fuzzing request block 30, type: restler_fuzzable_string
+Fuzzing request block 32, type: restler_fuzzable_object
+Fuzzing request block 34, type: restler_fuzzable_string
+Fuzzing request block 36, type: restler_fuzzable_int
+Fuzzing request block 38, type: restler_fuzzable_string
+Fuzzing request block 40, type: restler_fuzzable_string
+Fuzzing request block 42, type: restler_fuzzable_string
+Fuzzing request block 44, type: restler_fuzzable_int
+Fuzzing request block 46, type: restler_fuzzable_object
+Tested 1600 combinations for request /petclinic/api/pets POST, combination 1
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes POST
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_int
+Fuzzing request block 18, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/pettypes POST, combination 1
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties POST
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_int
+Fuzzing request block 18, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/specialties POST, combination 1
+Testing request: /petclinic/api/users POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_bool
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_int
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_string
+Tested 500 combinations for request /petclinic/api/users POST, combination 1
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_string
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+Tested 500 combinations for request /petclinic/api/vets POST, combination 1
+Testing request: /petclinic/api/visits GET
+Testing request: /petclinic/api/visits POST
+Found 16 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_string
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_int
+Fuzzing request block 22, type: restler_fuzzable_datetime
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_string
+Fuzzing request block 30, type: restler_fuzzable_string
+Fuzzing request block 32, type: restler_fuzzable_string
+Fuzzing request block 34, type: restler_fuzzable_int
+Fuzzing request block 36, type: restler_fuzzable_string
+Fuzzing request block 38, type: restler_fuzzable_object
+Fuzzing request block 40, type: restler_fuzzable_string
+Fuzzing request block 42, type: restler_fuzzable_int
+Fuzzing request block 44, type: restler_fuzzable_string
+Fuzzing request block 46, type: restler_fuzzable_object
+Tested 1600 combinations for request /petclinic/api/visits POST, combination 1
+Testing request: /petclinic/error GET
+Testing request: /petclinic/error HEAD
+Testing request: /petclinic/error POST
+Testing request: /petclinic/error PUT
+Testing request: /petclinic/error DELETE
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error PATCH
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pets/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes GET
+Testing request: /petclinic/api/pettypes POST
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_int
+Fuzzing request block 18, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/pettypes POST, combination 1
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes POST
+Testing request: /petclinic/api/pettypes/_READER_DELIM_api_pettypes_post_id_READER_DELIM GET
+Testing request: /petclinic/api/pettypes/_READER_DELIM_api_pettypes_post_id_READER_DELIM PUT
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/pettypes/_READER_DELIM_api_pettypes_post_id_READER_DELIM PUT, combination 1
+Testing request: /petclinic/api/pettypes/_READER_DELIM_api_pettypes_post_id_READER_DELIM DELETE
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties GET
+Testing request: /petclinic/api/specialties POST
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_int
+Fuzzing request block 18, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/specialties POST, combination 1
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties POST
+Testing request: /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM GET
+Testing request: /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM PUT
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Tested 200 combinations for request /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM PUT, combination 1
+Testing request: /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM DELETE
+Testing request: /petclinic/api/users POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_bool
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_int
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_string
+Tested 500 combinations for request /petclinic/api/users POST, combination 1
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/users POST
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets GET
+Testing request: /petclinic/api/vets POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_string
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+Tested 500 combinations for request /petclinic/api/vets POST, combination 1
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets POST
+Testing request: /petclinic/api/vets/_READER_DELIM_api_vets_post_id_READER_DELIM GET
+Testing request: /petclinic/api/vets/_READER_DELIM_api_vets_post_id_READER_DELIM PUT
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_int
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Tested 500 combinations for request /petclinic/api/vets/_READER_DELIM_api_vets_post_id_READER_DELIM PUT, combination 1
+Testing request: /petclinic/api/vets/_READER_DELIM_api_vets_post_id_READER_DELIM DELETE
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/error OPTIONS
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ HEAD
+Testing request: /petclinic/ HEAD

@@ -1,0 +1,88 @@
+{
+  "testId": "Test 472",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/v1.0/videos/get/{id}..%ff/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 472 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":5}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%5B%5D/?id=5",
+    "timestamp": "Tue, 3 Dec 2024 20:09:04 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "164",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:09:04.375+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/videos/get/%5B%5D/"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:04 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/get/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%5B%5D/?id=5",
+  "contractPath": "/api/v1.0/videos/get/{id}",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

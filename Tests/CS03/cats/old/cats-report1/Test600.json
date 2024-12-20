@@ -1,0 +1,82 @@
+{
+  "testId": "Test 600",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ld+json]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 600 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/v1.0/videos/list",
+    "timestamp": "Mon, 7 Oct 2024 13:05:59 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": [],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/ld+json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 11:05:58 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/ld+json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/list",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/list",
+  "contractPath": "/api/v1.0/videos/list",
+  "server": "http://localhost:8080"
+}

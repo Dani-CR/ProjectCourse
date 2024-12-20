@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3168",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/specialties/{specialtyId}\u0000",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3168 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"name\":\"xInF4S\",\"id\":8}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D%00",
+    "timestamp": "Thu, 5 Dec 2024 12:00:42 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "32",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "435",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 400 – Bad Request</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "435"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:41 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/specialties/{specialtyId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D%00",
+  "contractPath": "/api/specialties/{specialtyId}",
+  "server": "http://localhost:9966/petclinic"
+}

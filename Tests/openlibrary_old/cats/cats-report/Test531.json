@@ -1,0 +1,107 @@
+{
+  "testId": "Test 531",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 531 - NewFields)"
+      }
+    ],
+    "payload": "{\"olid\":\"OL53924W\",\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//books/OL53924W?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Fri, 11 Oct 2024 17:45:01 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "71",
+    "numberOfWordsInResponse": "52",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "578",
+    "jsonBody": {
+      "last_modified": {
+        "type": "/type/datetime",
+        "value": "2013-03-28T07:50:48.835814"
+      },
+      "latest_revision": 1,
+      "key": "/works/OL53924W",
+      "authors": [
+        {
+          "type": {
+            "key": "/type/author_role"
+          },
+          "author": {
+            "key": "/authors/OL18319A"
+          }
+        }
+      ],
+      "created": {
+        "type": "/type/datetime",
+        "value": "2013-03-28T07:50:48.835814"
+      },
+      "title": "The complete works of Mark Twain",
+      "subject_places": [
+        "Mississippi River"
+      ],
+      "subjects": [
+        "Voyages around the world",
+        "Description and travel",
+        "Christian Science"
+      ],
+      "subject_people": [
+        "Joan of Arc, Saint (1412-1431)"
+      ],
+      "type": {
+        "key": "/type/work"
+      },
+      "revision": 1
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:45:01 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"MC 2 0.000 TT 0 0.001\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/books/{olid}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080//books/OL53924W?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/books/{olid}",
+  "server": "http://localhost:8080/"
+}

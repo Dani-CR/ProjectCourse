@@ -1,0 +1,23 @@
+{
+  "SwaggerSpecFilePath": [
+    "/home/daniela/Documents/Tests/CS09/restler/../actual_schema.json"
+  ],
+  "GrammarOutputDirectoryPath": "/home/daniela/Documents/Tests/CS09/restler/Compile",
+  "CustomDictionaryFilePath": "/home/daniela/Documents/Tests/CS09/restler/Compile/defaultDict.json",
+  "IncludeOptionalParameters": true,
+  "UseHeaderExamples": true,
+  "UsePathExamples": false,
+  "UseQueryExamples": true,
+  "UseBodyExamples": true,
+  "UseAllExamplePayloads": false,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "ResolveHeaderDependencies": false,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": false,
+  "TrackFuzzedParameterNames": false
+}

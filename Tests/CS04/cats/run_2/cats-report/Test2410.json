@@ -1,0 +1,101 @@
+{
+  "testId": "Test 2410",
+  "scenario": "Insert zero-width chars in field names: field [id], char [\\u202b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [201]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2410 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"name\":\"8j9cvemX\",\"i‫d\":0}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 12:00:32 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "27",
+    "jsonBody": {
+      "id": 31,
+      "name": "8j9cvemX"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:31 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "location",
+        "value": "http://localhost:9966/petclinic/api/pettypes/31"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes",
+  "contractPath": "/api/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

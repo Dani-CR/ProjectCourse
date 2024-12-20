@@ -1,0 +1,39 @@
+Restler Information: 0 : Starting task Test...
+    DateTime=2024-11-27T15:11:22.4631661Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2024-11-27T15:11:23.1825657Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2024-11-27T15:11:23.1826509Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0141322 with exit code 0x0: 'python3 --version'
+    DateTime=2024-11-27T15:11:23.2074823Z
+Restler Information: 0 : (57000) python3 --version exited with code: 0
+    DateTime=2024-11-27T15:11:23.2116850Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/CS09/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/CS09/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2024-11-27T15:11:23.2217148Z
+Restler Information: 0 : Process execution terminated in 00:00:03.9796971 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/CS09/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/CS09/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2024-11-27T15:11:27.2016993Z
+Restler Information: 0 : (57002) python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/CS09/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/CS09/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2024-11-27T15:11:27.2018049Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/CS09/restler/Test" --output_dir "/home/daniela/Documents/Tests/CS09/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-11-27T15:11:27.2089293Z
+Restler Information: 0 : Process execution terminated in 00:00:00.5405548 with exit code 0x0: 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/CS09/restler/Test" --output_dir "/home/daniela/Documents/Tests/CS09/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-11-27T15:11:27.7496856Z
+Restler Information: 0 : (57011) dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/CS09/restler/Test" --output_dir "/home/daniela/Documents/Tests/CS09/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/CS09/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2024-11-27T15:11:27.7498594Z
+Restler Information: 0 : Request coverage (successful / total): 9 / 59
+    DateTime=2024-11-27T15:11:27.8736808Z
+Restler Information: 0 : Attempted requests: 45 / 59
+    DateTime=2024-11-27T15:11:27.8752249Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2024-11-27T15:11:27.9595634Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2024-11-27T15:11:27.9596176Z
+Restler Information: 0 : 
+main_driver_500: 5
+    DateTime=2024-11-27T15:11:27.9605001Z
+Restler Information: 0 : See 'coverage_failures_to_investigate.txt' to investigate API coverage.
+    DateTime=2024-11-27T15:11:28.0573514Z
+Restler Information: 0 : Task Test succeeded.
+    DateTime=2024-11-27T15:11:28.0613577Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-11-27T15:11:28.2837787Z

@@ -1,0 +1,88 @@
+{
+  "testId": "Test 138",
+  "scenario": "Send [outside the boundary values] in request fields: field [username], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 138 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"password\":\"mh2hwjiuZ\",\"created\":\"2024-12-04T09:42:09.970946424Z\",\"modified\":\"2024-12-04T09:42:09.97726664Z\",\"videos\":[{\"size\":1.0829374277488435,\"created\":\"2024-12-04T09:42:10.085716874Z\",\"modified\":\"2024-12-04T09:42:10.086362715Z\",\"id\":4,\"title\":\"Y3uRxJu\",\"url\":\"http://catsUuJpnX.com/cats\"},{\"size\":1.423153483832974,\"created\":\"2024-12-04T09:42:10.091557451Z\",\"modified\":\"2024-12-04T09:42:10.092142256Z\",\"id\":5,\"title\":\"PPH749seO\",\"url\":\"http://catsUgJjaj.com/cats\"}],\"id\":4,\"username\":\"\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Wed, 4 Dec 2024 10:42:15 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "POST",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "159",
+    "jsonBody": {
+      "timestamp": "2024-12-04T09:42:16.007+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Wed, 04 Dec 2024 09:42:15 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

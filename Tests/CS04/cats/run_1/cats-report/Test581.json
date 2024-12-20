@@ -1,0 +1,92 @@
+{
+  "testId": "Test 581",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [lastName], value [REPLACE with V4జ్ఞ\\u200cాTV], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 581 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"lastName\":\"V4జ్ఞ\\u200CాTV\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/owners/*/lastname/V4%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BETV",
+    "timestamp": "Thu, 5 Dec 2024 11:52:37 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "90",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:36 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/owners/*/lastname/{lastName}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/*/lastname/V4%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BETV",
+  "contractPath": "/api/owners/*/lastname/{lastName}",
+  "server": "http://localhost:9966/petclinic"
+}

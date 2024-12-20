@@ -1,0 +1,80 @@
+{
+  "testId": "Test 23",
+  "scenario": "Send a happy flow request with a [dummy] Accept header, value [application/cats]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 23 - DummyAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"password\":\"efxf5H4Vaa5\",\"created\":\"2024-12-03T19:08:52.632892569Z\",\"modified\":\"2024-12-03T19:08:52.634283483Z\",\"videos\":[{\"size\":4.134901373661577,\"created\":\"2024-12-03T19:08:52.757663919Z\",\"modified\":\"2024-12-03T19:08:52.758412148Z\",\"id\":9,\"title\":\"yCKKn5\",\"url\":\"http://catsAMNKyE.com/cats\"},{\"size\":6.3806885196514775,\"created\":\"2024-12-03T19:08:52.763434399Z\",\"modified\":\"2024-12-03T19:08:52.764203378Z\",\"id\":4,\"title\":\"nfBbh8lEn\",\"url\":\"http://catsDxakkP.com/cats\"}],\"id\":4,\"username\":\"mirian.smitham\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Tue, 3 Dec 2024 20:08:53 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "POST",
+    "responseTimeInMs": "32",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:08:53 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "DummyAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

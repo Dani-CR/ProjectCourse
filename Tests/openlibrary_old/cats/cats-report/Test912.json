@@ -1,0 +1,90 @@
+{
+  "testId": "Test 912",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ld+json]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 912 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"page\":1}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//search.json?page=1",
+    "timestamp": "Fri, 11 Oct 2024 17:46:57 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "16",
+    "numberOfLinesInResponse": "9",
+    "contentLengthInBytes": "133",
+    "jsonBody": {
+      "numFound": 0,
+      "start": 0,
+      "numFoundExact": true,
+      "docs": [],
+      "num_found": 0,
+      "q": "",
+      "offset": null
+    },
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:46:57 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"SR 1 0.003 TT 0 0.004\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/search.json",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//search.json?page=1",
+  "contractPath": "/search.json",
+  "server": "http://localhost:8080/"
+}

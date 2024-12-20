@@ -1,0 +1,88 @@
+{
+  "testId": "Test 123",
+  "scenario": "Replace non-primitive fields with primitive values.  Current field [videos] [REPLACE with cats_primitive_string]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 123 - ReplaceObjectsWithPrimitivesFields)"
+      }
+    ],
+    "payload": "{\n  \"password\": \"efxf5H4Vaa5\",\n  \"created\": \"2024-12-03T19:08:52.632892569Z\",\n  \"modified\": \"2024-12-03T19:08:52.634283483Z\",\n  \"videos\": \"cats_primitive_string\",\n  \"id\": 4,\n  \"username\": \"mirian.smitham\"\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Tue, 3 Dec 2024 20:08:57 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "POST",
+    "responseTimeInMs": "59",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "159",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:08:57.438+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:08:57 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "ReplaceObjectsWithPrimitivesFields",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

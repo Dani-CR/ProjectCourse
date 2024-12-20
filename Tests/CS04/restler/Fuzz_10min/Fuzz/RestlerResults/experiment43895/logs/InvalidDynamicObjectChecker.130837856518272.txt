@@ -1,0 +1,38 @@
+
+Sending invalid request(s):
+'GET /petclinic/api/specialties/1?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\n\r\n'
+
+Suspect sequence: 200
+POST /petclinic/api/specialties
+GET /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'GET /petclinic/api/specialties/1/?/ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\n\r\n'
+
+Suspect sequence: 200
+POST /petclinic/api/specialties
+GET /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'GET /petclinic/api/specialties/1?? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\n\r\n'
+
+Suspect sequence: 200
+POST /petclinic/api/specialties
+GET /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'GET /petclinic/api/specialties/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\n\r\n'
+'GET /petclinic/api/specialties/{} HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\n\r\n'
+
+Sending invalid request(s):
+'PUT /petclinic/api/specialties/1?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring"}\r\n'
+
+Suspect sequence: 204
+POST /petclinic/api/specialties
+PUT /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'PUT /petclinic/api/specialties/1/?/ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring"}\r\n'
+
+Suspect sequence: 204
+POST /petclinic/api/specialties
+PUT /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'PUT /petclinic/api/specialties/1?? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring"}\r\n'
+
+Suspect sequence: 204
+POST /petclinic/api/specialties
+PUT /petclinic/api/specialties/_READER_DELIM_api_specialties_post_id_READER_DELIM
+'PUT /petclinic/api/specialties/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring"}\r\n'
+'PUT /petclinic/api/specialties/{} HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring"}\r\n'

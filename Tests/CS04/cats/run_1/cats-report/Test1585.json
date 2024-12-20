@@ -1,0 +1,89 @@
+{
+  "testId": "Test 1585",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PATCH",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 400",
+  "resultDetails": "Unexpected response code for http method [PATCH]: expected [405], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1585 - HttpMethods)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "PATCH",
+    "url": "http://localhost:9966/petclinic/api/pets/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 11:53:05 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PATCH",
+    "responseTimeInMs": "56",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "129",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpRequestMethodNotSupportedException",
+      "exMessage": "Request method 'PATCH' not supported"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "129"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:04 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/pettypes",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/pettypes",
+  "contractPath": "/api/pets/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,21 @@
+{"bugs":[{
+    "filepath": "main_driver_500_1.json",
+    "reproducible": true,
+    "checker_name": "main_driver",
+    "error_code": "500"},{
+    "filepath": "main_driver_500_2.json",
+    "reproducible": true,
+    "checker_name": "main_driver",
+    "error_code": "500"},{
+    "filepath": "main_driver_500_3.json",
+    "reproducible": true,
+    "checker_name": "main_driver",
+    "error_code": "500"},{
+    "filepath": "main_driver_500_4.json",
+    "reproducible": true,
+    "checker_name": "main_driver",
+    "error_code": "500"},{
+    "filepath": "main_driver_500_5.json",
+    "reproducible": true,
+    "checker_name": "main_driver",
+    "error_code": "500"}]}

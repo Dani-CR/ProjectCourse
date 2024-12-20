@@ -1,0 +1,92 @@
+{
+  "testId": "Test 4186",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4186 - NewFields)"
+      }
+    ],
+    "payload": "{\"vetId\":\"0\",\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/api/vets/0?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Thu, 5 Dec 2024 11:54:08 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "61",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:08 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/vets/{vetId}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets/0?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/api/vets/{vetId}",
+  "server": "http://localhost:9966/petclinic"
+}

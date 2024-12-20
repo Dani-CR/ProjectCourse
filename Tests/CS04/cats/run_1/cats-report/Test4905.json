@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4905",
+  "scenario": "Send [zero-width characters] in request fields: field [pet#id], value [INSERT with \\u200b], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4905 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"Chuck Norris can use GOTO as much as he wants to. Telling him otherwise is considered harmful.\",\"id\":9,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Angelica\",\"lastName\":\"Block\",\"address\":\"Suite 350 43957 Jerde Avenue, New Buford, OK 74635\",\"city\":\"Watsicaborough\",\"id\":0},\"name\":\"FtXYVICZ\",\"id\":9,\"birthDate\":\"2024-12-05T10:54:14.244351971Z\"},null],\"firstName\":\"Chere\",\"lastName\":\"Deckow\",\"address\":\"678 DuBuque Trail, Delorisview, MO 53832-8189\",\"city\":\"Lake Michealton\",\"id\":3},\"name\":\"mHsa1\",\"id\":\"\\u200B7\",\"birthDate\":\"2024-12-05T10:54:14.242234872Z\"}}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 11:54:22 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:21 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

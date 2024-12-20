@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4019",
+  "scenario": "Send [zero-width characters] in request fields: field [id], value [INSERT with \\u200c], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4019 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Diedra\",\"lastName\":\"Boehm\",\"specialties\":[{\"name\":\"XA9D6D7i\",\"id\":9},{\"name\":\"OAJroVq0\",\"id\":9}],\"id\":\"\\u200C7\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:54:04 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "46",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "540",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String \"‌7\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"‌7\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 117] (through reference chain: org.springframework.samples.petclinic.model.Vet[\"id\"])"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "540"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:03 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

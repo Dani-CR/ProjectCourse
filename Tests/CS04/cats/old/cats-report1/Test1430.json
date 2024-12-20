@@ -1,0 +1,72 @@
+{
+  "testId": "Test 1430",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [application/x-shockwave-flash]",
+  "expectedResult": "Should return 415",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=utf-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/x-shockwave-flash"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1430 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"gfOeC\",\"id\":2,\"birthDate\":\"2024-10-07T14:21:07.34819263Z\"},null],\"firstName\":\"Katrina\",\"lastName\":\"Towne\",\"address\":\"Suite 766 273 Zachery Key, West Bethann, IA 66476-7426\",\"city\":\"Howellmouth\",\"id\":8},\"name\":\"Lze9nXb\",\"id\":9,\"birthDate\":\"2024-10-07T14:21:07.347417464Z\"},null],\"firstName\":\"Santo\",\"lastName\":\"Reichel\",\"address\":\"Suite 932 6913 Rachal Inlet, Alidaton, NC 42792-4817\",\"city\":\"Kiehnport\",\"id\":6},\"name\":\"sOmbT49U\",\"id\":1,\"birthDate\":\"2024-10-07T14:21:07.346610213Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/api/pets",
+    "timestamp": "Mon, 7 Oct 2024 16:21:08 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "POST",
+    "responseTimeInMs": "0",
+    "numberOfWordsInResponse": "32",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "431",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "431"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 14:21:07 GMT"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/pets",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:9966/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966"
+}

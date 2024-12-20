@@ -1,0 +1,64 @@
+{
+  "testId": "Test 23",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 501], actual [400], documented response codes: [200, 422]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 23 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{\"format\":\"json\",\"bibkeys\":\"NzOjLqAufj\",\"jscmd\":\"viewapi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+    "timestamp": "Fri, 11 Oct 2024 17:44:46 +0200"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "14",
+    "numberOfLinesInResponse": "9",
+    "contentLengthInBytes": "168",
+    "jsonBody": {
+      "notAJson": "<html>\n  <head>\n    <title>Bad Request</title>\n  </head>\n  <body>\n    <h1><p>Bad Request</p></h1>\n    Invalid HTTP Header: &#x27;CONTENT-LENGTH&#x27;\n  </body>\n</html>\n"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "168"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html"
+      }
+    ],
+    "responseContentType": "text/html"
+  },
+  "path": "/api/books",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+  "contractPath": "/api/books",
+  "server": "http://localhost:8080/"
+}

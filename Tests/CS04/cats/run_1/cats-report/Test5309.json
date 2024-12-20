@@ -1,0 +1,89 @@
+{
+  "testId": "Test 5309",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/octet-stream]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/plain;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/octet-stream"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5309 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"visitId\":6}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/api/visits/6",
+    "timestamp": "Thu, 5 Dec 2024 11:54:29 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "text/plain;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:29 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "text/plain;charset=UTF-8"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/6",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

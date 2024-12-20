@@ -1,0 +1,92 @@
+{
+  "testId": "Test 3855",
+  "scenario": "Remove the following fields from request: [firstName]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3855 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"lastName\":\"Moen\",\"specialties\":[{\"name\":\"7Kxuji\",\"id\":1},{\"name\":\"JcRU4aG\",\"id\":8}],\"id\":2}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 12:00:58 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:58 GMT"
+      },
+      {
+        "key": "errors",
+        "value": "[{\"objectName\":\"vet\",\"fieldName\":\"firstName\",\"fieldValue\":\"null\",\"errorMessage\":\"must not be empty\"}]"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/vets",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

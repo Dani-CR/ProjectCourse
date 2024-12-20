@@ -1,0 +1,89 @@
+{
+  "testId": "Test 3642",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/related; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [multipart/related; boundary=cats;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/related; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3642 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"password\":\"dp1Mij9fS\",\"roles\":[{\"name\":\"Lh6hd\",\"id\":6},{\"name\":\"6BvPWzFs\",\"id\":0}],\"enabled\":false,\"username\":\"dwain.swift\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 12:00:52 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "17",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "multipart/related; boundary=cats;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:52 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "multipart/related; boundary=cats;charset=UTF-8"
+  },
+  "path": "/api/users",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,37 @@
+POST /api/v1.0/users/sign-up
+	StructMissing_/created/id/modified/password/videos[...]
+	{'username': 'fuzzstring'}
+
+	StructMissing_/created/id/modified/password/username/+created/+modified/+size/+title/+url
+	{'videos': [{'id': 0}]}
+
+	StructMissing_/created/id/modified/password/username/+created/+id/+modified/+size/+title
+	{'videos': [{'url': 'fuzzstring'}]}
+
+	StructMissing_/created/id/modified/password/username/+created/+id/+modified/+title/+url
+	{'videos': [{'size': 0}]}
+
+	StructMissing_/created/id/modified/password/username/+created/+id/+modified/+size/+url
+	{'videos': [{'title': 'fuzzstring'}]}
+
+	StructMissing_/created/modified/password/username/videos[...]
+	{'id': 0}
+
+	StructMissing_/created/id/modified/password/username/videos[...]
+	{'fuzz': False}
+
+	TypeMismatch_modified
+	{'modified': 0}
+
+	TypeMismatch_username
+	{'username': 0}
+
+	TypeMismatch_videos_modified
+	{'videos': [{'modified': 0}]}
+
+	StructMissing_/created/id/modified/password/username/+created/+id/+modified/+size/+title/+url
+	{'videos': [{'fuzz': False}]}
+
+	TypeMismatch_videos_created
+	{'videos': [{'created': 0}]}
+

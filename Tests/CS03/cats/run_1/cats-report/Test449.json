@@ -1,0 +1,60 @@
+{
+  "testId": "Test 449",
+  "scenario": "Send a happy flow request with undocumented HTTP method: TRACE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [TRACE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 449 - HttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "TRACE",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%7Bid%7D",
+    "timestamp": "Tue, 3 Dec 2024 20:09:04 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "TRACE",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "HEAD, DELETE, POST, GET, OPTIONS, PUT"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:03 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/videos/get/{id}",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%7Bid%7D",
+  "contractPath": "/api/v1.0/videos/get/{id}",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

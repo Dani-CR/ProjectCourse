@@ -1,0 +1,80 @@
+{
+  "testId": "Test 36",
+  "scenario": "Send [empty strings] in request fields: field [id], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 36 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"password\":\"G0tGHZw4nCzt\",\"created\":\"2024-10-07T11:28:30.278217959Z\",\"modified\":\"2024-10-07T11:28:30.279917782Z\",\"videos\":[{\"size\":3.3465425911260804,\"created\":\"2024-10-07T11:28:30.353981037Z\",\"modified\":\"2024-10-07T11:28:30.354661666Z\",\"id\":9,\"title\":\"ybCX55Xkj\",\"url\":\"http://catsSIAdRO.com/cats\"},{\"size\":6.659121427479329,\"created\":\"2024-10-07T11:28:30.359604472Z\",\"modified\":\"2024-10-07T11:28:30.360145626Z\",\"id\":0,\"title\":\"yb1YPwG\",\"url\":\"http://catsIqSSbS.com/cats\"}],\"id\":\"\",\"username\":\"gayla.wuckert\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Mon, 7 Oct 2024 13:28:31 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "POST",
+    "responseTimeInMs": "72",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 11:28:31 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080"
+}

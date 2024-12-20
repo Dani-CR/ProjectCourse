@@ -1,0 +1,92 @@
+{
+  "testId": "Test 128",
+  "scenario": "Replace primitive fields with array values.  Current field [username] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 128 - ReplacePrimitivesWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"password\": \"G0tGHZw4nCzt\",\n  \"created\": \"2024-10-07T11:28:30.278217959Z\",\n  \"modified\": \"2024-10-07T11:28:30.279917782Z\",\n  \"videos\": [\n    {\n      \"size\": 3.3465425911260804,\n      \"created\": \"2024-10-07T11:28:30.353981037Z\",\n      \"modified\": \"2024-10-07T11:28:30.354661666Z\",\n      \"id\": 9,\n      \"title\": \"ybCX55Xkj\",\n      \"url\": \"http://catsSIAdRO.com/cats\"\n    },\n    {\n      \"size\": 6.659121427479329,\n      \"created\": \"2024-10-07T11:28:30.359604472Z\",\n      \"modified\": \"2024-10-07T11:28:30.360145626Z\",\n      \"id\": 0,\n      \"title\": \"yb1YPwG\",\n      \"url\": \"http://catsIqSSbS.com/cats\"\n    }\n  ],\n  \"id\": 4,\n  \"username\": [\n    {\n      \"catsKey1\": \"catsValue1\"\n    },\n    {\n      \"catsKey2\": \"catsValue2\"\n    }\n  ]\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Mon, 7 Oct 2024 13:28:35 +0200"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "501",
+    "jsonBody": {
+      "timestamp": "2024-10-07T11:28:35.492+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 24, column: 15] (through reference chain: com.streaming.domains.User[\"username\"])",
+      "path": "/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 11:28:34 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "ReplacePrimitivesWithArraysFields",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080"
+}

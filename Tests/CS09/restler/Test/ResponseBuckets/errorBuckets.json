@@ -1,0 +1,1363 @@
+{
+  "0": {},
+  "400": {
+    "419bcb9d-bbb1-493d-b2e5-f49129dd73b4": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books",
+            "query": "fields[Book]=fuzzstring&filter=fuzzstring&filter[author_id]=fuzzstring&filter[id]=fuzzstring&filter[published]=fuzzstring&filter[publisher_id]=fuzzstring&filter[reader_id]=fuzzstring&filter[title]=fuzzstring&include=fuzzstring&page[limit]=1&page[offset]=1&sort=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"detail\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/People",
+            "query": "fields[Person]=fuzzstring&filter=fuzzstring&filter[comment]=fuzzstring&filter[dob]=fuzzstring&filter[email]=fuzzstring&filter[employer_id]=fuzzstring&filter[id]=fuzzstring&filter[name]=fuzzstring&include=fuzzstring&page[limit]=1&page[offset]=1&sort=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"detail\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews",
+            "query": "fields[Review]=fuzzstring&filter=fuzzstring&filter[book_id]=fuzzstring&filter[created]=fuzzstring&filter[id]=fuzzstring&filter[reader_id]=fuzzstring&filter[review]=fuzzstring&include=fuzzstring&page[limit]=1&page[offset]=1&sort=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"detail\": \"Validation Error: Invalid filter format (see https://github.com/thomaxxl/safrs/wiki)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "576bd563-b2a2-4c22-a97e-951cd9c91e0d": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/my_rpc",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"my_rpc\",\n            \"args\":\"{\"email\":\"test email\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 77)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 77)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "8ff213cb-4a44-4edf-ac53-81d02cf8f050": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews",
+            "query": "",
+            "body": "{\n    \"data\":\"{\"attributes\":{\"book_id\":\"\",\"reader_id\":0,\"review\":\"\",\"created\":\"2024-11-27 12:12:00.191816\"},\"type\":\"Review\"}\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers",
+            "query": "",
+            "body": "{\n    \"data\":\"{\"attributes\":{\"name\":\"\",\"stock\":30},\"type\":\"Publisher\"}\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books",
+            "query": "",
+            "body": "{\n    \"data\":\"{\"attributes\":{\"title\":\"\",\"reader_id\":0,\"author_id\":0,\"publisher_id\":0,\"published\":\"00:00:00\"},\"type\":\"Book\"}\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People",
+            "query": "",
+            "body": "{\n    \"data\":\"{\"attributes\":{\"name\":\"John Doe\",\"email\":\"\",\"comment\":\"my custom value\",\"dob\":\"0001-01-01\",\"employer_id\":0},\"type\":\"Person\"}\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 2 column 15 (char 16)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "94cad64c-63e2-4b3b-b380-da725adaa5c0": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Data is not a dict object\",\n            \"detail\": \"Validation Error: Data is not a dict object\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Data is not a dict object\",\n            \"detail\": \"Validation Error: Data is not a dict object\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Data is not a dict object\",\n            \"detail\": \"Validation Error: Data is not a dict object\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Data is not a dict object\",\n            \"detail\": \"Validation Error: Data is not a dict object\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "b191515a-4465-4e9a-802f-de493534c0d2": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring/book",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring/book",
+            "query": "fields[Book]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring/reader",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring/reader",
+            "query": "fields[Person]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Reviews/fuzzstring",
+            "query": "fields[Review]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"detail\": \"Validation Error: PK values ([\\'fuzzstring\\']) do not match columns ([Column(\\'book_id\\', String(), ForeignKey(\\'Books.id\\'), table=<Reviews>, primary_key=True, nullable=False), Column(\\'reader_id\\', Integer(), ForeignKey(\\'People.id\\'), table=<Reviews>, primary_key=True, nullable=False)])\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "b3d678b2-7839-4f8f-804d-2bcb207a8e1a": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"{\"attr_name\":\"value\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/my_rpc",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"{\"email\":\"test email\"}\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"detail\": \"Failed to decode JSON object: Expecting \\',\\' delimiter: line 5 column 23 (char 81)\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "f30688aa-24d2-4f5d-9356-3be513d4e234": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Request contains no data\",\n            \"detail\": \"Validation Error: Request contains no data\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Request contains no data\",\n            \"detail\": \"Validation Error: Request contains no data\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Request contains no data\",\n            \"detail\": \"Validation Error: Request contains no data\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"Validation Error: Request contains no data\",\n            \"detail\": \"Validation Error: Request contains no data\",\n            \"code\": \"400\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "404": {
+    "8a023cb0-6d80-469e-894e-d16fc2a5e1bd": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Publishers/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Publishers/fuzzstring",
+            "query": "fields[Publisher]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/Publishers/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/Publishers/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Publishers/fuzzstring/books",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Publishers/fuzzstring/books",
+            "query": "fields[Book]=fuzzstring&filter=fuzzstring&filter[author_id]=fuzzstring&filter[id]=fuzzstring&filter[published]=fuzzstring&filter[publisher_id]=fuzzstring&filter[reader_id]=fuzzstring&filter[title]=fuzzstring&include=fuzzstring&page[limit]=1&page[offset]=1&sort=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Publisher\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "a5a75c33-202d-4fd5-a5d2-809634e3c530": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books/fuzzstring",
+            "query": "fields[Book]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PATCH",
+            "path": "/api/Books/fuzzstring/reader",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PATCH",
+            "path": "/api/Books/fuzzstring/reader",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PATCH",
+            "path": "/api/Books/fuzzstring/reader",
+            "query": "",
+            "body": "{\n    \"data\":\"{\"type\":\"Person\",\"id\":\"1\"}\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/Books/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/Books/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books/fuzzstring/reader",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books/fuzzstring/reader",
+            "query": "fields[Person]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/Books/fuzzstring/reviews",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Book\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "ce2813ee-487d-4a85-8c3a-3b59367c8264": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/People/fuzzstring/friends",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/People/fuzzstring/friends",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/People/fuzzstring/friends",
+            "query": "",
+            "body": "{\n    \"data\":\"[{\"type\":\"Person\",\"id\":\"1\"}]\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/fuzzstring/books_written",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/fuzzstring/books_written",
+            "query": "",
+            "body": "{\n    \"data\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/fuzzstring/books_written",
+            "query": "",
+            "body": "{\n    \"data\":\"[{\"type\":\"Book\",\"id\":\"_UUID_ABSTRACTED_\"}]\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/People/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/People/fuzzstring",
+            "query": "fields[Person]=fuzzstring&include=fuzzstring",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/fuzzstring/send_mail",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/fuzzstring/send_mail",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"detail\": \"NotFoundError Invalid \\\"Person\\\" ID \\\"fuzzstring\\\"\",\n            \"code\": \"404\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "500": {
+    "426af741-a2ef-4418-98ed-704d0df4a8b4": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/my_rpc",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"detail\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/my_rpc",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"my_rpc\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"detail\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/my_rpc",
+            "query": "my_query_string_param=fuzzstring",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"my_rpc\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"detail\": \"my_rpc() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      }
+    ],
+    "f8ba9933-b423-4b2d-8788-fa5e4bd4d23f": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/People/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Books/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Reviews/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/Publishers/startswith",
+            "query": "page[limit]=1&page[offset]=1",
+            "body": "{\n    \"meta\":\n        {\n            \"method\":\"fuzzstring\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "INTERNAL SERVER ERROR",
+            "content": "{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      }
+    ]
+  }
+}

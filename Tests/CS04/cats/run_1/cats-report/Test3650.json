@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3650",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [application/octet-stream]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/octet-stream"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3650 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"password\":\"OyoAOOyoAOO\",\"roles\":[{\"name\":\"dvoiff\",\"id\":7},{\"name\":\"CdRDzbff\",\"id\":9}],\"enabled\":false,\"username\":\"erik.wyman\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 11:53:55 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "156",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotSupportedException",
+      "exMessage": "Content type 'application/octet-stream;charset=UTF-8' not supported"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "156"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:54 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/users",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

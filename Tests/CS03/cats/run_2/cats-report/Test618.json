@@ -1,0 +1,88 @@
+{
+  "testId": "Test 618",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 618 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+    "timestamp": "Wed, 4 Dec 2024 10:42:26 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "33",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "306",
+    "jsonBody": {
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Wed Dec 04 09:42:26 GMT 2024</div><div>There was an unexpected error (type=Not Found, status=404).</div><div>No message available</div></body></html>"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-language",
+        "value": "en-US"
+      },
+      {
+        "key": "content-length",
+        "value": "306"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Wed, 04 Dec 2024 09:42:26 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/list",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "contractPath": "/api/v1.0/videos/list",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4671",
+  "scenario": "Replace primitive fields with object values.  Current field [pet#birthDate] [REPLACE with {\"catsKey1\":\"catsValue1\",\"cats...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4671 - ReplacePrimitivesWithObjectsFields)"
+      }
+    ],
+    "payload": "{\n  \"date\": \"yyyy/MM/dd\",\n  \"description\": \"The class object inherits from Chuck Norris.\",\n  \"id\": 7,\n  \"pet\": {\n    \"owner\": {\n      \"pets\": [\n        {\n          \"owner\": {\n            \"pets\": [\n              {},\n              null\n            ],\n            \"firstName\": \"Soon\",\n            \"lastName\": \"Hettinger\",\n            \"address\": \"Apt. 381 3708 Frank Trail, Padbergburgh, MD 85716-7442\",\n            \"city\": \"Jameton\",\n            \"id\": 8\n          },\n          \"name\": \"dczNCR\",\n          \"id\": 7,\n          \"birthDate\": \"2024-12-05T11:01:07.749153422Z\"\n        },\n        null\n      ],\n      \"firstName\": \"Austin\",\n      \"lastName\": \"Schoen\",\n      \"address\": \"Suite 679 8566 Jonah Road, East Kevin, ME 87588\",\n      \"city\": \"Bennyland\",\n      \"id\": 3\n    },\n    \"name\": \"bRW4Iu\",\n    \"id\": 0,\n    \"birthDate\": {\n      \"catsKey1\": \"catsValue1\",\n      \"catsKey2\": 20\n    }\n  }\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 12:01:10 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:09 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "ReplacePrimitivesWithObjectsFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

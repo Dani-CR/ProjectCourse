@@ -1,0 +1,92 @@
+{
+  "testId": "Test 86",
+  "scenario": "Send a happy flow request with undocumented HTTP method: REPORT",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [REPORT] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 86 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "{\"password\":\"G0tGHZw4nCzt\",\"created\":\"2024-10-07T11:28:30.278217959Z\",\"modified\":\"2024-10-07T11:28:30.279917782Z\",\"videos\":[{\"size\":3.3465425911260804,\"created\":\"2024-10-07T11:28:30.353981037Z\",\"modified\":\"2024-10-07T11:28:30.354661666Z\",\"id\":9,\"title\":\"ybCX55Xkj\",\"url\":\"http://catsSIAdRO.com/cats\"},{\"size\":6.659121427479329,\"created\":\"2024-10-07T11:28:30.359604472Z\",\"modified\":\"2024-10-07T11:28:30.360145626Z\",\"id\":0,\"title\":\"yb1YPwG\",\"url\":\"http://catsIqSSbS.com/cats\"}],\"id\":4,\"username\":\"gayla.wuckert\"}",
+    "httpMethod": "REPORT",
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Mon, 7 Oct 2024 13:28:33 +0200"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "REPORT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "169",
+    "jsonBody": {
+      "timestamp": "2024-10-07T11:28:33.918+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'REPORT' not supported",
+      "path": "/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "POST"
+      },
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 11:28:33 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080"
+}

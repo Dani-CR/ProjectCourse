@@ -1,0 +1,80 @@
+Testing request: /petclinic/ GET
+Testing request: /petclinic/ HEAD
+Testing request: /petclinic/ POST
+Testing request: /petclinic/ PUT
+Testing request: /petclinic/ DELETE
+Testing request: /petclinic/ OPTIONS
+Testing request: /petclinic/ PATCH
+Testing request: /petclinic/api/owners GET
+Testing request: /petclinic/api/owners POST
+Found 16 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_string
+Fuzzing request block 18, type: restler_fuzzable_string
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+Fuzzing request block 26, type: restler_fuzzable_datetime
+Fuzzing request block 28, type: restler_fuzzable_int
+Fuzzing request block 30, type: restler_fuzzable_string
+Fuzzing request block 32, type: restler_fuzzable_object
+Fuzzing request block 34, type: restler_fuzzable_int
+Fuzzing request block 36, type: restler_fuzzable_string
+Fuzzing request block 38, type: restler_fuzzable_string
+Fuzzing request block 40, type: restler_fuzzable_string
+Fuzzing request block 42, type: restler_fuzzable_int
+Fuzzing request block 44, type: restler_fuzzable_object
+Fuzzing request block 46, type: restler_fuzzable_string
+
+Suspect sequence: 500
+POST /petclinic/api/owners
+
+Suspect sequence: 500
+POST /petclinic/api/owners
+Tested 1600 combinations for request /petclinic/api/owners POST, combination 1
+Testing request: /petclinic/api/owners/*/lastname/fuzzstring GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 11, type: restler_fuzzable_string
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+
+Suspect sequence: 505
+GET /petclinic/api/owners/*/lastname/fuzzstring
+Tested 100 combinations for request /petclinic/api/owners/*/lastname/fuzzstring GET, combination 1
+Testing request: /petclinic/api/pets GET
+Testing request: /petclinic/api/pets POST
+Found 16 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 16, type: restler_fuzzable_datetime
+Fuzzing request block 18, type: restler_fuzzable_int
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_string
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int

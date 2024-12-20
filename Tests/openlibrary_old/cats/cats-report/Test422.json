@@ -1,0 +1,81 @@
+{
+  "testId": "Test 422",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 422 - NewFields)"
+      }
+    ],
+    "payload": "{\"limit\":0,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//authors/NOT_SET/works.json?limit=0&catsFuzzyField=catsFuzzyField",
+    "timestamp": "Fri, 11 Oct 2024 17:44:57 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "66",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "54",
+    "jsonBody": {
+      "error": "notfound",
+      "key": "/authors/NOT_SET/works"
+    },
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:44:57 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"IB 1 0.030 MC 1 0.004 TT 0 0.034\""
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/authors/{olid}/works.json",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080//authors/NOT_SET/works.json?limit=0&catsFuzzyField=catsFuzzyField",
+  "contractPath": "/authors/{olid}/works.json",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,104 @@
+{
+  "testId": "Test 255",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/tiff]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/tiff"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 255 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:9966/petclinic/",
+    "timestamp": "Thu, 5 Dec 2024 11:52:26 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "285",
+    "numberOfLinesInResponse": "75",
+    "contentLengthInBytes": "3318",
+    "jsonBody": {
+      "notAJson": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Swagger UI</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/springfox.css?v=2.9.2\" >\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2\" >\n  <link rel=\"icon\" type=\"image/png\" href=\"webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2\" sizes=\"32x32\" />\n  <link rel=\"icon\" type=\"image/png\" hr"
+    },
+    "headers": [
+      {
+        "key": "accept-ranges",
+        "value": "bytes"
+      },
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-length",
+        "value": "3318"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:26 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "last-modified",
+        "value": "Wed, 04 Dec 2024 11:14:19 GMT"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "text/html"
+  },
+  "path": "/",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/",
+  "contractPath": "/",
+  "server": "http://localhost:9966/petclinic"
+}

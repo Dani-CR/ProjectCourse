@@ -1,0 +1,22 @@
+{
+    "status_code": "204",
+    "checker_name": "InvalidDynamicObjectChecker",
+    "reproducible": true,
+    "verb": "PUT",
+    "endpoint": "/api/specialties/{specialtyId}",
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 20,
+            "replay_request": "POST /petclinic/api/specialties HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    \"id\":1,\n    \"name\":\"fuzzstring\"}\r\n",
+            "response": "HTTP/1.1 201 \r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers\r\nLocation: http://localhost:9966/petclinic/api/specialtys/1\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: 0\r\nX-Frame-Options: DENY\r\nContent-Type: application/json\r\nTransfer-Encoding: chunked\r\nDate: Wed, 04 Dec 2024 11:43:33 GMT\r\n\r\n1c\r\n{\"id\":1,\"name\":\"fuzzstring\"}\r\n0\r\n\r\n"
+        },
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "PUT /petclinic/api/specialties/1?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\n\r\n{\n    \"id\":1,\n    \"name\":\"fuzzstring\"}\r\n",
+            "response": "HTTP/1.1 204 \r\nVary: Origin\r\nVary: Access-Control-Request-Method\r\nVary: Access-Control-Request-Headers\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: 0\r\nX-Frame-Options: DENY\r\nContent-Type: application/json\r\nDate: Wed, 04 Dec 2024 11:43:33 GMT\r\n\r\n"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+  "testId": "Test 660",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [404] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 660 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"lastName\": \"GaSvMehUe\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/owners/*/lastname/GaSvMehUe",
+    "timestamp": "Thu, 5 Dec 2024 11:59:55 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:59:54 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/owners/*/lastname/{lastName}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/*/lastname/GaSvMehUe",
+  "contractPath": "/api/owners/*/lastname/{lastName}",
+  "server": "http://localhost:9966/petclinic"
+}

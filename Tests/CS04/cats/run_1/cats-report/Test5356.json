@@ -1,0 +1,93 @@
+{
+  "testId": "Test 5356",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [multipart/alternative; boundary=cats]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "multipart/alternative; boundary=cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5356 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"Chuck Norris can instantiate an abstract class.\",\"id\":3,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Chang\",\"lastName\":\"Kerluke\",\"address\":\"Apt. 820 87475 Farrell Union, Ziemeburgh, CT 96267-2447\",\"city\":\"New Brandee\",\"id\":1},\"name\":\"ZZYLACa\",\"id\":6,\"birthDate\":\"2024-12-05T10:54:22.530697529Z\"},null],\"firstName\":\"Jackie\",\"lastName\":\"Monahan\",\"address\":\"57912 Dennise Springs, Kimberbury, NV 84643-5130\",\"city\":\"Bertview\",\"id\":1},\"name\":\"8VtB8\",\"id\":4,\"birthDate\":\"2024-12-05T10:54:22.529590156Z\"}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:54:30 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "267",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{visitId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "267"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:29 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

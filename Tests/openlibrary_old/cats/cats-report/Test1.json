@@ -1,0 +1,84 @@
+{
+  "testId": "Test 1",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [format], value [REPLACE with x3f7n6tKgCW3SeYజ్ఞ\\u200cాcn4cKk60gZ...], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"format\":\"x3f7n6tKgCW3SeYజ్ఞ\\u200Cాcn4cKk60gZ8pGjgx\",\"bibkeys\":\"NzOjLqAufj\",\"jscmd\":\"viewapi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/books?format=x3f7n6tKgCW3SeY%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEcn4cKk60gZ8pGjgx&bibkeys=NzOjLqAufj&jscmd=viewapi",
+    "timestamp": "Fri, 11 Oct 2024 17:44:45 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "21",
+    "jsonBody": {
+      "notAJson": "var _OLBookInfo = {};"
+    },
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:44:45 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/books",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/books?format=x3f7n6tKgCW3SeY%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEcn4cKk60gZ8pGjgx&bibkeys=NzOjLqAufj&jscmd=viewapi",
+  "contractPath": "/api/books",
+  "server": "http://localhost:8080/"
+}

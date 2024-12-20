@@ -1,0 +1,68 @@
+{
+  "testId": "Test 619",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/owners/*/lastname/{lastName}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [GET]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 619 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"lastName\":\"Wilderman\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/owners/*/lastname/Wilderman/..%20;/",
+    "timestamp": "Thu, 5 Dec 2024 11:59:53 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "28",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "249",
+    "jsonBody": {
+      "timestamp": "2024-12-05T10:59:53.211+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/petclinic/api/owners/*/lastname/Wilderman/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:59:52 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/*/lastname/{lastName}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/*/lastname/Wilderman/..%20;/",
+  "contractPath": "/api/owners/*/lastname/{lastName}",
+  "server": "http://localhost:9966/petclinic"
+}

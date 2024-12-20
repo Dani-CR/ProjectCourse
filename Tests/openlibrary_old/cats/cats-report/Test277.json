@@ -1,0 +1,72 @@
+{
+  "testId": "Test 277",
+  "scenario": "Send a happy flow request with a [dummy] Accept header, value [application/cats]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html; charset=utf-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 277 - DummyAcceptHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//authors/NOT_SET",
+    "timestamp": "Fri, 11 Oct 2024 17:44:52 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "91",
+    "numberOfWordsInResponse": "1467",
+    "numberOfLinesInResponse": "685",
+    "contentLengthInBytes": "20959",
+    "jsonBody": {
+      "notAJson": "\n\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"title\" content=\"\" />\n    <meta name=\"keywords\" content=\"free books, books to read, free ebooks, audio books, read books for free, read books online, online library\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"author\" content=\"OpenLibrary.org\" />\n    <meta name=\"creator\" content=\"Ope"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html; charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:44:52 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"IB 1 0.051 MC 1 0.002 TT 0 0.054\""
+      }
+    ],
+    "responseContentType": "text/html; charset=utf-8"
+  },
+  "path": "/authors/{olid}.json",
+  "fuzzer": "DummyAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//authors/NOT_SET",
+  "contractPath": "/authors/{olid}.json",
+  "server": "http://localhost:8080/"
+}

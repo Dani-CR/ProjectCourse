@@ -1,0 +1,82 @@
+{
+  "testId": "Test 7",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 7 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"format\":\"json\",\"bibkeys\":\"NzOjLqAufj\",\"jscmd\":\"viewapi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+    "timestamp": "Fri, 11 Oct 2024 17:44:45 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "37",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {},
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:44:45 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"\""
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/books",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080//api/books?format=json&bibkeys=NzOjLqAufj&jscmd=viewapi",
+  "contractPath": "/api/books",
+  "server": "http://localhost:8080/"
+}

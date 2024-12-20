@@ -1,0 +1,12 @@
+InvalidValueChecker_500: 1
+InvalidValueChecker_505: 1
+Total Buckets: 2
+-------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_1.replay.txt
+Hash: InvalidValueChecker_500_c4756ded702671b55c5e3fb4c0edb96ebc388276
+POST /petclinic/api/owners HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "address":fuzzstring,\n    "city":fuzzstring,\n    "firstName":fuzzstring,\n    "id":1,\n    "lastName":fuzzstring,\n    "pets":\n    [\n        {\n            "birthDate":2019-06-26T20:20:39+00:00,\n            "id":1,\n            "name":fuzzstring,\n            "owner":\n                { }\n            ,\n            "type":\n                {\n                    "id":1,\n                    "name":fuzzstring\n                }\n            ,\n            "visits":\n            [\n                {\n                    "date":fuzzstring,\n                    "description":fuzzstring,\n                    "id":1,\n                    "pet":\n                        { }\n                }\n            ]\n        }\n    ],\n    "telephone":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_505 - Bug was reproduced - InvalidValueChecker_505_1.replay.txt
+Hash: InvalidValueChecker_505_68faae0571e4f6c63d6e947e9fbff91459bdfdf5
+GET /petclinic/api/owners/*/lastname/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:9966\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------

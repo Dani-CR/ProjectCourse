@@ -1,0 +1,93 @@
+{
+  "testId": "Test 2666",
+  "scenario": "Send [outside the boundary values] in request fields: field [name], value [REPLACE with hS8AjO637hguLQHUp9X09swnnBfZzi...], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2666 - StringFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"name\":\"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\",\"id\":7}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/pettypes/%7BpetTypeId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:53:31 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "27",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "269",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{petTypeId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "269"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:30 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes/{petTypeId}",
+  "fuzzer": "StringFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes/%7BpetTypeId%7D",
+  "contractPath": "/api/pettypes/{petTypeId}",
+  "server": "http://localhost:9966/petclinic"
+}

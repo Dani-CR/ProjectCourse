@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1519",
+  "scenario": "Send [zero-width characters] in request fields: field [owner#firstName], value [INSERT with \\u202b], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1519 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"ymqylYs\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:54.808646685Z\"},null],\"firstName\":\"Joanne\",\"lastName\":\"Considine\",\"address\":\"Apt. 191 45263 Kihn Stravenue, Cormierfurt, TX 07280\",\"city\":\"Lorishire\",\"id\":4},\"name\":\"3Ptnmzz5\",\"id\":0,\"birthDate\":\"2024-12-05T10:52:54.807522387Z\"},null],\"firstName\":\"Bl\\u202Bair\",\"lastName\":\"Barton\",\"address\":\"161 Koss Cape, Magenbury, CA 23083\",\"city\":\"Douglasbury\",\"id\":6},\"name\":\"jvQSSS3a\",\"id\":8,\"birthDate\":\"2024-12-05T10:52:54.806373938Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pets",
+    "timestamp": "Thu, 5 Dec 2024 11:53:03 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:03 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966/petclinic"
+}

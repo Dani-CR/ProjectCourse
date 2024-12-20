@@ -1,0 +1,139 @@
+{
+  "testId": "Test 4671",
+  "scenario": "Send a 'happy' flow request with all fields and all headers and checks if the response headers match those declared in the contract",
+  "expectedResult": "Should return 2XX",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4671 - ResponseHeadersMatchContractHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 11:54:19 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "60",
+    "numberOfWordsInResponse": "8",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "536",
+    "jsonBody": [
+      {
+        "id": 1,
+        "date": "2013/01/01",
+        "description": "rabies shot",
+        "pet": {
+          "id": 7,
+          "name": "Samantha",
+          "birthDate": "2012/09/04",
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "owner": {
+            "id": 6,
+            "firstName": "Jean",
+            "lastName": "Coleman",
+            "address": "105 N. Lake St.",
+            "city": "Monona",
+            "telephone": "6085552654"
+          }
+        }
+      },
+      {
+        "id": 4,
+        "date": "2013/01/04",
+        "description": "spayed",
+        "pet": {
+          "id": 7,
+          "name": "Samantha",
+          "birthDate": "2012/09/04",
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "owner": {
+            "id": 6,
+            "firstName": "Jean",
+            "lastName": "Coleman",
+            "address": "105 N. Lake St.",
+            "city": "Monona",
+            "telephone": "6085552654"
+          }
+        }
+      }
+    ],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:18 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "ResponseHeadersMatchContractHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

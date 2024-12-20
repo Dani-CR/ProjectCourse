@@ -1,0 +1,93 @@
+{
+  "testId": "Test 2272",
+  "scenario": "Send a request with a ␀ body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2272 - NullUnicodeSymbolBody)"
+      }
+    ],
+    "payload": "␀",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 11:53:21 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "53",
+    "numberOfWordsInResponse": "24",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "299",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "JSON parse error: Invalid UTF-8 start byte 0x90; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid UTF-8 start byte 0x90\n at [Source: (PushbackInputStream); line: 1, column: 3]"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "299"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:20 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes",
+  "fuzzer": "NullUnicodeSymbolBody",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes",
+  "contractPath": "/api/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

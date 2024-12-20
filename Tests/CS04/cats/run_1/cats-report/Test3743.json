@@ -1,0 +1,112 @@
+{
+  "testId": "Test 3743",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [X-XSS-Protection=null, X-XSS-Protection=0]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3743 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Diedra\",\"lastName\":\"Boehm\",\"specialties\":[{\"name\":\"XA9D6D7i\",\"id\":9},{\"name\":\"OAJroVq0\",\"id\":9}],\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:53:57 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "142",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "118",
+    "jsonBody": {
+      "id": 7,
+      "firstName": "Diedra",
+      "lastName": "Boehm",
+      "specialties": [
+        {
+          "id": 9,
+          "name": "OAJroVq0"
+        },
+        {
+          "id": 9,
+          "name": "XA9D6D7i"
+        }
+      ]
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:56 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "location",
+        "value": "http://localhost:9966/petclinic/api/vets/7"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

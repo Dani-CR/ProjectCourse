@@ -1,0 +1,72 @@
+{
+  "testId": "Test 4526",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 501], actual [400], documented response codes: [200, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4526 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 12:01:08 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "32",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "435",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 400 – Bad Request</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 – Bad Request</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "435"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:07 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/visits",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

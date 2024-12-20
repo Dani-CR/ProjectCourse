@@ -1,0 +1,97 @@
+{
+  "testId": "Test 2663",
+  "scenario": "Send a 'happy' flow request with all fields and all headers and checks if the response headers match those declared in the contract",
+  "expectedResult": "Should return 2XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2663 - ResponseHeadersMatchContractHeaders)"
+      }
+    ],
+    "payload": "{\"petTypeId\":7}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pettypes/7",
+    "timestamp": "Thu, 5 Dec 2024 11:53:31 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "71",
+    "jsonBody": {
+      "id": 7,
+      "name": "P3rYOfUzRW7op4Mz5Ozజ్ఞ‌ాvqtrqAiAz7jXIWoH7V0"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:30 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes/{petTypeId}",
+  "fuzzer": "ResponseHeadersMatchContractHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes/7",
+  "contractPath": "/api/pettypes/{petTypeId}",
+  "server": "http://localhost:9966/petclinic"
+}

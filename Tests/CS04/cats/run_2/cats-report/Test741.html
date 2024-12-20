@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 5 Dec 2024 11:59:57 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 741
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 741</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 5 Dec 2024 11:59:57 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow</p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return 4XX</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-warn">warn</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/owners/{ownerId}</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>DuplicateHeaders</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:9966/petclinic/api/owners/%7BownerId%7D</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-put details">put</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{&#10;  &quot;pets&quot;: [&#10;    {&#10;      &quot;owner&quot;: {&#10;        &quot;pets&quot;: [&#10;          {&#10;            &quot;owner&quot;: {&#10;              &quot;pets&quot;: [&#10;                {},&#10;                null&#10;              ],&#10;              &quot;firstName&quot;: &quot;Davida&quot;,&#10;              &quot;lastName&quot;: &quot;D&#39;Amore&quot;,&#10;              &quot;address&quot;: &quot;57866 Shelba Ridges, North Josueberg, SC 68003&quot;,&#10;              &quot;city&quot;: &quot;South Allysonfort&quot;,&#10;              &quot;id&quot;: 1&#10;            },&#10;            &quot;name&quot;: &quot;ppppp&quot;,&#10;            &quot;id&quot;: 2,&#10;            &quot;birthDate&quot;: &quot;2024-12-05T10:59:56.359776303Z&quot;&#10;          },&#10;          null&#10;        ],&#10;        &quot;firstName&quot;: &quot;Mitzi&quot;,&#10;        &quot;lastName&quot;: &quot;Treutel&quot;,&#10;        &quot;address&quot;: &quot;Apt. 809 967 Bruno Stream, Port Woodrow, OH 14321-6103&quot;,&#10;        &quot;city&quot;: &quot;Lake Sulemastad&quot;,&#10;        &quot;id&quot;: 5&#10;      },&#10;      &quot;name&quot;: &quot;eSzye&quot;,&#10;      &quot;id&quot;: 4,&#10;      &quot;birthDate&quot;: &quot;2024-12-05T10:59:56.356227167Z&quot;&#10;    },&#10;    null&#10;  ],&#10;  &quot;firstName&quot;: &quot;Jenine&quot;,&#10;  &quot;lastName&quot;: &quot;Witting&quot;,&#10;  &quot;address&quot;: &quot;04245 Okuneva Station, East Shanekaport, IN 97799&quot;,&#10;  &quot;city&quot;: &quot;South Earlshire&quot;,&#10;  &quot;id&quot;: 2&#10;}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Cats-Fuzzy-Header&quot;,&#10;    &quot;value&quot;: &quot;Cats-Fuzzy-Header&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Cats-Fuzzy-Header&quot;,&#10;    &quot;value&quot;: &quot;Cats-Fuzzy-Header&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 741 - DuplicateHeaders)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X PUT \&#10;      -H &quot;Cats-Fuzzy-Header: Cats-Fuzzy-Header&quot; -H &quot;Cats-Fuzzy-Header: Cats-Fuzzy-Header&quot; -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 741 - DuplicateHeaders)&quot; \&#10;      -d &#39;{&quot;pets&quot;:[{&quot;owner&quot;:{&quot;pets&quot;:[{&quot;owner&quot;:{&quot;pets&quot;:[{},null],&quot;firstName&quot;:&quot;Davida&quot;,&quot;lastName&quot;:&quot;D&#39;Amore&quot;,&quot;address&quot;:&quot;57866 Shelba Ridges, North Josueberg, SC 68003&quot;,&quot;city&quot;:&quot;South Allysonfort&quot;,&quot;id&quot;:1},&quot;name&quot;:&quot;ppppp&quot;,&quot;id&quot;:2,&quot;birthDate&quot;:&quot;2024-12-05T10:59:56.359776303Z&quot;},null],&quot;firstName&quot;:&quot;Mitzi&quot;,&quot;lastName&quot;:&quot;Treutel&quot;,&quot;address&quot;:&quot;Apt. 809 967 Bruno Stream, Port Woodrow, OH 14321-6103&quot;,&quot;city&quot;:&quot;Lake Sulemastad&quot;,&quot;id&quot;:5},&quot;name&quot;:&quot;eSzye&quot;,&quot;id&quot;:4,&quot;birthDate&quot;:&quot;2024-12-05T10:59:56.356227167Z&quot;},null],&quot;firstName&quot;:&quot;Jenine&quot;,&quot;lastName&quot;:&quot;Witting&quot;,&quot;address&quot;:&quot;04245 Okuneva Station, East Shanekaport, IN 97799&quot;,&quot;city&quot;:&quot;South Earlshire&quot;,&quot;id&quot;:2}&#39; \&#10;      http://localhost:9966/petclinic/api/owners/%7BownerId%7D&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;PUT&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;17&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;19&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;267&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;className&quot;: &quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException&quot;,&#10;    &quot;exMessage&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;int&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;{ownerId}\&quot;&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;cache-control&quot;,&#10;      &quot;value&quot;: &quot;no-cache, no-store, max-age&#61;0, must-revalidate&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-length&quot;,&#10;      &quot;value&quot;: &quot;267&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 05 Dec 2024 10:59:56 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;expires&quot;,&#10;      &quot;value&quot;: &quot;0&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;pragma&quot;,&#10;      &quot;value&quot;: &quot;no-cache&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;vary&quot;,&#10;      &quot;value&quot;: &quot;Origin&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-content-type-options&quot;,&#10;      &quot;value&quot;: &quot;nosniff&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-frame-options&quot;,&#10;      &quot;value&quot;: &quot;DENY&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-xss-protection&quot;,&#10;      &quot;value&quot;: &quot;1; mode&#61;block&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test741</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

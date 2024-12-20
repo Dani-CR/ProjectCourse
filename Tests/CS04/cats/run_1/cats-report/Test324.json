@@ -1,0 +1,93 @@
+{
+  "testId": "Test 324",
+  "scenario": "Insert invalid data {0.0} within a valid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 324 - InsertRandomValuesInBody)"
+      }
+    ],
+    "payload": "{{0.0},\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Roxana\",\"lastName\":\"Goodwin\",\"address\":\"Suite 436 304 Lynelle Isle, Pricillaside, WA 56321-3997\",\"city\":\"Brockshire\",\"id\":1},\"name\":\"MzR1dUv\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.080004883Z\"},null],\"firstName\":\"Marylou\",\"lastName\":\"Jacobs\",\"address\":\"787 Spinka Knolls, Kennethborough, WI 06064-1194\",\"city\":\"Yevetteshire\",\"id\":0},\"name\":\"wGwI2\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.07782338Z\"},null],\"firstName\":\"Jule\",\"lastName\":\"Kemmer\",\"address\":\"Apt. 957 57559 Georgia Route, Port Robertport, VT 98615\",\"city\":\"Port Teddy\",\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/owners",
+    "timestamp": "Thu, 5 Dec 2024 11:52:29 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "25",
+    "numberOfWordsInResponse": "38",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "411",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "JSON parse error: Unexpected character ('{' (code 123)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('{' (code 123)): was expecting double-quote to start field name\n at [Source: (PushbackInputStream); line: 1, column: 3]"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "411"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:29 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners",
+  "fuzzer": "InsertRandomValuesInBody",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners",
+  "contractPath": "/api/owners",
+  "server": "http://localhost:9966/petclinic"
+}

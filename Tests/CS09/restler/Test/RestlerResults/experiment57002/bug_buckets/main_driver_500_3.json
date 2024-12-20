@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "main_driver",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": "/Reviews/startswith",
+    "status_text": "INTERNAL SERVER ERROR",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /api/Reviews/startswith?page[offset]=1&page[limit]=1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    \"meta\":\n        {\n            \"method\":\"startswith\",\n            \"args\":\"fuzzstring\"\n        }\n    }\r\n",
+            "response": "HTTP/1.0 500 INTERNAL SERVER ERROR\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 237\r\nConnection: close\r\n\r\n{\n    \"errors\": [\n        {\n            \"title\": \"startswith() argument after ** must be a mapping, not str\",\n            \"detail\": \"startswith() argument after ** must be a mapping, not str\",\n            \"code\": \"500\"\n        }\n    ]\n}\n"
+        }
+    ]
+}

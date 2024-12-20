@@ -1,0 +1,68 @@
+{
+  "testId": "Test 813",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/owners/{ownerId};.json",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [PUT]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 813 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Davida\",\"lastName\":\"D'Amore\",\"address\":\"57866 Shelba Ridges, North Josueberg, SC 68003\",\"city\":\"South Allysonfort\",\"id\":1},\"name\":\"ppppp\",\"id\":2,\"birthDate\":\"2024-12-05T10:59:56.359776303Z\"},null],\"firstName\":\"Mitzi\",\"lastName\":\"Treutel\",\"address\":\"Apt. 809 967 Bruno Stream, Port Woodrow, OH 14321-6103\",\"city\":\"Lake Sulemastad\",\"id\":5},\"name\":\"eSzye\",\"id\":4,\"birthDate\":\"2024-12-05T10:59:56.356227167Z\"},null],\"firstName\":\"Jenine\",\"lastName\":\"Witting\",\"address\":\"04245 Okuneva Station, East Shanekaport, IN 97799\",\"city\":\"South Earlshire\",\"id\":2}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D;.json",
+    "timestamp": "Thu, 5 Dec 2024 11:59:59 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "240",
+    "jsonBody": {
+      "timestamp": "2024-12-05T10:59:59.933+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/petclinic/api/owners/%7BownerId%7D;.json"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:59:59 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D;.json",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

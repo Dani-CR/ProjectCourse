@@ -1,0 +1,84 @@
+{
+  "testId": "Test 872",
+  "scenario": "Send [extreme positive values] in request fields: field [page], value [REPLACE with 9223372036854775807], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 872 - ExtremePositiveNumbersInIntegerFields)"
+      }
+    ],
+    "payload": "{\"page\":9223372036854775807}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//search.json?page=9223372036854775807",
+    "timestamp": "Fri, 11 Oct 2024 17:46:55 +0200"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "79",
+    "numberOfWordsInResponse": "1487",
+    "numberOfLinesInResponse": "682",
+    "contentLengthInBytes": "21115",
+    "jsonBody": {
+      "notAJson": "\n\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"title\" content=\"\" />\n    <meta name=\"keywords\" content=\"free books, books to read, free ebooks, audio books, read books for free, read books online, online library\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"author\" content=\"OpenLibrary.org\" />\n    <meta name=\"creator\" content=\"Ope"
+    },
+    "headers": [
+      {
+        "key": "access-control-allow-method",
+        "value": "GET, OPTIONS"
+      },
+      {
+        "key": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "key": "access-control-max-age",
+        "value": "86400"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html; charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:46:55 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"SR 1 0.018 TT 0 0.069\""
+      }
+    ],
+    "responseContentType": "text/html"
+  },
+  "path": "/search.json",
+  "fuzzer": "ExtremePositiveNumbersInIntegerFields",
+  "fullRequestPath": "http://localhost:8080//search.json?page=9223372036854775807",
+  "contractPath": "/search.json",
+  "server": "http://localhost:8080/"
+}

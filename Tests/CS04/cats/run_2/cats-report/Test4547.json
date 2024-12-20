@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4547",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4547 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"date\": \"yyyy/MM/dd\",\n  \"description\": \"Chuck Norris knows the last digit of PI.\",\n  \"id\": 1,\n  \"pet\": {\n    \"owner\": {\n      \"pets\": [\n        {\n          \"owner\": {\n            \"pets\": [\n              {\n                \"birthDate\": null\n              },\n              null\n            ],\n            \"firstName\": \"Sol\",\n            \"lastName\": \"Feil\",\n            \"address\": \"84811 Delorse Station, Port Norahberg, TX 57313-8198\",\n            \"city\": \"Maggiofort\",\n            \"id\": 7\n          },\n          \"name\": \"zJBHUNjc\",\n          \"id\": 6,\n          \"birthDate\": \"2024-12-05T11:01:07.75191985Z\"\n        },\n        null\n      ],\n      \"firstName\": \"Kia\",\n      \"lastName\": \"Kub\",\n      \"address\": \"Suite 990 55473 Swift Mountains, New Ranamouth, IN 36271\",\n      \"city\": \"Michelleberg\",\n      \"id\": 4\n    },\n    \"name\": \"AzVifA\",\n    \"id\": 2,\n    \"birthDate\": \"2024-12-05T11:01:07.751000298Z\"\n  }\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 12:01:08 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:07 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

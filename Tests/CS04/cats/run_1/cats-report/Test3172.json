@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3172",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/specialties/{specialtyId}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [PUT]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3172 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"name\":\"bxVNP\",\"id\":5}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D/..%20;/",
+    "timestamp": "Thu, 5 Dec 2024 11:53:43 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "251",
+    "jsonBody": {
+      "timestamp": "2024-12-05T10:53:43.741+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/petclinic/api/specialties/%7BspecialtyId%7D/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:43 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/specialties/{specialtyId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/specialties/%7BspecialtyId%7D/..%20;/",
+  "contractPath": "/api/specialties/{specialtyId}",
+  "server": "http://localhost:9966/petclinic"
+}

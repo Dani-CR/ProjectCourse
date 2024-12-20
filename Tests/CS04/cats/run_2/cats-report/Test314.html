@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 5 Dec 2024 11:59:45 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 314
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 314</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 5 Dec 2024 11:59:45 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. </p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return 2XX</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-warn">warn</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/owners</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>ExtraHeaders</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:9966/petclinic/api/owners</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-get details">get</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Cats-Fuzzy-Header&quot;,&#10;    &quot;value&quot;: &quot;Cats-Fuzzy-Header&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 314 - ExtraHeaders)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X GET \&#10;      -H &quot;Cats-Fuzzy-Header: Cats-Fuzzy-Header&quot; -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 314 - ExtraHeaders)&quot; \&#10;      \&#10;      http://localhost:9966/petclinic/api/owners&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 200,&#10;  &quot;httpMethod&quot;: &quot;GET&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;97&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;27&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;2885&quot;,&#10;  &quot;jsonBody&quot;: [&#10;    {&#10;      &quot;id&quot;: 1,&#10;      &quot;firstName&quot;: &quot;George&quot;,&#10;      &quot;lastName&quot;: &quot;Franklin&quot;,&#10;      &quot;address&quot;: &quot;110 W. Liberty St.&quot;,&#10;      &quot;city&quot;: &quot;Madison&quot;,&#10;      &quot;telephone&quot;: &quot;6085551023&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 1,&#10;          &quot;name&quot;: &quot;Leo&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/09/07&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 1,&#10;            &quot;name&quot;: &quot;cat&quot;&#10;          },&#10;          &quot;owner&quot;: 1,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 2,&#10;      &quot;firstName&quot;: &quot;Betty&quot;,&#10;      &quot;lastName&quot;: &quot;Davis&quot;,&#10;      &quot;address&quot;: &quot;638 Cardinal Ave.&quot;,&#10;      &quot;city&quot;: &quot;Sun Prairie&quot;,&#10;      &quot;telephone&quot;: &quot;6085551749&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 2,&#10;          &quot;name&quot;: &quot;Basil&quot;,&#10;          &quot;birthDate&quot;: &quot;2012/08/06&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 6,&#10;            &quot;name&quot;: &quot;hamster&quot;&#10;          },&#10;          &quot;owner&quot;: 2,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 3,&#10;      &quot;firstName&quot;: &quot;Eduardo&quot;,&#10;      &quot;lastName&quot;: &quot;Rodriquez&quot;,&#10;      &quot;address&quot;: &quot;2693 Commerce St.&quot;,&#10;      &quot;city&quot;: &quot;McFarland&quot;,&#10;      &quot;telephone&quot;: &quot;6085558763&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 4,&#10;          &quot;name&quot;: &quot;Jewel&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/03/07&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 2,&#10;            &quot;name&quot;: &quot;dog&quot;&#10;          },&#10;          &quot;owner&quot;: 3,&#10;          &quot;visits&quot;: []&#10;        },&#10;        {&#10;          &quot;id&quot;: 3,&#10;          &quot;name&quot;: &quot;Rosy&quot;,&#10;          &quot;birthDate&quot;: &quot;2011/04/17&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 2,&#10;            &quot;name&quot;: &quot;dog&quot;&#10;          },&#10;          &quot;owner&quot;: 3,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 4,&#10;      &quot;firstName&quot;: &quot;Harold&quot;,&#10;      &quot;lastName&quot;: &quot;Davis&quot;,&#10;      &quot;address&quot;: &quot;563 Friendly St.&quot;,&#10;      &quot;city&quot;: &quot;Windsor&quot;,&#10;      &quot;telephone&quot;: &quot;6085553198&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 5,&#10;          &quot;name&quot;: &quot;Iggy&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/11/30&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 3,&#10;            &quot;name&quot;: &quot;lizard&quot;&#10;          },&#10;          &quot;owner&quot;: 4,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 5,&#10;      &quot;firstName&quot;: &quot;Peter&quot;,&#10;      &quot;lastName&quot;: &quot;McTavish&quot;,&#10;      &quot;address&quot;: &quot;2387 S. Fair Way&quot;,&#10;      &quot;city&quot;: &quot;Madison&quot;,&#10;      &quot;telephone&quot;: &quot;6085552765&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 6,&#10;          &quot;name&quot;: &quot;George&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/01/20&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 4,&#10;            &quot;name&quot;: &quot;snake&quot;&#10;          },&#10;          &quot;owner&quot;: 5,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 6,&#10;      &quot;firstName&quot;: &quot;Jean&quot;,&#10;      &quot;lastName&quot;: &quot;Coleman&quot;,&#10;      &quot;address&quot;: &quot;105 N. Lake St.&quot;,&#10;      &quot;city&quot;: &quot;Monona&quot;,&#10;      &quot;telephone&quot;: &quot;6085552654&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 8,&#10;          &quot;name&quot;: &quot;Max&quot;,&#10;          &quot;birthDate&quot;: &quot;2012/09/04&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 1,&#10;            &quot;name&quot;: &quot;cat&quot;&#10;          },&#10;          &quot;owner&quot;: 6,&#10;          &quot;visits&quot;: [&#10;            {&#10;              &quot;id&quot;: 3,&#10;              &quot;date&quot;: &quot;2013/01/03&quot;,&#10;              &quot;description&quot;: &quot;neutered&quot;,&#10;              &quot;pet&quot;: 8&#10;            },&#10;            {&#10;              &quot;id&quot;: 2,&#10;              &quot;date&quot;: &quot;2013/01/02&quot;,&#10;              &quot;description&quot;: &quot;rabies shot&quot;,&#10;              &quot;pet&quot;: 8&#10;            }&#10;          ]&#10;        },&#10;        {&#10;          &quot;id&quot;: 7,&#10;          &quot;name&quot;: &quot;Samantha&quot;,&#10;          &quot;birthDate&quot;: &quot;2012/09/04&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 1,&#10;            &quot;name&quot;: &quot;cat&quot;&#10;          },&#10;          &quot;owner&quot;: 6,&#10;          &quot;visits&quot;: [&#10;            {&#10;              &quot;id&quot;: 4,&#10;              &quot;date&quot;: &quot;2013/01/04&quot;,&#10;              &quot;description&quot;: &quot;spayed&quot;,&#10;              &quot;pet&quot;: 7&#10;            },&#10;            {&#10;              &quot;id&quot;: 1,&#10;              &quot;date&quot;: &quot;2013/01/01&quot;,&#10;              &quot;description&quot;: &quot;rabies shot&quot;,&#10;              &quot;pet&quot;: 7&#10;            }&#10;          ]&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 7,&#10;      &quot;firstName&quot;: &quot;Jeff&quot;,&#10;      &quot;lastName&quot;: &quot;Black&quot;,&#10;      &quot;address&quot;: &quot;1450 Oak Blvd.&quot;,&#10;      &quot;city&quot;: &quot;Monona&quot;,&#10;      &quot;telephone&quot;: &quot;6085555387&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 9,&#10;          &quot;name&quot;: &quot;Lucky&quot;,&#10;          &quot;birthDate&quot;: &quot;2011/08/06&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 5,&#10;            &quot;name&quot;: &quot;bird&quot;&#10;          },&#10;          &quot;owner&quot;: 7,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 8,&#10;      &quot;firstName&quot;: &quot;Maria&quot;,&#10;      &quot;lastName&quot;: &quot;Escobito&quot;,&#10;      &quot;address&quot;: &quot;345 Maple St.&quot;,&#10;      &quot;city&quot;: &quot;Madison&quot;,&#10;      &quot;telephone&quot;: &quot;6085557683&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 10,&#10;          &quot;name&quot;: &quot;Mulligan&quot;,&#10;          &quot;birthDate&quot;: &quot;2007/02/24&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 2,&#10;            &quot;name&quot;: &quot;dog&quot;&#10;          },&#10;          &quot;owner&quot;: 8,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 9,&#10;      &quot;firstName&quot;: &quot;David&quot;,&#10;      &quot;lastName&quot;: &quot;Schroeder&quot;,&#10;      &quot;address&quot;: &quot;2749 Blackhawk Trail&quot;,&#10;      &quot;city&quot;: &quot;Madison&quot;,&#10;      &quot;telephone&quot;: &quot;6085559435&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 11,&#10;          &quot;name&quot;: &quot;Freddy&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/03/09&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 5,&#10;            &quot;name&quot;: &quot;bird&quot;&#10;          },&#10;          &quot;owner&quot;: 9,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    },&#10;    {&#10;      &quot;id&quot;: 10,&#10;      &quot;firstName&quot;: &quot;Carlos&quot;,&#10;      &quot;lastName&quot;: &quot;Estaban&quot;,&#10;      &quot;address&quot;: &quot;2335 Independence La.&quot;,&#10;      &quot;city&quot;: &quot;Waunakee&quot;,&#10;      &quot;telephone&quot;: &quot;6085555487&quot;,&#10;      &quot;pets&quot;: [&#10;        {&#10;          &quot;id&quot;: 12,&#10;          &quot;name&quot;: &quot;Lucky&quot;,&#10;          &quot;birthDate&quot;: &quot;2010/06/24&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 2,&#10;            &quot;name&quot;: &quot;dog&quot;&#10;          },&#10;          &quot;owner&quot;: 10,&#10;          &quot;visits&quot;: []&#10;        },&#10;        {&#10;          &quot;id&quot;: 13,&#10;          &quot;name&quot;: &quot;Sly&quot;,&#10;          &quot;birthDate&quot;: &quot;2012/06/08&quot;,&#10;          &quot;type&quot;: {&#10;            &quot;id&quot;: 1,&#10;            &quot;name&quot;: &quot;cat&quot;&#10;          },&#10;          &quot;owner&quot;: 10,&#10;          &quot;visits&quot;: []&#10;        }&#10;      ]&#10;    }&#10;  ],&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;cache-control&quot;,&#10;      &quot;value&quot;: &quot;no-cache, no-store, max-age&#61;0, must-revalidate&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;keep-alive&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 05 Dec 2024 10:59:45 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;expires&quot;,&#10;      &quot;value&quot;: &quot;0&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;keep-alive&quot;,&#10;      &quot;value&quot;: &quot;timeout&#61;60&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;pragma&quot;,&#10;      &quot;value&quot;: &quot;no-cache&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;vary&quot;,&#10;      &quot;value&quot;: &quot;Origin&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-content-type-options&quot;,&#10;      &quot;value&quot;: &quot;nosniff&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-frame-options&quot;,&#10;      &quot;value&quot;: &quot;DENY&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-xss-protection&quot;,&#10;      &quot;value&quot;: &quot;1; mode&#61;block&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test314</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

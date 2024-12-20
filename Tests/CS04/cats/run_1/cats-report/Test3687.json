@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3687",
+  "scenario": "Send [values containing zalgo text] in request fields: field [enabled], value [PREFIX with ̵̡͚̬̱̤̰̗͛͒͂̎̊̿̀̅̈͌͋̃̾̈̾̇͛͌͘͜͠͝...], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3687 - ZalgoTextInFields)"
+      }
+    ],
+    "payload": "{\"password\":\"OyoAOOyoAOO\",\"roles\":[{\"name\":\"dvoiff\",\"id\":7},{\"name\":\"CdRDzbff\",\"id\":9}],\"enabled\":\"̵̷̷̷̴̶̶̶̶̸̡̡̢̡̨̨̢̨̢̧̢̡̨̧̡̡̧̧̧̢̡̡̨̡̡̧̡̨̧̡̧̛̛̛̛̛͚̬̱̤̰̗͉͚̖͙͎͔͔̺̳͕̫̬͚̹͖̬̭̖̪̗͕̜̣̥̣̼͍͉̖͍̪͈̖͚̙͕̗͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͚̯̬̩̘̫̫̠̟̻̳̻͈̲̖͚͇̼̩̥̥͎̥̯͚̞̘̼̞͍̮̗͈̱͚͙̠͔̞̮̱̭͍͍̪̲̜͓͍̣̯̲̠̲̤̥̥̱̪͇̞̭͙͚͔̜̠͓͈̞͈̣̹̝̩̦̟̻̰͙̯̼̜̞̮̬̝͚̺̟͎̻̱̙̦̜̭̲̰͎̳̣̹̟̯̝͚̪̼͓͕͕̹͖̣̠͓̫͇͚͔̼͛͒͂̎̊̿̀̅̈͌͋̃̾̈̾̇͛͌̇͛̅̀̑̇̈͗͌͛̐̀͆̐̊̅̋̈́̂̈́̈́͑̓͂͂̌̈́̽͌͐̐͂͐̈́̍̂͗̂͌̓̀̅̋̋̀̈́̎̄͛̾̊͐̎̉̏͊͐̑͊͒̐̔̏̔̋̑̌͆̏̀̉͆̆́̓̆̉̀̒̆̆̉̀̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍̅͊̑̇̆́̈́̓̿̄̐̓̐͐́͛̆̈̊́͑̊̊̅͗͘͘̕̕͘̕̚̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͜͜͜͜͠͝͠͝͝͝͝͝͝͝͝͠͠͝͝͠͝͝͝͝͠͠ͅͅͅͅͅͅͅͅͅͅͅfalse\",\"username\":\"erik.wyman\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 11:53:55 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "26",
+    "numberOfWordsInResponse": "46",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "4561",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "Invalid JSON input: Cannot deserialize value of type `java.lang.Boolean` from String \"̵̷̷̷̴̶̶̡̡̢̡̨̨̢̨̢̧̢̡̨̧̡̡̧̧̧̛̛̛̛̛͚̬̱̤̰̗͉͚̖͙͎͔͔̺̳͕̫̬͚̹͖̬̭̖̪̗͕̜̣̥̣̼͍͉̖͍̪͈̖͚̙͕̗͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͛͒͂̎̊̿̀̅̈͌͋̃̾̈̾̇͛͌̇͛̅̀̑̇̈͗͌͛̐̀͆̐̊̅̋̈́̂̈́̈́͑̓͂͂̌̈́̽͌͐̐͂͐̈́̍̂͗̂͌̓̀̅̋̋̀̈́̎̄͛̾̊͐̎̉̏͊͐̑͊͒̐̔̏̔̋̑̌͆̏̀̉͆̆́̓̆̉̀̒̆̆̉̀̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍͘͘̕̕͘̕̚̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͠͝͠͝͝͝͝͝͝͝͝͠͠͝͝͠͝ͅͅͅͅͅͅͅͅ]...[̷̴̶̶̶̶̸̨̢̧̢̡̨̧̡̡̧̧̧̢̡̡̨̡̡̧̡̨̧̡̧̛̛̛̛͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͚̯̬̩̘̫̫̠̟̻̳̻͈̲̖͚͇̼̩̥̥͎̥̯͚̞̘̼̞͍̮̗͈̱͚͙̠͔̞̮̱̭͍͍̪̲̜͓͍̣̯̲̠̲̤̥̥̱̪͇̞̭͙͚͔̜̠͓͈̞͈̣̹̝̩̦̟̻̰͙̯̼̜̞̮̬̝͚̺̟͎̻̱̙̦̜̭̲̰͎̳̣̹̟̯̝͚̪̼͓͕͕̹͖̣̠͓̫͇͚͔̼̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍̅͊̑̇̆́̈́̓̿̄̐̓̐͐́͛̆̈̊́͑̊̊̅͗̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͜͜͠͠͝͝͠͝͝͝͝͠͠ͅͅͅͅͅͅͅfalse\": only \"true\" or \"false\" recognized; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Boolean` from String \"̵̷̷̷̴̶̶̡̡̢̡̨̨̢̨̢̧̢̡̨̧̡̡̧̧̧̛̛̛̛̛͚̬̱̤̰̗͉͚̖͙͎͔͔̺̳͕̫̬͚̹͖̬̭̖̪̗͕̜̣̥̣̼͍͉̖͍̪͈̖͚̙͕̗͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͛͒͂̎̊̿̀̅̈͌͋̃̾̈̾̇͛͌̇͛̅̀̑̇̈͗͌͛̐̀͆̐̊̅̋̈́̂̈́̈́͑̓͂͂̌̈́̽͌͐̐͂͐̈́̍̂͗̂͌̓̀̅̋̋̀̈́̎̄͛̾̊͐̎̉̏͊͐̑͊͒̐̔̏̔̋̑̌͆̏̀̉͆̆́̓̆̉̀̒̆̆̉̀̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍͘͘̕̕͘̕̚̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͠͝͠͝͝͝͝͝͝͝͝͠͠͝͝͠͝ͅͅͅͅͅͅͅͅ]...[̷̴̶̶̶̶̸̨̢̧̢̡̨̧̡̡̧̧̧̢̡̡̨̡̡̧̡̨̧̡̧̛̛̛̛͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͚̯̬̩̘̫̫̠̟̻̳̻͈̲̖͚͇̼̩̥̥͎̥̯͚̞̘̼̞͍̮̗͈̱͚͙̠͔̞̮̱̭͍͍̪̲̜͓͍̣̯̲̠̲̤̥̥̱̪͇̞̭͙͚͔̜̠͓͈̞͈̣̹̝̩̦̟̻̰͙̯̼̜̞̮̬̝͚̺̟͎̻̱̙̦̜̭̲̰͎̳̣̹̟̯̝͚̪̼͓͕͕̹͖̣̠͓̫͇͚͔̼̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍̅͊̑̇̆́̈́̓̿̄̐̓̐͐́͛̆̈̊́͑̊̊̅͗̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͜͜͠͠͝͝͠͝͝͝͝͠͠ͅͅͅͅͅͅͅfalse\": only \"true\" or \"false\" recognized\n at [Source: (PushbackInputStream); line: 1, column: 99] (through reference chain: org.springframework.samples.petclinic.model.User[\"enabled\"])"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "4561"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:55 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/users",
+  "fuzzer": "ZalgoTextInFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

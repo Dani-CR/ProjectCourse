@@ -1,0 +1,28 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: streaming-mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_init/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: live-streaming
+
+  live-streaming:
+    image: live-streaming
+    container_name: live-streaming
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 6300:6300 #For JaCoCo TCP server access
+    environment:
+      MYSQL_HOST: streaming-mysql
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: live-streaming
+    #volumes:
+    #  - ./jacoco-reports:/jacoco-report # Mount to access JaCoCo coverage data

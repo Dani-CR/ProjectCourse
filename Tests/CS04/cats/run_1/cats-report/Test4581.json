@@ -1,0 +1,97 @@
+{
+  "testId": "Test 4581",
+  "scenario": "Send a happy flow request with a [invalid] Content-Length header, value [1]",
+  "expectedResult": "Should return 400",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 501], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "1"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4581 - InvalidContentLengthHeaders)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"Chuck Norris can use GOTO as much as he wants to. Telling him otherwise is considered harmful.\",\"id\":9,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Angelica\",\"lastName\":\"Block\",\"address\":\"Suite 350 43957 Jerde Avenue, New Buford, OK 74635\",\"city\":\"Watsicaborough\",\"id\":0},\"name\":\"FtXYVICZ\",\"id\":9,\"birthDate\":\"2024-12-05T10:54:14.244351971Z\"},null],\"firstName\":\"Chere\",\"lastName\":\"Deckow\",\"address\":\"678 DuBuque Trail, Delorisview, MO 53832-8189\",\"city\":\"Lake Michealton\",\"id\":3},\"name\":\"mHsa1\",\"id\":7,\"birthDate\":\"2024-12-05T10:54:14.242234872Z\"}}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 11:54:17 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "46",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "496",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (PushbackInputStream); line: 1, column: 1]); nested exception is com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (PushbackInputStream); line: 1, column: 1])\n at [Source: (PushbackInputStream); line: 1, column: 2]"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "496"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:16 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "InvalidContentLengthHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,88 @@
+{
+  "testId": "Test 354",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PROPPATCH",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 404",
+  "resultDetails": "Unexpected response code for http method [PROPPATCH]: expected [405], actual [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 354 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "{\"id\":1}",
+    "httpMethod": "PROPPATCH",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/%7Bid%7D",
+    "timestamp": "Tue, 3 Dec 2024 20:09:02 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "PROPPATCH",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "170",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:09:02.248+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/videos/download/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:02 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/download/{id}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/%7Bid%7D",
+  "contractPath": "/api/v1.0/videos/download/{id}",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

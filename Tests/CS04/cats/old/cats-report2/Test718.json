@@ -1,0 +1,72 @@
+{
+  "testId": "Test 718",
+  "scenario": "Send a happy flow request with undocumented HTTP method: BATCH",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 404",
+  "resultDetails": "Unexpected response code for http method [BATCH]: expected [405], actual [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 718 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "BATCH",
+    "url": "http://localhost:9966/api/owners/%7BownerId%7D",
+    "timestamp": "Mon, 7 Oct 2024 16:22:17 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "BATCH",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "32",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "431",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "431"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 14:22:17 GMT"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:9966/api/owners/%7BownerId%7D",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966"
+}

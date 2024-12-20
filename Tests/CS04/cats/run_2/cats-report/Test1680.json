@@ -1,0 +1,119 @@
+{
+  "testId": "Test 1680",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1680 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{\"petId\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pets/2",
+    "timestamp": "Thu, 5 Dec 2024 12:00:20 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "38",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "225",
+    "jsonBody": {
+      "id": 2,
+      "name": "Basil",
+      "birthDate": "2012/08/06",
+      "type": {
+        "id": 6,
+        "name": "hamster"
+      },
+      "owner": {
+        "id": 2,
+        "firstName": "Betty",
+        "lastName": "Davis",
+        "address": "638 Cardinal Ave.",
+        "city": "Sun Prairie",
+        "telephone": "6085551749"
+      },
+      "visits": []
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:20 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/2",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

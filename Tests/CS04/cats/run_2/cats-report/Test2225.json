@@ -1,0 +1,151 @@
+{
+  "testId": "Test 2225",
+  "scenario": "Send a 'happy' flow request with all fields and all headers",
+  "expectedResult": "Should return 2XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2225 - HappyPath)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 12:00:29 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "437",
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "cat"
+      },
+      {
+        "id": 2,
+        "name": "dog"
+      },
+      {
+        "id": 3,
+        "name": "lizard"
+      },
+      {
+        "id": 4,
+        "name": "snake"
+      },
+      {
+        "id": 5,
+        "name": "HGIJA"
+      },
+      {
+        "id": 6,
+        "name": "hamster"
+      },
+      {
+        "id": 7,
+        "name": "illuiGwKquUhQaజ్ఞ‌ాN1QK4FgFrgROarR"
+      },
+      {
+        "id": 8,
+        "name": "illuiGwKquUhQaস্র‌ুN1QK4FgFrgROarR"
+      },
+      {
+        "id": 9,
+        "name": "8j9cvemX"
+      },
+      {
+        "id": 10,
+        "name": "8j9cvemX"
+      },
+      {
+        "id": 11,
+        "name": "8j9cvemX"
+      },
+      {
+        "id": 12,
+        "name": "8j9cvemX"
+      },
+      {
+        "id": 13,
+        "name": "8j9cvemX"
+      },
+      {
+        "id": 14,
+        "name": "8j9cvemX"
+      }
+    ],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:29 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes",
+  "fuzzer": "HappyPath",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes",
+  "contractPath": "/api/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

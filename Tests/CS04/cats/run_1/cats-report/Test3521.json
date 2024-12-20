@@ -1,0 +1,116 @@
+{
+  "testId": "Test 3521",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [201]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3521 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{\"password\":\"OyoAOOyoAOO\",\"roles\":[{\"name\":\"dvoiff\",\"id\":7},{\"name\":\"CdRDzbff\",\"id\":9}],\"enabled\":false,\"username\":\"erik.wyman\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 11:53:51 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "97",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "138",
+    "jsonBody": {
+      "username": "erik.wyman",
+      "password": "OyoAOOyoAOO",
+      "enabled": false,
+      "roles": [
+        {
+          "id": 7,
+          "name": "ROLE_dvoiff"
+        },
+        {
+          "id": 9,
+          "name": "ROLE_CdRDzbff"
+        }
+      ]
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:50 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/users",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

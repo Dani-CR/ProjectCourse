@@ -1,0 +1,103 @@
+{
+  "testId": "Test 3978",
+  "scenario": "Insert zero-width chars in field names: field [specialties], char [\\u200b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [201]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3978 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Diedra\",\"lastName\":\"Boehm\",\"speci​alties\":[{\"name\":\"XA9D6D7i\",\"id\":9},{\"name\":\"OAJroVq0\",\"id\":9}],\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:54:03 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "65",
+    "jsonBody": {
+      "id": 7,
+      "firstName": "Diedra",
+      "lastName": "Boehm",
+      "specialties": []
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:02 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "location",
+        "value": "http://localhost:9966/petclinic/api/vets/7"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

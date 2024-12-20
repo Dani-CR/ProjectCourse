@@ -1,0 +1,119 @@
+{
+  "testId": "Test 1563",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [X-XSS-Protection=null, X-XSS-Protection=0]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1563 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pets/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 12:00:16 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "57",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "143",
+    "jsonBody": [
+      {
+        "id": 5,
+        "name": "bird"
+      },
+      {
+        "id": 1,
+        "name": "cat"
+      },
+      {
+        "id": 2,
+        "name": "dog"
+      },
+      {
+        "id": 6,
+        "name": "hamster"
+      },
+      {
+        "id": 3,
+        "name": "lizard"
+      },
+      {
+        "id": 4,
+        "name": "snake"
+      }
+    ],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:16 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/pettypes",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/pettypes",
+  "contractPath": "/api/pets/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

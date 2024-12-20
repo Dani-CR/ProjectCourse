@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4399",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [text/plain]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "text/plain"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4399 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Brian\",\"lastName\":\"Kuvalis\",\"specialties\":[{\"name\":\"1IFRc5E\",\"id\":6},{\"name\":\"BpEo2\",\"id\":0}],\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/vets/%7BvetId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:54:11 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "265",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{vetId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "265"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:11 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets/{vetId}",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets/%7BvetId%7D",
+  "contractPath": "/api/vets/{vetId}",
+  "server": "http://localhost:9966/petclinic"
+}

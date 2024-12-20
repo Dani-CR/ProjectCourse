@@ -1,0 +1,80 @@
+{
+  "testId": "Test 528",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/alternative; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/alternative; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 528 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":6}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/v1.0/videos/get/6",
+    "timestamp": "Mon, 7 Oct 2024 13:28:46 +0200"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 11:28:46 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/videos/get/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/6",
+  "contractPath": "/api/v1.0/videos/get/{id}",
+  "server": "http://localhost:8080"
+}

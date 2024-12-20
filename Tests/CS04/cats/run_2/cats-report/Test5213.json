@@ -1,0 +1,93 @@
+{
+  "testId": "Test 5213",
+  "scenario": "Replace primitive fields with array values.  Current field [pet#birthDate] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5213 - ReplacePrimitivesWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"date\": \"yyyy/MM/dd\",\n  \"description\": \"Chuck Norris can compile syntax errors.\",\n  \"id\": 9,\n  \"pet\": {\n    \"owner\": {\n      \"pets\": [\n        {\n          \"owner\": {\n            \"pets\": [\n              {},\n              null\n            ],\n            \"firstName\": \"Billy\",\n            \"lastName\": \"Monahan\",\n            \"address\": \"Suite 660 2755 Eloy Plaza, Charlesettaside, CT 09821-9356\",\n            \"city\": \"North Jeri\",\n            \"id\": 5\n          },\n          \"name\": \"mvWkzkFw\",\n          \"id\": 4,\n          \"birthDate\": \"2024-12-05T11:01:12.906937184Z\"\n        },\n        null\n      ],\n      \"firstName\": \"Modesta\",\n      \"lastName\": \"Ferry\",\n      \"address\": \"0914 Vertie Flat, Mraztown, SC 60323\",\n      \"city\": \"East Nicolette\",\n      \"id\": 1\n    },\n    \"name\": \"aFzupXMw\",\n    \"id\": 0,\n    \"birthDate\": [\n      {\n        \"catsKey1\": \"catsValue1\"\n      },\n      {\n        \"catsKey2\": \"catsValue2\"\n      }\n    ]\n  }\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+    "timestamp": "Thu, 5 Dec 2024 12:01:16 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "267",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{visitId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "267"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:16 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "ReplacePrimitivesWithArraysFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,69 @@
+{
+  "testId": "Test 1186",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /works/{olid}జ్ఞ‌ా",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1186 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//works/NOT_SET",
+    "timestamp": "Fri, 11 Oct 2024 17:47:06 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "64",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "46",
+    "jsonBody": {
+      "error": "notfound",
+      "key": "/works/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:47:07 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"IB 1 0.027 MC 1 0.000 TT 0 0.028\""
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/works/{olid}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//works/NOT_SET",
+  "contractPath": "/works/{olid}",
+  "server": "http://localhost:8080/"
+}

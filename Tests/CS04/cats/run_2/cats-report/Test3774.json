@@ -1,0 +1,92 @@
+{
+  "testId": "Test 3774",
+  "scenario": "Send [empty strings] in request fields: field [lastName], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3774 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Michaele\",\"lastName\":\"\",\"specialties\":[{\"name\":\"7Kxuji\",\"id\":1},{\"name\":\"JcRU4aG\",\"id\":8}],\"id\":2}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 12:00:56 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:55 GMT"
+      },
+      {
+        "key": "errors",
+        "value": "[{\"objectName\":\"vet\",\"fieldName\":\"lastName\",\"fieldValue\":\"\",\"errorMessage\":\"must not be empty\"}]"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/vets",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

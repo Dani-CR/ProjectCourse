@@ -1,0 +1,64 @@
+{
+  "testId": "Test 562",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 501], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 562 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+    "timestamp": "Wed, 4 Dec 2024 10:42:25 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Wed, 04 Dec 2024 09:42:25 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/videos/list",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "contractPath": "/api/v1.0/videos/list",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

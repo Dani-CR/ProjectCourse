@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Application.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Start cats run1</a> &gt; <a href="index.source.html" class="el_package">com.streaming</a> &gt; <span class="el_source">Application.java</span></div><h1>Application.java</h1><pre class="source lang-java linenums">package com.streaming;
+
+import com.streaming.services.FileStorageProperties;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@SpringBootApplication
+@EnableConfigurationProperties({
+        FileStorageProperties.class
+})
+@EnableSwagger2
+<span class="fc" id="L21">public class Application {</span>
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+<span class="fc" id="L25">        return new BCryptPasswordEncoder();</span>
+    }
+
+    @Bean
+    public Docket apiV10() {
+<span class="fc" id="L30">        return new Docket(DocumentationType.SWAGGER_2)</span>
+<span class="fc" id="L31">                .groupName(&quot;live-streaming-api-v1.0&quot;)</span>
+<span class="fc" id="L32">                .select()</span>
+<span class="fc" id="L33">                .apis(RequestHandlerSelectors.basePackage(&quot;com.streaming.controllers&quot;))</span>
+<span class="fc" id="L34">                .paths(PathSelectors.any())</span>
+<span class="fc" id="L35">                .build()</span>
+<span class="fc" id="L36">                .apiInfo(new ApiInfoBuilder()</span>
+<span class="fc" id="L37">                        .version(&quot;1.0&quot;)</span>
+<span class="fc" id="L38">                        .title(&quot;Live Streaming API&quot;)</span>
+<span class="fc" id="L39">                        .description(&quot;Documentation Live Streaming API v1.0&quot;)</span>
+<span class="fc" id="L40">                        .build());</span>
+    }
+
+    public static void main(String[] args) {
+<span class="fc" id="L44">        SpringApplication.run(Application.class, args);</span>
+<span class="fc" id="L45">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

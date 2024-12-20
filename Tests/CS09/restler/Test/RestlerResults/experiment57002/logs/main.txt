@@ -1,0 +1,2035 @@
+Random seed: 12345
+Setting fuzzing schemes: directed-smoke-test
+2024-11-27 16:11:23.359: Going to fuzz a set with 59 requests
+2024-11-27 16:11:23.359: Request-0: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-1: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-2: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-3: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-4: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-5: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-6: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-7: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-8: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-9: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-10: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-11: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-12: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-13: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-14: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-15: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-16: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-17: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-18: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-19: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-20: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-21: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-22: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-23: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-24: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-25: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-26: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-27: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-28: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-29: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-30: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-31: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-32: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-33: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-34: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-35: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-36: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-37: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-38: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-39: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-40: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-41: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-42: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-43: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-44: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-45: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-46: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-47: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-48: Value Combinations: 5
+2024-11-27 16:11:23.359: Request-49: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-50: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-51: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-52: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-53: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-54: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-55: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-56: Value Combinations: 3
+2024-11-27 16:11:23.359: Request-57: Value Combinations: 2
+2024-11-27 16:11:23.359: Request-58: Value Combinations: 2
+2024-11-27 16:11:23.359: Avg. Value Combinations per Request: 2.593220338983051
+2024-11-27 16:11:23.359: Median Value Combinations per Request: 2
+2024-11-27 16:11:23.359: Min Value Combinations per Request: 2
+2024-11-27 16:11:23.359: Max Value Combinations per Request: 5
+2024-11-27 16:11:23.359: Total dependencies: 18
+
+2024-11-27 16:11:23.373: Generation: 1 / Sequences Collection Size: 45 
+(After directed-smoke-test Extend)
+
+Rendering request 0 from scratch
+
+2024-11-27 16:11:23.443: Request 0
+2024-11-27 16:11:23.443: Endpoint - /Publishers/{PublisherId}/books
+2024-11-27 16:11:23.443: Hex Def - 039176937d8d449bf27e9697c8f07f5c994bb365
+2024-11-27 16:11:23.443: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.443: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[title]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[author_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[publisher_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[published]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 1 from scratch
+
+2024-11-27 16:11:23.572: Request 1
+2024-11-27 16:11:23.572: Endpoint - /People/{PersonId}/books_read
+2024-11-27 16:11:23.572: Hex Def - 0940513f0634ac1b5e5eb167708043b79c9fd5f6
+2024-11-27 16:11:23.572: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.572: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_read'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 2 from scratch
+
+2024-11-27 16:11:23.691: Request 2
+2024-11-27 16:11:23.691: Endpoint - /Reviews
+2024-11-27 16:11:23.691: Hex Def - 0e924c7a4c7f75692bddcf397ee0eb2d5a7fc5b1
+2024-11-27 16:11:23.691: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.691: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[book_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[created]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 3 from scratch
+
+2024-11-27 16:11:23.730: Request 3
+2024-11-27 16:11:23.730: Endpoint - /Publishers
+2024-11-27 16:11:23.730: Hex Def - 0eec5e8923d76e77ac74c0dbc1a0cb6b8e2b97ee
+2024-11-27 16:11:23.730: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.730: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Publisher]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[name]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[stock]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 4 from scratch
+
+2024-11-27 16:11:23.842: Request 4
+2024-11-27 16:11:23.842: Endpoint - /Books/{BookId}/author
+2024-11-27 16:11:23.842: Hex Def - 1a7667172f38fbe88a1c0296e9a83844d650e11c
+2024-11-27 16:11:23.842: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.842: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'author'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"type":"Person","id":"1"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 5 from scratch
+
+2024-11-27 16:11:23.919: Request 5
+2024-11-27 16:11:23.919: Endpoint - /Books/{BookId}/publisher
+2024-11-27 16:11:23.919: Hex Def - 1ade553d474abc5adf5f0898723ae53bbf8dc45d
+2024-11-27 16:11:23.919: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:23.919: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'publisher'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Publisher]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 6 from scratch
+
+2024-11-27 16:11:24.143: Request 6
+2024-11-27 16:11:24.143: Endpoint - /People/my_rpc
+2024-11-27 16:11:24.143: Hex Def - 1c1c4be1771e8da5d41df5e2e2111a2fa34f6514
+2024-11-27 16:11:24.143: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.143: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_static_string: 'my_rpc'
+		- restler_static_string: '?'
+		- restler_static_string: 'my_query_string_param='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"my_rpc"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"email":"test email"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 7 from scratch
+
+2024-11-27 16:11:24.203: Request 7
+2024-11-27 16:11:24.203: Endpoint - /Books/{BookId}/author
+2024-11-27 16:11:24.203: Hex Def - 1ceab41706fcc9c666ef97ce77f6d527cfb4999e
+2024-11-27 16:11:24.203: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.203: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'author'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 8 from scratch
+
+2024-11-27 16:11:24.296: Request 8
+2024-11-27 16:11:24.296: Endpoint - /Books/{BookId}/author
+2024-11-27 16:11:24.296: Hex Def - 21fbacedc1956c6181823742eb80255ffb37495e
+2024-11-27 16:11:24.296: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.296: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'author'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"type":"Person","id":"1"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 9 from scratch
+
+2024-11-27 16:11:24.382: Request 9
+2024-11-27 16:11:24.382: Endpoint - /People
+2024-11-27 16:11:24.382: Hex Def - 2a12e98970e0a0d575a1f648b451d8c637c4b45b
+2024-11-27 16:11:24.382: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.382: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"attributes":{"name":"John Doe","email":"","comment":"my custom value","dob":"0001-01-01","employer_id":0},"type":"Person"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 10 from scratch
+
+2024-11-27 16:11:24.473: Request 10
+2024-11-27 16:11:24.473: Endpoint - /People/{PersonId}/friends
+2024-11-27 16:11:24.473: Hex Def - 2fe7569e5ea89888c77538047807952bd96e1c4d
+2024-11-27 16:11:24.473: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.473: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'friends'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Person","id":"1"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 11 from scratch
+
+2024-11-27 16:11:24.548: Request 11
+2024-11-27 16:11:24.548: Endpoint - /People/{PersonId}/books_written
+2024-11-27 16:11:24.548: Hex Def - 36583ec15f09263e4ae3ceb2e86ac0a03aa03abe
+2024-11-27 16:11:24.548: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.548: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_written'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 12 from scratch
+
+2024-11-27 16:11:24.728: Request 12
+2024-11-27 16:11:24.728: Endpoint - /Publishers/startswith
+2024-11-27 16:11:24.728: Hex Def - 3c8bd567a064c6df3564c43b7dabfde8696c096f
+2024-11-27 16:11:24.728: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.728: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_static_string: 'startswith'
+		- restler_static_string: '?'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"startswith"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"attr_name":"value"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 13 from scratch
+
+2024-11-27 16:11:24.770: Request 13
+2024-11-27 16:11:24.770: Endpoint - /People/{PersonId}
+2024-11-27 16:11:24.770: Hex Def - 3ee849b63b4ba74a5c9dd6b024314771e56d8586
+2024-11-27 16:11:24.770: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.771: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 14 from scratch
+
+2024-11-27 16:11:24.843: Request 14
+2024-11-27 16:11:24.843: Endpoint - /Books
+2024-11-27 16:11:24.843: Hex Def - 482313152aa5225b746d5f1162cc9a013a66c847
+2024-11-27 16:11:24.843: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.843: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"attributes":{"title":"","reader_id":0,"author_id":0,"publisher_id":0,"published":"00:00:00"},"type":"Book"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 15 from scratch
+
+2024-11-27 16:11:24.910: Request 15
+2024-11-27 16:11:24.910: Endpoint - /People/{PersonId}/books_read
+2024-11-27 16:11:24.910: Hex Def - 520f28be19029aa74da6ed830c7c5d741fa68e68
+2024-11-27 16:11:24.910: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.910: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_read'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 16 from scratch
+
+2024-11-27 16:11:24.977: Request 16
+2024-11-27 16:11:24.977: Endpoint - /Books/{BookId}/reader
+2024-11-27 16:11:24.977: Hex Def - 531c04d9dabe354582576aa6ad3089107a06bb2b
+2024-11-27 16:11:24.977: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:24.978: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reader'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"type":"Person","id":"1"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 17 from scratch
+
+2024-11-27 16:11:25.021: Request 17
+2024-11-27 16:11:25.021: Endpoint - /Publishers/{PublisherId}
+2024-11-27 16:11:25.021: Hex Def - 5c176270b6983ad63cdcaa8009cd7cccfe4ba8ab
+2024-11-27 16:11:25.021: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.021: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 18 from scratch
+
+2024-11-27 16:11:25.185: Request 18
+2024-11-27 16:11:25.185: Endpoint - /Reviews/startswith
+2024-11-27 16:11:25.185: Hex Def - 661eaf7e71147137f84ed913a50c3e2ad84c07f4
+2024-11-27 16:11:25.185: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.185: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: '/'
+		- restler_static_string: 'startswith'
+		- restler_static_string: '?'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"startswith"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"attr_name":"value"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 19 from scratch
+
+2024-11-27 16:11:25.255: Request 19
+2024-11-27 16:11:25.255: Endpoint - /People/{PersonId}/books_written
+2024-11-27 16:11:25.255: Hex Def - 6d07705444197693410091bbedb0fe1d43c5ab7c
+2024-11-27 16:11:25.255: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.255: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_written'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 20 from scratch
+
+2024-11-27 16:11:25.328: Request 20
+2024-11-27 16:11:25.328: Endpoint - /Publishers
+2024-11-27 16:11:25.328: Hex Def - 7095604d6c561f7215a9862d224a8b44f2d40155
+2024-11-27 16:11:25.328: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.328: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"attributes":{"name":"","stock":30},"type":"Publisher"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 21 from scratch
+
+2024-11-27 16:11:25.373: Request 21
+2024-11-27 16:11:25.373: Endpoint - /Reviews/{ReviewId}
+2024-11-27 16:11:25.373: Hex Def - 762a9f89a221f27ec0b26b77b24f6c14889cd030
+2024-11-27 16:11:25.373: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.373: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 22 from scratch
+
+2024-11-27 16:11:25.453: Request 22
+2024-11-27 16:11:25.453: Endpoint - /People/{PersonId}/friends
+2024-11-27 16:11:25.453: Hex Def - 77796c1f69e7b6d7efaa21e99424d0fae371d70c
+2024-11-27 16:11:25.453: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.453: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'friends'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Person","id":"1"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 23 from scratch
+
+2024-11-27 16:11:25.640: Request 23
+2024-11-27 16:11:25.640: Endpoint - /Books/startswith
+2024-11-27 16:11:25.640: Hex Def - 77bdeb9cbfa6d76ae97361d022f4d51eb19c6dd5
+2024-11-27 16:11:25.640: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.640: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_static_string: 'startswith'
+		- restler_static_string: '?'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"startswith"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"attr_name":"value"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 24 from scratch
+
+2024-11-27 16:11:25.692: Request 24
+2024-11-27 16:11:25.692: Endpoint - /People/{PersonId}/books_read
+2024-11-27 16:11:25.692: Hex Def - 7e622f82f48beca3f51c7e0e59baade1dfb60808
+2024-11-27 16:11:25.692: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.692: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_read'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[title]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[author_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[publisher_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[published]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 25 from scratch
+
+2024-11-27 16:11:25.743: Request 25
+2024-11-27 16:11:25.743: Endpoint - /People/{PersonId}/reviews
+2024-11-27 16:11:25.743: Hex Def - 7ef83f0ca5df7879842b3e03bc3911bdcc6adf63
+2024-11-27 16:11:25.743: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.743: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[book_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[created]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 26 from scratch
+
+2024-11-27 16:11:25.790: Request 26
+2024-11-27 16:11:25.790: Endpoint - /Books/{BookId}/reviews
+2024-11-27 16:11:25.790: Hex Def - 7fb79cef84aec94475292e28d639488230a97d9b
+2024-11-27 16:11:25.790: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.790: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[book_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[review]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[created]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 27 from scratch
+
+2024-11-27 16:11:25.842: Request 27
+2024-11-27 16:11:25.842: Endpoint - /People/{PersonId}/friends
+2024-11-27 16:11:25.842: Hex Def - 834026f8df191bb347ae4f2d47fcf95084be06f8
+2024-11-27 16:11:25.842: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.842: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'friends'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[name]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[email]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[comment]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[dob]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[employer_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 28 from scratch
+
+2024-11-27 16:11:25.920: Request 28
+2024-11-27 16:11:25.920: Endpoint - /Books/{BookId}/reader
+2024-11-27 16:11:25.920: Hex Def - 930c0d23c8ec589994539dd1fe703f78d859782b
+2024-11-27 16:11:25.920: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.920: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reader'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 29 from scratch
+
+2024-11-27 16:11:25.963: Request 29
+2024-11-27 16:11:25.963: Endpoint - /Reviews/{ReviewId}/reader
+2024-11-27 16:11:25.963: Hex Def - 9ae530c86f3d675c55f49dcd9d481a8f31600006
+2024-11-27 16:11:25.963: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:25.963: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reader'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 30 from scratch
+
+2024-11-27 16:11:26.005: Request 30
+2024-11-27 16:11:26.005: Endpoint - /Books/{BookId}
+2024-11-27 16:11:26.005: Hex Def - a30dfd53b2813fd7cbc5a44cfb9f02a6e293d524
+2024-11-27 16:11:26.005: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.005: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 31 from scratch
+
+2024-11-27 16:11:26.077: Request 31
+2024-11-27 16:11:26.078: Endpoint - /People/{PersonId}/books_read
+2024-11-27 16:11:26.078: Hex Def - a310070e53b22d98f6efd58abd9dcafb447c0c56
+2024-11-27 16:11:26.078: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.078: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_read'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 32 from scratch
+
+2024-11-27 16:11:26.185: Request 32
+2024-11-27 16:11:26.185: Endpoint - /People
+2024-11-27 16:11:26.185: Hex Def - b06aad1c325c40c671177b43c55f209511249d27
+2024-11-27 16:11:26.185: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.185: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[name]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[email]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[comment]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[dob]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[employer_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 33 from scratch
+
+2024-11-27 16:11:26.253: Request 33
+2024-11-27 16:11:26.253: Endpoint - /Books/{BookId}/reader
+2024-11-27 16:11:26.253: Hex Def - b09927cfbb402a6b9cabbb3563f27f9c1b322d30
+2024-11-27 16:11:26.253: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.253: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reader'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"type":"Person","id":"1"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 34 from scratch
+
+2024-11-27 16:11:26.299: Request 34
+2024-11-27 16:11:26.299: Endpoint - /People/{PersonId}/books_written
+2024-11-27 16:11:26.299: Hex Def - b79c05f6225055375293cf70b3f12cc22d6d86a5
+2024-11-27 16:11:26.299: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.299: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_written'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[title]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[author_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[publisher_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[published]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 35 from scratch
+
+2024-11-27 16:11:26.343: Request 35
+2024-11-27 16:11:26.343: Endpoint - /Books/{BookId}
+2024-11-27 16:11:26.343: Hex Def - c4b1d93e12882a3745e48ecf019330ba3bcff8ca
+2024-11-27 16:11:26.343: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.343: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 36 from scratch
+
+2024-11-27 16:11:26.456: Request 36
+2024-11-27 16:11:26.456: Endpoint - /People/{PersonId}/send_mail
+2024-11-27 16:11:26.456: Hex Def - c6c6858b6c19bf380bfd42369199ab5a27735c70
+2024-11-27 16:11:26.456: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.456: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'send_mail'
+		- restler_static_string: '?'
+		- restler_static_string: 'my_query_string_param='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"send_mail"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"email":"test email"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 37 from scratch
+
+2024-11-27 16:11:26.669: Request 37
+2024-11-27 16:11:26.669: Endpoint - /People/startswith
+2024-11-27 16:11:26.669: Hex Def - ce28d083e2ecbb94958545ffae28a39bedf38d27
+2024-11-27 16:11:26.669: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.669: Rendering VALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_static_string: 'startswith'
+		- restler_static_string: '?'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "meta":\n        {\n            "method":'
+		+ restler_fuzzable_string: ['"startswith"', '"fuzzstring"']
+		- restler_static_string: ',\n            "args":'
+		+ restler_fuzzable_string: ['"{"attr_name":"value"}"', '"fuzzstring"']
+		- restler_static_string: '\n        }\n    }'
+		- restler_static_string: '\r\n'
+
+Rendering request 38 from scratch
+
+2024-11-27 16:11:26.721: Request 38
+2024-11-27 16:11:26.721: Endpoint - /People/{PersonId}
+2024-11-27 16:11:26.721: Hex Def - d17ceb798bf07f5216d99c960ae2c73b69e00866
+2024-11-27 16:11:26.721: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.721: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Person]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 39 from scratch
+
+2024-11-27 16:11:26.770: Request 39
+2024-11-27 16:11:26.770: Endpoint - /Publishers/{PublisherId}
+2024-11-27 16:11:26.770: Hex Def - d6712c7a1e926ce21bc2f18fc1f8de66a1d82840
+2024-11-27 16:11:26.770: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.770: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Publisher]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 40 from scratch
+
+2024-11-27 16:11:26.843: Request 40
+2024-11-27 16:11:26.843: Endpoint - /People/{PersonId}/books_written
+2024-11-27 16:11:26.843: Hex Def - d9c4f1971a8b887648214747c4610ed3334d20e5
+2024-11-27 16:11:26.843: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.843: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books_written'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 41 from scratch
+
+2024-11-27 16:11:26.940: Request 41
+2024-11-27 16:11:26.940: Endpoint - /Books
+2024-11-27 16:11:26.940: Hex Def - db611d7a28f019992d978a9b2b1e0ea53a6ede2d
+2024-11-27 16:11:26.940: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.940: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[offset]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'page[limit]='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'sort='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[title]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[reader_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[author_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[publisher_id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[published]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter[id]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'filter='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 42 from scratch
+
+2024-11-27 16:11:26.988: Request 42
+2024-11-27 16:11:26.988: Endpoint - /Reviews/{ReviewId}/book
+2024-11-27 16:11:26.988: Hex Def - df0800c444baabc3eb117802ad45e7f08a0808da
+2024-11-27 16:11:26.988: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:26.988: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'book'
+		- restler_static_string: '?'
+		- restler_static_string: 'include='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'fields[Book]='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 43 from scratch
+
+2024-11-27 16:11:27.063: Request 43
+2024-11-27 16:11:27.063: Endpoint - /Reviews
+2024-11-27 16:11:27.063: Hex Def - e498677920f0917207946ca2a62cba2aacf4b981
+2024-11-27 16:11:27.063: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:27.063: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"{"attributes":{"book_id":"","reader_id":0,"review":"","created":"2024-11-27 12:12:00.191816"},"type":"Review"}"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 44 from scratch
+
+2024-11-27 16:11:27.140: Request 44
+2024-11-27 16:11:27.140: Endpoint - /People/{PersonId}/friends
+2024-11-27 16:11:27.140: Hex Def - f4dcdff7c1d83d4ad9f5b7b5c45bc13780bd277e
+2024-11-27 16:11:27.140: Sequence length that satisfies dependencies: 1
+2024-11-27 16:11:27.140: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'friends'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		+ restler_fuzzable_string: ['"[{"type":"Person","id":"1"}]"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-11-27 16:11:27.140: Generation: 1 / Sequences Collection Size: 9 
+(After directed-smoke-test Render)
+
+2024-11-27 16:11:27.140: Final Swagger spec coverage: 9 / 59
+2024-11-27 16:11:27.140: Rendered requests: 45 / 59
+2024-11-27 16:11:27.140: Rendered requests with "valid" status codes: 9 / 45
+2024-11-27 16:11:27.140: Num fully valid requests (no resource creation failures): 9
+2024-11-27 16:11:27.140: Num requests not rendered due to invalid sequence re-renders: 0
+2024-11-27 16:11:27.140: Num invalid requests caused by failed resource creations: 0
+2024-11-27 16:11:27.140: Total Creations of Dyn Objects: 0
+2024-11-27 16:11:27.140: Total Requests Sent: {'gc': 0, 'main_driver': 124}
+2024-11-27 16:11:27.140: Bug Buckets: {'main_driver_500': 5}
+2024-11-27 16:11:27.146: Generation: 2 / Sequences Collection Size: 14 
+(After directed-smoke-test Extend)
+
+Found a matching prefix of length 1 for request 45 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.147: Request 45
+2024-11-27 16:11:27.147: Endpoint - /Books/{BookId}/reviews
+2024-11-27 16:11:27.147: Hex Def - 0032465e5a0b0788bf2851a1762d55c4c9dee730
+2024-11-27 16:11:27.147: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.147: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 46 with previous request 20
+	but that prefix was INVALID (root = 20)
+
+2024-11-27 16:11:27.148: Request 46
+2024-11-27 16:11:27.148: Endpoint - /Books/{BookId}/publisher
+2024-11-27 16:11:27.148: Hex Def - 215fa970f08558ed0f3bad019dae7d1eb3c145af
+2024-11-27 16:11:27.148: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.148: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'publisher'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Publishers_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 47 with previous request 14
+	but that prefix was INVALID (root = 14)
+
+2024-11-27 16:11:27.148: Request 47
+2024-11-27 16:11:27.148: Endpoint - /Publishers/{PublisherId}/books
+2024-11-27 16:11:27.148: Hex Def - 2368e8d159932eeb67c510df31473bbaeeca27db
+2024-11-27 16:11:27.148: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.148: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Books_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 48 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.149: Request 48
+2024-11-27 16:11:27.149: Endpoint - /People/{PersonId}/reviews
+2024-11-27 16:11:27.149: Hex Def - 328cf9ae3e0be1e8d78360bc2e3863289916fc50
+2024-11-27 16:11:27.149: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.149: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 49 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.150: Request 49
+2024-11-27 16:11:27.150: Endpoint - /People/{PersonId}/reviews
+2024-11-27 16:11:27.150: Hex Def - 4731170b69ed8096b37d344e660a61d9bfa21391
+2024-11-27 16:11:27.150: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.150: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 50 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.151: Request 50
+2024-11-27 16:11:27.151: Endpoint - /People/{PersonId}/reviews
+2024-11-27 16:11:27.151: Hex Def - 50ba1414989f35054dbafceae7d521244da5d799
+2024-11-27 16:11:27.151: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.151: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 51 with previous request 14
+	but that prefix was INVALID (root = 14)
+
+2024-11-27 16:11:27.151: Request 51
+2024-11-27 16:11:27.151: Endpoint - /Publishers/{PublisherId}/books
+2024-11-27 16:11:27.151: Hex Def - 78b163bc185fbbd34418763ecf4100f9de494e89
+2024-11-27 16:11:27.151: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.152: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Books_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 52 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.152: Request 52
+2024-11-27 16:11:27.152: Endpoint - /Books/{BookId}/reviews
+2024-11-27 16:11:27.152: Hex Def - 9388f47247b17d10e3a03cad24233a10c2c3970c
+2024-11-27 16:11:27.152: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.152: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 53 with previous request 14
+	but that prefix was INVALID (root = 14)
+
+2024-11-27 16:11:27.153: Request 53
+2024-11-27 16:11:27.153: Endpoint - /Books/{BookId}
+2024-11-27 16:11:27.153: Hex Def - a0a1d243152bfbfb62bf84c76b0b92fa0f58e4f9
+2024-11-27 16:11:27.153: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.153: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Books_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 54 with previous request 14
+	but that prefix was INVALID (root = 14)
+
+2024-11-27 16:11:27.154: Request 54
+2024-11-27 16:11:27.154: Endpoint - /Publishers/{PublisherId}/books
+2024-11-27 16:11:27.154: Hex Def - b2ec7a2f8777260d3e71e59faf7379c2450fa836
+2024-11-27 16:11:27.154: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.154: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Books_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 55 with previous request 9
+	but that prefix was INVALID (root = 9)
+
+2024-11-27 16:11:27.155: Request 55
+2024-11-27 16:11:27.155: Endpoint - /People/{PersonId}
+2024-11-27 16:11:27.155: Hex Def - b5dc69e501489650843f88919d7250b67e42a91a
+2024-11-27 16:11:27.155: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.155: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'People'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_People_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 56 with previous request 43
+	but that prefix was INVALID (root = 43)
+
+2024-11-27 16:11:27.156: Request 56
+2024-11-27 16:11:27.156: Endpoint - /Books/{BookId}/reviews
+2024-11-27 16:11:27.156: Hex Def - d354673e1b8f82fc178269b9372878ca1439fcaa
+2024-11-27 16:11:27.156: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.156: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'reviews'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Reviews_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 57 with previous request 20
+	but that prefix was INVALID (root = 20)
+
+2024-11-27 16:11:27.157: Request 57
+2024-11-27 16:11:27.157: Endpoint - /Publishers/{PublisherId}
+2024-11-27 16:11:27.157: Hex Def - f7328b59a2e60959d0a489e12772a69f389fe50d
+2024-11-27 16:11:27.157: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.157: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Publishers'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Publishers_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 58 with previous request 20
+	but that prefix was INVALID (root = 20)
+
+2024-11-27 16:11:27.157: Request 58
+2024-11-27 16:11:27.157: Endpoint - /Books/{BookId}/publisher
+2024-11-27 16:11:27.157: Hex Def - f99919a6986580262f9358471ec5a3fc7ae84f85
+2024-11-27 16:11:27.157: Sequence length that satisfies dependencies: 2
+2024-11-27 16:11:27.157: Rendering INVALID
+		- restler_static_string: 'PATCH '
+		- restler_static_string: '/api'
+		- restler_static_string: '/'
+		- restler_static_string: 'Books'
+		- restler_static_string: '/'
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '/'
+		- restler_static_string: 'publisher'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "data":'
+		- restler_static_string: '"_READER_DELIM_Publishers_post_data_READER_DELIM"'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+2024-11-27 16:11:27.157: Generation: 2 / Sequences Collection Size: 0 
+(After directed-smoke-test Render)
+
+2024-11-27 16:11:27.157: Final Swagger spec coverage: 9 / 59
+2024-11-27 16:11:27.157: Rendered requests: 45 / 59
+2024-11-27 16:11:27.157: Rendered requests with "valid" status codes: 9 / 45
+2024-11-27 16:11:27.157: Num fully valid requests (no resource creation failures): 9
+2024-11-27 16:11:27.157: Num requests not rendered due to invalid sequence re-renders: 0
+2024-11-27 16:11:27.157: Num invalid requests caused by failed resource creations: 0
+2024-11-27 16:11:27.157: Total Creations of Dyn Objects: 0
+2024-11-27 16:11:27.157: Total Requests Sent: {'gc': 0, 'main_driver': 124}
+2024-11-27 16:11:27.157: Bug Buckets: {'main_driver_500': 5}
+
+Testing completed -- below are the final stats:
+
+2024-11-27 16:11:27.181: Final Swagger spec coverage: 9 / 59
+2024-11-27 16:11:27.181: Rendered requests: 45 / 59
+2024-11-27 16:11:27.181: Rendered requests with "valid" status codes: 9 / 45
+2024-11-27 16:11:27.181: Num fully valid requests (no resource creation failures): 9
+2024-11-27 16:11:27.181: Num requests not rendered due to invalid sequence re-renders: 0
+2024-11-27 16:11:27.181: Num invalid requests caused by failed resource creations: 0
+2024-11-27 16:11:27.181: Total Creations of Dyn Objects: 0
+2024-11-27 16:11:27.181: Total Requests Sent: {'gc': 0, 'main_driver': 124}
+2024-11-27 16:11:27.181: Bug Buckets: {'main_driver_500': 5}

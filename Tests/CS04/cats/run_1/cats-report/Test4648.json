@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4648",
+  "scenario": "Replace primitive fields with array values.  Current field [pet#owner#city] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4648 - ReplacePrimitivesWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"date\": \"yyyy/MM/dd\",\n  \"description\": \"Chuck Norris can use GOTO as much as he wants to. Telling him otherwise is considered harmful.\",\n  \"id\": 9,\n  \"pet\": {\n    \"owner\": {\n      \"pets\": [\n        {\n          \"owner\": {\n            \"pets\": [\n              {},\n              null\n            ],\n            \"firstName\": \"Angelica\",\n            \"lastName\": \"Block\",\n            \"address\": \"Suite 350 43957 Jerde Avenue, New Buford, OK 74635\",\n            \"city\": \"Watsicaborough\",\n            \"id\": 0\n          },\n          \"name\": \"FtXYVICZ\",\n          \"id\": 9,\n          \"birthDate\": \"2024-12-05T10:54:14.244351971Z\"\n        },\n        null\n      ],\n      \"firstName\": \"Chere\",\n      \"lastName\": \"Deckow\",\n      \"address\": \"678 DuBuque Trail, Delorisview, MO 53832-8189\",\n      \"city\": [\n        {\n          \"catsKey1\": \"catsValue1\"\n        },\n        {\n          \"catsKey2\": \"catsValue2\"\n        }\n      ],\n      \"id\": 3\n    },\n    \"name\": \"mHsa1\",\n    \"id\": 7,\n    \"birthDate\": \"2024-12-05T10:54:14.242234872Z\"\n  }\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 11:54:19 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "35",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:18 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "ReplacePrimitivesWithArraysFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

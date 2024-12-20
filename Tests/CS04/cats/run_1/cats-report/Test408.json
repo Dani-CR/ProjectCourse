@@ -1,0 +1,93 @@
+{
+  "testId": "Test 408",
+  "scenario": "Send [outside the boundary values] in request fields: field [address], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 408 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Roxana\",\"lastName\":\"Goodwin\",\"address\":\"Suite 436 304 Lynelle Isle, Pricillaside, WA 56321-3997\",\"city\":\"Brockshire\",\"id\":1},\"name\":\"MzR1dUv\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.080004883Z\"},null],\"firstName\":\"Marylou\",\"lastName\":\"Jacobs\",\"address\":\"787 Spinka Knolls, Kennethborough, WI 06064-1194\",\"city\":\"Yevetteshire\",\"id\":0},\"name\":\"wGwI2\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:27.07782338Z\"},null],\"firstName\":\"Jule\",\"lastName\":\"Kemmer\",\"address\":\"\",\"city\":\"Port Teddy\",\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/owners",
+    "timestamp": "Thu, 5 Dec 2024 11:52:33 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "17",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:32 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners",
+  "contractPath": "/api/owners",
+  "server": "http://localhost:9966/petclinic"
+}

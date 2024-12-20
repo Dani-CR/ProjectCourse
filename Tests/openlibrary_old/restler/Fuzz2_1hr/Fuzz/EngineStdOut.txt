@@ -1,0 +1,163 @@
+2024-10-10 15:14:44.876: Initializing: Garbage collection every 30 seconds.
+2024-10-10 15:14:44.883: Generation: 1 
+Invalid value generator random seed: 1728566085.57807
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566093.2016847
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566102.8398528
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566113.1620126
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566123.6296782
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566130.2360587
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566137.1882632
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566144.679049
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566153.7564917
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566162.6847956
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566171.6481514
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566181.988369
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566190.821376
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566199.3976433
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566208.5109658
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566217.4887903
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566225.862102
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566235.643693
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566247.8601584
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566256.9450264
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566265.5900996
+Setting invalid value generator random seed: 12345
+2024-10-10 15:17:54.423: Generation: 2 
+Invalid value generator random seed: 1728566275.0492365
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566283.0414276
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566292.8150852
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566303.080986
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566324.8165793
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566333.775498
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566345.5261452
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566355.4998302
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566364.6818368
+Setting invalid value generator random seed: 12345
+2024-10-10 15:19:35.558: Generation: 3 
+Invalid value generator random seed: 1728566376.463937
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566384.4855826
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566395.09983
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566405.8031828
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566426.9736462
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566434.7511315
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566442.0678382
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566463.9908605
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566487.005849
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566495.1564045
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566517.919136
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566549.6253166
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566557.9437754
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566566.7156932
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566589.7289248
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566612.2926154
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566620.802495
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566641.4976633
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566660.2579405
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566669.6254153
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566689.4847627
+Setting invalid value generator random seed: 12345
+2024-10-10 15:25:11.695: Generation: 4 
+Invalid value generator random seed: 1728566712.9499803
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566721.4262698
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566731.2270606
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566741.8379843
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566987.6415117
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728566996.5642257
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567057.2632463
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567115.8454502
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567124.975901
+Setting invalid value generator random seed: 12345
+2024-10-10 15:33:32.421: Generation: 5 
+Invalid value generator random seed: 1728567213.8533309
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567222.4768622
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567232.8194861
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567243.4981542
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567489.7553246
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567496.890156
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567504.339915
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728567823.3988342
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568147.6446648
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568155.9994645
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568483.164429
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568966.769299
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568975.091802
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728568983.5211282
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728569303.368109
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728569623.7292376
+Setting invalid value generator random seed: 12345
+Invalid value generator random seed: 1728569632.86692
+Setting invalid value generator random seed: 12345
+timeout reached
+2024-10-10 16:14:45.216: Terminating garbage collection. Waiting for max 300 seconds. 
+Done.

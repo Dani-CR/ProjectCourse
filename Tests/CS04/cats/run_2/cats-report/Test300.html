@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 5 Dec 2024 11:59:45 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 300
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 300</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 5 Dec 2024 11:59:45 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Send a happy flow request with a [dummy] Transfer-Encoding header, value [cats]</p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return 400|501</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-success">success</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Response matches expected result. Response code [501] is documented and response body matches the corresponding schema.
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/owners</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>DummyTransferEncodingHeaders</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:9966/petclinic/api/owners</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-post details">post</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{&#10;  &quot;pets&quot;: [&#10;    {&#10;      &quot;owner&quot;: {&#10;        &quot;pets&quot;: [&#10;          {&#10;            &quot;owner&quot;: {&#10;              &quot;pets&quot;: [&#10;                {},&#10;                null&#10;              ],&#10;              &quot;firstName&quot;: &quot;Scottie&quot;,&#10;              &quot;lastName&quot;: &quot;Wilkinson&quot;,&#10;              &quot;address&quot;: &quot;777 Rau Vista, Port Averystad, OH 96859-5612&quot;,&#10;              &quot;city&quot;: &quot;Beerburgh&quot;,&#10;              &quot;id&quot;: 2&#10;            },&#10;            &quot;name&quot;: &quot;0rM67j&quot;,&#10;            &quot;id&quot;: 5,&#10;            &quot;birthDate&quot;: &quot;2024-12-05T10:59:43.874761391Z&quot;&#10;          },&#10;          null&#10;        ],&#10;        &quot;firstName&quot;: &quot;Pasquale&quot;,&#10;        &quot;lastName&quot;: &quot;Reinger&quot;,&#10;        &quot;address&quot;: &quot;Apt. 049 9615 Zieme Rue, Claytonport, IN 23753-7667&quot;,&#10;        &quot;city&quot;: &quot;Conroyfurt&quot;,&#10;        &quot;id&quot;: 3&#10;      },&#10;      &quot;name&quot;: &quot;qxoBVl&quot;,&#10;      &quot;id&quot;: 8,&#10;      &quot;birthDate&quot;: &quot;2024-12-05T10:59:43.873129823Z&quot;&#10;    },&#10;    null&#10;  ],&#10;  &quot;firstName&quot;: &quot;Christin&quot;,&#10;  &quot;lastName&quot;: &quot;Legros&quot;,&#10;  &quot;address&quot;: &quot;52343 Bruen Extension, New Mariella, NH 60083&quot;,&#10;  &quot;city&quot;: &quot;Gordonmouth&quot;,&#10;  &quot;id&quot;: 3&#10;}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Transfer-Encoding&quot;,&#10;    &quot;value&quot;: &quot;cats&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 300 - DummyTransferEncodingHeaders)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X POST \&#10;      -H &quot;Transfer-Encoding: cats&quot; -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 300 - DummyTransferEncodingHeaders)&quot; \&#10;      -d &#39;{&quot;pets&quot;:[{&quot;owner&quot;:{&quot;pets&quot;:[{&quot;owner&quot;:{&quot;pets&quot;:[{},null],&quot;firstName&quot;:&quot;Scottie&quot;,&quot;lastName&quot;:&quot;Wilkinson&quot;,&quot;address&quot;:&quot;777 Rau Vista, Port Averystad, OH 96859-5612&quot;,&quot;city&quot;:&quot;Beerburgh&quot;,&quot;id&quot;:2},&quot;name&quot;:&quot;0rM67j&quot;,&quot;id&quot;:5,&quot;birthDate&quot;:&quot;2024-12-05T10:59:43.874761391Z&quot;},null],&quot;firstName&quot;:&quot;Pasquale&quot;,&quot;lastName&quot;:&quot;Reinger&quot;,&quot;address&quot;:&quot;Apt. 049 9615 Zieme Rue, Claytonport, IN 23753-7667&quot;,&quot;city&quot;:&quot;Conroyfurt&quot;,&quot;id&quot;:3},&quot;name&quot;:&quot;qxoBVl&quot;,&quot;id&quot;:8,&quot;birthDate&quot;:&quot;2024-12-05T10:59:43.873129823Z&quot;},null],&quot;firstName&quot;:&quot;Christin&quot;,&quot;lastName&quot;:&quot;Legros&quot;,&quot;address&quot;:&quot;52343 Bruen Extension, New Mariella, NH 60083&quot;,&quot;city&quot;:&quot;Gordonmouth&quot;,&quot;id&quot;:3}&#39; \&#10;      http://localhost:9966/petclinic/api/owners&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 501,&#10;  &quot;httpMethod&quot;: &quot;POST&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;23&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;32&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;443&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;notAJson&quot;: &quot;&lt;!doctype html&gt;&lt;html lang&#61;\&quot;en\&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 501 – Not Implemented&lt;/title&gt;&lt;style type&#61;\&quot;text/css\&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 501 – Not Implemented&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-language&quot;,&#10;      &quot;value&quot;: &quot;en&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-length&quot;,&#10;      &quot;value&quot;: &quot;443&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;text/html;charset&#61;utf-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 05 Dec 2024 10:59:44 GMT&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;text/html;charset&#61;utf-8&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test300</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

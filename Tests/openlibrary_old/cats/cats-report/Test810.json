@@ -1,0 +1,69 @@
+{
+  "testId": "Test 810",
+  "scenario": "Send a 'happy' flow request with all fields and all headers and checks if the response headers match those declared in the contract",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 810 - ResponseHeadersMatchContractHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//isbn/NOT_SET",
+    "timestamp": "Fri, 11 Oct 2024 17:46:53 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "62",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "45",
+    "jsonBody": {
+      "error": "notfound",
+      "key": "/isbn/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:46:53 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"IB 1 0.050 MC 1 0.004 TT 0 0.054\""
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/isbn/{isbn}",
+  "fuzzer": "ResponseHeadersMatchContractHeaders",
+  "fullRequestPath": "http://localhost:8080//isbn/NOT_SET",
+  "contractPath": "/isbn/{isbn}",
+  "server": "http://localhost:8080/"
+}

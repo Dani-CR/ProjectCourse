@@ -1,0 +1,89 @@
+{
+  "testId": "Test 988",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/png]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [image/png;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/png"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 988 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Davida\",\"lastName\":\"D'Amore\",\"address\":\"57866 Shelba Ridges, North Josueberg, SC 68003\",\"city\":\"South Allysonfort\",\"id\":1},\"name\":\"ppppp\",\"id\":2,\"birthDate\":\"2024-12-05T10:59:56.359776303Z\"},null],\"firstName\":\"Mitzi\",\"lastName\":\"Treutel\",\"address\":\"Apt. 809 967 Bruno Stream, Port Woodrow, OH 14321-6103\",\"city\":\"Lake Sulemastad\",\"id\":5},\"name\":\"eSzye\",\"id\":4,\"birthDate\":\"2024-12-05T10:59:56.356227167Z\"},null],\"firstName\":\"Jenine\",\"lastName\":\"Witting\",\"address\":\"04245 Okuneva Station, East Shanekaport, IN 97799\",\"city\":\"South Earlshire\",\"id\":2}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D",
+    "timestamp": "Thu, 5 Dec 2024 12:00:05 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "image/png;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:05 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "image/png;charset=UTF-8"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

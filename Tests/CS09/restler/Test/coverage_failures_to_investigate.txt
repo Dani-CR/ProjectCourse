@@ -1,0 +1,706 @@
+This file contains the failing requests, ordered by the number of blocked dependent requests.
+To improve coverage, fix the failing requests in the order listed in this file.
+
+Note: some requests are labeled as 'sequence failure'.
+This means the request depends on another request that is failing intermittently.
+For example, a DELETE request for a resource may be skipped because the resource
+PUT request failed due to exceeding quota.  The same PUT request succeeded earlier (and may
+succeed later depending on the resource clean-up behavior in the service), so it is
+considered an intermittent failure.
+
+-----------------------------------------------
+Request: Post /Reviews
+Number of blocked dependent requests: 6
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/Reviews HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"attributes":{"book_id":"","reader_id":0,"review":"","created":"2024-11-27 12:12:00.191816"},"type":"Review"}"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 285\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "detail": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/Reviews HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 209\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Data is not a dict object",\n            "detail": "Validation Error: Data is not a dict object",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/Reviews HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 207\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Request contains no data",\n            "detail": "Validation Error: Request contains no data",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /Books
+Number of blocked dependent requests: 4
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/Books HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"attributes":{"title":"","reader_id":0,"author_id":0,"publisher_id":0,"published":"00:00:00"},"type":"Book"}"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 285\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "detail": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/Books HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 209\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Data is not a dict object",\n            "detail": "Validation Error: Data is not a dict object",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/Books HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 207\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Request contains no data",\n            "detail": "Validation Error: Request contains no data",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /Publishers
+Number of blocked dependent requests: 3
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/Publishers HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"attributes":{"name":"","stock":30},"type":"Publisher"}"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 285\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "detail": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/Publishers HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 209\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Data is not a dict object",\n            "detail": "Validation Error: Data is not a dict object",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/Publishers HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 207\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Request contains no data",\n            "detail": "Validation Error: Request contains no data",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /People
+Number of blocked dependent requests: 1
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/People HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"attributes":{"name":"John Doe","email":"","comment":"my custom value","dob":"0001-01-01","employer_id":0},"type":"Person"}"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 285\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "detail": "Failed to decode JSON object: Expecting ',' delimiter: line 2 column 15 (char 16)",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/People HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 209\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Data is not a dict object",\n            "detail": "Validation Error: Data is not a dict object",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/People HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 207\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: Request contains no data",\n            "detail": "Validation Error: Request contains no data",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Publishers/{PublisherId}/books
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Publishers/fuzzstring/books?include=fuzzstring&fields[Book]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[title]=fuzzstring&filter[reader_id]=fuzzstring&filter[author_id]=fuzzstring&filter[publisher_id]=fuzzstring&filter[published]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Publishers/fuzzstring/books HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /People/{PersonId}/books_read
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Patch /Books/{BookId}/author
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"type":"Person","id":"1"}"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Books/{BookId}/publisher
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/publisher?include=fuzzstring&fields[Publisher]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/publisher HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:23 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Books/{BookId}/author
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/author?include=fuzzstring&fields[Person]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /Books/{BookId}/author
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"type":"Person","id":"1"}"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/author HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /People/{PersonId}/friends
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Person","id":"1"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /People/{PersonId}/books_written
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /People/{PersonId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /People/{PersonId}/books_read
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /Books/{BookId}/reader
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"type":"Person","id":"1"}"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /Publishers/{PublisherId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/Publishers/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:24 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/Publishers/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Patch /People/{PersonId}/books_written
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Reviews/{ReviewId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring?include=fuzzstring&fields[Review]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Patch /People/{PersonId}/friends
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Person","id":"1"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /People/{PersonId}/books_read
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/books_read?include=fuzzstring&fields[Book]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[title]=fuzzstring&filter[reader_id]=fuzzstring&filter[author_id]=fuzzstring&filter[publisher_id]=fuzzstring&filter[published]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /People/{PersonId}/reviews
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/reviews?include=fuzzstring&fields[Review]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[book_id]=fuzzstring&filter[reader_id]=fuzzstring&filter[review]=fuzzstring&filter[created]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/reviews HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Books/{BookId}/reviews
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/reviews?include=fuzzstring&fields[Review]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[book_id]=fuzzstring&filter[reader_id]=fuzzstring&filter[review]=fuzzstring&filter[created]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/reviews HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /People/{PersonId}/friends
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/friends?include=fuzzstring&fields[Person]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[name]=fuzzstring&filter[email]=fuzzstring&filter[comment]=fuzzstring&filter[dob]=fuzzstring&filter[employer_id]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Books/{BookId}/reader
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/reader?include=fuzzstring&fields[Person]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Reviews/{ReviewId}/reader
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring/reader?include=fuzzstring&fields[Person]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /Books/{BookId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:25 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/Books/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Patch /People/{PersonId}/books_read
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> PATCH /api/People/fuzzstring/books_read HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Patch /Books/{BookId}/reader
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"{"type":"Person","id":"1"}"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> PATCH /api/Books/fuzzstring/reader HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /People/{PersonId}/books_written
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/books_written?include=fuzzstring&fields[Book]=fuzzstring&page[offset]=1&page[limit]=1&sort=fuzzstring&filter[title]=fuzzstring&filter[reader_id]=fuzzstring&filter[author_id]=fuzzstring&filter[publisher_id]=fuzzstring&filter[published]=fuzzstring&filter[id]=fuzzstring&filter=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Books/{BookId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring?include=fuzzstring&fields[Book]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Books/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 219\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Book\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /People/{PersonId}/send_mail
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/send_mail?my_query_string_param=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "meta":\n        {\n            "method":"send_mail",\n            "args":"{"email":"test email"}"\n        }\n    }\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/send_mail?my_query_string_param=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "meta":\n        {\n            "method":"send_mail",\n            "args":"fuzzstring"\n        }\n    }\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/send_mail?my_query_string_param=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "meta":\n        {\n            "method":"fuzzstring",\n            "args":"{"email":"test email"}"\n        }\n    }\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 4 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/send_mail?my_query_string_param=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "meta":\n        {\n            "method":"fuzzstring",\n            "args":"fuzzstring"\n        }\n    }\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 5 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/send_mail HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /People/{PersonId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring?include=fuzzstring&fields[Person]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/People/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Publishers/{PublisherId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Publishers/fuzzstring?include=fuzzstring&fields[Publisher]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Publishers/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 229\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Publisher\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Post /People/{PersonId}/books_written
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Book","id":"c8a8975d-80c8-473f-8e42-d509815e7335"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /api/People/fuzzstring/books_written HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Get /Reviews/{ReviewId}/book
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring/book?include=fuzzstring&fields[Book]=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /api/Reviews/fuzzstring/book HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+	< HTTP/1.0 400 BAD REQUEST\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:26 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 683\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "detail": "Validation Error: PK values (['fuzzstring']) do not match columns ([Column('book_id', String(), ForeignKey('Books.id'), table=<Reviews>, primary_key=True, nullable=False), Column('reader_id', Integer(), ForeignKey('People.id'), table=<Reviews>, primary_key=True, nullable=False)])",\n            "code": "400"\n        }\n    ]\n}\n
+
+
+-----------------------------------------------
+Request: Delete /People/{PersonId}/friends
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"[{"type":"Person","id":"1"}]"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "data":"fuzzstring"}\r\n
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> DELETE /api/People/fuzzstring/friends HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{}
+	< HTTP/1.0 404 NOT FOUND\r\nServer: Werkzeug/3.0.6 Python/3.8.2\r\nDate: Wed, 27 Nov 2024 15:11:27 GMT\r\nContent-Type: application/vnd.api+json\r\nContent-Length: 223\r\nConnection: close\r\n\r\n{\n    "errors": [\n        {\n            "title": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "detail": "NotFoundError Invalid \"Person\" ID \"fuzzstring\"",\n            "code": "404"\n        }\n    ]\n}\n
+
+

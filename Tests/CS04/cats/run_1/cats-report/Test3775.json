@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3775",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3775 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"firstName\": \"Burma\",\n  \"lastName\": \"Corkery\",\n  \"specialties\": [\n    {\n      \"name\": \"4HI8qDn\",\n      \"id\": 0\n    },\n    {\n      \"name\": \"f3hGELt\",\n      \"id\": 6\n    }\n  ],\n  \"id\": 5\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:53:58 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "18",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "314",
+    "jsonBody": {
+      "className": "org.springframework.orm.jpa.JpaObjectRetrievalFailureException",
+      "exMessage": "Unable to find org.springframework.samples.petclinic.model.Specialty with id 0; nested exception is javax.persistence.EntityNotFoundException: Unable to find org.springframework.samples.petclinic.model.Specialty with id 0"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "314"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:57 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

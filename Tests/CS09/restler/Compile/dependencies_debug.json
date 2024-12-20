@@ -1,0 +1,7548 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[title]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[title]",
+        "ProducerParameterName": "filter[title]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[author_id]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[author_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[publisher_id]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[publisher_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[published]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[published]",
+        "ProducerParameterName": "filter[published]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "Books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Books",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Books",
+          "PathContainerName": "Books",
+          "CandidateTypeNames": [
+            "book"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "author",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "author"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "author",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "author"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "author",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "author"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/author",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "author",
+        "PathContainerName": "author",
+        "CandidateTypeNames": [
+          "author"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "publisher",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Publisher]"
+        },
+        "ContainerName": "publisher",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Publisher]",
+        "ProducerParameterName": "publisher]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "publisher",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Publishers",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Publishers",
+          "PathContainerName": "Publishers",
+          "CandidateTypeNames": [
+            "publisher"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/publisher",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "publisher",
+        "PathContainerName": "publisher",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Publishers",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Publishers",
+          "PathContainerName": "Publishers",
+          "CandidateTypeNames": [
+            "publisher"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reader",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Review]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Review]",
+        "ProducerParameterName": "review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[book_id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[book_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[review]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[review]",
+        "ProducerParameterName": "filter[review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[created]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[created]",
+        "ProducerParameterName": "filter[created]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "BookId",
+            "pathToParameter": [
+              "Books"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Books",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "BookId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Books/{BookId}/reviews",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[name]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[name]",
+        "ProducerParameterName": "filter[name]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[email]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[email]",
+        "ProducerParameterName": "filter[email]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[comment]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[comment]",
+        "ProducerParameterName": "filter[comment]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[dob]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[dob]",
+        "ProducerParameterName": "filter[dob]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[employer_id]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[employer_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/my_rpc",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "my_query_string_param"
+        },
+        "ContainerName": "my_rpc",
+        "PathContainerName": "my_rpc",
+        "CandidateTypeNames": [
+          "my__rpc"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "my_query_string_param",
+        "ProducerParameterName": "param",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/my_rpc",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "my_rpc",
+        "PathContainerName": "my_rpc",
+        "CandidateTypeNames": [
+          "my__rpc"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/my_rpc",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "my_rpc",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/my_rpc",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "my_rpc",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "People",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/People",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "People",
+          "PathContainerName": "People",
+          "CandidateTypeNames": [
+            "person"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[title]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[title]",
+        "ProducerParameterName": "filter[title]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[author_id]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[author_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[publisher_id]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[publisher_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[published]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[published]",
+        "ProducerParameterName": "filter[published]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_read",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_read",
+        "PathContainerName": "books_read",
+        "CandidateTypeNames": [
+          "books__read"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[title]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[title]",
+        "ProducerParameterName": "filter[title]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[author_id]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[author_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[publisher_id]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[publisher_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[published]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[published]",
+        "ProducerParameterName": "filter[published]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/books_written",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books_written",
+        "PathContainerName": "books_written",
+        "CandidateTypeNames": [
+          "books__written"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[name]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[name]",
+        "ProducerParameterName": "filter[name]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[email]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[email]",
+        "ProducerParameterName": "filter[email]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[comment]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[comment]",
+        "ProducerParameterName": "filter[comment]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[dob]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[dob]",
+        "ProducerParameterName": "filter[dob]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[employer_id]"
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[employer_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/friends",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "friends",
+        "PathContainerName": "friends",
+        "CandidateTypeNames": [
+          "friend"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Review]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Review]",
+        "ProducerParameterName": "review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[book_id]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[book_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[review]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[review]",
+        "ProducerParameterName": "filter[review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[created]"
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[created]",
+        "ProducerParameterName": "filter[created]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/reviews",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "reviews",
+        "PathContainerName": "reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Reviews",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Reviews",
+          "PathContainerName": "Reviews",
+          "CandidateTypeNames": [
+            "review"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/send_mail",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "my_query_string_param"
+        },
+        "ContainerName": "send_mail",
+        "PathContainerName": "send_mail",
+        "CandidateTypeNames": [
+          "send__mail"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "my_query_string_param",
+        "ProducerParameterName": "param",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/send_mail",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PersonId",
+            "pathToParameter": [
+              "People"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "People",
+        "PathContainerName": "send_mail",
+        "CandidateTypeNames": [
+          "person"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PersonId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/send_mail",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "send_mail",
+        "PathContainerName": "send_mail",
+        "CandidateTypeNames": [
+          "send__mail"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/send_mail",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "send_mail",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/People/{PersonId}/send_mail",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "send_mail",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Publisher]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Publisher]",
+        "ProducerParameterName": "publisher]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[name]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[name]",
+        "ProducerParameterName": "filter[name]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[stock]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[stock]",
+        "ProducerParameterName": "filter[stock]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Publisher]"
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Publisher]",
+        "ProducerParameterName": "publisher]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "Publishers",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Publishers",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Publishers",
+          "PathContainerName": "Publishers",
+          "CandidateTypeNames": [
+            "publisher"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[title]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[title]",
+        "ProducerParameterName": "filter[title]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[author_id]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[author_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[publisher_id]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[publisher_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[published]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[published]",
+        "ProducerParameterName": "filter[published]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Books",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Books",
+          "PathContainerName": "Books",
+          "CandidateTypeNames": [
+            "book"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Books",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Books",
+          "PathContainerName": "Books",
+          "CandidateTypeNames": [
+            "book"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "PublisherId",
+            "pathToParameter": [
+              "Publishers"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Publishers",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "publisher"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "PublisherId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Publishers/{PublisherId}/books",
+          "method": "Patch"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "books",
+        "PathContainerName": "books",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/Books",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "data",
+              "fullPath": {
+                "path": [
+                  "data"
+                ]
+              }
+            }
+          },
+          "ContainerName": "Books",
+          "PathContainerName": "Books",
+          "CandidateTypeNames": [
+            "book"
+          ],
+          "AccessPath": "data",
+          "AccessPathParts": {
+            "path": [
+              "data"
+            ]
+          },
+          "ResourceName": "data",
+          "ProducerParameterName": "data",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[reader_id]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[reader_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[id]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[id]",
+        "ProducerParameterName": "filter[id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter",
+        "ProducerParameterName": "filter",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Review]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Review]",
+        "ProducerParameterName": "review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[book_id]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[book_id]",
+        "ProducerParameterName": "id]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[review]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[review]",
+        "ProducerParameterName": "filter[review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "filter[created]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "filter[created]",
+        "ProducerParameterName": "filter[created]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "data",
+            "fullPath": {
+              "path": [
+                "data"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPath": "data",
+        "AccessPathParts": {
+          "path": [
+            "data"
+          ]
+        },
+        "ResourceName": "data",
+        "ProducerParameterName": "data",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[offset]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[offset]",
+        "ProducerParameterName": "page[offset]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "page[limit]"
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page[limit]",
+        "ProducerParameterName": "page[limit]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "meta",
+            "fullPath": {
+              "path": [
+                "meta"
+              ]
+            }
+          }
+        },
+        "ContainerName": "startswith",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "startswith"
+        ],
+        "AccessPath": "meta",
+        "AccessPathParts": {
+          "path": [
+            "meta"
+          ]
+        },
+        "ResourceName": "meta",
+        "ProducerParameterName": "meta",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "args",
+            "fullPath": {
+              "path": [
+                "meta",
+                "args"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/args",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "args"
+          ]
+        },
+        "ResourceName": "args",
+        "ProducerParameterName": "args",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/startswith",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "method",
+            "fullPath": {
+              "path": [
+                "meta",
+                "method"
+              ]
+            }
+          }
+        },
+        "ContainerName": "meta",
+        "BodyContainerName": "meta",
+        "PathContainerName": "startswith",
+        "CandidateTypeNames": [
+          "meta"
+        ],
+        "AccessPath": "meta/method",
+        "AccessPathParts": {
+          "path": [
+            "meta",
+            "method"
+          ]
+        },
+        "ResourceName": "method",
+        "ProducerParameterName": "method",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Review]"
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Review]",
+        "ProducerParameterName": "review]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "ReviewId",
+            "pathToParameter": [
+              "Reviews"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "Reviews",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "ReviewId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/book",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "book",
+        "PathContainerName": "book",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/book",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Book]"
+        },
+        "ContainerName": "book",
+        "PathContainerName": "book",
+        "CandidateTypeNames": [
+          "book"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Book]",
+        "ProducerParameterName": "book]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/book",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "ReviewId",
+            "pathToParameter": [
+              "Reviews"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "book",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "ReviewId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "include"
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "include",
+        "ProducerParameterName": "include",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "fields[Person]"
+        },
+        "ContainerName": "reader",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "reader"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "fields[Person]",
+        "ProducerParameterName": "person]",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Reviews/{ReviewId}/reader",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "ReviewId",
+            "pathToParameter": [
+              "Reviews"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Reviews",
+        "PathContainerName": "reader",
+        "CandidateTypeNames": [
+          "review"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "ReviewId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  }
+]

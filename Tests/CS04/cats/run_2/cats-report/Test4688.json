@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4688",
+  "scenario": "Send [outside the boundary values] in request fields: field [pet#owner#firstName], value [REPLACE with 9e2y4k0aa99e2y4k0aa999e2y4k0aa...], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4688 - StringFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"The class object inherits from Chuck Norris.\",\"id\":7,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Soon\",\"lastName\":\"Hettinger\",\"address\":\"Apt. 381 3708 Frank Trail, Padbergburgh, MD 85716-7442\",\"city\":\"Jameton\",\"id\":8},\"name\":\"dczNCR\",\"id\":7,\"birthDate\":\"2024-12-05T11:01:07.749153422Z\"},null],\"firstName\":\"9e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa999999999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa99999e2y4k0aa99e2y4k0aa999e2y4k0aa99e2y4k0aa9999e2y4k0aa99e2y4k0\",\"lastName\":\"Schoen\",\"address\":\"Suite 679 8566 Jonah Road, East Kevin, ME 87588\",\"city\":\"Bennyland\",\"id\":3},\"name\":\"bRW4Iu\",\"id\":0,\"birthDate\":\"2024-12-05T11:01:07.748239866Z\"}}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 12:01:10 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "63",
+    "jsonBody": {
+      "className": "java.lang.NullPointerException",
+      "exMessage": null
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "63"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:09 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits",
+  "fuzzer": "StringFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

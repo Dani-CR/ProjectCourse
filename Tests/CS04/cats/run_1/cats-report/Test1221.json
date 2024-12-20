@@ -1,0 +1,89 @@
+{
+  "testId": "Test 1221",
+  "scenario": "Send a happy flow request with a [dummy] Accept header, value [application/cats]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [application/cats;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1221 - DummyAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"ymqylYs\",\"id\":6,\"birthDate\":\"2024-12-05T10:52:54.808646685Z\"},null],\"firstName\":\"Joanne\",\"lastName\":\"Considine\",\"address\":\"Apt. 191 45263 Kihn Stravenue, Cormierfurt, TX 07280\",\"city\":\"Lorishire\",\"id\":4},\"name\":\"3Ptnmzz5\",\"id\":0,\"birthDate\":\"2024-12-05T10:52:54.807522387Z\"},null],\"firstName\":\"Blair\",\"lastName\":\"Barton\",\"address\":\"161 Koss Cape, Magenbury, CA 23083\",\"city\":\"Douglasbury\",\"id\":6},\"name\":\"jvQSSS3a\",\"id\":8,\"birthDate\":\"2024-12-05T10:52:54.806373938Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pets",
+    "timestamp": "Thu, 5 Dec 2024 11:52:55 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "application/cats;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:55 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/cats;charset=UTF-8"
+  },
+  "path": "/api/pets",
+  "fuzzer": "DummyAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966/petclinic"
+}

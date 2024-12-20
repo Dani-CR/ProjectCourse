@@ -1,0 +1,345 @@
+{
+  "testId": "Test 1230",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1230 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pets",
+    "timestamp": "Thu, 5 Dec 2024 11:52:55 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "75",
+    "numberOfWordsInResponse": "31",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2919",
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "Leo",
+        "birthDate": "2010/09/07",
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "owner": {
+          "id": 1,
+          "firstName": "George",
+          "lastName": "Franklin",
+          "address": "110 W. Liberty St.",
+          "city": "Madison",
+          "telephone": "6085551023"
+        },
+        "visits": []
+      },
+      {
+        "id": 2,
+        "name": "Basil",
+        "birthDate": "2012/08/06",
+        "type": {
+          "id": 6,
+          "name": "hamster"
+        },
+        "owner": {
+          "id": 2,
+          "firstName": "Betty",
+          "lastName": "Davis",
+          "address": "638 Cardinal Ave.",
+          "city": "Sun Prairie",
+          "telephone": "6085551749"
+        },
+        "visits": []
+      },
+      {
+        "id": 3,
+        "name": "Rosy",
+        "birthDate": "2011/04/17",
+        "type": {
+          "id": 2,
+          "name": "dog"
+        },
+        "owner": {
+          "id": 3,
+          "firstName": "Eduardo",
+          "lastName": "Rodriquez",
+          "address": "2693 Commerce St.",
+          "city": "McFarland",
+          "telephone": "6085558763"
+        },
+        "visits": []
+      },
+      {
+        "id": 4,
+        "name": "Jewel",
+        "birthDate": "2010/03/07",
+        "type": {
+          "id": 2,
+          "name": "dog"
+        },
+        "owner": {
+          "id": 3,
+          "firstName": "Eduardo",
+          "lastName": "Rodriquez",
+          "address": "2693 Commerce St.",
+          "city": "McFarland",
+          "telephone": "6085558763"
+        },
+        "visits": []
+      },
+      {
+        "id": 5,
+        "name": "Iggy",
+        "birthDate": "2010/11/30",
+        "type": {
+          "id": 3,
+          "name": "lizard"
+        },
+        "owner": {
+          "id": 4,
+          "firstName": "Harold",
+          "lastName": "Davis",
+          "address": "563 Friendly St.",
+          "city": "Windsor",
+          "telephone": "6085553198"
+        },
+        "visits": []
+      },
+      {
+        "id": 7,
+        "name": "Samantha",
+        "birthDate": "2012/09/04",
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "owner": {
+          "id": 6,
+          "firstName": "Jean",
+          "lastName": "Coleman",
+          "address": "105 N. Lake St.",
+          "city": "Monona",
+          "telephone": "6085552654"
+        },
+        "visits": [
+          {
+            "id": 4,
+            "date": "2013/01/04",
+            "description": "spayed",
+            "pet": 7
+          },
+          {
+            "id": 1,
+            "date": "2013/01/01",
+            "description": "rabies shot",
+            "pet": 7
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Max",
+        "birthDate": "2012/09/04",
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "owner": {
+          "id": 6,
+          "firstName": "Jean",
+          "lastName": "Coleman",
+          "address": "105 N. Lake St.",
+          "city": "Monona",
+          "telephone": "6085552654"
+        },
+        "visits": [
+          {
+            "id": 3,
+            "date": "2013/01/03",
+            "description": "neutered",
+            "pet": 8
+          },
+          {
+            "id": 2,
+            "date": "2013/01/02",
+            "description": "rabies shot",
+            "pet": 8
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Lucky",
+        "birthDate": "2011/08/06",
+        "type": {
+          "id": 5,
+          "name": "bird"
+        },
+        "owner": {
+          "id": 7,
+          "firstName": "Jeff",
+          "lastName": "Black",
+          "address": "1450 Oak Blvd.",
+          "city": "Monona",
+          "telephone": "6085555387"
+        },
+        "visits": []
+      },
+      {
+        "id": 10,
+        "name": "Mulligan",
+        "birthDate": "2007/02/24",
+        "type": {
+          "id": 2,
+          "name": "dog"
+        },
+        "owner": {
+          "id": 8,
+          "firstName": "Maria",
+          "lastName": "Escobito",
+          "address": "345 Maple St.",
+          "city": "Madison",
+          "telephone": "6085557683"
+        },
+        "visits": []
+      },
+      {
+        "id": 11,
+        "name": "Freddy",
+        "birthDate": "2010/03/09",
+        "type": {
+          "id": 5,
+          "name": "bird"
+        },
+        "owner": {
+          "id": 9,
+          "firstName": "David",
+          "lastName": "Schroeder",
+          "address": "2749 Blackhawk Trail",
+          "city": "Madison",
+          "telephone": "6085559435"
+        },
+        "visits": []
+      },
+      {
+        "id": 12,
+        "name": "Lucky",
+        "birthDate": "2010/06/24",
+        "type": {
+          "id": 2,
+          "name": "dog"
+        },
+        "owner": {
+          "id": 10,
+          "firstName": "Carlos",
+          "lastName": "Estaban",
+          "address": "2335 Independence La.",
+          "city": "Waunakee",
+          "telephone": "6085555487"
+        },
+        "visits": []
+      },
+      {
+        "id": 13,
+        "name": "Sly",
+        "birthDate": "2012/06/08",
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "owner": {
+          "id": 10,
+          "firstName": "Carlos",
+          "lastName": "Estaban",
+          "address": "2335 Independence La.",
+          "city": "Waunakee",
+          "telephone": "6085555487"
+        },
+        "visits": []
+      }
+    ],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:55 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets",
+  "contractPath": "/api/pets",
+  "server": "http://localhost:9966/petclinic"
+}

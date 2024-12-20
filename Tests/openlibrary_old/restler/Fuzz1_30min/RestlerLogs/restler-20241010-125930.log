@@ -1,0 +1,39 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2024-10-10T10:59:30.5752253Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2024-10-10T10:59:30.7305777Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2024-10-10T10:59:30.7310976Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0158282 with exit code 0x0: 'python3 --version'
+    DateTime=2024-10-10T10:59:30.7505734Z
+Restler Information: 0 : (51883) python3 --version exited with code: 0
+    DateTime=2024-10-10T10:59:30.7541638Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/openlibrary/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/openlibrary/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.500000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2024-10-10T10:59:30.7603326Z
+Restler Information: 0 : Process execution terminated in 00:30:00.3878584 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/openlibrary/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/openlibrary/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.500000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2024-10-10T11:29:31.1489570Z
+Restler Information: 0 : (51886) python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/Tests/openlibrary/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/Tests/openlibrary/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.500000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap exited with code: 0
+    DateTime=2024-10-10T11:29:31.1498973Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz" --output_dir "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-10-10T11:29:31.1639142Z
+Restler Information: 0 : Process execution terminated in 00:00:00.6636992 with exit code 0x86: 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz" --output_dir "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-10-10T11:29:31.8280250Z
+Restler Information: 0 : (67436) dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz" --output_dir "/home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/Tests/openlibrary/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 134
+    DateTime=2024-10-10T11:29:31.8290393Z
+Restler Error: 0 : Results analyzer for logs in /home/daniela/Documents/Tests/openlibrary/restler/Fuzz1_30min/Fuzz failed.
+    DateTime=2024-10-10T11:29:31.8342168Z
+Restler Information: 0 : Request coverage (successful / total): 11 / 11
+    DateTime=2024-10-10T11:29:32.0445305Z
+Restler Information: 0 : Attempted requests: 11 / 11
+    DateTime=2024-10-10T11:29:32.0450065Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2024-10-10T11:29:32.0504032Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2024-10-10T11:29:32.0504843Z
+Restler Information: 0 : 
+InvalidValueChecker_500: 1
+    DateTime=2024-10-10T11:29:32.0510691Z
+Restler Information: 0 : Task Fuzz succeeded.
+    DateTime=2024-10-10T11:29:32.0530430Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-10-10T11:29:32.0625373Z

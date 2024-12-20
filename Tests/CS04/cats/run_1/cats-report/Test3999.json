@@ -1,0 +1,93 @@
+{
+  "testId": "Test 3999",
+  "scenario": "Insert zero-width chars in field names: field [id], char [\\u202e]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3999 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Diedra\",\"lastName\":\"Boehm\",\"specialties\":[{\"name\":\"XA9D6D7i\",\"i‮d\":9},{\"name\":\"OAJroVq0\",\"i‮d\":9}],\"i‮d\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:54:03 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "34",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "520",
+    "jsonBody": {
+      "className": "org.springframework.dao.InvalidDataAccessApiUsageException",
+      "exMessage": "org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: org.springframework.samples.petclinic.model.Specialty; nested exception is java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: org.springframework.samples.petclinic.model.Specialty"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "520"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:02 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,100 @@
+{
+  "testId": "Test 1192",
+  "scenario": "Check that previously deleted resource is not available",
+  "expectedResult": "Should return 4XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [GET] with response code [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1192 - CheckDeletedResourcesNotAvailable)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/petclinic/api/owners/3",
+    "timestamp": "Thu, 5 Dec 2024 12:00:09 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "114",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "153",
+    "jsonBody": {
+      "timestamp": "2024-12-05T11:00:09.121+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/petclinic/petclinic/api/owners/3"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:08 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "CheckDeletedResourcesNotAvailable",
+  "fullRequestPath": "http://localhost:9966/petclinic/petclinic/api/owners/3",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

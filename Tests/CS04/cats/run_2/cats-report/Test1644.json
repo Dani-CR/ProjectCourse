@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1644",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [name], value [REPLACE with WSPwMfVnuhJC0AP0fsEkKz0স্র\\u200cুTz...], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1644 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"VUZBvkoB\",\"id\":1,\"birthDate\":\"2024-12-05T11:00:19.358742376Z\"},null],\"firstName\":\"Ahmed\",\"lastName\":\"Denesik\",\"address\":\"Apt. 108 9255 Gilberto Flat, Andrachester, ND 33760-6931\",\"city\":\"South Vince\",\"id\":0},\"name\":\"kUdwJCj\",\"id\":7,\"birthDate\":\"2024-12-05T11:00:19.357649551Z\"},null],\"firstName\":\"Izola\",\"lastName\":\"Walsh\",\"address\":\"2249 Collins Divide, Eusebioview, NE 33913\",\"city\":\"Lake Dewitt\",\"id\":8},\"name\":\"WSPwMfVnuhJC0AP0fsEkKz0স্র\\u200CুTzmNygEwR13v7Enf1cSOZmVz\",\"id\":2,\"birthDate\":\"2024-12-05T11:00:19.356110054Z\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+    "timestamp": "Thu, 5 Dec 2024 12:00:19 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "265",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{petId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "265"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:19 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

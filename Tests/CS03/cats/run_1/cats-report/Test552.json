@@ -1,0 +1,88 @@
+{
+  "testId": "Test 552",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UNPUBLISH",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 404",
+  "resultDetails": "Unexpected response code for http method [UNPUBLISH]: expected [405], actual [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 552 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UNPUBLISH",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+    "timestamp": "Tue, 3 Dec 2024 20:09:06 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "UNPUBLISH",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "157",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:09:06.058+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/videos/list"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:05 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/videos/list",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "contractPath": "/api/v1.0/videos/list",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

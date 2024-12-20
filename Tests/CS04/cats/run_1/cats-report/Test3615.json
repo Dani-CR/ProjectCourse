@@ -1,0 +1,108 @@
+{
+  "testId": "Test 3615",
+  "scenario": "Send [outside the boundary values] in request fields: field [password], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [201]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3615 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"password\":\"\",\"roles\":[{\"name\":\"dvoiff\",\"id\":7},{\"name\":\"CdRDzbff\",\"id\":9}],\"enabled\":false,\"username\":\"erik.wyman\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/users",
+    "timestamp": "Thu, 5 Dec 2024 11:53:54 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "127",
+    "jsonBody": {
+      "username": "erik.wyman",
+      "password": "",
+      "enabled": false,
+      "roles": [
+        {
+          "id": 9,
+          "name": "ROLE_CdRDzbff"
+        },
+        {
+          "id": 7,
+          "name": "ROLE_dvoiff"
+        }
+      ]
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:53 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/users",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966/petclinic"
+}

@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1177",
+  "scenario": "Send [zero-width characters] in request fields: field [id], value [INSERT with \\u200f], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1177 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Margorie\",\"lastName\":\"Pollich\",\"address\":\"Apt. 864 89895 Hane Center, East Rheabury, AK 29805\",\"city\":\"Port Reinaville\",\"id\":6},\"name\":\"pGeDG\",\"id\":1,\"birthDate\":\"2024-12-05T10:52:41.249857183Z\"},null],\"firstName\":\"Jewell\",\"lastName\":\"Murray\",\"address\":\"Apt. 409 947 Agustin Forest, New Cammy, MD 45116-0014\",\"city\":\"West Phyliciatown\",\"id\":6},\"name\":\"OugPKRjw\",\"id\":1,\"birthDate\":\"2024-12-05T10:52:41.244610919Z\"},null],\"firstName\":\"Dane\",\"lastName\":\"Muller\",\"address\":\"70998 O'Conner Drive, Port Barbra, HI 81145\",\"city\":\"Pacochamouth\",\"id\":\"\\u200F4\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:52:54 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "267",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{ownerId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "267"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:54 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

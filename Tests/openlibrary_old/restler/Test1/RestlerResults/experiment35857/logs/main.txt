@@ -1,0 +1,300 @@
+Random seed: 12345
+Setting fuzzing schemes: directed-smoke-test
+2024-10-10 12:22:51.074: Going to fuzz a set with 11 requests
+2024-10-10 12:22:51.074: Request-0: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-1: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-2: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-3: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-4: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-5: Value Combinations: 4
+2024-10-10 12:22:51.074: Request-6: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-7: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-8: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-9: Value Combinations: 2
+2024-10-10 12:22:51.074: Request-10: Value Combinations: 4
+2024-10-10 12:22:51.074: Avg. Value Combinations per Request: 2.3636363636363638
+2024-10-10 12:22:51.074: Median Value Combinations per Request: 2
+2024-10-10 12:22:51.074: Min Value Combinations per Request: 2
+2024-10-10 12:22:51.074: Max Value Combinations per Request: 4
+2024-10-10 12:22:51.074: Total dependencies: 0
+
+2024-10-10 12:22:51.075: Generation: 1 / Sequences Collection Size: 11 
+(After directed-smoke-test Extend)
+
+Rendering request 0 from scratch
+
+2024-10-10 12:22:51.232: Request 0
+2024-10-10 12:22:51.232: Endpoint - /authors/{olid}.json
+2024-10-10 12:22:51.232: Hex Def - 0694873363dda2a137bfdbb0d32d9a9af73c9647
+2024-10-10 12:22:51.232: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.232: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'authors'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '.json'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 1 from scratch
+
+2024-10-10 12:22:51.296: Request 1
+2024-10-10 12:22:51.296: Endpoint - /api/volumes/brief/{key_type}/{value}.json
+2024-10-10 12:22:51.296: Hex Def - 0b465a19ada39ef68376153ee5271c86d8766e60
+2024-10-10 12:22:51.296: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.296: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'volumes'
+		- restler_static_string: '/'
+		- restler_static_string: 'brief'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '.json'
+		- restler_static_string: '?'
+		- restler_static_string: 'callback='
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 2 from scratch
+
+2024-10-10 12:22:51.392: Request 2
+2024-10-10 12:22:51.392: Endpoint - /authors/{olid}/works.json
+2024-10-10 12:22:51.392: Hex Def - 0e3df832a6e7cb4c87984adb9d046d5522941302
+2024-10-10 12:22:51.392: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.392: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'authors'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '/'
+		- restler_static_string: 'works.json'
+		- restler_static_string: '?'
+		- restler_static_string: 'limit='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 3 from scratch
+
+2024-10-10 12:22:51.486: Request 3
+2024-10-10 12:22:51.486: Endpoint - /covers/{key_type}/{value}-{size}.jpg
+2024-10-10 12:22:51.486: Hex Def - 3fee9f57f8aea3431ed6f506ca8833f8a6f76cd6
+2024-10-10 12:22:51.486: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.486: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'covers'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '-'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '.jpg'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 4 from scratch
+
+2024-10-10 12:22:51.605: Request 4
+2024-10-10 12:22:51.605: Endpoint - /search.json
+2024-10-10 12:22:51.605: Hex Def - 41b3b5b42cd75e2ecbca6ec7786552aee5c0cbc6
+2024-10-10 12:22:51.605: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.605: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'search.json'
+		- restler_static_string: '?'
+		- restler_static_string: 'q='
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '&'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 5 from scratch
+
+2024-10-10 12:22:51.967: Request 5
+2024-10-10 12:22:51.967: Endpoint - /api/books
+2024-10-10 12:22:51.967: Hex Def - a213e822d958d489f90e2776fafe29811dd796b3
+2024-10-10 12:22:51.967: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:51.967: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: '?'
+		- restler_static_string: 'bibkeys='
+		+ restler_fuzzable_string: ['ISBN:0201558025', 'fuzzstring']
+		- restler_static_string: '&'
+		- restler_static_string: 'format='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: '&'
+		- restler_static_string: 'callback='
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '&'
+		- restler_static_string: 'jscmd='
+		- restler_fuzzable_string: 'fuzzstring'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 6 from scratch
+
+2024-10-10 12:22:52.115: Request 6
+2024-10-10 12:22:52.115: Endpoint - /subjects/{subject}.json
+2024-10-10 12:22:52.115: Hex Def - a2b830aca575e24ea77aef71ff14f7acd312d1b3
+2024-10-10 12:22:52.115: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:52.115: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'subjects'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: '.json'
+		- restler_static_string: '?'
+		- restler_static_string: 'details='
+		- restler_fuzzable_bool: 'true'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 7 from scratch
+
+2024-10-10 12:22:52.183: Request 7
+2024-10-10 12:22:52.183: Endpoint - /isbn/{isbn}
+2024-10-10 12:22:52.183: Hex Def - c576f6a55c3cf9d25fb3377982f9757aecf6fcd7
+2024-10-10 12:22:52.183: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:52.183: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'isbn'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 8 from scratch
+
+2024-10-10 12:22:52.239: Request 8
+2024-10-10 12:22:52.239: Endpoint - /search/authors.json
+2024-10-10 12:22:52.239: Hex Def - da7e5b858499c5dc0c84685ad3f0c305df8a719d
+2024-10-10 12:22:52.239: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:52.239: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'search'
+		- restler_static_string: '/'
+		- restler_static_string: 'authors.json'
+		- restler_static_string: '?'
+		- restler_static_string: 'q='
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 9 from scratch
+
+2024-10-10 12:22:52.337: Request 9
+2024-10-10 12:22:52.337: Endpoint - /works/{olid}
+2024-10-10 12:22:52.337: Hex Def - e96bd33b47509527eb183f217ea53434c1ba84a6
+2024-10-10 12:22:52.337: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:52.337: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'works'
+		- restler_static_string: '/'
+		- restler_fuzzable_object: '{ "fuzz": false }'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 10 from scratch
+
+2024-10-10 12:22:52.592: Request 10
+2024-10-10 12:22:52.592: Endpoint - /books/{olid}
+2024-10-10 12:22:52.592: Hex Def - f0d3abf52d2923745ae7f9f3cf2ab46356f78f55
+2024-10-10 12:22:52.592: Sequence length that satisfies dependencies: 1
+2024-10-10 12:22:52.592: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'books'
+		- restler_static_string: '/'
+		+ restler_fuzzable_object: ['OL53924W', '{ "fuzz": false }']
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+2024-10-10 12:22:52.592: Generation: 1 / Sequences Collection Size: 4 
+(After directed-smoke-test Render)
+
+2024-10-10 12:22:52.592: Final Swagger spec coverage: 4 / 11
+2024-10-10 12:22:52.592: Rendered requests: 11 / 11
+2024-10-10 12:22:52.592: Rendered requests with "valid" status codes: 4 / 11
+2024-10-10 12:22:52.592: Num fully valid requests (no resource creation failures): 4
+2024-10-10 12:22:52.592: Num requests not rendered due to invalid sequence re-renders: 0
+2024-10-10 12:22:52.592: Num invalid requests caused by failed resource creations: 0
+2024-10-10 12:22:52.592: Total Creations of Dyn Objects: 0
+2024-10-10 12:22:52.592: Total Requests Sent: {'gc': 0, 'main_driver': 20}
+2024-10-10 12:22:52.592: Bug Buckets: {}
+
+Testing completed -- below are the final stats:
+
+2024-10-10 12:22:52.601: Final Swagger spec coverage: 4 / 11
+2024-10-10 12:22:52.601: Rendered requests: 11 / 11
+2024-10-10 12:22:52.601: Rendered requests with "valid" status codes: 4 / 11
+2024-10-10 12:22:52.601: Num fully valid requests (no resource creation failures): 4
+2024-10-10 12:22:52.601: Num requests not rendered due to invalid sequence re-renders: 0
+2024-10-10 12:22:52.601: Num invalid requests caused by failed resource creations: 0
+2024-10-10 12:22:52.601: Total Creations of Dyn Objects: 0
+2024-10-10 12:22:52.601: Total Requests Sent: {'gc': 0, 'main_driver': 20}
+2024-10-10 12:22:52.601: Bug Buckets: {}

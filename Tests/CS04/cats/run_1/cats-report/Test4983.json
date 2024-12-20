@@ -1,0 +1,93 @@
+{
+  "testId": "Test 4983",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4983 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"date\": \"yyyy/MM/dd\",\n  \"description\": \"Chuck Norris's first program was kill -9.\",\n  \"id\": 9,\n  \"pet\": {\n    \"owner\": {\n      \"pets\": [\n        {\n          \"owner\": {\n            \"pets\": [\n              {\n                \"birthDate\": null\n              },\n              null\n            ],\n            \"firstName\": \"Rutha\",\n            \"lastName\": \"Feil\",\n            \"address\": \"Apt. 179 65569 Scott Meadows, Hermannfort, IN 58012\",\n            \"city\": \"Chrisview\",\n            \"id\": 3\n          },\n          \"name\": \"CN4tA9k\",\n          \"id\": 2,\n          \"birthDate\": \"2024-12-05T10:54:22.561023793Z\"\n        },\n        null\n      ],\n      \"firstName\": \"Candy\",\n      \"lastName\": \"Davis\",\n      \"address\": \"Suite 707 551 Rohan Greens, West Jinburgh, NM 36959-9660\",\n      \"city\": \"Lake Maryln\",\n      \"id\": 3\n    },\n    \"name\": \"jaZTeuHa\",\n    \"id\": 7,\n    \"birthDate\": \"2024-12-05T10:54:22.559230812Z\"\n  }\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:54:24 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "267",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{visitId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "267"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:23 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/visits/{visitId}",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits/%7BvisitId%7D",
+  "contractPath": "/api/visits/{visitId}",
+  "server": "http://localhost:9966/petclinic"
+}

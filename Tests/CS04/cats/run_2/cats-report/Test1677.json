@@ -1,0 +1,72 @@
+{
+  "testId": "Test 1677",
+  "scenario": "Send a happy flow request with a [dummy] Transfer-Encoding header, value [cats]",
+  "expectedResult": "Should return 400|501",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [501] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Transfer-Encoding",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1677 - DummyTransferEncodingHeaders)"
+      }
+    ],
+    "payload": "{\"petId\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/pets/2",
+    "timestamp": "Thu, 5 Dec 2024 12:00:20 +0100"
+  },
+  "response": {
+    "responseCode": 501,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "32",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "443",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 501 – Not Implemented</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 501 – Not Implemented</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "443"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:20 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "DummyTransferEncodingHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/2",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

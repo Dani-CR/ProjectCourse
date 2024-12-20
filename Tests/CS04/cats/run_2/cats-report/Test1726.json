@@ -1,0 +1,93 @@
+{
+  "testId": "Test 1726",
+  "scenario": "Insert invalid data {\"␀\":\"␀\"}  within a valid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1726 - InsertRandomValuesInBody)"
+      }
+    ],
+    "payload": "{{\"␀\":\"␀\"} ,\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{},\"name\":\"VUZBvkoB\",\"id\":1,\"birthDate\":\"2024-12-05T11:00:19.358742376Z\"},null],\"firstName\":\"Ahmed\",\"lastName\":\"Denesik\",\"address\":\"Apt. 108 9255 Gilberto Flat, Andrachester, ND 33760-6931\",\"city\":\"South Vince\",\"id\":0},\"name\":\"kUdwJCj\",\"id\":7,\"birthDate\":\"2024-12-05T11:00:19.357649551Z\"},null],\"firstName\":\"Izola\",\"lastName\":\"Walsh\",\"address\":\"2249 Collins Divide, Eusebioview, NE 33913\",\"city\":\"Lake Dewitt\",\"id\":8},\"name\":\"5lD4I\",\"id\":2,\"birthDate\":\"2024-12-05T11:00:19.356110054Z\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+    "timestamp": "Thu, 5 Dec 2024 12:00:21 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "19",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "265",
+    "jsonBody": {
+      "className": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "exMessage": "Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"{petId}\""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "265"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:00:21 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pets/{petId}",
+  "fuzzer": "InsertRandomValuesInBody",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pets/%7BpetId%7D",
+  "contractPath": "/api/pets/{petId}",
+  "server": "http://localhost:9966/petclinic"
+}

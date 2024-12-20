@@ -1,0 +1,47 @@
+{
+  "testId": "Test 573",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/jpeg]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 999",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [999]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/jpeg"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 573 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"olid\":\"OL53924W\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//books/OL53924W",
+    "timestamp": "Fri, 11 Oct 2024 17:45:41 +0200"
+  },
+  "response": {
+    "responseCode": 999,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10027",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "0",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": "no body due to unknown error"
+    },
+    "headers": null,
+    "responseContentType": null
+  },
+  "path": "/books/{olid}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//books/OL53924W",
+  "contractPath": "/books/{olid}",
+  "server": "http://localhost:8080/"
+}

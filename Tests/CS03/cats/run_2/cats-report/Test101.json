@@ -1,0 +1,88 @@
+{
+  "testId": "Test 101",
+  "scenario": "Send {\"circularRef\": {\"self\": {\"$ref\": \"#/circularRef\"}}}\n as invalid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 101 - RandomDummyInvalidJsonBody)"
+      }
+    ],
+    "payload": "{\"circularRef\": {\"self\": {\"$ref\": \"#/circularRef\"}}}\n",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Wed, 4 Dec 2024 10:42:14 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "POST",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "159",
+    "jsonBody": {
+      "timestamp": "2024-12-04T09:42:14.691+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Wed, 04 Dec 2024 09:42:14 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "RandomDummyInvalidJsonBody",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

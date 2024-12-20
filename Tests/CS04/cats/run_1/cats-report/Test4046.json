@@ -1,0 +1,89 @@
+{
+  "testId": "Test 4046",
+  "scenario": "Send a happy flow request with a [dummy] Accept header, value [application/cats]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [application/cats;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4046 - DummyAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"firstName\":\"Brian\",\"lastName\":\"Kuvalis\",\"specialties\":[{\"name\":\"1IFRc5E\",\"id\":6},{\"name\":\"BpEo2\",\"id\":0}],\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/vets/%7BvetId%7D",
+    "timestamp": "Thu, 5 Dec 2024 11:54:04 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "5",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "130",
+    "jsonBody": {
+      "className": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "exMessage": "Could not find acceptable representation"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "130"
+      },
+      {
+        "key": "content-type",
+        "value": "application/cats;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:54:04 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/cats;charset=UTF-8"
+  },
+  "path": "/api/vets/{vetId}",
+  "fuzzer": "DummyAcceptHeaders",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets/%7BvetId%7D",
+  "contractPath": "/api/vets/{vetId}",
+  "server": "http://localhost:9966/petclinic"
+}

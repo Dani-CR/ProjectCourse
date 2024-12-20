@@ -1,0 +1,72 @@
+{
+  "testId": "Test 3533",
+  "scenario": "Send a happy flow request with undocumented HTTP method: HEAD",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 404",
+  "resultDetails": "Unexpected response code for http method [HEAD]: expected [405], actual [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3533 - HttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "HEAD",
+    "url": "http://localhost:9966/api/users",
+    "timestamp": "Mon, 7 Oct 2024 16:22:37 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "HEAD",
+    "responseTimeInMs": "0",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "431"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Mon, 07 Oct 2024 14:22:37 GMT"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/users",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:9966/api/users",
+  "contractPath": "/api/users",
+  "server": "http://localhost:9966"
+}

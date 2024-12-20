@@ -1,0 +1,68 @@
+{
+  "testId": "Test 805",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/owners/{ownerId}.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [PUT]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 805 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"pets\":[{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Margorie\",\"lastName\":\"Pollich\",\"address\":\"Apt. 864 89895 Hane Center, East Rheabury, AK 29805\",\"city\":\"Port Reinaville\",\"id\":6},\"name\":\"pGeDG\",\"id\":1,\"birthDate\":\"2024-12-05T10:52:41.249857183Z\"},null],\"firstName\":\"Jewell\",\"lastName\":\"Murray\",\"address\":\"Apt. 409 947 Agustin Forest, New Cammy, MD 45116-0014\",\"city\":\"West Phyliciatown\",\"id\":6},\"name\":\"OugPKRjw\",\"id\":1,\"birthDate\":\"2024-12-05T10:52:41.244610919Z\"},null],\"firstName\":\"Dane\",\"lastName\":\"Muller\",\"address\":\"70998 O'Conner Drive, Port Barbra, HI 81145\",\"city\":\"Pacochamouth\",\"id\":4}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D..%20;/",
+    "timestamp": "Thu, 5 Dec 2024 11:52:45 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "15",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "241",
+    "jsonBody": {
+      "timestamp": "2024-12-05T10:52:45.433+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
+      "path": "/petclinic/api/owners/%7BownerId%7D..%20;/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:52:45 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/owners/{ownerId}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/owners/%7BownerId%7D..%20;/",
+  "contractPath": "/api/owners/{ownerId}",
+  "server": "http://localhost:9966/petclinic"
+}

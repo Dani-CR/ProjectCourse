@@ -1,0 +1,88 @@
+{
+  "testId": "Test 124",
+  "scenario": "Replace primitive fields with array values.  Current field [password] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 124 - ReplacePrimitivesWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"password\": [\n    {\n      \"catsKey1\": \"catsValue1\"\n    },\n    {\n      \"catsKey2\": \"catsValue2\"\n    }\n  ],\n  \"created\": \"2024-12-03T19:08:52.632892569Z\",\n  \"modified\": \"2024-12-03T19:08:52.634283483Z\",\n  \"videos\": [\n    {\n      \"size\": 4.134901373661577,\n      \"created\": \"2024-12-03T19:08:52.757663919Z\",\n      \"modified\": \"2024-12-03T19:08:52.758412148Z\",\n      \"id\": 9,\n      \"title\": \"yCKKn5\",\n      \"url\": \"http://catsAMNKyE.com/cats\"\n    },\n    {\n      \"size\": 6.3806885196514775,\n      \"created\": \"2024-12-03T19:08:52.763434399Z\",\n      \"modified\": \"2024-12-03T19:08:52.764203378Z\",\n      \"id\": 4,\n      \"title\": \"nfBbh8lEn\",\n      \"url\": \"http://catsDxakkP.com/cats\"\n    }\n  ],\n  \"id\": 4,\n  \"username\": \"mirian.smitham\"\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+    "timestamp": "Tue, 3 Dec 2024 20:08:57 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "POST",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "159",
+    "jsonBody": {
+      "timestamp": "2024-12-03T19:08:57.467+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:08:57 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/v1.0/users/sign-up",
+  "fuzzer": "ReplacePrimitivesWithArraysFields",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "contractPath": "/api/v1.0/users/sign-up",
+  "server": "http://localhost:8080/swagger-ui.html"
+}

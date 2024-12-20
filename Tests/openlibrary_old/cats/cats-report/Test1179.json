@@ -1,0 +1,73 @@
+{
+  "testId": "Test 1179",
+  "scenario": "Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. ",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1179 - ExtraHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//works/NOT_SET",
+    "timestamp": "Fri, 11 Oct 2024 17:47:06 +0200"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "59",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "46",
+    "jsonBody": {
+      "error": "notfound",
+      "key": "/works/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Fri, 11 Oct 2024 15:47:06 GMT"
+      },
+      {
+        "key": "server",
+        "value": "gunicorn"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-ol-stats",
+        "value": "\"IB 1 0.006 MC 1 0.002 TT 0 0.008\""
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/works/{olid}",
+  "fuzzer": "ExtraHeaders",
+  "fullRequestPath": "http://localhost:8080//works/NOT_SET",
+  "contractPath": "/works/{olid}",
+  "server": "http://localhost:8080/"
+}

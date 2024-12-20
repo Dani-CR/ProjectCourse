@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4593",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PROPPATCH",
+  "expectedResult": "Should return 405",
+  "result": "warn",
+  "resultReason": "Unexpected Response Code: 500",
+  "resultDetails": "Unexpected response code for http method [PROPPATCH]: expected [405], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4593 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "{\"date\":\"yyyy/MM/dd\",\"description\":\"The class object inherits from Chuck Norris.\",\"id\":7,\"pet\":{\"owner\":{\"pets\":[{\"owner\":{\"pets\":[{},null],\"firstName\":\"Soon\",\"lastName\":\"Hettinger\",\"address\":\"Apt. 381 3708 Frank Trail, Padbergburgh, MD 85716-7442\",\"city\":\"Jameton\",\"id\":8},\"name\":\"dczNCR\",\"id\":7,\"birthDate\":\"2024-12-05T11:01:07.749153422Z\"},null],\"firstName\":\"Austin\",\"lastName\":\"Schoen\",\"address\":\"Suite 679 8566 Jonah Road, East Kevin, ME 87588\",\"city\":\"Bennyland\",\"id\":3},\"name\":\"bRW4Iu\",\"id\":0,\"birthDate\":\"2024-12-05T11:01:07.748239866Z\"}}",
+    "httpMethod": "PROPPATCH",
+    "url": "http://localhost:9966/petclinic/api/visits",
+    "timestamp": "Thu, 5 Dec 2024 12:01:09 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PROPPATCH",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "34",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "455",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 500 – Internal Server Error</title><style type=\"text/css\">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "455"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 11:01:08 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/visits",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/visits",
+  "contractPath": "/api/visits",
+  "server": "http://localhost:9966/petclinic"
+}

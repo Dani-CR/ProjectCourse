@@ -1,0 +1,221 @@
+{
+  "testId": "Test 3782",
+  "scenario": "Send a 'happy' flow request with all fields and all headers",
+  "expectedResult": "Should return 2XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3782 - HappyPath)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:9966/petclinic/api/vets",
+    "timestamp": "Thu, 5 Dec 2024 11:53:58 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "63",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1075",
+    "jsonBody": [
+      {
+        "id": 1,
+        "firstName": "James",
+        "lastName": "Carter",
+        "specialties": []
+      },
+      {
+        "id": 2,
+        "firstName": "Helen",
+        "lastName": "Leary",
+        "specialties": [
+          {
+            "id": 1,
+            "name": "radiology"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "firstName": "Linda",
+        "lastName": "Douglas",
+        "specialties": [
+          {
+            "id": 2,
+            "name": "5h‮ck5"
+          },
+          {
+            "id": 3,
+            "name": "dentistry"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "firstName": "Rafael",
+        "lastName": "Ortega",
+        "specialties": [
+          {
+            "id": 2,
+            "name": "5h‮ck5"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "firstName": "Henry",
+        "lastName": "Stevens",
+        "specialties": [
+          {
+            "id": 1,
+            "name": "radiology"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "firstName": "Sharon",
+        "lastName": "Jenkins",
+        "specialties": []
+      },
+      {
+        "id": 11,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "firstName": "Diedra",
+        "lastName": "Boehm",
+        "specialties": [
+          {
+            "id": 9,
+            "name": "5hck5"
+          }
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:57 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "keep-alive",
+        "value": "timeout=60"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/vets",
+  "fuzzer": "HappyPath",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/vets",
+  "contractPath": "/api/vets",
+  "server": "http://localhost:9966/petclinic"
+}

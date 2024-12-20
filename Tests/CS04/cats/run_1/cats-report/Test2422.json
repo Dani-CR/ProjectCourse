@@ -1,0 +1,93 @@
+{
+  "testId": "Test 2422",
+  "scenario": "Send [zero-width characters] in request fields: field [id], value [INSERT with \\u200f], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2422 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"name\":\"qsXCTxca\",\"id\":\"\\u200F0\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:9966/petclinic/api/pettypes",
+    "timestamp": "Thu, 5 Dec 2024 11:53:24 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "46",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "543",
+    "jsonBody": {
+      "className": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "exMessage": "Invalid JSON input: Cannot deserialize value of type `java.lang.Integer` from String \"‏0\": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"‏0\": not a valid Integer value\n at [Source: (PushbackInputStream); line: 1, column: 25] (through reference chain: org.springframework.samples.petclinic.model.PetType[\"id\"])"
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "543"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 05 Dec 2024 10:53:23 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "vary",
+        "value": "Origin"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "application/json"
+  },
+  "path": "/api/pettypes",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:9966/petclinic/api/pettypes",
+  "contractPath": "/api/pettypes",
+  "server": "http://localhost:9966/petclinic"
+}

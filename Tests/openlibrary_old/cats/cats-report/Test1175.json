@@ -1,0 +1,64 @@
+{
+  "testId": "Test 1175",
+  "scenario": "Send a happy flow request with a [dummy] Transfer-Encoding header, value [cats]",
+  "expectedResult": "Should return 400|501",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 501], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Transfer-Encoding",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1175 - DummyTransferEncodingHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//works/NOT_SET",
+    "timestamp": "Fri, 11 Oct 2024 17:47:06 +0200"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "12",
+    "numberOfLinesInResponse": "9",
+    "contentLengthInBytes": "141",
+    "jsonBody": {
+      "notAJson": "<html>\n  <head>\n    <title>Internal Server Error</title>\n  </head>\n  <body>\n    <h1><p>Internal Server Error</p></h1>\n    \n  </body>\n</html>\n"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "141"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html"
+      }
+    ],
+    "responseContentType": "text/html"
+  },
+  "path": "/works/{olid}",
+  "fuzzer": "DummyTransferEncodingHeaders",
+  "fullRequestPath": "http://localhost:8080//works/NOT_SET",
+  "contractPath": "/works/{olid}",
+  "server": "http://localhost:8080/"
+}

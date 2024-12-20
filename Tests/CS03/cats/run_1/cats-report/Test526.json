@@ -1,0 +1,80 @@
+{
+  "testId": "Test 526",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/svg+xml]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/svg+xml"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 526 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":5}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
+    "timestamp": "Tue, 3 Dec 2024 20:09:05 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "cache-control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Tue, 03 Dec 2024 19:09:05 GMT"
+      },
+      {
+        "key": "expires",
+        "value": "0"
+      },
+      {
+        "key": "pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "x-content-type-options",
+        "value": "nosniff"
+      },
+      {
+        "key": "x-frame-options",
+        "value": "DENY"
+      },
+      {
+        "key": "x-xss-protection",
+        "value": "1; mode=block"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/v1.0/videos/get/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
+  "contractPath": "/api/v1.0/videos/get/{id}",
+  "server": "http://localhost:8080/swagger-ui.html"
+}
