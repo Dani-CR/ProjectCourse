@@ -1,2 +1,8 @@
 APIs/openlibrary/
+
 Tests/openlibrary_old/
+
+APIs/training/.coverage
+APIs/training/prova1.py
+APIs/training/provaCov.py
+
