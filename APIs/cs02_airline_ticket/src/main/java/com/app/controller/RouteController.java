@@ -16,7 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.app.DTO.RouteDTO;
+import com.app.entity.Airport;
 import com.app.entity.Route;
+import com.app.service.impl.AirportServiceImpl;
 import com.app.service.impl.RouteServiceImpl;
 import com.app.util.ApiPaths;
 
@@ -30,15 +33,43 @@ public class RouteController {
 
 	@Autowired
 	RouteServiceImpl routeServiceImpl;
+	
+	@Autowired
+	private AirportServiceImpl airportServiceImpl;
 
 	@PostMapping
 	@Operation(description = "Create Operation")//, response = Route.class)
-	public ResponseEntity<?> create(@Valid @RequestBody Route route) {
-		if (routeServiceImpl.getByName(route.getName()) != null) {
-			return new ResponseEntity<>(HttpStatus.CONFLICT);
-		}
-		route = routeServiceImpl.save(route);
-		return new ResponseEntity<>(route, HttpStatus.CREATED);
+	public ResponseEntity<?> create(@Valid @RequestBody RouteDTO routeDTO) {
+	        // Check if a route with the same name already exists
+	        if (routeServiceImpl.getByName(routeDTO.getName()) != null) {
+	            return new ResponseEntity<>("Route with this name already exists", HttpStatus.CONFLICT);
+	        }
+
+	        // Fetch the Departure and Arrival Airports
+	        Airport departureAirport = airportServiceImpl.getById(routeDTO.getDepartureAirportId());
+	        Airport arrivalAirport = airportServiceImpl.getById(routeDTO.getArrivalAirportId());
+	        
+	        if (departureAirport == null) {
+		        return new ResponseEntity<>("depart. airport not found", HttpStatus.NOT_FOUND);
+		    }
+	        
+	        if (arrivalAirport == null) {
+		        return new ResponseEntity<>("arrival airport not found", HttpStatus.NOT_FOUND);
+		    }
+	        
+	        if (departureAirport.getName() == arrivalAirport.getName()) {
+		        return new ResponseEntity<>("Depart. and arrival can not be the same", HttpStatus.CONFLICT);
+		    }
+
+	        // Map DTO to Route entity
+	        Route route = new Route();
+	        route.setName(routeDTO.getName());
+	        route.setDepartureAirport(departureAirport);
+	        route.setArrivalAirport(arrivalAirport);
+
+	        // Save the Route
+	        route = routeServiceImpl.save(route);
+	        return new ResponseEntity<>(route, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/{id}")

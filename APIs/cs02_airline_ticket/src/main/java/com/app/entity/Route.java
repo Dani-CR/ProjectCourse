@@ -21,7 +21,7 @@ import lombok.Data;
 @Data
 @Schema(description = "RouteEntityObject")
 public class Route {
-	
+	@Column(name = "id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Schema(description = "Route_Id")
@@ -32,16 +32,36 @@ public class Route {
 	private String name;
 	
 	@JoinColumn(name = "departure_airport_id")
-	//@ManyToOne(fetch = FetchType.LAZY)
-	private Long departureAirport;
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Airport departureAirport;
 	
 	@JoinColumn(name = "arrival_airport_id")
-	//@ManyToOne(fetch = FetchType.LAZY)
-	private Long arrivalAirport;	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Airport arrivalAirport;	
 	
 	/*@JoinColumn(name = "route_flight_id")
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Flight> flights;*/
+
+	public Airport getDepartureAirport() {
+		return departureAirport;
+	}
+
+	public void setDepartureAirport(Airport departureAirport) {
+		this.departureAirport = departureAirport;
+	}
+
+	public Airport getArrivalAirport() {
+		return arrivalAirport;
+	}
+
+	public void setArrivalAirport(Airport arrivalAirport) {
+		this.arrivalAirport = arrivalAirport;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getName() {
 		// TODO Auto-generated method stub

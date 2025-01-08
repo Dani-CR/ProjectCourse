@@ -68,39 +68,6 @@ LOCK TABLES `company` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `flight`
---
-
-DROP TABLE IF EXISTS `flight`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `flight` (
-  `id` bigint NOT NULL,
-  `arrival_date` datetime DEFAULT NULL,
-  `departure_date` datetime DEFAULT NULL,
-  `duration` int DEFAULT NULL,
-  `name` varchar(50) NOT NULL,
-  `quota` int DEFAULT NULL,
-  `quota_filled` int DEFAULT NULL,
-  `quota_filled_percentage` int DEFAULT NULL,
-  `route_plane_id` bigint DEFAULT NULL,
-  `route_flight_id` bigint DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK8u092esxyghsq190bun619vq` (`route_plane_id`),
-  KEY `FKbe5mgl9uelnc4mouubfcapxgx` (`route_flight_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `flight`
---
-
-LOCK TABLES `flight` WRITE;
-/*!40000 ALTER TABLE `flight` DISABLE KEYS */;
-/*!40000 ALTER TABLE `flight` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `hibernate_sequence`
 --
 
@@ -176,6 +143,39 @@ LOCK TABLES `route` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `flight`
+--
+
+DROP TABLE IF EXISTS `flight`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `flight` (
+  `id` bigint NOT NULL,
+  `arrival_date` datetime DEFAULT NULL,
+  `departure_date` datetime DEFAULT NULL,
+  `duration` int DEFAULT NULL,
+  `name` varchar(50) NOT NULL,
+  `quota` int DEFAULT NULL,
+  `quota_filled` int DEFAULT NULL,
+  `quota_filled_percentage` int DEFAULT NULL,
+  `plane_flight_id` bigint DEFAULT NULL,
+  `route_flight_id` bigint DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK8u092esxyghsq190bun619vq` (`plane_flight_id`),
+  KEY `FKbe5mgl9uelnc4mouubfcapxgx` (`route_flight_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `flight`
+--
+
+LOCK TABLES `flight` WRITE;
+/*!40000 ALTER TABLE `flight` DISABLE KEYS */;
+/*!40000 ALTER TABLE `flight` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `ticket`
 --
 
@@ -187,9 +187,9 @@ CREATE TABLE `ticket` (
   `is_sold` bit(1) DEFAULT NULL,
   `price` int DEFAULT NULL,
   `ticket_code` varchar(255) NOT NULL,
-  `ticket_flight_id` bigint DEFAULT NULL,
+  `flight_ticket_id` bigint DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKp9nlo1ikv3ndnbsgjlwx6ecj5` (`ticket_flight_id`)
+  KEY `FKp9nlo1ikv3ndnbsgjlwx6ecj5` (`flight_ticket_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -250,14 +250,14 @@ INSERT INTO plane VALUES
 
 -- (id, arrival_date, departure_date, duration, name, quota, quota_filled, quota_filled_perc, company_id, route_id)
 INSERT INTO flight VALUES
-(0, NULL, NULL, 9, 'Long flight to Verona', NULL, NULL, NULL, 1, 3),
-(1, NULL, NULL, 5, 'Short flight to London', 50, 25, 50, 2, 0),
-(3, NULL, NULL, 0, 'Empty flight', 0, 0, 0, 0, 0);
+(0, '2024-12-20 15:25:05', '2024-12-20 15:25:05', 9, 'Long flight to Verona', 100, 1, 1, 1, 3),
+(1, '2024-12-20 15:25:05', '2024-12-20 15:25:05', 5, 'Short flight to London', 50, 25, 50, 2, 0),
+(2, '2024-12-20 15:25:05', '2024-12-20 15:25:05', 0, 'Empty flight', 0, 0, 0, 0, 0);
 
 -- (id, is_sold, price, ticket_code, flight_id)
 INSERT INTO ticket VALUES
-(0, 0, NULL, 'emptyticket-ticket-code', NULL),
+(0, 0, 0, 'emptyticket-ticket-code', 0),
 (1, 1, 150, 'another-ticket-code', 0),
-(2, 0, NULL, 'third-ticket-code', NULL),
-(3, 1, 300, 'just-a-ticket-code', NULL),
-(4, 1, 500, 'ticket-code', 3);
+(2, 0, 3, 'third-ticket-code', 1),
+(3, 1, 300, 'just-a-ticket-code', 2),
+(4, 1, 500, 'ticket-code', 2);

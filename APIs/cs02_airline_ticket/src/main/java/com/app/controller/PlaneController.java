@@ -16,7 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.app.DTO.PlaneDTO;
+import com.app.entity.Company;
 import com.app.entity.Plane;
+import com.app.service.impl.CompanyServiceImpl;
 import com.app.service.impl.PlaneServiceImpl;
 import com.app.util.ApiPaths;
 
@@ -29,15 +32,31 @@ public class PlaneController {
 
 	@Autowired
 	PlaneServiceImpl planeServiceImpl;
+	@Autowired
+	CompanyServiceImpl companyServiceImpl;
 
 	@PostMapping
 	@Operation(description = "Create Operation")//, response = Plane.class)
-	public ResponseEntity<?> create(@Valid @RequestBody Plane plane) {
-		if (planeServiceImpl.getByName(plane.getName()) != null) {
-			return new ResponseEntity<>(HttpStatus.CONFLICT);
-		}
-		plane = planeServiceImpl.save(plane);
-		return new ResponseEntity<>(plane, HttpStatus.CREATED);
+	public ResponseEntity<?> create(@Valid @RequestBody PlaneDTO planeDTO) {
+	    if (planeServiceImpl.getByName(planeDTO.getName()) != null) {
+	        return new ResponseEntity<>(HttpStatus.CONFLICT);
+	    }
+
+	    // Convert PlaneDTO to Plane entity
+	    Plane plane = new Plane();
+	    plane.setName(planeDTO.getName());
+	    plane.setNumberOfSeats(planeDTO.getNumberOfSeats());
+
+	    // Find the company by ID and set it in the Plane entity
+	    Company company = companyServiceImpl.getById(planeDTO.getCompanyId());
+	    if (company == null) {
+	        return new ResponseEntity<>("Company not found", HttpStatus.NOT_FOUND);
+	    }
+	    plane.setCompany(company);
+
+	    // Save the Plane entity
+	    plane = planeServiceImpl.save(plane);
+	    return new ResponseEntity<>(plane, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/{id}")

@@ -24,6 +24,7 @@ public class Airport {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	@Schema(description = "Airport Id")
 	private Long id;
 	

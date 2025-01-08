@@ -47,7 +47,7 @@ public class TicketServiceImpl implements TicketService {
 	public Ticket update(Ticket ticket) {
 		if(ticket.getIsSold() == true) {
 			// Get quota status
-			Flight flight = flightRepository.getOne(ticket.getFlightId());
+			Flight flight = flightRepository.getOne(ticket.getFlight().getId());
 			Integer quota = flight.getQuota();
 			Integer quotaFilled = flight.getQuotaFilled();
 			

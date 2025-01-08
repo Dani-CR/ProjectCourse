@@ -19,7 +19,7 @@ import lombok.Data;
 @Data
 @Schema(description = "PlaneEntityObject")
 public class Plane {
-	
+	@Column(name = "id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Schema(description = "Plane_Id")
@@ -35,7 +35,28 @@ public class Plane {
 	private Integer numberOfSeats;
 	
 	@JoinColumn(name = "company_plane_id")
-	private Long companyID;
+	@ManyToOne
+	private Company company;
+	
+	public Integer getNumberOfSeats() {
+		return numberOfSeats;
+	}
+
+	public void setNumberOfSeats(Integer numberOfSeats) {
+		this.numberOfSeats = numberOfSeats;
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getName() {
 		// TODO Auto-generated method stub

@@ -25,7 +25,7 @@ import lombok.Data;
 @Data
 @Schema(description = "FlightEntityObject")
 public class Flight {
-	
+	@Column(name = "id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Schema(description = "Flight_Id")
@@ -64,13 +64,13 @@ public class Flight {
 	
 	@NotNull
 	@JoinColumn(name = "route_flight_id")
-	//@ManyToOne(fetch = FetchType.LAZY)
-	private Long routeID;
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Route route;
 	
 	@NotNull
-	@JoinColumn(name = "route_plane_id")
-	//@ManyToOne(fetch = FetchType.LAZY)
-	private Long planeID;
+	@JoinColumn(name = "plane_flight_id")
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Plane plane;
 	
 	
 	/*@JoinColumn(name = "flight_company_id")
@@ -80,6 +80,62 @@ public class Flight {
 	@JoinColumn(name = "ticket_flight_id")
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Ticket> tickets;*/
+	
+	public Date getDepartureDateTime() {
+		return departureDateTime;
+	}
+
+	public void setDepartureDateTime(Date departureDateTime) {
+		this.departureDateTime = departureDateTime;
+	}
+
+	public Date getArrivalDateTime() {
+		return arrivalDateTime;
+	}
+
+	public void setArrivalDateTime(Date arrivalDateTime) {
+		this.arrivalDateTime = arrivalDateTime;
+	}
+
+	public Integer getDuration() {
+		return duration;
+	}
+
+	public void setDuration(Integer duration) {
+		this.duration = duration;
+	}
+
+	public Route getRoute() {
+		return route;
+	}
+
+	public void setRoute(Route route) {
+		this.route = route;
+	}
+
+	public Plane getPlane() {
+		return plane;
+	}
+
+	public void setPlane(Plane plane) {
+		this.plane = plane;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setQuota(Integer quota) {
+		this.quota = quota;
+	}
+
+	public void setQuotaFilled(Integer quotaFilled) {
+		this.quotaFilled = quotaFilled;
+	}
+
+	public void setQuotaFilledPercentage(Integer quotaFilledPercentage) {
+		this.quotaFilledPercentage = quotaFilledPercentage;
+	}
 
 	public String getName() {
 		// TODO Auto-generated method stub

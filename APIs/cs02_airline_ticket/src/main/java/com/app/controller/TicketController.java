@@ -16,7 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.app.DTO.TicketDTO;
+import com.app.entity.Flight;
 import com.app.entity.Ticket;
+import com.app.service.impl.FlightServiceImpl;
 import com.app.service.impl.TicketServiceImpl;
 import com.app.util.ApiPaths;
 
@@ -30,15 +33,30 @@ public class TicketController {
 
 	@Autowired
 	TicketServiceImpl ticketServiceImpl;
+	@Autowired
+	private FlightServiceImpl flightServiceImpl;
 
 	@PostMapping
 	@Operation(description = "Create Operation")//, response = Ticket.class)
-	public ResponseEntity<?> create(@Valid @RequestBody Ticket ticket) {
-		if (ticketServiceImpl.getByCode(ticket.getTicketCode()) != null) {
-			return new ResponseEntity<>(HttpStatus.CONFLICT);
-		}
-		ticket = ticketServiceImpl.save(ticket);
-		return new ResponseEntity<>(ticket, HttpStatus.CREATED);
+	public ResponseEntity<?> create(@Valid @RequestBody TicketDTO ticketDTO) {
+		// Check if a ticket with the same code already exists
+        if (ticketServiceImpl.getByCode(ticketDTO.getTicketCode()) != null) {
+            return new ResponseEntity<>("Ticket with this code already exists", HttpStatus.CONFLICT);
+        }
+
+        // Fetch the Flight entity
+        Flight flight = flightServiceImpl.getById(ticketDTO.getFlightId());
+
+        // Map DTO to Ticket entity
+        Ticket ticket = new Ticket();
+        ticket.setTicketCode(ticketDTO.getTicketCode());
+        ticket.setPrice(ticketDTO.getPrice());
+        ticket.setIsSold(ticketDTO.getIsSold());
+        ticket.setFlight(flight);
+
+        // Save the Ticket
+        ticket = ticketServiceImpl.save(ticket);
+        return new ResponseEntity<>(ticket, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/{id}")

@@ -19,7 +19,7 @@ import lombok.Data;
 @Data
 @Schema(description = "TicketEntityObject")
 public class Ticket {
-	
+	@Column(name = "id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Schema(description = "Ticket_Id")
@@ -30,9 +30,9 @@ public class Ticket {
 	@Schema(description = "Code_of_Ticket", required = true)
 	private String ticketCode;
 	
-	@JoinColumn(name = "ticket_flight_id")
-	//@ManyToOne(fetch = FetchType.LAZY)
-	private Long flight;
+	@JoinColumn(name = "flight_ticket_id")
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Flight flight;
 	
 	@Column(name = "price")
 	@Schema(description = "Price_of_Ticket")
@@ -41,6 +41,22 @@ public class Ticket {
 	@Column(name = "is_sold")
 	@Schema(description = "Is_Ticket_Sold")
 	private Boolean isSold; //   0: Cancelled, 1: Sold
+	
+	public void setTicketCode(String ticketCode) {
+		this.ticketCode = ticketCode;
+	}
+
+	public void setFlight(Flight flight) {
+		this.flight = flight;
+	}
+
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+
+	public void setIsSold(Boolean isSold) {
+		this.isSold = isSold;
+	}
 
 	public String getTicketCode() {
 		// TODO Auto-generated method stub
@@ -52,7 +68,7 @@ public class Ticket {
 		return isSold;
 	}
 
-	public Long getFlightId() {
+	public Flight getFlight() {
 		// TODO Auto-generated method stub
 		return flight;
 	}
