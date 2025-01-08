@@ -6,3 +6,6 @@ APIs/training/.coverage
 APIs/training/prova1.py
 APIs/training/provaCov.py
 
+#ignore because is already forked from another repository but the application is included in the project course
+APIs/spring-boot-rest-example/ 
+
