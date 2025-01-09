@@ -1,0 +1,60 @@
+{
+  "testId": "Test 643",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/vnd.microsoft.icon]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/vnd.microsoft.icon"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 643 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 08:55:52 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:52 GMT"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HotelController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-rest-example</a> &gt; <a href="index.source.html" class="el_package">com.khoubyari.example.api.rest</a> &gt; <span class="el_source">HotelController.java</span></div><h1>HotelController.java</h1><pre class="source lang-java linenums">package com.khoubyari.example.api.rest;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+
+import com.khoubyari.example.domain.Hotel;
+import com.khoubyari.example.exception.DataFormatException;
+import com.khoubyari.example.service.HotelService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/*
+ * Demonstrates how to set up RESTful API endpoints using Spring MVC
+ */
+
+@RestController
+@RequestMapping(value = &quot;/example/v1/hotels&quot;)
+@Api(tags = {&quot;hotels&quot;})
+<span class="fc" id="L26">public class HotelController extends AbstractRestHandler {</span>
+
+    @Autowired
+    private HotelService hotelService;
+
+    @RequestMapping(value = &quot;&quot;,
+            method = RequestMethod.POST,
+            consumes = {&quot;application/json&quot;, &quot;application/xml&quot;},
+            produces = {&quot;application/json&quot;, &quot;application/xml&quot;})
+    @ResponseStatus(HttpStatus.CREATED)
+    @ApiOperation(value = &quot;Create a hotel resource.&quot;, notes = &quot;Returns the URL of the new resource in the Location header.&quot;)
+    public void createHotel(@RequestBody Hotel hotel,
+                                 HttpServletRequest request, HttpServletResponse response) {
+<span class="fc" id="L39">        Hotel createdHotel = this.hotelService.createHotel(hotel);</span>
+<span class="fc" id="L40">        response.setHeader(&quot;Location&quot;, request.getRequestURL().append(&quot;/&quot;).append(createdHotel.getId()).toString());</span>
+<span class="fc" id="L41">    }</span>
+
+    @RequestMapping(value = &quot;&quot;,
+            method = RequestMethod.GET,
+            produces = {&quot;application/json&quot;, &quot;application/xml&quot;})
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = &quot;Get a paginated list of all hotels.&quot;, notes = &quot;The list is paginated. You can provide a page number (default 0) and a page size (default 100)&quot;)
+    public
+    @ResponseBody
+    Page&lt;Hotel&gt; getAllHotel(@ApiParam(value = &quot;The page number (zero-based)&quot;, required = true)
+                                      @RequestParam(value = &quot;page&quot;, required = true, defaultValue = DEFAULT_PAGE_NUM) Integer page,
+                                      @ApiParam(value = &quot;Tha page size&quot;, required = true)
+                                      @RequestParam(value = &quot;size&quot;, required = true, defaultValue = DEFAULT_PAGE_SIZE) Integer size,
+                                      HttpServletRequest request, HttpServletResponse response) {
+<span class="fc" id="L55">        return this.hotelService.getAllHotels(page, size);</span>
+    }
+
+    @RequestMapping(value = &quot;/{id}&quot;,
+            method = RequestMethod.GET,
+            produces = {&quot;application/json&quot;, &quot;application/xml&quot;})
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = &quot;Get a single hotel.&quot;, notes = &quot;You have to provide a valid hotel ID.&quot;)
+    public
+    @ResponseBody
+    Hotel getHotel(@ApiParam(value = &quot;The ID of the hotel.&quot;, required = true)
+                             @PathVariable(&quot;id&quot;) Long id,
+                             HttpServletRequest request, HttpServletResponse response) throws Exception {
+<span class="fc" id="L68">        Hotel hotel = this.hotelService.getHotel(id);</span>
+<span class="fc" id="L69">        checkResourceFound(hotel);</span>
+        //todo: http://goo.gl/6iNAkz
+<span class="fc" id="L71">        return hotel;</span>
+    }
+
+    @RequestMapping(value = &quot;/{id}&quot;,
+            method = RequestMethod.PUT,
+            consumes = {&quot;application/json&quot;, &quot;application/xml&quot;},
+            produces = {&quot;application/json&quot;, &quot;application/xml&quot;})
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ApiOperation(value = &quot;Update a hotel resource.&quot;, notes = &quot;You have to provide a valid hotel ID in the URL and in the payload. The ID attribute can not be updated.&quot;)
+    public void updateHotel(@ApiParam(value = &quot;The ID of the existing hotel resource.&quot;, required = true)
+                                 @PathVariable(&quot;id&quot;) Long id, @RequestBody Hotel hotel,
+                                 HttpServletRequest request, HttpServletResponse response) {
+<span class="fc" id="L83">        checkResourceFound(this.hotelService.getHotel(id));</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        if (id != hotel.getId()) throw new DataFormatException(&quot;ID doesn't match!&quot;);</span>
+<span class="nc" id="L85">        this.hotelService.updateHotel(hotel);</span>
+<span class="nc" id="L86">    }</span>
+
+    //todo: @ApiImplicitParams, @ApiResponses
+    @RequestMapping(value = &quot;/{id}&quot;,
+            method = RequestMethod.DELETE,
+            produces = {&quot;application/json&quot;, &quot;application/xml&quot;})
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ApiOperation(value = &quot;Delete a hotel resource.&quot;, notes = &quot;You have to provide a valid hotel ID in the URL. Once deleted the resource can not be recovered.&quot;)
+    public void deleteHotel(@ApiParam(value = &quot;The ID of the existing hotel resource.&quot;, required = true)
+                                 @PathVariable(&quot;id&quot;) Long id, HttpServletRequest request,
+                                 HttpServletResponse response) {
+<span class="fc" id="L97">        checkResourceFound(this.hotelService.getHotel(id));</span>
+<span class="fc" id="L98">        this.hotelService.deleteHotel(id);</span>
+<span class="fc" id="L99">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

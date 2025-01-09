@@ -1,0 +1,77 @@
+{
+  "testId": "Test 406",
+  "scenario": "Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. ",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 406 - ExtraHeaders)"
+      }
+    ],
+    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 08:55:46 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "370",
+    "jsonBody": {
+      "timestamp": 1736409346331,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"{id}\"",
+      "path": "//example/v1/hotels/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:45 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "ExtraHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

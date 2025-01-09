@@ -1,0 +1,69 @@
+{
+  "testId": "Test 246",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [text/csv]",
+  "expectedResult": "Should return 415",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [415] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "text/csv"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 246 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "city=Lake+Eric&name=beSftKC8&rating=4&description=Chuck+Norris+writes+code+that+optimizes+itself.&id=4",
+    "httpMethod": "POST",
+    "url": "http://localhost:8090//example/v1/hotels",
+    "timestamp": "Thu, 9 Jan 2025 08:58:52 +0100"
+  },
+  "response": {
+    "responseCode": 415,
+    "httpMethod": "POST",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "225",
+    "jsonBody": {
+      "timestamp": 1736409532926,
+      "status": 415,
+      "error": "Unsupported Media Type",
+      "exception": "org.springframework.web.HttpMediaTypeNotSupportedException",
+      "message": "Content type 'text/csv' not supported",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:52 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

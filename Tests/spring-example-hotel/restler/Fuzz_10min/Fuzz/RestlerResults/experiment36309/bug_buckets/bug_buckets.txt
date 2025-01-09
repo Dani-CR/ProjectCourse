@@ -1,0 +1,11 @@
+InvalidValueChecker_500: 2
+Total Buckets: 2
+-------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_1.replay.txt
+Hash: InvalidValueChecker_500_a744855be4308f267e32c525d00d518c7116c060
+GET /example/v1/hotels?page=1&size=1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_2.replay.txt
+Hash: InvalidValueChecker_500_512971248af17be36515bf84c29c95abec43d183
+POST /example/v1/hotels HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "city":fuzzstring,\n    "description":fuzzstring,\n    "id":1,\n    "name":fuzzstring,\n    "rating":1}\r\n
+--------------------------------------------------------------------------------

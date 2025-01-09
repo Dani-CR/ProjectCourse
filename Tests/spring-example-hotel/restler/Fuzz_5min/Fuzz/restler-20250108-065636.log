@@ -1,0 +1,37 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2025-01-08T17:56:36.1905779Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2025-01-08T17:56:36.9346618Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2025-01-08T17:56:36.9347255Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0140366 with exit code 0x0: 'python3 --version'
+    DateTime=2025-01-08T17:56:36.9522025Z
+Restler Information: 0 : (33748) python3 --version exited with code: 0
+    DateTime=2025-01-08T17:56:36.9563682Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2025-01-08T17:56:36.9663680Z
+Restler Information: 0 : Process execution terminated in 00:05:02.6041128 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2025-01-08T18:01:39.5706193Z
+Restler Information: 0 : (33750) python3 -B "/home/daniela/Documents/Restler_folder/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --set_version 9.2.4    --no_ssl   --settings "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap exited with code: 0
+    DateTime=2025-01-08T18:01:39.5707756Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-01-08T18:01:39.5786487Z
+Restler Information: 0 : Process execution terminated in 00:01:17.0768463 with exit code 0x0: 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-01-08T18:02:56.6556748Z
+Restler Information: 0 : (34473) dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2025-01-08T18:02:56.6565898Z
+Restler Information: 0 : Request coverage (successful / total): 5 / 5
+    DateTime=2025-01-08T18:02:56.7888260Z
+Restler Information: 0 : Attempted requests: 5 / 5
+    DateTime=2025-01-08T18:02:56.7888836Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2025-01-08T18:02:56.7928366Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2025-01-08T18:02:56.7928477Z
+Restler Information: 0 : 
+InvalidValueChecker_500: 2
+    DateTime=2025-01-08T18:02:56.7932108Z
+Restler Information: 0 : Task Fuzz succeeded.
+    DateTime=2025-01-08T18:02:56.7946877Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-01-08T18:02:58.8185998Z

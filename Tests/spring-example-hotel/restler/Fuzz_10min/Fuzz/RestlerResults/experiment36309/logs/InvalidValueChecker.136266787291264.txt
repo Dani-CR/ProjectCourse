@@ -1,0 +1,2566 @@
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+POST /example/v1/hotels
+
+Suspect sequence: 500
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+POST /example/v1/hotels
+
+Suspect sequence: 500
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+POST /example/v1/hotels
+
+Suspect sequence: 500
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels/1 GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 GET, combination 1
+Testing request: /example/v1/hotels/id PUT
+Found 6 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_custom_payload_uuid4_suffix, name: id
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int
+Tested 600 combinations for request /example/v1/hotels/id PUT, combination 1
+Testing request: /example/v1/hotels/1 DELETE
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 DELETE, combination 1
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/1 GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 GET, combination 1
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 DELETE
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 DELETE, combination 1
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/id PUT
+Found 6 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_custom_payload_uuid4_suffix, name: id
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int
+Tested 600 combinations for request /example/v1/hotels/id PUT, combination 1
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/1 GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 GET, combination 1
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 DELETE
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 DELETE, combination 1
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/id PUT
+Found 6 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_custom_payload_uuid4_suffix, name: id
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int
+Tested 600 combinations for request /example/v1/hotels/id PUT, combination 1
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/1 GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 GET, combination 1
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 DELETE
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 DELETE, combination 1
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/id PUT
+Found 6 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_custom_payload_uuid4_suffix, name: id
+Fuzzing request block 20, type: restler_fuzzable_string
+Fuzzing request block 22, type: restler_fuzzable_string
+Fuzzing request block 24, type: restler_fuzzable_int
+Fuzzing request block 26, type: restler_fuzzable_string
+Fuzzing request block 28, type: restler_fuzzable_int
+Tested 600 combinations for request /example/v1/hotels/id PUT, combination 1
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels/id PUT
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels POST
+Found 5 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 18, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 20, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 22, type: restler_fuzzable_int
+Fuzzing request block 24, type: restler_fuzzable_string
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+POST /example/v1/hotels
+Fuzzing request block 26, type: restler_fuzzable_int
+Tested 500 combinations for request /example/v1/hotels POST, combination 1
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels POST
+Testing request: /example/v1/hotels/1 GET
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 GET, combination 1
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 GET
+Testing request: /example/v1/hotels/1 DELETE
+Found 1 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 100 combinations for request /example/v1/hotels/1 DELETE, combination 1
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels/1 DELETE
+Testing request: /example/v1/hotels GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 10, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Fuzzing request block 13, type: restler_fuzzable_int
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+
+Suspect sequence: 500
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+GET /example/v1/hotels
+Tested 200 combinations for request /example/v1/hotels GET, combination 1
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET
+Testing request: /example/v1/hotels GET

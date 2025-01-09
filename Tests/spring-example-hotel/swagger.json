@@ -1,0 +1,316 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "REST example",
+    "version": "1.0",
+    "title": "REST example",
+    "termsOfService": "github",
+    "license": {
+      "name": "Siamak"
+    }
+  },
+  "host": "localhost:8090",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "hotels",
+      "description": "Hotel Controller"
+    }
+  ],
+  "paths": {
+    "/example/v1/hotels": {
+      "get": {
+        "tags": [
+          "hotels"
+        ],
+        "summary": "Get a paginated list of all hotels.",
+        "description": "The list is paginated. You can provide a page number (default 0) and a page size (default 100)",
+        "operationId": "getAllHotelUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "The page number (zero-based)",
+            "required": true,
+            "type": "integer",
+            "default": 0,
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "description": "Tha page size",
+            "required": true,
+            "type": "integer",
+            "default": 100,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PageHotel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "hotels"
+        ],
+        "summary": "Create a hotel resource.",
+        "description": "Returns the URL of the new resource in the Location header.",
+        "operationId": "createHotelUsingPOST",
+        "consumes": [
+          "application/xml",
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "hotel",
+            "description": "hotel",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Hotel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/example/v1/hotels/{id}": {
+      "get": {
+        "tags": [
+          "hotels"
+        ],
+        "summary": "Get a single hotel.",
+        "description": "You have to provide a valid hotel ID.",
+        "operationId": "getHotelUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the hotel.",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Hotel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "hotels"
+        ],
+        "summary": "Update a hotel resource.",
+        "description": "You have to provide a valid hotel ID in the URL and in the payload. The ID attribute can not be updated.",
+        "operationId": "updateHotelUsingPUT",
+        "consumes": [
+          "application/xml",
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the existing hotel resource.",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "in": "body",
+            "name": "hotel",
+            "description": "hotel",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Hotel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "hotels"
+        ],
+        "summary": "Delete a hotel resource.",
+        "description": "You have to provide a valid hotel ID in the URL. Once deleted the resource can not be recovered.",
+        "operationId": "deleteHotelUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the existing hotel resource.",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "PageHotel": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Hotel"
+          }
+        },
+        "first": {
+          "type": "boolean"
+        },
+        "last": {
+          "type": "boolean"
+        },
+        "number": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "numberOfElements": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sort": {
+          "$ref": "#/definitions/Sort"
+        },
+        "totalElements": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "totalPages": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Sort": {
+      "type": "object"
+    },
+    "Hotel": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}

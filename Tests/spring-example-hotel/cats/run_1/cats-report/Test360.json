@@ -1,0 +1,73 @@
+{
+  "testId": "Test 360",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 360 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 08:55:44 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "28",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "370",
+    "jsonBody": {
+      "timestamp": 1736409344602,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"{id}\"",
+      "path": "//example/v1/hotels/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:43 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

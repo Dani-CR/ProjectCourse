@@ -1,0 +1,64 @@
+{
+  "testId": "Test 693",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/xml]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [application/xml]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/xml"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 693 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":4}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/4",
+    "timestamp": "Thu, 9 Jan 2025 08:59:04 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "623",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "content-type",
+        "value": "application/xml"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:59:04 GMT"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/xml"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/4",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

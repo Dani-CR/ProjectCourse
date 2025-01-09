@@ -1,0 +1,142 @@
+fuzzing valid True
+fuzzing invalid True
+start with examples True
+size dep budget True
+use feedback True
+skip_uuid_substitution False
+recipe None
+Start fuzzing request: POST /example/v1/hotels
+#node: 6
+Fuzz using dynamic feedback
+#N: 6, #max: 200, #width: 20
+Task begin Invalid-JSON
+Tracker begin (Invalid-JSON):
+    Valid: 12
+    Invalid: 0
+Tracker end
+Task end Invalid-JSON
+
+Task begin Structure
+Tracker begin (Structure):
+    Valid: 12
+    Invalid: 0
+Tracker end
+Task end Structure
+
+Task begin Type
+Tracker begin (Type):
+    Valid: 26
+    Invalid: 64
+    400_UnknownResponse: 18 (64: 4 2 4 4 4 4 2 2 4 2 4 4 4 4 4 4 4 4)
+Tracker end
+Task end Type
+Start fuzzing request: PUT /example/v1/hotels/{id}
+#node: 6
+Fuzz using dynamic feedback
+#N: 6, #max: 200, #width: 20
+Task begin Invalid-JSON
+Tracker begin (Invalid-JSON):
+    Valid: 0
+    Invalid: 12
+    400_UnknownResponse: 4 (12: 7 1 2 2)
+Tracker end
+Task end Invalid-JSON
+
+Task begin Structure
+Tracker begin (Structure):
+    Valid: 0
+    Invalid: 12
+    400_UnknownResponse: 5 (12: 6 3 1 1 1)
+Tracker end
+Task end Structure
+
+Task begin Type
+Tracker begin (Type):
+    Valid: 0
+    Invalid: 42
+    400_UnknownResponse: 7 (42: 26 5 4 2 3 1 1)
+Tracker end
+Task end Type
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels/{id}
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels
+Skip visited request /example/v1/hotels

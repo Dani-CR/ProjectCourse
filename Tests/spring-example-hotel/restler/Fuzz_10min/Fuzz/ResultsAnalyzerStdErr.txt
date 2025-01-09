@@ -1,0 +1,295 @@
+Warning: could not parse response in line 6162: {"timestamp":1736359933422,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"vu[MC\\"","path":"/example/v1/hotels/vu[MC"}
+Warning: could not parse request in line 6255: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6258: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6283: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6286: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 6330: {"timestamp":1736359934036,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"zB\\"","path":"/example/v1/hotels/zB"}
+Warning: could not parse request in line 6339: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6342: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6451: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6454: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 6484: {"timestamp":1736359934549,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"!VrW\\"","path":"/example/v1/hotels/!VrW"}
+Warning: could not parse request in line 6507: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6510: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 6526: {"timestamp":1736359934680,"status":405,"error":"Method Not Allowed","exception":"org.springframework.web.HttpRequestMethodNotSupportedException","message":"Request method \'PUT\' not supported","path":"/example/v1/hotels/"}
+Warning: could not parse request in line 6549: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6552: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6591: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6594: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 6624: {"timestamp":1736359934987,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"hzQ)BjnP\\"","path":"/example/v1/hotels/hzQ)BjnP"}
+Warning: could not parse request in line 6703: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6706: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6745: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6748: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6759: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6762: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6773: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 6776: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 23921: {"timestamp":1736360004841,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"vu[MC\\"","path":"/example/v1/hotels/vu[MC"}
+Warning: could not parse request in line 24014: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24017: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24042: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24045: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 24089: {"timestamp":1736360005479,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"zB\\"","path":"/example/v1/hotels/zB"}
+Warning: could not parse request in line 24098: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24101: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24210: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24213: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 24243: {"timestamp":1736360006004,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"!VrW\\"","path":"/example/v1/hotels/!VrW"}
+Warning: could not parse request in line 24266: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24269: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 24285: {"timestamp":1736360006126,"status":405,"error":"Method Not Allowed","exception":"org.springframework.web.HttpRequestMethodNotSupportedException","message":"Request method \'PUT\' not supported","path":"/example/v1/hotels/"}
+Warning: could not parse request in line 24308: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24311: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24350: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24353: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 24383: {"timestamp":1736360006400,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"hzQ)BjnP\\"","path":"/example/v1/hotels/hzQ)BjnP"}
+Warning: could not parse request in line 24462: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24465: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24504: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24507: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24518: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24521: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24532: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 24535: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 54928: {"timestamp":1736360084209,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"vu[MC\\"","path":"/example/v1/hotels/vu[MC"}
+Warning: could not parse request in line 55021: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55024: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55049: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55052: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 55096: {"timestamp":1736360084721,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"zB\\"","path":"/example/v1/hotels/zB"}
+Warning: could not parse request in line 55105: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55108: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55217: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55220: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 55250: {"timestamp":1736360085201,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"!VrW\\"","path":"/example/v1/hotels/!VrW"}
+Warning: could not parse request in line 55273: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55276: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 55292: {"timestamp":1736360085317,"status":405,"error":"Method Not Allowed","exception":"org.springframework.web.HttpRequestMethodNotSupportedException","message":"Request method \'PUT\' not supported","path":"/example/v1/hotels/"}
+Warning: could not parse request in line 55315: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55318: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55357: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55360: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 55390: {"timestamp":1736360085623,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"hzQ)BjnP\\"","path":"/example/v1/hotels/hzQ)BjnP"}
+Warning: could not parse request in line 55469: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55472: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55511: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55514: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55525: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55528: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55539: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 55542: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 165300: {"timestamp":1736360219849,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"vu[MC\\"","path":"/example/v1/hotels/vu[MC"}
+Warning: could not parse request in line 165393: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165396: PUT /example/v1/hotels/_Y Ve]\t!_91}\tA}KO\r HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165421: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165424: PUT /example/v1/hotels/3>1-Q"Vg!e*Az[~bHG &E HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 165468: {"timestamp":1736360220379,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"zB\\"","path":"/example/v1/hotels/zB"}
+Warning: could not parse request in line 165477: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165480: PUT /example/v1/hotels/B /^(t(O~Nh&g8\n+Fh,*J`i HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165589: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165592: PUT /example/v1/hotels/o 0x<JOyY<O&TS$Kc\nApDc;4 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 165622: {"timestamp":1736360220803,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"!VrW\\"","path":"/example/v1/hotels/!VrW"}
+Warning: could not parse request in line 165645: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165648: PUT /example/v1/hotels/XG+7k_o0 7*2x2xIVg;u5M|8}!HM?Cs9 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 165664: {"timestamp":1736360220924,"status":405,"error":"Method Not Allowed","exception":"org.springframework.web.HttpRequestMethodNotSupportedException","message":"Request method \'PUT\' not supported","path":"/example/v1/hotels/"}
+Warning: could not parse request in line 165687: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165690: PUT /example/v1/hotels/cPGnjeR$B55iIeR&qvI))(p?:~JKyA )7f+ HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165729: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165732: PUT /example/v1/hotels/9D}@doGxM5.F g*mf=#_ub[1Ur\']nW\tm) HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse response in line 165762: {"timestamp":1736360221187,"status":400,"error":"Bad Request","exception":"org.springframework.web.method.annotation.MethodArgumentTypeMismatchException","message":"Failed to convert value of type \'java.lang.String\' to required type \'java.lang.Long\'; nested exception is java.lang.NumberFormatException: For input string: \\"hzQ)BjnP\\"","path":"/example/v1/hotels/hzQ)BjnP"}
+Warning: could not parse request in line 165841: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165844: PUT /example/v1/hotels/5{5W}JqtMG:|\x0c52<?kzrT"6ZW\nT(\t95y-WzH)C\tuwf#ki> dY8 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165883: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165886: PUT /example/v1/hotels/4sbPu u|9ElgA?G6rj(+7 H3-@\x0bC6XHb#PCF0"y\x0cgQzD~7? HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165897: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165900: PUT /example/v1/hotels/Iu%hA0Ed2Ckz 3KIL Gk\'nzjD Yqhx5.#MB8Pd1M40.efE;W HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165911: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+Warning: could not parse request in line 165914: PUT /example/v1/hotels/I_>~3KBOwLa$/df>1 5jsW MR5pwNxdG{s*n2]4*_PY*CT HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\nContent-Type: application/json\r\nContent-Length: 113\r\nUser-Agent: restler/9.2.4\r\n\r\n{\n    "city":"fuzzstring",\n    "description":"fuzzstring",\n    "id":1,\n    "name":"fuzzstring",\n    "rating":1}\r\n
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100
+ERROR: Ran out of buckets for error code 400! The maximum is: 100

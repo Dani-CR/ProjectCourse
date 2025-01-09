@@ -1,0 +1,73 @@
+{
+  "testId": "Test 569",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [404, 400, 422], actual [400], documented response codes: [201, 204, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 569 - RandomResources)"
+      }
+    ],
+    "payload": "city=Beershire&name=CGUZA&rating=0&description=Chuck+Norris+breaks+RSA+128-bit+encrypted+codes+in+milliseconds.&id=1",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8090//example/v1/hotels/sgiDLrlvs",
+    "timestamp": "Thu, 9 Jan 2025 08:59:02 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "376",
+    "jsonBody": {
+      "timestamp": 1736409542806,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"sgiDLrlvs\"",
+      "path": "//example/v1/hotels/sgiDLrlvs"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:59:01 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/sgiDLrlvs",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

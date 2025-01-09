@@ -1,0 +1,60 @@
+{
+  "testId": "Test 452",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /example/v1/hotels/{id}\u0000",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 452 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "city=Beershire&name=CGUZA&rating=0&description=Chuck+Norris+breaks+RSA+128-bit+encrypted+codes+in+milliseconds.&id=1",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D%00",
+    "timestamp": "Thu, 9 Jan 2025 08:58:59 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "23",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:58 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D%00",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

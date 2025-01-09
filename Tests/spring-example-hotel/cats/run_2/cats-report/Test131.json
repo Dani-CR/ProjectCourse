@@ -1,0 +1,73 @@
+{
+  "testId": "Test 131",
+  "scenario": "Send {\"␀\":\"␀\"}\n as invalid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 131 - RandomDummyInvalidJsonBody)"
+      }
+    ],
+    "payload": "%E2%90%80=%E2%90%80",
+    "httpMethod": "POST",
+    "url": "http://localhost:8090//example/v1/hotels",
+    "timestamp": "Thu, 9 Jan 2025 08:58:50 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "26",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "438",
+    "jsonBody": {
+      "timestamp": 1736409530632,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:49 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "RandomDummyInvalidJsonBody",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

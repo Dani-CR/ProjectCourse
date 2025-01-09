@@ -1,0 +1,69 @@
+{
+  "testId": "Test 407",
+  "scenario": "Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. ",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 407 - ExtraHeaders)"
+      }
+    ],
+    "payload": "{\"id\":5}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels/5",
+    "timestamp": "Thu, 9 Jan 2025 08:58:58 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "69",
+    "jsonBody": {
+      "detail": "Sorry I couldn't find it.",
+      "message": "resource not found"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:57 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "ExtraHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/5",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

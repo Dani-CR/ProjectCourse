@@ -1,0 +1,73 @@
+{
+  "testId": "Test 80",
+  "scenario": "Send [outside the boundary values] in request fields: field [size], value [REPLACE with -2147483648], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 80 - IntegerFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"size\":-2147483648,\"page\":0}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels?size=-2147483648&page=0",
+    "timestamp": "Thu, 9 Jan 2025 08:58:47 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "66",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "199",
+    "jsonBody": {
+      "timestamp": 1736409527599,
+      "status": 500,
+      "error": "Internal Server Error",
+      "exception": "java.lang.IllegalArgumentException",
+      "message": "Page size must not be less than one!",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:47 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "IntegerFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=-2147483648&page=0",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

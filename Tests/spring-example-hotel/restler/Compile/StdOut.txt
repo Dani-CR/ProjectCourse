@@ -1,0 +1,140 @@
+[1/8/2025 6:28:27PM] Generating grammar...
+[1/8/2025 6:28:27PM] Getting requests...
+[1/8/2025 6:28:27PM] Getting dependencies...
+[1/8/2025 6:28:27PM] Getting path consumers...
+[1/8/2025 6:28:27PM] Getting query consumers...
+[1/8/2025 6:28:27PM] Getting header consumers...
+[1/8/2025 6:28:27PM] Getting body consumers...
+[1/8/2025 6:28:27PM] Getting producers...
+[1/8/2025 6:28:27PM] Done processing producers
+[1/8/2025 6:28:27PM] Compute dependencies
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels"
+  xMsPath = None
+  method = Post }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Delete }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Get }
+[1/8/2025 6:28:27PM] Second pass dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Done dependencies for request { endpoint = "/example/v1/hotels/{id}"
+  xMsPath = None
+  method = Put }
+[1/8/2025 6:28:27PM] Assigning equality constraints...
+[1/8/2025 6:28:27PM] Getting ordering constraints...
+[1/8/2025 6:28:27PM] Dependency analysis completed.
+[1/8/2025 6:28:27PM] Generating request primitives...
+Writing new dictionary to /home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/dict.json
+[1/8/2025 6:28:27PM] Generating python grammar...
+[1/8/2025 6:28:27PM] Get requests
+[1/8/2025 6:28:27PM] Done get requests
+[1/8/2025 6:28:27PM] Done generating python grammar.
+Workflow completed.  See /home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile for REST-ler grammar.

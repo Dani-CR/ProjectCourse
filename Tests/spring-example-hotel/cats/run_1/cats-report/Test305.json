@@ -1,0 +1,73 @@
+{
+  "testId": "Test 305",
+  "scenario": "Insert zero-width chars in field names: field [description], char [\\u202b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [201, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 305 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "city=Rauland&name=8DZ8pt&rating=7&id=4&descr%E2%80%ABiption=Chuck+Norris+doesn%27t+need+a+java+compiler%2C+he+goes+straight+to+.war",
+    "httpMethod": "POST",
+    "url": "http://localhost:8090//example/v1/hotels",
+    "timestamp": "Thu, 9 Jan 2025 08:55:42 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "18",
+    "numberOfWordsInResponse": "26",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "438",
+    "jsonBody": {
+      "timestamp": 1736409342652,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:41 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

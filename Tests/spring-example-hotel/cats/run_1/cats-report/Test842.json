@@ -1,0 +1,73 @@
+{
+  "testId": "Test 842",
+  "scenario": "Send [zero-width characters] in request fields: field [id], value [INSERT with \\u200f], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 842 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"id\":\"\\u200F3\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/%E2%80%8F3",
+    "timestamp": "Thu, 9 Jan 2025 08:55:56 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "372",
+    "jsonBody": {
+      "timestamp": 1736409356415,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"‏3\"",
+      "path": "//example/v1/hotels/%E2%80%8F3"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:56 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%E2%80%8F3",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

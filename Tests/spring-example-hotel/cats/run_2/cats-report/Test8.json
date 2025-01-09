@@ -1,0 +1,72 @@
+{
+  "testId": "Test 8",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 8 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"size\":100,\"page\":0}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+    "timestamp": "Thu, 9 Jan 2025 08:58:43 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "255",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "127",
+    "jsonBody": {
+      "content": [],
+      "totalPages": 0,
+      "totalElements": 0,
+      "last": true,
+      "numberOfElements": 0,
+      "sort": null,
+      "first": true,
+      "size": 100,
+      "number": 0
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:43 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

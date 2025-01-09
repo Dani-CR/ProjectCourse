@@ -1,0 +1,14 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+spring-boot-rest-example,com.khoubyari.example.api.rest,AbstractRestHandler,18,39,0,2,2,9,1,5,1,4
+spring-boot-rest-example,com.khoubyari.example.api.rest,HotelController,23,49,2,0,4,11,2,5,1,5
+spring-boot-rest-example,com.khoubyari.example,Application,9,14,0,0,1,5,1,3,1,3
+spring-boot-rest-example,com.khoubyari.example,RestControllerAspect,0,20,0,0,0,4,0,2,0,2
+spring-boot-rest-example,com.khoubyari.example.domain,RestErrorInfo,0,10,0,0,0,4,0,1,0,1
+spring-boot-rest-example,com.khoubyari.example.domain,Hotel,50,38,0,0,6,17,2,11,2,11
+spring-boot-rest-example,com.khoubyari.example.exception,ResourceNotFoundException,12,4,0,0,6,2,3,1,3,1
+spring-boot-rest-example,com.khoubyari.example.exception,DataFormatException,16,0,0,0,8,0,4,0,4,0
+spring-boot-rest-example,com.khoubyari.example.service,ServiceProperties,0,13,0,0,0,5,0,3,0,3
+spring-boot-rest-example,com.khoubyari.example.service,HotelServiceHealth,19,3,0,0,1,1,1,1,1,1
+spring-boot-rest-example,com.khoubyari.example.service,HotelServiceEvent,6,0,0,0,3,0,2,0,2,0
+spring-boot-rest-example,com.khoubyari.example.service,HotelService,6,46,0,2,2,11,1,7,1,6
+spring-boot-rest-example,com.khoubyari.example.api.rest.docs,SwaggerConfig,0,38,0,0,0,16,0,3,0,3

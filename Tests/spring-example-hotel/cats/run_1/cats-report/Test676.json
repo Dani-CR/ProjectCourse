@@ -1,0 +1,60 @@
+{
+  "testId": "Test 676",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/alternative; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/alternative; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 676 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":6}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels/6",
+    "timestamp": "Thu, 9 Jan 2025 08:55:53 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "GET",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:53 GMT"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/6",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

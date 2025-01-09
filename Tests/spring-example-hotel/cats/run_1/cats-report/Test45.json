@@ -1,0 +1,72 @@
+{
+  "testId": "Test 45",
+  "scenario": "Send [empty strings] in request fields: field [page], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 45 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"size\":100,\"page\":\"\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels?size=100&page=",
+    "timestamp": "Thu, 9 Jan 2025 08:55:35 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "17",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "127",
+    "jsonBody": {
+      "content": [],
+      "totalPages": 0,
+      "totalElements": 0,
+      "last": true,
+      "numberOfElements": 0,
+      "sort": null,
+      "first": true,
+      "size": 100,
+      "number": 0
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:34 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

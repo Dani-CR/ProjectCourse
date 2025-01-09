@@ -1,0 +1,73 @@
+{
+  "testId": "Test 85",
+  "scenario": "Send [outside the boundary values] in request fields: field [page], value [REPLACE with 2147483647], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 85 - IntegerFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"size\":100,\"page\":2147483647}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels?size=100&page=2147483647",
+    "timestamp": "Thu, 9 Jan 2025 08:55:36 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "59",
+    "numberOfWordsInResponse": "18",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "337",
+    "jsonBody": {
+      "timestamp": 1736409336812,
+      "status": 500,
+      "error": "Internal Server Error",
+      "exception": "org.springframework.dao.InvalidDataAccessApiUsageException",
+      "message": "Negative value (-100) passed to setFirstResult; nested exception is java.lang.IllegalArgumentException: Negative value (-100) passed to setFirstResult",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:36 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "IntegerFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=2147483647",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

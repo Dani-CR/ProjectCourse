@@ -1,0 +1,21 @@
+################################################################################
+ InvalidValueChecker_500
+
+ Hash: InvalidValueChecker_500_a744855be4308f267e32c525d00d518c7116c060
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> GET /example/v1/hotels?page=-6&size=1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8090\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 20
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nX-Application-Context: application:test:8090\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 08 Jan 2025 18:11:40 GMT\r\nConnection: close\r\n\r\nc8\r\n{"timestamp":1736359901065,"status":500,"error":"Internal Server Error","exception":"java.lang.IllegalArgumentException","message":"Page index must not be less than zero!","path":"/example/v1/hotels"}\r\n0\r\n\r\n'
+

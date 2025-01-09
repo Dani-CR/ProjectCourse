@@ -1,0 +1,73 @@
+{
+  "testId": "Test 5",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [description], value [REPLACE with NaOAegLynaVqtXKXW4u2ysRAజ్ఞ\\u200cాA...], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "city=Rauland&name=8DZ8pt&rating=7&description=NaOAegLynaVqtXKXW4u2ysRA%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEACMHrLSre7qUUVfNA970urZtN&id=4",
+    "httpMethod": "POST",
+    "url": "http://localhost:8090//example/v1/hotels",
+    "timestamp": "Thu, 9 Jan 2025 08:55:33 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "26",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "438",
+    "jsonBody": {
+      "timestamp": 1736409333790,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
+      "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
+      "path": "//example/v1/hotels"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:33 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

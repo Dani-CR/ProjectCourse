@@ -1,0 +1,23 @@
+{
+  "SwaggerSpecFilePath": [
+    "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/../swagger.json"
+  ],
+  "GrammarOutputDirectoryPath": "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile",
+  "CustomDictionaryFilePath": "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/defaultDict.json",
+  "IncludeOptionalParameters": true,
+  "UseHeaderExamples": true,
+  "UsePathExamples": false,
+  "UseQueryExamples": true,
+  "UseBodyExamples": true,
+  "UseAllExamplePayloads": false,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "ResolveHeaderDependencies": false,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": false,
+  "TrackFuzzedParameterNames": false
+}

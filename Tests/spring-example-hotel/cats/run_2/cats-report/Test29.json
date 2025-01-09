@@ -1,0 +1,64 @@
+{
+  "testId": "Test 29",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 501], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 29 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{\"size\":100,\"page\":0}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+    "timestamp": "Thu, 9 Jan 2025 08:58:44 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:44 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/example/v1/hotels",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+  "contractPath": "/example/v1/hotels",
+  "server": "http://localhost:8090/"
+}

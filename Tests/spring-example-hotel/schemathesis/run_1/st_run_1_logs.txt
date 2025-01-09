@@ -1,0 +1,43 @@
+======================= Schemathesis test session starts =======================
+Schema location: file:///home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/schemathesis/run_1/../../swagger.json
+Base URL: http://localhost:8090
+Specification version: Swagger 2.0
+Random seed: 20837888010731928068981338169298086019
+Workers: 1
+Collected API operations: 5
+Collected API links: 0
+API probing: SUCCESS
+Schema analysis: SKIP
+
+GET /example/v1/hotels F                                                  [ 20%]
+POST /example/v1/hotels .                                                 [ 40%]
+GET /example/v1/hotels/{id} .                                             [ 60%]
+PUT /example/v1/hotels/{id} .                                             [ 80%]
+DELETE /example/v1/hotels/{id} .                                          [100%]
+
+=================================== FAILURES ===================================
+____________________________ GET /example/v1/hotels ____________________________
+1. Test Case ID: e9jY1D
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":1736409894679,"status":500,"error":"Internal Server Error","exception":"java.lang.IllegalArgumentException","message":"Page size must not be less than one!","path":"/example/v1/hotels"}`
+
+Reproduce with: 
+
+    curl -X GET 'http://localhost:8090/example/v1/hotels?page=0&size=0'
+
+=================================== SUMMARY ====================================
+
+Performed checks:
+    not_a_server_error                    404 / 411 passed          FAILED 
+
+Note: Use the 'X-Schemathesis-TestCaseId' header to correlate test case ids from failure messages with server logs for debugging.
+
+Note: To replicate these test failures, rerun with `--hypothesis-seed=20837888010731928068981338169298086019`
+
+Compressed report size: 38 KB
+Report is saved to ./run_1.tar.gz
+

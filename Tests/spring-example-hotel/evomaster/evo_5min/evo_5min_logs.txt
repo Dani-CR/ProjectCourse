@@ -1,0 +1,18 @@
+* Covered targets: 5; time per test: 5.9ms (5.2 actions); since last improvement: 298s
+* Starting to apply minimization phase
+* Recomputing full coverage for 5 tests
+* No test to minimize
+* Minimization phase took 0 seconds
+* Evaluated tests: 40226
+* Evaluated actions: 221444
+* Needed budget: 1%
+* Passed time (seconds): 300
+* Execution time per test (ms): Avg=6.87 , min=0.00 , max=1119.00
+* Execution time per action (ms): Avg=1.27 , min=0.00 , max=373.00
+* Computation overhead between tests (ms): Avg=0.59 , min=0.00 , max=755.00
+* Going to save 5 tests to generated_tests
+19:44:42.232 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Unhandled type for body payload: application/xml
+* Potential faults: 0
+* Successfully executed (HTTP code 2xx) 0 endpoints out of 5 (0%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options

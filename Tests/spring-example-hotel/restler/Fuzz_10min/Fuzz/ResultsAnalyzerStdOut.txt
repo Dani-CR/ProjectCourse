@@ -1,0 +1,1 @@
+Analyzing REST-ler network logs in /home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Fuzz_10min/Fuzz

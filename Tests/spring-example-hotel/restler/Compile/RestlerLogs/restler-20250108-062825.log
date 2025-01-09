@@ -1,0 +1,12 @@
+Restler Information: 0 : Starting task Compile...
+    DateTime=2025-01-08T17:28:25.2159730Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/config.json"'
+    DateTime=2025-01-08T17:28:26.9313668Z
+Restler Information: 0 : Process execution terminated in 00:00:01.0500755 with exit code 0x0: 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/config.json"'
+    DateTime=2025-01-08T17:28:27.9844410Z
+Restler Information: 0 : (29398) dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/restler/Compile/config.json" exited with code: 0
+    DateTime=2025-01-08T17:28:27.9876829Z
+Restler Information: 0 : Task Compile succeeded.
+    DateTime=2025-01-08T17:28:27.9981767Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-01-08T17:28:28.2305108Z

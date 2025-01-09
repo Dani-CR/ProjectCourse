@@ -1,0 +1,111 @@
+
+2025-01-08 18:57:31.703: Generation-1
+2025-01-08 18:57:31.703: 	Rendered requests: 5 / 5
+2025-01-08 18:57:31.703: 	Rendered requests with "valid" status codes: 4 / 5
+2025-01-08 18:57:31.703: 	Rendered requests determined to be fully valid (no resource creation failures): 4 / 5
+2025-01-08 18:57:31.703: List of failing requests:
+	Request: 3
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'example'
+		- restler_static_string: '/'
+		- restler_static_string: 'v1'
+		- restler_static_string: '/'
+		- restler_static_string: 'hotels'
+		- restler_static_string: '/'
+		- restler_custom_payload_uuid4_suffix: 'i'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8090\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "city":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "description":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "id":'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ',\n    "name":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "rating":'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+-------------------------
+
+
+2025-01-08 18:58:03.180: Generation-2
+2025-01-08 18:58:03.180: 	Rendered requests: 5 / 5
+2025-01-08 18:58:03.180: 	Rendered requests with "valid" status codes: 4 / 5
+2025-01-08 18:58:03.180: 	Rendered requests determined to be fully valid (no resource creation failures): 4 / 5
+2025-01-08 18:58:03.180: List of failing requests:
+	Request: 3
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'example'
+		- restler_static_string: '/'
+		- restler_static_string: 'v1'
+		- restler_static_string: '/'
+		- restler_static_string: 'hotels'
+		- restler_static_string: '/'
+		- restler_custom_payload_uuid4_suffix: 'i'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8090\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "city":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "description":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "id":'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ',\n    "name":'
+		- restler_fuzzable_string: '"fuzzstring"'
+		- restler_static_string: ',\n    "rating":'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+-------------------------
+
+
+2025-01-08 18:58:44.175: Generation-3
+2025-01-08 18:58:44.175: 	Rendered requests: 5 / 5
+2025-01-08 18:58:44.175: 	Rendered requests with "valid" status codes: 5 / 5
+2025-01-08 18:58:44.175: 	Rendered requests determined to be fully valid (no resource creation failures): 5 / 5
+
+2025-01-08 18:59:18.053: Generation-4
+2025-01-08 18:59:18.053: 	Rendered requests: 5 / 5
+2025-01-08 18:59:18.053: 	Rendered requests with "valid" status codes: 5 / 5
+2025-01-08 18:59:18.053: 	Rendered requests determined to be fully valid (no resource creation failures): 5 / 5
+
+2025-01-08 19:00:08.328: Generation-5
+2025-01-08 19:00:08.328: 	Rendered requests: 5 / 5
+2025-01-08 19:00:08.328: 	Rendered requests with "valid" status codes: 5 / 5
+2025-01-08 19:00:08.328: 	Rendered requests determined to be fully valid (no resource creation failures): 5 / 5
+
+2025-01-08 19:01:09.278: Generation-6
+2025-01-08 19:01:09.278: 	Rendered requests: 5 / 5
+2025-01-08 19:01:09.278: 	Rendered requests with "valid" status codes: 5 / 5
+2025-01-08 19:01:09.278: 	Rendered requests determined to be fully valid (no resource creation failures): 5 / 5
+
+2025-01-08 19:01:39.538: Generation-7
+2025-01-08 19:01:39.538: 	Rendered requests: 5 / 5
+2025-01-08 19:01:39.538: 	Rendered requests with "valid" status codes: 5 / 5
+2025-01-08 19:01:39.538: 	Rendered requests determined to be fully valid (no resource creation failures): 5 / 5
+
+2025-01-08 19:01:39.538: 	Never Rendered requests:
+-------------------------
+

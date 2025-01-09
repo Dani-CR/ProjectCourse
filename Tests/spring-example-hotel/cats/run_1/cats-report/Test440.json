@@ -1,0 +1,65 @@
+{
+  "testId": "Test 440",
+  "scenario": "Send [outside the boundary values] in request fields: field [id], value [REPLACE with -9223372036854775808], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 440 - IntegerFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"id\":-9223372036854775808}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/-9223372036854775808",
+    "timestamp": "Thu, 9 Jan 2025 08:55:47 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "54",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "69",
+    "jsonBody": {
+      "detail": "Sorry I couldn't find it.",
+      "message": "resource not found"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:46 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "IntegerFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/-9223372036854775808",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

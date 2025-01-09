@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Hotel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">spring-boot-rest-example</a> &gt; <a href="index.source.html" class="el_package">com.khoubyari.example.domain</a> &gt; <span class="el_source">Hotel.java</span></div><h1>Hotel.java</h1><pre class="source lang-java linenums">package com.khoubyari.example.domain;
+
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
+
+/*
+ * a simple domain entity doubling as a DTO
+ */
+@Entity
+@Table(name = &quot;hotel&quot;)
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Hotel {
+
+    @Id
+    @GeneratedValue()
+    private long id;
+
+    @Column(nullable = false)
+    private String name;
+
+    @Column()
+    private String description;
+
+    @Column()
+    String city;
+
+    @Column()
+    private int rating;
+
+<span class="fc" id="L31">    public Hotel() {</span>
+<span class="fc" id="L32">    }</span>
+
+<span class="nc" id="L34">    public Hotel(String name, String description, int rating) {</span>
+<span class="nc" id="L35">        this.name = name;</span>
+<span class="nc" id="L36">        this.description = description;</span>
+<span class="nc" id="L37">        this.rating = rating;</span>
+<span class="nc" id="L38">    }</span>
+
+    public long getId() {
+<span class="fc" id="L41">        return this.id;</span>
+    }
+
+    // for tests ONLY
+    public void setId(long id) {
+<span class="fc" id="L46">        this.id = id;</span>
+<span class="fc" id="L47">    }</span>
+
+    public String getName() {
+<span class="fc" id="L50">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L54">        this.name = name;</span>
+<span class="fc" id="L55">    }</span>
+
+    public String getDescription() {
+<span class="fc" id="L58">        return description;</span>
+    }
+
+    public void setDescription(String description) {
+<span class="fc" id="L62">        this.description = description;</span>
+<span class="fc" id="L63">    }</span>
+
+    public int getRating() {
+<span class="fc" id="L66">        return rating;</span>
+    }
+
+    public void setRating(int rating) {
+<span class="fc" id="L70">        this.rating = rating;</span>
+<span class="fc" id="L71">    }</span>
+
+    public String getCity() {
+<span class="fc" id="L74">        return city;</span>
+    }
+
+    public void setCity(String city) {
+<span class="fc" id="L78">        this.city = city;</span>
+<span class="fc" id="L79">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L83">        return &quot;Hotel {&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, name='&quot; + name + '\'' +
+                &quot;, description='&quot; + description + '\'' +
+                &quot;, city='&quot; + city + '\'' +
+                &quot;, rating=&quot; + rating +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

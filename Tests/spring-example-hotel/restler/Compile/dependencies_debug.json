@@ -1,0 +1,530 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page"
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page",
+        "ProducerParameterName": "page",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "size"
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "size",
+        "ProducerParameterName": "size",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "city",
+            "fullPath": {
+              "path": [
+                "city"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "city",
+        "AccessPathParts": {
+          "path": [
+            "city"
+          ]
+        },
+        "ResourceName": "city",
+        "ProducerParameterName": "city",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "description",
+            "fullPath": {
+              "path": [
+                "description"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "description",
+        "AccessPathParts": {
+          "path": [
+            "description"
+          ]
+        },
+        "ResourceName": "description",
+        "ProducerParameterName": "description",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "rating",
+            "fullPath": {
+              "path": [
+                "rating"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "rating",
+        "AccessPathParts": {
+          "path": [
+            "rating"
+          ]
+        },
+        "ResourceName": "rating",
+        "ProducerParameterName": "rating",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "example",
+              "v1",
+              "hotels"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "example",
+              "v1",
+              "hotels"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "DictionaryPayload": {
+        "payloadType": "UuidSuffix",
+        "primitiveType": "Int",
+        "name": "id",
+        "isObject": false
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "city",
+            "fullPath": {
+              "path": [
+                "city"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "city",
+        "AccessPathParts": {
+          "path": [
+            "city"
+          ]
+        },
+        "ResourceName": "city",
+        "ProducerParameterName": "city",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "description",
+            "fullPath": {
+              "path": [
+                "description"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "description",
+        "AccessPathParts": {
+          "path": [
+            "description"
+          ]
+        },
+        "ResourceName": "description",
+        "ProducerParameterName": "description",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "rating",
+            "fullPath": {
+              "path": [
+                "rating"
+              ]
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPath": "rating",
+        "AccessPathParts": {
+          "path": [
+            "rating"
+          ]
+        },
+        "ResourceName": "rating",
+        "ProducerParameterName": "rating",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/example/v1/hotels/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "example",
+              "v1",
+              "hotels"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "hotels",
+        "PathContainerName": "hotels",
+        "CandidateTypeNames": [
+          "hotel"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "testId": "Test 392",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 392 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{\"id\":4}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/4",
+    "timestamp": "Thu, 9 Jan 2025 08:58:57 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "69",
+    "jsonBody": {
+      "detail": "Sorry I couldn't find it.",
+      "message": "resource not found"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/4",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

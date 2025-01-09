@@ -1,0 +1,73 @@
+{
+  "testId": "Test 366",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UNPUBLISH",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [UNPUBLISH] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 366 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UNPUBLISH",
+    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 08:58:56 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "UNPUBLISH",
+    "responseTimeInMs": "31",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "237",
+    "jsonBody": {
+      "timestamp": 1736409536921,
+      "status": 405,
+      "error": "Method Not Allowed",
+      "exception": "org.springframework.web.HttpRequestMethodNotSupportedException",
+      "message": "Request method 'UNPUBLISH' not supported",
+      "path": "//example/v1/hotels/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

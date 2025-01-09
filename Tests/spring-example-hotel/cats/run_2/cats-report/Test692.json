@@ -1,0 +1,69 @@
+{
+  "testId": "Test 692",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ld+json]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 692 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":4}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/4",
+    "timestamp": "Thu, 9 Jan 2025 08:59:04 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "223",
+    "jsonBody": {
+      "timestamp": 1736409544921,
+      "status": 406,
+      "error": "Not Acceptable",
+      "exception": "org.springframework.web.HttpMediaTypeNotAcceptableException",
+      "message": "Could not find acceptable representation",
+      "path": "//example/v1/hotels/4"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/ld+json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:59:04 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/ld+json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/4",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}

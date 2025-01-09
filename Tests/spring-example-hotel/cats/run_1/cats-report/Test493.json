@@ -1,0 +1,73 @@
+{
+  "testId": "Test 493",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /example/v1/hotels/{id}স্র‌ু",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 493 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":3}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8090//example/v1/hotels/NOT_SET?id=3",
+    "timestamp": "Thu, 9 Jan 2025 08:55:48 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "36",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "372",
+    "jsonBody": {
+      "timestamp": 1736409348606,
+      "status": 400,
+      "error": "Bad Request",
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"NOT_SET\"",
+      "path": "//example/v1/hotels/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 07:55:47 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      },
+      {
+        "key": "x-application-context",
+        "value": "application:test:8090"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/example/v1/hotels/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8090//example/v1/hotels/NOT_SET?id=3",
+  "contractPath": "/example/v1/hotels/{id}",
+  "server": "http://localhost:8090/"
+}
