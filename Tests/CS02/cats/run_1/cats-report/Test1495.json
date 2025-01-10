@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1495",
+  "scenario": "Send [extreme positive values] in request fields: field [quota], value [REPLACE with 9223372036854775807], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1495 - ExtremePositiveNumbersInIntegerFields)"
+      }
+    ],
+    "payload": "{\"duration\":9,\"routeId\":4,\"quota\":9223372036854775807,\"name\":\"1dXgR\",\"planeId\":6,\"departureDateTime\":\"2025-01-09T17:22:16.836241772Z\",\"arrivalDateTime\":\"2025-01-09T17:22:16.84078735Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:20 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "35",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "435",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:20.962+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Numeric value (9223372036854775807) out of range of int; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Numeric value (9223372036854775807) out of range of int\n at [Source: (PushbackInputStream); line: 1, column: 35] (through reference chain: com.app.DTO.FlightDTO[\"quota\"])",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:20 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "ExtremePositiveNumbersInIntegerFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

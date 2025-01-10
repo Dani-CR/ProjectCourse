@@ -7,7 +7,7 @@
 
 configs:  {} # remove this {} when specifying properties
 #   bbSwaggerUrl: "file:///home/daniela/Documents/ProjCourse_repo/Tests/spring-example-hotel/swagger.json"
-#   bbTargetUrl: "http://localhost:8090/swagger-ui.html"
+#   bbTargetUrl: "http://localhost:8090"
 #   blackBox: true
 #   configPath: "em.yaml"
 #   endpointFocus: null

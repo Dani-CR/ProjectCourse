@@ -1,0 +1,24 @@
+################################################################################
+ PayloadBodyChecker_500
+
+ TypeMismatch_flight_plane_company_name
+{'id': 0, 'ticketCode': 'fuzzstring', 'flight': {'plane': {'id': 0, 'name': 'fuzzstring', 'numberOfSeats': 0, 'company': {'id': 0, 'name': 0}}}, 'price': 0, 'isSold': False}
+
+ Hash: PayloadBodyChecker_500_48aa9a9dacaddb8921c43eb9ce22e595f7102fb7
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":0}}},"price":0,"isSold":false}
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:23:52 GMT\r\nConnection: close\r\n\r\n23a\r\n{"timestamp":"2025-01-09T16:23:52.710+0000","status":500,"error":"Internal Server Error","message":"org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Ticket.flight -> com.app.entity.Flight; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Ticket.flight -> com.app.entity.Flight","path":"/api/ticket"}\r\n0\r\n\r\n'
+

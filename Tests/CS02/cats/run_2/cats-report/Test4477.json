@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4477",
+  "scenario": "Send a happy flow request with undocumented HTTP method: REPORT",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [REPORT] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4477 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "{\"price\":5,\"isSold\":true,\"flightId\":4,\"ticketCode\":\"YDh248TJ06GF5l\"}",
+    "httpMethod": "REPORT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:25 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "REPORT",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "158",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:25.914+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'REPORT' not supported",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, POST"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:25 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

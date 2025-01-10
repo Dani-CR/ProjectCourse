@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1205",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/company/{id}/?/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [DELETE]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1205 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":8}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/company/8/?/",
+    "timestamp": "Thu, 9 Jan 2025 18:22:14 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "184",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:14.648+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Company entity with id 8 exists!",
+      "path": "//api/company/8/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:14 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//api/company/8/?/",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

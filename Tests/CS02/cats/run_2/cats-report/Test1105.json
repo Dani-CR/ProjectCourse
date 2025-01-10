@@ -1,0 +1,61 @@
+{
+  "testId": "Test 1105",
+  "scenario": "Insert zero-width chars in field names: field [name], char [\\u202b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1105 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"na‫me\":\"BUaYS\",\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:31 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "24",
+    "jsonBody": {
+      "id": 32907,
+      "name": null
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:31 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

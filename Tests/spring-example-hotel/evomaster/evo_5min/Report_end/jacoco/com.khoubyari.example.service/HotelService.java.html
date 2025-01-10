@@ -32,29 +32,29 @@ public class HotelService {
 <span class="fc" id="L32">    }</span>
 
     public Hotel createHotel(Hotel hotel) {
-<span class="nc" id="L35">        return hotelRepository.save(hotel);</span>
+<span class="fc" id="L35">        return hotelRepository.save(hotel);</span>
     }
 
     public Hotel getHotel(long id) {
-<span class="nc" id="L39">        return hotelRepository.findOne(id);</span>
+<span class="fc" id="L39">        return hotelRepository.findOne(id);</span>
     }
 
     public void updateHotel(Hotel hotel) {
-<span class="nc" id="L43">        hotelRepository.save(hotel);</span>
-<span class="nc" id="L44">    }</span>
+<span class="fc" id="L43">        hotelRepository.save(hotel);</span>
+<span class="fc" id="L44">    }</span>
 
     public void deleteHotel(Long id) {
-<span class="nc" id="L47">        hotelRepository.delete(id);</span>
-<span class="nc" id="L48">    }</span>
+<span class="fc" id="L47">        hotelRepository.delete(id);</span>
+<span class="fc" id="L48">    }</span>
 
     //http://goo.gl/7fxvVf
     public Page&lt;Hotel&gt; getAllHotels(Integer page, Integer size) {
-<span class="nc" id="L52">        Page&lt;Hotel&gt; pageOfHotels = hotelRepository.findAll(new PageRequest(page, size));</span>
+<span class="fc" id="L52">        Page&lt;Hotel&gt; pageOfHotels = hotelRepository.findAll(new PageRequest(page, size));</span>
         // example of adding to the /metrics
-<span class="nc bnc" id="L54" title="All 2 branches missed.">        if (size &gt; 50) {</span>
-<span class="nc" id="L55">            counterService.increment(&quot;Khoubyari.HotelService.getAll.largePayload&quot;);</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        if (size &gt; 50) {</span>
+<span class="fc" id="L55">            counterService.increment(&quot;Khoubyari.HotelService.getAll.largePayload&quot;);</span>
         }
-<span class="nc" id="L57">        return pageOfHotels;</span>
+<span class="fc" id="L57">        return pageOfHotels;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

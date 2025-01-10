@@ -2,9 +2,9 @@
   "testId": "Test 503",
   "scenario": "Send random values in path variables",
   "expectedResult": "Should return 4XX",
-  "result": "warn",
-  "resultReason": "Not matching response schema",
-  "resultDetails": "Response does NOT match expected result. Response code [404] is documented, but response body does NOT match the corresponding schema.",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [404, 400, 422], actual [200]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,20 @@
         "value": "cats/12.0.0 (Test 503 - RandomResources)"
       }
     ],
-    "payload": "{\n  \"id\": \"-1703\"\n}",
+    "payload": "{\n  \"id\": \"-8931\"\n}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/-1703",
-    "timestamp": "Wed, 4 Dec 2024 10:42:23 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/-8931",
+    "timestamp": "Fri, 10 Jan 2025 18:04:34 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "8",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "162",
+    "contentLengthInBytes": "0",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:23.632+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/-1703"
+      "notAJson": ""
     },
     "headers": [
       {
@@ -46,12 +42,12 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
-        "key": "content-type",
-        "value": "application/json;charset=UTF-8"
+        "key": "content-length",
+        "value": "0"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:22 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:34 GMT"
       },
       {
         "key": "expires",
@@ -60,10 +56,6 @@
       {
         "key": "pragma",
         "value": "no-cache"
-      },
-      {
-        "key": "transfer-encoding",
-        "value": "chunked"
       },
       {
         "key": "x-content-type-options",
@@ -78,11 +70,11 @@
         "value": "1; mode=block"
       }
     ],
-    "responseContentType": "application/json;charset=UTF-8"
+    "responseContentType": "unknown/unknown"
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "RandomResources",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/-1703",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/-8931",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

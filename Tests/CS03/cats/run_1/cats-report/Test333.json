@@ -4,7 +4,7 @@
   "expectedResult": "Should return [2XX, 4XX]",
   "result": "success",
   "resultReason": null,
-  "resultDetails": "Response code expected: [404]",
+  "resultDetails": "Response code expected: [400]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 333 - InvalidReferencesFields)"
       }
     ],
-    "payload": "{\"id\":1}",
+    "payload": "{\"id\":5}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/NOT_SET?id=1",
-    "timestamp": "Tue, 3 Dec 2024 20:09:01 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/NOT_SET?id=5",
+    "timestamp": "Fri, 10 Jan 2025 18:00:54 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "GET",
     "responseTimeInMs": "4",
-    "numberOfWordsInResponse": "4",
+    "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "169",
+    "contentLengthInBytes": "303",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:01.643+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/download/NOT_SET"
+      "timestamp": "2025-01-10T17:00:54.564+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"NOT_SET\"",
+      "path": "/api/v1.0/videos/download/NOT_SET"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:01 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:54 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "InvalidReferencesFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/NOT_SET?id=1",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/NOT_SET?id=5",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

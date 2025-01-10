@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3522",
+  "scenario": "Send a happy flow request with undocumented HTTP method: MOVE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [MOVE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3522 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "MOVE",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:22:58 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "MOVE",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "155",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:59.006+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'MOVE' not supported",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, POST"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:58 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

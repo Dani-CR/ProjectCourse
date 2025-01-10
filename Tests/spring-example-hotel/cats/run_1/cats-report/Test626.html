@@ -20,7 +20,7 @@
     <div class="flex-items-center">
         <img src="./assets/clock.svg" alt="timestamp">
         <span>
-				Thu, 9 Jan 2025 08:55:52 +0100
+				Fri, 10 Jan 2025 13:13:55 +0100
 			</span>
     </div>
 </div>
@@ -53,14 +53,14 @@
             <p>Timestamp</p>
         </div>
         <div class="component text">
-            <p>Thu, 9 Jan 2025 08:55:52 +0100</p>
+            <p>Fri, 10 Jan 2025 13:13:55 +0100</p>
         </div>
 
         <div class="component title">
             <p>Scenario</p>
         </div>
         <div class="component text">
-            <p>Send [strings in numeric fields] in request fields: field [id], value [REPLACE with fuzzPWym], is required [TRUE]</p>
+            <p>Send [strings in numeric fields] in request fields: field [id], value [REPLACE with fuzzsdyb], is required [TRUE]</p>
         </div>
         <div class="component title">
             <p>Expected Result</p>
@@ -100,7 +100,7 @@
             <p>Full Request Path</p>
         </div>
         <div class="component text">
-            <span class="rounded path details">http://localhost:8090//example/v1/hotels/fuzzPWym</span>
+            <span class="rounded path details">http://localhost:8090/example/v1/hotels/fuzzsdyb</span>
         </div>
 
         <div class="component title border-left-bottom">
@@ -124,7 +124,7 @@
             <button class="copy-button" onclick="copyTabs()">Copy code</button>
         </div>
         <div class="code-area" id="code-1">
-            <pre><code>{&#10;  &quot;id&quot;: &quot;fuzzPWym&quot;&#10;}</code></pre>
+            <pre><code>{&#10;  &quot;id&quot;: &quot;fuzzsdyb&quot;&#10;}</code></pre>
         </div>
 
         <div class="code-area active" id="code-2">
@@ -132,7 +132,7 @@
         </div>
 
         <div class="code-area" id="code-3">
-            <pre><code>curl  -X GET \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 626 - StringsInNumericFields)&quot; \&#10;      \&#10;      http://localhost:8090//example/v1/hotels/fuzzPWym&#10;</code></pre>
+            <pre><code>curl  -X GET \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 626 - StringsInNumericFields)&quot; \&#10;      \&#10;      http://localhost:8090/example/v1/hotels/fuzzsdyb&#10;</code></pre>
         </div>
     </div>
 
@@ -142,7 +142,7 @@
             <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
         </div>
         <div class="code-area-outside" id="code-response">
-            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;GET&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;23&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;20&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;374&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736409352742,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException&quot;,&#10;    &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;fuzzPWym\&quot;&quot;,&#10;    &quot;path&quot;: &quot;//example/v1/hotels/fuzzPWym&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 09 Jan 2025 07:55:52 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;GET&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;13&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;20&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;373&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736511235540,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException&quot;,&#10;    &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;fuzzsdyb\&quot;&quot;,&#10;    &quot;path&quot;: &quot;/example/v1/hotels/fuzzsdyb&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Fri, 10 Jan 2025 12:13:55 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 {
   "testId": "Test 162",
-  "scenario": "Send [strings in numeric fields] in request fields: field [rating], value [REPLACE with fuzzJAQj], is required [FALSE]",
+  "scenario": "Send [strings in numeric fields] in request fields: field [rating], value [REPLACE with fuzzFKcJ], is required [FALSE]",
   "expectedResult": "Should return [4XX]",
   "result": "warn",
   "resultReason": "Undocumented response code: 400",
@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 162 - StringsInNumericFields)"
       }
     ],
-    "payload": "city=Lake+Eric&name=beSftKC8&rating=fuzzJAQj&description=Chuck+Norris+writes+code+that+optimizes+itself.&id=4",
+    "payload": "city=Abshireville&name=XIcwSFl&rating=fuzzFKcJ&description=Chuck+Norris+doesn%27t+have+disk+latency+because+the+hard+drive+knows+to+hurry+the+hell+up.&id=1",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:58:51 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:20:59 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "48",
+    "responseTimeInMs": "8",
     "numberOfWordsInResponse": "26",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "438",
+    "contentLengthInBytes": "437",
     "jsonBody": {
-      "timestamp": 1736409531943,
+      "timestamp": 1736511659654,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
       "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:51 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:58 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "StringsInNumericFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

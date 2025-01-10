@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4200",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4200 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":8}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/route/8",
+    "timestamp": "Thu, 9 Jan 2025 18:27:21 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "39",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "352",
+    "jsonBody": {
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 17:27:21 GMT 2025</div><div>There was an unexpected error (type=Internal Server Error, status=500).</div><div>No class com.app.entity.Route entity with id 8 exists!</div></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en-US"
+      },
+      {
+        "key": "content-length",
+        "value": "352"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:21 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/route/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/route/8",
+  "contractPath": "/api/route/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -21,24 +21,20 @@
         "value": "cats/12.0.0 (Test 421 - CheckSecurityHeaders)"
       }
     ],
-    "payload": "{\"id\":5}",
+    "payload": "{\"id\":2}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
-    "timestamp": "Tue, 3 Dec 2024 20:09:03 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/2",
+    "timestamp": "Fri, 10 Jan 2025 18:00:56 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "4",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "63",
+    "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "158",
+    "contentLengthInBytes": "0",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:03.494+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/5"
+      "notAJson": ""
     },
     "headers": [
       {
@@ -46,12 +42,12 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
-        "key": "content-type",
-        "value": "application/json;charset=UTF-8"
+        "key": "content-length",
+        "value": "0"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:03 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:55 GMT"
       },
       {
         "key": "expires",
@@ -60,10 +56,6 @@
       {
         "key": "pragma",
         "value": "no-cache"
-      },
-      {
-        "key": "transfer-encoding",
-        "value": "chunked"
       },
       {
         "key": "x-content-type-options",
@@ -78,11 +70,11 @@
         "value": "1; mode=block"
       }
     ],
-    "responseContentType": "application/json;charset=UTF-8"
+    "responseContentType": "unknown/unknown"
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "CheckSecurityHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/2",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

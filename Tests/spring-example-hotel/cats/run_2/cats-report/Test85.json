@@ -23,23 +23,23 @@
     ],
     "payload": "{\"size\":100,\"page\":2147483647}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=2147483647",
-    "timestamp": "Thu, 9 Jan 2025 08:58:47 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=2147483647",
+    "timestamp": "Fri, 10 Jan 2025 13:20:56 +0100"
   },
   "response": {
     "responseCode": 500,
     "httpMethod": "GET",
-    "responseTimeInMs": "42",
+    "responseTimeInMs": "44",
     "numberOfWordsInResponse": "18",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "337",
+    "contentLengthInBytes": "336",
     "jsonBody": {
-      "timestamp": 1736409527816,
+      "timestamp": 1736511656658,
       "status": 500,
       "error": "Internal Server Error",
       "exception": "org.springframework.dao.InvalidDataAccessApiUsageException",
       "message": "Negative value (-100) passed to setFirstResult; nested exception is java.lang.IllegalArgumentException: Negative value (-100) passed to setFirstResult",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:47 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:56 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "IntegerFieldsRightBoundary",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=2147483647",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=2147483647",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3162",
+  "scenario": "Send a happy flow request with undocumented HTTP method: MERGE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [MERGE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3162 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "MERGE",
+    "url": "http://localhost:8080//api/plane/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:22:51 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "MERGE",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "165",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:51.829+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'MERGE' not supported",
+      "path": "//api/plane/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:51 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane/{id}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/plane/%7Bid%7D",
+  "contractPath": "/api/plane/{id}",
+  "server": "http://localhost:8080/"
+}

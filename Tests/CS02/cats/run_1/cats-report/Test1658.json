@@ -1,0 +1,145 @@
+{
+  "testId": "Test 1658",
+  "scenario": "Send {\"␀\":\"␀\"}\n as invalid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1658 - RandomDummyInvalidJsonBody)"
+      }
+    ],
+    "payload": "{\"␀\":\"␀\"}\n",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:24 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "17",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1212",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:24.327+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "errors": [
+        {
+          "codes": [
+            "NotNull.flightDTO.routeId",
+            "NotNull.routeId",
+            "NotNull.java.lang.Long",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flightDTO.routeId",
+                "routeId"
+              ],
+              "arguments": null,
+              "defaultMessage": "routeId",
+              "code": "routeId"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flightDTO",
+          "field": "routeId",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        },
+        {
+          "codes": [
+            "NotNull.flightDTO.name",
+            "NotNull.name",
+            "NotNull.java.lang.String",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flightDTO.name",
+                "name"
+              ],
+              "arguments": null,
+              "defaultMessage": "name",
+              "code": "name"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flightDTO",
+          "field": "name",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        },
+        {
+          "codes": [
+            "NotNull.flightDTO.planeId",
+            "NotNull.planeId",
+            "NotNull.java.lang.Long",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flightDTO.planeId",
+                "planeId"
+              ],
+              "arguments": null,
+              "defaultMessage": "planeId",
+              "code": "planeId"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flightDTO",
+          "field": "planeId",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        }
+      ],
+      "message": "Validation failed for object='flightDTO'. Error count: 3",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:23 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "RandomDummyInvalidJsonBody",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

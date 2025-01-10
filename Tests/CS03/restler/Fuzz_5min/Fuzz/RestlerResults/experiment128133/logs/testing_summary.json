@@ -1,0 +1,33 @@
+{
+    "final_spec_coverage": "5 / 5",
+    "rendered_requests": "5 / 5",
+    "rendered_requests_valid_status": "5 / 5",
+    "num_fully_valid": 5,
+    "num_sequence_failures": 0,
+    "num_invalid_by_failed_resource_creations": 0,
+    "total_object_creations": 0,
+    "total_requests_sent": {
+        "gc": 0,
+        "main_driver": 739,
+        "LeakageRuleChecker": 0,
+        "ResourceHierarchyChecker": 0,
+        "UseAfterFreeChecker": 0,
+        "InvalidDynamicObjectChecker": 0,
+        "PayloadBodyChecker": 264,
+        "ExamplesChecker": 0,
+        "InvalidValueChecker": 28
+    },
+    "bug_buckets": {
+        "InvalidValueChecker_500": 3,
+        "PayloadBodyChecker_500": 12,
+        "main_driver_500": 3
+    },
+    "reproducible_bug_buckets": {
+        "InvalidValueChecker_500": 3,
+        "PayloadBodyChecker_500": 12,
+        "main_driver_500": 3
+    },
+    "settings": {
+        "random_seed": 12345
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "testId": "Test 3795",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [image/svg+xml]",
+  "expectedResult": "Should return 415",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [415] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "image/svg+xml"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3795 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"departureAirport\":{\"name\":\"JaYXfmQ\",\"location\":\"ipXudaKoJGT\",\"id\":5,\"capacity\":6},\"name\":\"oEQCdRF\",\"id\":4,\"arrivalAirport\":{\"name\":\"DsGou\",\"location\":\"qvVl1MviCTW\",\"id\":6,\"capacity\":2}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:16 +0100"
+  },
+  "response": {
+    "responseCode": 415,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "180",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:16.460+0000",
+      "status": 415,
+      "error": "Unsupported Media Type",
+      "message": "Content type 'image/svg+xml;charset=UTF-8' not supported",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:16 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

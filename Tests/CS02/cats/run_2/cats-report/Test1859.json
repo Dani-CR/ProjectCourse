@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1859",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/x-icon]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [image/x-icon;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/x-icon"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1859 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":4,\"routeId\":6,\"quota\":5,\"name\":\"3a802\",\"planeId\":6,\"departureDateTime\":\"2025-01-09T17:26:36.043351314Z\",\"arrivalDateTime\":\"2025-01-09T17:26:36.044517929Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:45 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Flight with this name already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "image/x-icon;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:45 GMT"
+      }
+    ],
+    "responseContentType": "image/x-icon;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

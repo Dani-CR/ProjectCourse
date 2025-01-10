@@ -1,0 +1,95 @@
+{
+  "testId": "Test 3876",
+  "scenario": "Insert zero-width chars in field names: field [arrivalAirportId], char [\\u200d]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3876 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"name\":\"9o9rHRs\",\"arrivalA‍irportId\":5,\"departureAirportId\":8}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:23:04 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "11",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "589",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:04.536+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "errors": [
+        {
+          "codes": [
+            "NotNull.routeDTO.arrivalAirportId",
+            "NotNull.arrivalAirportId",
+            "NotNull.java.lang.Long",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "routeDTO.arrivalAirportId",
+                "arrivalAirportId"
+              ],
+              "arguments": null,
+              "defaultMessage": "arrivalAirportId",
+              "code": "arrivalAirportId"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "routeDTO",
+          "field": "arrivalAirportId",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        }
+      ],
+      "message": "Validation failed for object='routeDTO'. Error count: 1",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:04 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

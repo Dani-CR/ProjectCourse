@@ -1,0 +1,63 @@
+{
+  "testId": "Test 7",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [location], value [REPLACE with 8qbBజ్ఞ\\u200cాq0mYo], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 7 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"name\":\"oKFgYB\",\"location\":\"8qbBజ్ఞ\\u200Cాq0mYo\",\"id\":6,\"capacity\":1}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:48 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "23",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "79",
+    "jsonBody": {
+      "id": 31717,
+      "name": "oKFgYB",
+      "capacity": 1,
+      "location": "8qbBజ్ఞ‌ాq0mYo"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:48 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

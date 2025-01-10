@@ -1,0 +1,64 @@
+{
+  "testId": "Test 5052",
+  "scenario": "Insert zero-width chars in field names: field [flight], char [\\u200f]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5052 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"fli‏ght\":{\"duration\":2,\"plane\":{\"numberOfSeats\":6,\"name\":\"mLehXM\",\"company\":{\"name\":\"Waelchi Group\",\"id\":6},\"id\":0},\"route\":{\"departureAirport\":{\"name\":\"qQtIh\",\"location\":\"FHFubHWhNH9\",\"id\":8,\"capacity\":8},\"name\":\"qf0Xq\",\"id\":9,\"arrivalAirport\":{\"name\":\"cO9zz6z8\",\"location\":\"BmfQ51Kxm\",\"id\":3,\"capacity\":9}},\"quota\":2,\"name\":\"aMMNQS\",\"quotaFilled\":9,\"departureDateTime\":\"2025-01-09T17:23:09.285202273Z\",\"id\":4,\"arrivalDateTime\":\"2025-01-09T17:23:09.285767054Z\",\"quotaFilledPercentage\":4},\"price\":8,\"isSold\":false,\"id\":0,\"ticketCode\":\"HuWRASzGqKun\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:22 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "79",
+    "jsonBody": {
+      "id": 32659,
+      "ticketCode": "HuWRASzGqKun",
+      "flight": null,
+      "price": 8,
+      "isSold": false
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:21 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

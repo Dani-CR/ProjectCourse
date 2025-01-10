@@ -1,0 +1,63 @@
+{
+  "testId": "Test 268",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ld+json]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 268 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"oKFgYB\",\"location\":\"7m6WuJtvEnR\",\"id\":6,\"capacity\":1}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:56 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "66",
+    "jsonBody": {
+      "id": 31756,
+      "name": "oKFgYB",
+      "capacity": 1,
+      "location": "7m6WuJtvEnR"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/ld+json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:56 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/ld+json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

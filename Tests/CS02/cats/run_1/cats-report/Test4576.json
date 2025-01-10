@@ -1,0 +1,98 @@
+{
+  "testId": "Test 4576",
+  "scenario": "Remove the following fields from request: [id]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4576 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"flight\":{\"duration\":2,\"plane\":{\"numberOfSeats\":6,\"name\":\"mLehXM\",\"company\":{\"name\":\"Waelchi Group\",\"id\":6},\"id\":0},\"route\":{\"departureAirport\":{\"name\":\"qQtIh\",\"location\":\"FHFubHWhNH9\",\"id\":8,\"capacity\":8},\"name\":\"qf0Xq\",\"id\":9,\"arrivalAirport\":{\"name\":\"cO9zz6z8\",\"location\":\"BmfQ51Kxm\",\"id\":3,\"capacity\":9}},\"quota\":2,\"name\":\"aMMNQS\",\"quotaFilled\":9,\"departureDateTime\":\"2025-01-09T17:23:09.285202273Z\",\"id\":4,\"arrivalDateTime\":\"2025-01-09T17:23:09.285767054Z\",\"quotaFilledPercentage\":4},\"price\":8,\"isSold\":false,\"ticketCode\":\"HuWRASzGqKun\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:16 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "2",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "550",
+    "jsonBody": {
+      "id": 32542,
+      "ticketCode": "HuWRASzGqKun",
+      "flight": {
+        "id": 4,
+        "name": "aMMNQS",
+        "departureDateTime": "2025-01-09T17:23:09.285+0000",
+        "arrivalDateTime": "2025-01-09T17:23:09.285+0000",
+        "duration": 2,
+        "quota": 2,
+        "quotaFilled": 9,
+        "quotaFilledPercentage": 4,
+        "route": {
+          "id": 9,
+          "name": "qf0Xq",
+          "departureAirport": {
+            "id": 8,
+            "name": "qQtIh",
+            "capacity": 8,
+            "location": "FHFubHWhNH9"
+          },
+          "arrivalAirport": {
+            "id": 3,
+            "name": "cO9zz6z8",
+            "capacity": 9,
+            "location": "BmfQ51Kxm"
+          }
+        },
+        "plane": {
+          "id": 0,
+          "name": "mLehXM",
+          "numberOfSeats": 6,
+          "company": {
+            "id": 6,
+            "name": "Waelchi Group"
+          }
+        }
+      },
+      "price": 8,
+      "isSold": false
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:15 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

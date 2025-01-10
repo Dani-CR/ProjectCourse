@@ -1,0 +1,24 @@
+################################################################################
+ PayloadBodyChecker_500
+
+ TypeMismatch_isSold
+{'ticketCode': 'fuzzstring', 'price': 0, 'isSold': 0, 'flightId': 0}
+
+ Hash: PayloadBodyChecker_500_c1b9f989f9f5d053f676e52e30f305c2ef151246
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{"ticketCode":"fuzzstring","price":0,"isSold":0,"flightId":0}
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:42:33 GMT\r\nConnection: close\r\n\r\n10d\r\n{"timestamp":"2025-01-09T12:42:33.961+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 45; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 45","path":"/api/ticket"}\r\n0\r\n\r\n'
+

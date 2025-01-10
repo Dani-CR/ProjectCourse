@@ -1,0 +1,60 @@
+{
+  "testId": "Test 4265",
+  "scenario": "Send [decimal values in integer fields] in request fields: field [price], value [REPLACE with 0.09125958948873925], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 409",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [409]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4265 - DecimalNumbersInIntegerFields)"
+      }
+    ],
+    "payload": "{\"price\":0.09125958948873925,\"isSold\":true,\"flightId\":4,\"ticketCode\":\"YDh248TJ06GF5l\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:22 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "36",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Ticket with this code already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:22 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "DecimalNumbersInIntegerFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

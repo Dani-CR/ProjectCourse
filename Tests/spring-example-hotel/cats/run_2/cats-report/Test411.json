@@ -23,23 +23,23 @@
     ],
     "payload": "{\"id\":-18446744073709551616}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels/-18446744073709551616",
-    "timestamp": "Thu, 9 Jan 2025 08:58:58 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/-18446744073709551616",
+    "timestamp": "Fri, 10 Jan 2025 13:21:04 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "GET",
-    "responseTimeInMs": "61",
+    "responseTimeInMs": "6",
     "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "400",
+    "contentLengthInBytes": "399",
     "jsonBody": {
-      "timestamp": 1736409538297,
+      "timestamp": 1736511664613,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
       "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"-18446744073709551616\"",
-      "path": "//example/v1/hotels/-18446744073709551616"
+      "path": "/example/v1/hotels/-18446744073709551616"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:57 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:03 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "ExtremeNegativeNumbersInIntegerFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/-18446744073709551616",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/-18446744073709551616",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

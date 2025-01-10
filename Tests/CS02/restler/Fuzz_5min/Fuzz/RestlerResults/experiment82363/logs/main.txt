@@ -1,0 +1,82 @@
+Random seed: 12345
+Setting fuzzing schemes: bfs-cheap
+2025-01-09 13:41:32.967: Going to fuzz a set with 30 requests
+2025-01-09 13:41:32.967: Request-0: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-1: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-2: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-3: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-4: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-5: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-6: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-7: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-8: Value Combinations: 6
+2025-01-09 13:41:32.967: Request-9: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-10: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-11: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-12: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-13: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-14: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-15: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-16: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-17: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-18: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-19: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-20: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-21: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-22: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-23: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-24: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-25: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-26: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-27: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-28: Value Combinations: 2
+2025-01-09 13:41:32.967: Request-29: Value Combinations: 2
+2025-01-09 13:41:32.967: Avg. Value Combinations per Request: 2.1333333333333333
+2025-01-09 13:41:32.967: Median Value Combinations per Request: 2.0
+2025-01-09 13:41:32.967: Min Value Combinations per Request: 2
+2025-01-09 13:41:32.967: Max Value Combinations per Request: 6
+2025-01-09 13:41:32.967: Total dependencies: 0
+
+2025-01-09 13:41:32.970: Generation: 1 / Sequences Collection Size: 30 
+(After bfs-cheap Extend)
+
+2025-01-09 13:44:56.362: Generation: 1 / Sequences Collection Size: 24 
+(After bfs-cheap Render)
+
+2025-01-09 13:44:56.362: Final Swagger spec coverage: 24 / 30
+2025-01-09 13:44:56.362: Rendered requests: 30 / 30
+2025-01-09 13:44:56.362: Rendered requests with "valid" status codes: 24 / 30
+2025-01-09 13:44:56.362: Num fully valid requests (no resource creation failures): 24
+2025-01-09 13:44:56.362: Num requests not rendered due to invalid sequence re-renders: 0
+2025-01-09 13:44:56.362: Num invalid requests caused by failed resource creations: 0
+2025-01-09 13:44:56.362: Total Creations of Dyn Objects: 0
+2025-01-09 13:44:56.362: Total Requests Sent: {'gc': 0, 'main_driver': 36, 'LeakageRuleChecker': 0, 'ResourceHierarchyChecker': 0, 'UseAfterFreeChecker': 0, 'InvalidDynamicObjectChecker': 0, 'PayloadBodyChecker': 2672, 'ExamplesChecker': 0, 'InvalidValueChecker': 0}
+2025-01-09 13:44:56.362: Bug Buckets: {'InvalidValueChecker_500': 24, 'PayloadBodyChecker_500': 43, 'main_driver_500': 6}
+2025-01-09 13:44:56.368: Generation: 2 / Sequences Collection Size: 720 
+(After bfs-cheap Extend)
+
+Timed out...
+2025-01-09 13:46:35.369: Generation: 2 / Sequences Collection Size: 720 
+(After bfs-cheap Render)
+
+2025-01-09 13:46:35.369: Final Swagger spec coverage: 24 / 30
+2025-01-09 13:46:35.369: Rendered requests: 30 / 30
+2025-01-09 13:46:35.369: Rendered requests with "valid" status codes: 24 / 30
+2025-01-09 13:46:35.369: Num fully valid requests (no resource creation failures): 24
+2025-01-09 13:46:35.369: Num requests not rendered due to invalid sequence re-renders: 0
+2025-01-09 13:46:35.369: Num invalid requests caused by failed resource creations: 0
+2025-01-09 13:46:35.369: Total Creations of Dyn Objects: 0
+2025-01-09 13:46:35.369: Total Requests Sent: {'gc': 0, 'main_driver': 106, 'LeakageRuleChecker': 0, 'ResourceHierarchyChecker': 0, 'UseAfterFreeChecker': 0, 'InvalidDynamicObjectChecker': 0, 'PayloadBodyChecker': 2672, 'ExamplesChecker': 0, 'InvalidValueChecker': 3}
+2025-01-09 13:46:35.369: Bug Buckets: {'InvalidValueChecker_500': 24, 'PayloadBodyChecker_500': 43, 'main_driver_500': 12}
+
+Testing completed -- below are the final stats:
+
+2025-01-09 13:46:35.375: Final Swagger spec coverage: 24 / 30
+2025-01-09 13:46:35.375: Rendered requests: 30 / 30
+2025-01-09 13:46:35.375: Rendered requests with "valid" status codes: 24 / 30
+2025-01-09 13:46:35.375: Num fully valid requests (no resource creation failures): 24
+2025-01-09 13:46:35.375: Num requests not rendered due to invalid sequence re-renders: 0
+2025-01-09 13:46:35.375: Num invalid requests caused by failed resource creations: 0
+2025-01-09 13:46:35.375: Total Creations of Dyn Objects: 0
+2025-01-09 13:46:35.375: Total Requests Sent: {'gc': 0, 'main_driver': 106, 'LeakageRuleChecker': 0, 'ResourceHierarchyChecker': 0, 'UseAfterFreeChecker': 0, 'InvalidDynamicObjectChecker': 0, 'PayloadBodyChecker': 2672, 'ExamplesChecker': 0, 'InvalidValueChecker': 3}
+2025-01-09 13:46:35.375: Bug Buckets: {'InvalidValueChecker_500': 24, 'PayloadBodyChecker_500': 43, 'main_driver_500': 12}

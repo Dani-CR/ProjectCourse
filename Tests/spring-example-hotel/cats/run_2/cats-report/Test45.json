@@ -23,21 +23,21 @@
     ],
     "payload": "{\"size\":100,\"page\":\"\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=",
-    "timestamp": "Thu, 9 Jan 2025 08:58:45 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=",
+    "timestamp": "Fri, 10 Jan 2025 13:20:55 +0100"
   },
   "response": {
     "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "21",
+    "responseTimeInMs": "18",
     "numberOfWordsInResponse": "1",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "127",
     "jsonBody": {
       "content": [],
+      "last": true,
       "totalPages": 0,
       "totalElements": 0,
-      "last": true,
       "numberOfElements": 0,
       "sort": null,
       "first": true,
@@ -51,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:45 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:54 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -66,7 +66,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "EmptyStringsInFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 329 - ZeroWidthCharsInValuesFields)"
       }
     ],
-    "payload": "city=Rauland&name=8DZ8pt&rating=%E2%80%AE7&description=Chuck+Norris+doesn%27t+need+a+java+compiler%2C+he+goes+straight+to+.war&id=4",
+    "payload": "city=Hodkiewiczview&name=iImvNDtD&rating=%E2%80%AE9&description=%22It+works+on+my+machine%22+always+holds+true+for+Chuck+Norris.&id=2",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:55:43 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:13:46 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "35",
+    "responseTimeInMs": "7",
     "numberOfWordsInResponse": "26",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "438",
+    "contentLengthInBytes": "437",
     "jsonBody": {
-      "timestamp": 1736409343383,
+      "timestamp": 1736511226414,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
       "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:42 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:45 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "ZeroWidthCharsInValuesFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

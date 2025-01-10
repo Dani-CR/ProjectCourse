@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "PayloadBodyChecker",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": null,
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\"name\":\"fuzzstring\"}",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:44:28 GMT\r\nConnection: close\r\n\r\n10e\r\n{\"timestamp\":\"2025-01-09T12:44:28.265+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"query did not return a unique result: 59; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 59\",\"path\":\"/api/airport\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4640",
+  "scenario": "Replace primitive fields with object values.  Current field [isSold] [REPLACE with {\"catsKey1\":\"catsValue1\",\"cats...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4640 - ReplacePrimitivesWithObjectsFields)"
+      }
+    ],
+    "payload": "{\n  \"price\": 6,\n  \"isSold\": {\n    \"catsKey1\": \"catsValue1\",\n    \"catsKey2\": 20\n  },\n  \"flightId\": 8,\n  \"ticketCode\": \"n6z8NUl1Llz\"\n}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:17 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "486",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:17.015+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.lang.Boolean` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Boolean` out of START_OBJECT token\n at [Source: (PushbackInputStream); line: 3, column: 13] (through reference chain: com.app.DTO.TicketDTO[\"isSold\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:16 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "ReplacePrimitivesWithObjectsFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

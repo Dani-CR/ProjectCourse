@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4586",
+  "scenario": "Remove the following fields from request: [flight#route#departureAirport#id]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4586 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"flight\":{\"duration\":2,\"plane\":{\"numberOfSeats\":6,\"name\":\"mLehXM\",\"company\":{\"name\":\"Waelchi Group\",\"id\":6},\"id\":0},\"route\":{\"departureAirport\":{\"name\":\"qQtIh\",\"location\":\"FHFubHWhNH9\",\"capacity\":8},\"name\":\"qf0Xq\",\"id\":9,\"arrivalAirport\":{\"name\":\"cO9zz6z8\",\"location\":\"BmfQ51Kxm\",\"id\":3,\"capacity\":9}},\"quota\":2,\"name\":\"aMMNQS\",\"quotaFilled\":9,\"departureDateTime\":\"2025-01-09T17:23:09.285202273Z\",\"id\":4,\"arrivalDateTime\":\"2025-01-09T17:23:09.285767054Z\",\"quotaFilledPercentage\":4},\"price\":8,\"isSold\":false,\"id\":0,\"ticketCode\":\"HuWRASzGqKun\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:16 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "431",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:16.454+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id 4; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 4 (through reference chain: com.app.entity.Ticket[\"flight\"]->com.app.entity.Flight$HibernateProxy$iF1XBDBu[\"name\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:15 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

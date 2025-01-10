@@ -1,1 +1,0 @@
-"""Coverstore tests"""

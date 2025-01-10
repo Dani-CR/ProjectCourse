@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2830",
+  "scenario": "Replace object fields with array values.  Current field [company] [REPLACE with [{\"catsKey1\":\"catsValue1\",\"cat...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2830 - ReplaceObjectsWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"numberOfSeats\": 3,\n  \"name\": \"WAdGcXxa\",\n  \"company\": [\n    {\n      \"catsKey1\": \"catsValue1\",\n      \"catsKey2\": 20\n    },\n    {\n      \"catsKey3\": 40\n    }\n  ],\n  \"id\": 5\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:27:01 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "493",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:01.283+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `com.app.entity.Company` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.app.entity.Company` out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 4, column: 14] (through reference chain: com.app.entity.Plane[\"company\"])",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:00 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "ReplaceObjectsWithArraysFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

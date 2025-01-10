@@ -23,23 +23,23 @@
     ],
     "payload": "{\"size\":100,\"page\":0}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=0",
-    "timestamp": "Thu, 9 Jan 2025 08:58:52 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=0",
+    "timestamp": "Fri, 10 Jan 2025 13:21:00 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "GET",
-    "responseTimeInMs": "5",
+    "responseTimeInMs": "3",
     "numberOfWordsInResponse": "6",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "221",
+    "contentLengthInBytes": "220",
     "jsonBody": {
-      "timestamp": 1736409532530,
+      "timestamp": 1736511660193,
       "status": 406,
       "error": "Not Acceptable",
       "exception": "org.springframework.web.HttpMediaTypeNotAcceptableException",
       "message": "Could not find acceptable representation",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:51 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:59 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -63,7 +63,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=0",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

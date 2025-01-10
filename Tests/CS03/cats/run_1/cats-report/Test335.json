@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 335 - InvalidReferencesFields)"
       }
     ],
-    "payload": "{\"id\":1}",
+    "payload": "{\"id\":5}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/1/..%20;/",
-    "timestamp": "Tue, 3 Dec 2024 20:09:01 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/5/..%20;/",
+    "timestamp": "Fri, 10 Jan 2025 18:00:54 +0100"
   },
   "response": {
     "responseCode": 500,
     "httpMethod": "GET",
-    "responseTimeInMs": "8",
+    "responseTimeInMs": "9",
     "numberOfWordsInResponse": "15",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "250",
+    "contentLengthInBytes": "234",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:01.669+0000",
+      "timestamp": "2025-01-10T17:00:54.583+0000",
       "status": 500,
       "error": "Internal Server Error",
       "message": "The request was rejected because the URL contained a potentially malicious String \";\"",
-      "path": "/swagger-ui.html/api/v1.0/videos/download/1/..%20;/"
+      "path": "/api/v1.0/videos/download/5/..%20;/"
     },
     "headers": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:01 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:54 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -62,7 +62,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "InvalidReferencesFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/1/..%20;/",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/5/..%20;/",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

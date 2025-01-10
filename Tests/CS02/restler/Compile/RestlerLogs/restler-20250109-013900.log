@@ -1,0 +1,12 @@
+Restler Information: 0 : Starting task Compile...
+    DateTime=2025-01-09T12:39:00.9295907Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/CS02/restler/Compile/config.json"'
+    DateTime=2025-01-09T12:39:02.1519164Z
+Restler Information: 0 : Process execution terminated in 00:00:00.9151596 with exit code 0x0: 'dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/CS02/restler/Compile/config.json"'
+    DateTime=2025-01-09T12:39:03.0700879Z
+Restler Information: 0 : (82237) dotnet "/home/daniela/Documents/Restler_folder/restler_bin/restler/../compiler/Restler.CompilerExe.dll" "/home/daniela/Documents/ProjCourse_repo/Tests/CS02/restler/Compile/config.json" exited with code: 0
+    DateTime=2025-01-09T12:39:03.0737356Z
+Restler Information: 0 : Task Compile succeeded.
+    DateTime=2025-01-09T12:39:03.0849860Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-01-09T12:39:03.2901028Z

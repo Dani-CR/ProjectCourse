@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "PayloadBodyChecker",
+    "reproducible": true,
+    "verb": "PUT",
+    "endpoint": null,
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\"id\":0,\"ticketCode\":\"fuzzstring\",\"flight\":{ \"fuzz\" : false },\"price\":0,\"isSold\":false}",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:23:52 GMT\r\nConnection: close\r\n\r\n23a\r\n{\"timestamp\":\"2025-01-09T16:23:52.369+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Ticket.flight -> com.app.entity.Flight; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Ticket.flight -> com.app.entity.Flight\",\"path\":\"/api/ticket\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

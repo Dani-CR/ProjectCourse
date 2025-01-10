@@ -1,6 +1,6 @@
 {
   "testId": "Test 354",
-  "scenario": "Send [values containing abugidas chars] in request fields: field [city], value [REPLACE with 8SeOD0pU4jJrh9OENHజ్ఞ\\u200cాClmFHn8...], is required [FALSE]",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [city], value [REPLACE with 6ZgnL8QWoNOPag942Fజ్ఞ\\u200cాLkR7AH0...], is required [FALSE]",
   "expectedResult": "Should return [2XX]",
   "result": "error",
   "resultReason": "Unexpected behaviour: 400",
@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 354 - AbugidasInStringFields)"
       }
     ],
-    "payload": "city=8SeOD0pU4jJrh9OENH%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEClmFHn8yIA57RBnnyI8&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "payload": "city=6ZgnL8QWoNOPag942F%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BELkR7AH0hwAG9tgWR7xp&name=9Vv6kXwk&rating=2&description=There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&id=7",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
-    "timestamp": "Thu, 9 Jan 2025 08:55:44 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 13:13:47 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "PUT",
-    "responseTimeInMs": "26",
+    "responseTimeInMs": "8",
     "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "370",
+    "contentLengthInBytes": "369",
     "jsonBody": {
-      "timestamp": 1736409344423,
+      "timestamp": 1736511227018,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
       "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"{id}\"",
-      "path": "//example/v1/hotels/%7Bid%7D"
+      "path": "/example/v1/hotels/%7Bid%7D"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:43 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:46 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "AbugidasInStringFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

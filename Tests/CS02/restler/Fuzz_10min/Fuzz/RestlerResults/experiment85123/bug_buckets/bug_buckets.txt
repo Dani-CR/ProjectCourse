@@ -1,0 +1,401 @@
+main_driver_500: 26
+PayloadBodyChecker_500: 49
+InvalidValueChecker_500: 24
+Total Buckets: 99
+-------------
+main_driver_500 - Bug was reproduced - main_driver_500_1.replay.txt
+Hash: main_driver_500_3fa5cb83dc1546964d0011cb0b7abeea8127faea
+GET /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_2.replay.txt
+Hash: main_driver_500_5d9f0ad7e913e66f77a6d851694f14f01039c471
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "ticketCode":fuzzstring,\n    "flight":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "departureDateTime":2019-06-26T20:20:39+00:00,\n            "arrivalDateTime":2019-06-26T20:20:39+00:00,\n            "duration":1,\n            "quota":1,\n            "quotaFilled":1,\n            "quotaFilledPercentage":1,\n            "route":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "departureAirport":\n                        {\n                            "id":1,\n                            "name":fuzzstring,\n                            "capacity":1,\n                            "location":fuzzstring\n                        }\n                    ,\n                    "arrivalAirport":\n                        {\n                            "id":1,\n                            "name":fuzzstring,\n                            "capacity":1,\n                            "location":fuzzstring\n                        }\n                }\n            ,\n            "plane":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "numberOfSeats":1,\n                    "company":\n                        {\n                            "id":1,\n                            "name":fuzzstring\n                        }\n                }\n        }\n    ,\n    "price":1,\n    "isSold":true}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_3.replay.txt
+Hash: main_driver_500_fc33fb9e156e8b4b820c5f90480e9d45213aa26a
+POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "ticketCode":fuzzstring,\n    "price":1,\n    "isSold":true,\n    "flightId":1}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_4.replay.txt
+Hash: main_driver_500_880db4d5a3c5f212ccffa83b9d465745090292da
+GET /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_5.replay.txt
+Hash: main_driver_500_5c6130af40a5c3964db6a56d6f066ff5c02a0a7d
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "departureAirport":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "capacity":1,\n            "location":fuzzstring\n        }\n    ,\n    "arrivalAirport":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "capacity":1,\n            "location":fuzzstring\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_6.replay.txt
+Hash: main_driver_500_295f76a8e615091ce599023091a6efe11e337fea
+POST /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "departureAirportId":1,\n    "arrivalAirportId":1}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_7.replay.txt
+Hash: main_driver_500_44f070ea3b213cd22e93d434021c7b0b47fd95aa
+GET /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_8.replay.txt
+Hash: main_driver_500_198fb0e5a8dd236ce541ce466325e5303cc2faed
+PUT /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "numberOfSeats":1,\n    "company":\n        {\n            "id":1,\n            "name":fuzzstring\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_9.replay.txt
+Hash: main_driver_500_f90e9ac6b74b4b8b28a5dd261cb1e2bf9481aa19
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "numberOfSeats":1,\n    "companyId":1}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_10.replay.txt
+Hash: main_driver_500_04f1b83d68b6f6cd291afb6768ca63b06d855aff
+GET /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_11.replay.txt
+Hash: main_driver_500_20bba9e7951cbdca2b6ef75b7b4a196b933cc6f8
+PUT /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "departureDateTime":2019-06-26T20:20:39+00:00,\n    "arrivalDateTime":2019-06-26T20:20:39+00:00,\n    "duration":1,\n    "quota":1,\n    "quotaFilled":1,\n    "quotaFilledPercentage":1,\n    "route":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "departureAirport":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "capacity":1,\n                    "location":fuzzstring\n                }\n            ,\n            "arrivalAirport":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "capacity":1,\n                    "location":fuzzstring\n                }\n        }\n    ,\n    "plane":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "numberOfSeats":1,\n            "company":\n                {\n                    "id":1,\n                    "name":fuzzstring\n                }\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_12.replay.txt
+Hash: main_driver_500_915d77f52fde9b14a09e10ae72b3d29b86640513
+POST /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "departureDateTime":2019-06-26T20:20:39+00:00,\n    "arrivalDateTime":2019-06-26T20:20:39+00:00,\n    "duration":1,\n    "quota":1,\n    "planeId":1,\n    "routeId":1}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_13.replay.txt
+Hash: main_driver_500_9e7bd38dfe735423b2f8af62ac00caa6e72753bd
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_14.replay.txt
+Hash: main_driver_500_4fb526e66b10896f9814e4ae84c3f9fdc7d5dcc0
+POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "capacity":1,\n    "location":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_15.replay.txt
+Hash: main_driver_500_412099eba13f845a7734c7261ec8486ea52f9de0
+GET /api/ticket/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_16.replay.txt
+Hash: main_driver_500_ce8353664476a2c8585453b52ae7a3fb985b0407
+DELETE /api/ticket/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_17.replay.txt
+Hash: main_driver_500_9e386a152e76959dd9f78ab6bd8805606d7da45c
+GET /api/route/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_18.replay.txt
+Hash: main_driver_500_b35b0206f19c773950ce0c42f83e5f6fc8684fbb
+DELETE /api/route/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_19.replay.txt
+Hash: main_driver_500_91fa499b67fbc9aa180d0a019f737d8f36061b7b
+GET /api/plane/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_20.replay.txt
+Hash: main_driver_500_9d11825029a0bd0ebce65786919906408749ae94
+DELETE /api/plane/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_21.replay.txt
+Hash: main_driver_500_89f6298522fc4795f4bd048c84f48a939ac00c02
+GET /api/flight/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_22.replay.txt
+Hash: main_driver_500_54a82cd4f9398fa15a3d187ef69cc0d44afbe556
+DELETE /api/flight/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_23.replay.txt
+Hash: main_driver_500_c7b82992aa84a6c03d4d8a5a959bc0f17b081a54
+GET /api/company/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_24.replay.txt
+Hash: main_driver_500_14e5e820635abce000a4b3f48f0811d597be61f5
+DELETE /api/company/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_25.replay.txt
+Hash: main_driver_500_37e60ba940c35e93a35db4ce53cf9a22795134f6
+GET /api/airport/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+main_driver_500 - Bug was reproduced - main_driver_500_26.replay.txt
+Hash: main_driver_500_e5308fd22a3cd97eb9e19fc8b7c9d7c779f8b373
+DELETE /api/airport/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.replay.txt
+Hash: PayloadBodyChecker_500_e64d450d7b24bbceedc8fb5764673c1e96c0e8e2
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.replay.txt
+Hash: PayloadBodyChecker_500_3b756b4337df91b118d3de8eb37a1c798a2e9742
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"id":0,"name":"fuzzstring","departureAirport":{"location":"fuzzstring"},"arrivalAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.replay.txt
+Hash: PayloadBodyChecker_500_42fd9677784f67346e40d657d9bfd062fc589b74
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"id":0}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.replay.txt
+Hash: PayloadBodyChecker_500_1a37fb25bcd89dbc4ca7da57e0f69cb6299b536a
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"name":"fuzzstring"}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.replay.txt
+Hash: PayloadBodyChecker_500_50f0fa986b0a1bb919083f3909704cd3c84fd0f5
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"id":0,"name":"fuzzstring","departureAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"},"arrivalAirport":{"capacity":0}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.replay.txt
+Hash: PayloadBodyChecker_500_7ff2ac7c2c6e193fdb1f761035958f53485c281f
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"departureAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_7.replay.txt
+Hash: PayloadBodyChecker_500_c099b842091230ea854158eeca8f007c46589d98
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"id":0},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_8.replay.txt
+Hash: PayloadBodyChecker_500_04ff8e8d12f00d4932a8121a37f7774ae857c38d
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_9.replay.txt
+Hash: PayloadBodyChecker_500_7e26054a39831359c9c6bf75c0b0266d548ab729
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"departureAirport":{"name":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_10.replay.txt
+Hash: PayloadBodyChecker_500_9298923db0df89eb78e9ea14eece5a7416b7df8a
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"arrivalAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_11.replay.txt
+Hash: PayloadBodyChecker_500_6fdf114772e0853af2113b82c23845366cf98e0f
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"route":{"departureAirport":{"id":0}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_12.replay.txt
+Hash: PayloadBodyChecker_500_bb181623d8944b57b59ab7c1f3f8d78b80adc104
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{ "fuzz" : false },"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_13.replay.txt
+Hash: PayloadBodyChecker_500_bcf4dfdc3904dafad3265e4ccecfe9595bd6dc38
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{ "fuzz" : false }},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_14.replay.txt
+Hash: PayloadBodyChecker_500_48aa9a9dacaddb8921c43eb9ce22e595f7102fb7
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":0}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_15.replay.txt
+Hash: PayloadBodyChecker_500_60f7d8f388821701776c21315a3f50db29f9e622
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":0,"numberOfSeats":0,"company":{"id":0,"name":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_16.replay.txt
+Hash: PayloadBodyChecker_500_d8c9daccc2d20ecc9a88b4f9ea5e6e2123ac6f0c
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":false,"flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":"fuzzstring"}}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_17.replay.txt
+Hash: PayloadBodyChecker_500_2eb3a0e2684c2d4564c4a91a3ef38fc5d330dd39
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{ "fuzz" : false }}},"price":0,"isSold":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_18.replay.txt
+Hash: PayloadBodyChecker_500_062dc5a8d6f1be199a2632d32a6dbd6cdbd619f9
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"ticketCode":"fuzzstring","flight":{"plane":{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":"fuzzstring"}}},"price":0,"isSold":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_19.replay.txt
+Hash: PayloadBodyChecker_500_62f8dad2390cd0ad3825ea678bb60aa92d0243d7
+POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"ticketCode":"fuzzstring","price":0,"isSold":false,"flightId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_20.replay.txt
+Hash: PayloadBodyChecker_500_c1b9f989f9f5d053f676e52e30f305c2ef151246
+POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"ticketCode":"fuzzstring","price":0,"isSold":0,"flightId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_21.replay.txt
+Hash: PayloadBodyChecker_500_b9b2498639b3762b6a26f0a5445406d278252607
+POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"ticketCode":false,"price":0,"isSold":false,"flightId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_22.replay.txt
+Hash: PayloadBodyChecker_500_7d2147bd22758269751ddd808f54e0af74b16a1a
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":"fuzzstring","departureAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"},"arrivalAirport":{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_23.replay.txt
+Hash: PayloadBodyChecker_500_2dfef97e2c7d9a8b3d33b67a59702527d3e4503b
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"arrivalAirport":{"capacity":0}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_24.replay.txt
+Hash: PayloadBodyChecker_500_d14313643eb6e088761f5ebecf35ed3f21a8188c
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"arrivalAirport":{"name":"None"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_25.replay.txt
+Hash: PayloadBodyChecker_500_7afca64e3d11e492745610472292c578b6ab318b
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"arrivalAirport":{"location":"None"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_26.replay.txt
+Hash: PayloadBodyChecker_500_8a33874bdf2c7dd5806412755f14132ec41157be
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"departureAirport":{"location":"None"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_27.replay.txt
+Hash: PayloadBodyChecker_500_91ae1aae26f19f186bf0c8709a2b42e87af0b052
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"departureAirport":{"name":"None"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_28.replay.txt
+Hash: PayloadBodyChecker_500_0a7fbc56b3ab6d8cc5c49668161f4d0c78319822
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"arrivalAirport":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_29.replay.txt
+Hash: PayloadBodyChecker_500_6fd7f0845a97a7b04eed0c27d44a0788e2288470
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"departureAirport":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_30.replay.txt
+Hash: PayloadBodyChecker_500_b55f3a92b489fccc3af1cf0c927098c437c2489a
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":3176,"name":"None","departureAirport":{"name":"None"},"arrivalAirport":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_31.replay.txt
+Hash: PayloadBodyChecker_500_e2ef57dd9bbf983d12a085f8d838c776bc0644c8
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"departureAirport":{"location":false}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_32.replay.txt
+Hash: PayloadBodyChecker_500_0eb3f2fed9ad9d8cb25cce34b35692b3ea82e2ce
+POST /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":"fuzzstring","departureAirportId":0,"arrivalAirportId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_33.replay.txt
+Hash: PayloadBodyChecker_500_be36fea1ac6377936cb82f3e16466e53998eb72e
+POST /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":0,"departureAirportId":0,"arrivalAirportId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_34.replay.txt
+Hash: PayloadBodyChecker_500_56da2c582829aa3a5a0891fa18f0362cfeee31cc
+PUT /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0,"name":"fuzzstring"}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_35.replay.txt
+Hash: PayloadBodyChecker_500_78dce2e82dd8ff35a71bbbbca88d2f38156540e2
+PUT /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":"fuzzstring","numberOfSeats":0,"company":{"id":0}}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_36.replay.txt
+Hash: PayloadBodyChecker_500_a0e8cc02b8e92575e2451a58a5948e3c724c1016
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":"fuzzstring","numberOfSeats":0,"companyId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_37.replay.txt
+Hash: PayloadBodyChecker_500_ea968337098fe1821f4c433f4eaf10677dc7f846
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"numberOfSeats":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_38.replay.txt
+Hash: PayloadBodyChecker_500_27247946b11e37fd1f73d4c9e23e9c7caa97568c
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_39.replay.txt
+Hash: PayloadBodyChecker_500_fb358fd3da6c58f6a8ee8e7003e4fbce4d642ff1
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"companyId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_40.replay.txt
+Hash: PayloadBodyChecker_500_ed4d4cf9c9df667478cc7c1b7af7bd1246668e37
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_41.replay.txt
+Hash: PayloadBodyChecker_500_02ed49bf2a7a7496b07f0848f7fe316b0cc9bbb5
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":0,"numberOfSeats":0,"companyId":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_42.replay.txt
+Hash: PayloadBodyChecker_500_3545eb5101c1579568775744a0ec24b6baa08d32
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_43.replay.txt
+Hash: PayloadBodyChecker_500_3d81e2d7456bb2c4dd12db3dac35a543056a604b
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_44.replay.txt
+Hash: PayloadBodyChecker_500_0004085d8ae73469b9a9b7c72cad749750b42f01
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_45.replay.txt
+Hash: PayloadBodyChecker_500_49b6cbf6a9946e12bac2985ec4b5a2ea792b9089
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":false}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_46.replay.txt
+Hash: PayloadBodyChecker_500_e0814632e65b6b5dae90c9945982284bb4443ade
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_47.replay.txt
+Hash: PayloadBodyChecker_500_c097517e2b98bbe823b991965c842cc260918fe5
+POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"id":0,"name":"fuzzstring","capacity":0,"location":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_48.replay.txt
+Hash: PayloadBodyChecker_500_384220c1e097ae75bca59064a41758a3d85fadaf
+POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_49.replay.txt
+Hash: PayloadBodyChecker_500_e4414abcc93e8ca02b1f7765d94611d3611a255e
+POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{"name":0}
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_1.replay.txt
+Hash: InvalidValueChecker_500_5d9f0ad7e913e66f77a6d851694f14f01039c471
+PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "ticketCode":fuzzstring,\n    "flight":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "departureDateTime":2019-06-26T20:20:39+00:00,\n            "arrivalDateTime":2019-06-26T20:20:39+00:00,\n            "duration":1,\n            "quota":1,\n            "quotaFilled":1,\n            "quotaFilledPercentage":1,\n            "route":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "departureAirport":\n                        {\n                            "id":1,\n                            "name":fuzzstring,\n                            "capacity":1,\n                            "location":fuzzstring\n                        }\n                    ,\n                    "arrivalAirport":\n                        {\n                            "id":1,\n                            "name":fuzzstring,\n                            "capacity":1,\n                            "location":fuzzstring\n                        }\n                }\n            ,\n            "plane":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "numberOfSeats":1,\n                    "company":\n                        {\n                            "id":1,\n                            "name":fuzzstring\n                        }\n                }\n        }\n    ,\n    "price":1,\n    "isSold":true}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_2.replay.txt
+Hash: InvalidValueChecker_500_fc33fb9e156e8b4b820c5f90480e9d45213aa26a
+POST /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "ticketCode":fuzzstring,\n    "price":1,\n    "isSold":true,\n    "flightId":1}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_3.replay.txt
+Hash: InvalidValueChecker_500_5c6130af40a5c3964db6a56d6f066ff5c02a0a7d
+PUT /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "departureAirport":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "capacity":1,\n            "location":fuzzstring\n        }\n    ,\n    "arrivalAirport":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "capacity":1,\n            "location":fuzzstring\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_4.replay.txt
+Hash: InvalidValueChecker_500_295f76a8e615091ce599023091a6efe11e337fea
+POST /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "departureAirportId":1,\n    "arrivalAirportId":1}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_5.replay.txt
+Hash: InvalidValueChecker_500_198fb0e5a8dd236ce541ce466325e5303cc2faed
+PUT /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "numberOfSeats":1,\n    "company":\n        {\n            "id":1,\n            "name":fuzzstring\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_6.replay.txt
+Hash: InvalidValueChecker_500_f90e9ac6b74b4b8b28a5dd261cb1e2bf9481aa19
+POST /api/plane HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "numberOfSeats":1,\n    "companyId":1}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_7.replay.txt
+Hash: InvalidValueChecker_500_20bba9e7951cbdca2b6ef75b7b4a196b933cc6f8
+PUT /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "departureDateTime":2019-06-26T20:20:39+00:00,\n    "arrivalDateTime":2019-06-26T20:20:39+00:00,\n    "duration":1,\n    "quota":1,\n    "quotaFilled":1,\n    "quotaFilledPercentage":1,\n    "route":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "departureAirport":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "capacity":1,\n                    "location":fuzzstring\n                }\n            ,\n            "arrivalAirport":\n                {\n                    "id":1,\n                    "name":fuzzstring,\n                    "capacity":1,\n                    "location":fuzzstring\n                }\n        }\n    ,\n    "plane":\n        {\n            "id":1,\n            "name":fuzzstring,\n            "numberOfSeats":1,\n            "company":\n                {\n                    "id":1,\n                    "name":fuzzstring\n                }\n        }\n    }\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_8.replay.txt
+Hash: InvalidValueChecker_500_915d77f52fde9b14a09e10ae72b3d29b86640513
+POST /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "name":fuzzstring,\n    "departureDateTime":2019-06-26T20:20:39+00:00,\n    "arrivalDateTime":2019-06-26T20:20:39+00:00,\n    "duration":1,\n    "quota":1,\n    "planeId":1,\n    "routeId":1}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_9.replay.txt
+Hash: InvalidValueChecker_500_9dc195ebc2525df6bddb1f40bcbe2da9113292d4
+PUT /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_10.replay.txt
+Hash: InvalidValueChecker_500_9e7bd38dfe735423b2f8af62ac00caa6e72753bd
+POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_11.replay.txt
+Hash: InvalidValueChecker_500_f6bb658d2319c22194f143149139400b7cbbe758
+PUT /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "capacity":1,\n    "location":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_12.replay.txt
+Hash: InvalidValueChecker_500_4fb526e66b10896f9814e4ae84c3f9fdc7d5dcc0
+POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "name":fuzzstring,\n    "capacity":1,\n    "location":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_13.replay.txt
+Hash: InvalidValueChecker_500_412099eba13f845a7734c7261ec8486ea52f9de0
+GET /api/ticket/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_14.replay.txt
+Hash: InvalidValueChecker_500_ce8353664476a2c8585453b52ae7a3fb985b0407
+DELETE /api/ticket/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_15.replay.txt
+Hash: InvalidValueChecker_500_9e386a152e76959dd9f78ab6bd8805606d7da45c
+GET /api/route/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_16.replay.txt
+Hash: InvalidValueChecker_500_b35b0206f19c773950ce0c42f83e5f6fc8684fbb
+DELETE /api/route/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_17.replay.txt
+Hash: InvalidValueChecker_500_91fa499b67fbc9aa180d0a019f737d8f36061b7b
+GET /api/plane/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_18.replay.txt
+Hash: InvalidValueChecker_500_9d11825029a0bd0ebce65786919906408749ae94
+DELETE /api/plane/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_19.replay.txt
+Hash: InvalidValueChecker_500_89f6298522fc4795f4bd048c84f48a939ac00c02
+GET /api/flight/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_20.replay.txt
+Hash: InvalidValueChecker_500_54a82cd4f9398fa15a3d187ef69cc0d44afbe556
+DELETE /api/flight/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_21.replay.txt
+Hash: InvalidValueChecker_500_c7b82992aa84a6c03d4d8a5a959bc0f17b081a54
+GET /api/company/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_22.replay.txt
+Hash: InvalidValueChecker_500_14e5e820635abce000a4b3f48f0811d597be61f5
+DELETE /api/company/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_23.replay.txt
+Hash: InvalidValueChecker_500_37e60ba940c35e93a35db4ce53cf9a22795134f6
+GET /api/airport/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------
+InvalidValueChecker_500 - Bug was reproduced - InvalidValueChecker_500_24.replay.txt
+Hash: InvalidValueChecker_500_e5308fd22a3cd97eb9e19fc8b7c9d7c779f8b373
+DELETE /api/airport/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nauthentication_token_tag\r\n
+--------------------------------------------------------------------------------

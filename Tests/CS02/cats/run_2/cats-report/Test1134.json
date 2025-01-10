@@ -1,0 +1,56 @@
+{
+  "testId": "Test 1134",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1134 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"id\":\"32833\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/company/32833",
+    "timestamp": "Thu, 9 Jan 2025 18:26:32 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "41",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:32 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080//api/company/32833",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,64 @@
+{
+  "testId": "Test 4826",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [multipart/related; boundary=cats]",
+  "expectedResult": "Should return 415",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [415] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "multipart/related; boundary=cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4826 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"price\":5,\"isSold\":true,\"flightId\":4,\"ticketCode\":\"YDh248TJ06GF5l\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:29 +0100"
+  },
+  "response": {
+    "responseCode": 415,
+    "httpMethod": "POST",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "199",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:29.379+0000",
+      "status": 415,
+      "error": "Unsupported Media Type",
+      "message": "Content type 'multipart/related;boundary=cats;charset=UTF-8' not supported",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:29 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

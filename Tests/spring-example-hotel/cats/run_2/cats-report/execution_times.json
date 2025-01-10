@@ -1,0 +1,330 @@
+{
+  "path": "get /example/v1/hotels",
+  "executions": [
+    {
+      "executionInMs": "2",
+      "testId": "Test 29"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 199"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 200"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 201"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 204"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 205"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 209"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 216"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 218"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 222"
+    },
+    {
+      "executionInMs": "2",
+      "testId": "Test 258"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 195"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 197"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 198"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 202"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 203"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 206"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 208"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 210"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 211"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 212"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 214"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 215"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 220"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 221"
+    },
+    {
+      "executionInMs": "3",
+      "testId": "Test 264"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 207"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 213"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 219"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 253"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 254"
+    },
+    {
+      "executionInMs": "4",
+      "testId": "Test 272"
+    },
+    {
+      "executionInMs": "5",
+      "testId": "Test 217"
+    },
+    {
+      "executionInMs": "5",
+      "testId": "Test 350"
+    },
+    {
+      "executionInMs": "5",
+      "testId": "Test 352"
+    },
+    {
+      "executionInMs": "6",
+      "testId": "Test 349"
+    },
+    {
+      "executionInMs": "7",
+      "testId": "Test 257"
+    },
+    {
+      "executionInMs": "8",
+      "testId": "Test 27"
+    },
+    {
+      "executionInMs": "8",
+      "testId": "Test 265"
+    },
+    {
+      "executionInMs": "8",
+      "testId": "Test 343"
+    },
+    {
+      "executionInMs": "8",
+      "testId": "Test 346"
+    },
+    {
+      "executionInMs": "8",
+      "testId": "Test 348"
+    },
+    {
+      "executionInMs": "10",
+      "testId": "Test 155"
+    },
+    {
+      "executionInMs": "11",
+      "testId": "Test 23"
+    },
+    {
+      "executionInMs": "11",
+      "testId": "Test 44"
+    },
+    {
+      "executionInMs": "11",
+      "testId": "Test 90"
+    },
+    {
+      "executionInMs": "12",
+      "testId": "Test 56"
+    },
+    {
+      "executionInMs": "12",
+      "testId": "Test 196"
+    },
+    {
+      "executionInMs": "13",
+      "testId": "Test 120"
+    },
+    {
+      "executionInMs": "15",
+      "testId": "Test 347"
+    },
+    {
+      "executionInMs": "15",
+      "testId": "Test 351"
+    },
+    {
+      "executionInMs": "16",
+      "testId": "Test 52"
+    },
+    {
+      "executionInMs": "17",
+      "testId": "Test 271"
+    },
+    {
+      "executionInMs": "18",
+      "testId": "Test 45"
+    },
+    {
+      "executionInMs": "18",
+      "testId": "Test 353"
+    },
+    {
+      "executionInMs": "19",
+      "testId": "Test 33"
+    },
+    {
+      "executionInMs": "19",
+      "testId": "Test 49"
+    },
+    {
+      "executionInMs": "19",
+      "testId": "Test 93"
+    },
+    {
+      "executionInMs": "19",
+      "testId": "Test 345"
+    },
+    {
+      "executionInMs": "20",
+      "testId": "Test 53"
+    },
+    {
+      "executionInMs": "20",
+      "testId": "Test 342"
+    },
+    {
+      "executionInMs": "22",
+      "testId": "Test 24"
+    },
+    {
+      "executionInMs": "22",
+      "testId": "Test 35"
+    },
+    {
+      "executionInMs": "23",
+      "testId": "Test 25"
+    },
+    {
+      "executionInMs": "23",
+      "testId": "Test 278"
+    },
+    {
+      "executionInMs": "25",
+      "testId": "Test 47"
+    },
+    {
+      "executionInMs": "25",
+      "testId": "Test 59"
+    },
+    {
+      "executionInMs": "25",
+      "testId": "Test 81"
+    },
+    {
+      "executionInMs": "26",
+      "testId": "Test 57"
+    },
+    {
+      "executionInMs": "28",
+      "testId": "Test 165"
+    },
+    {
+      "executionInMs": "28",
+      "testId": "Test 279"
+    },
+    {
+      "executionInMs": "36",
+      "testId": "Test 344"
+    },
+    {
+      "executionInMs": "38",
+      "testId": "Test 84"
+    },
+    {
+      "executionInMs": "38",
+      "testId": "Test 164"
+    },
+    {
+      "executionInMs": "44",
+      "testId": "Test 85"
+    },
+    {
+      "executionInMs": "45",
+      "testId": "Test 119"
+    },
+    {
+      "executionInMs": "47",
+      "testId": "Test 80"
+    },
+    {
+      "executionInMs": "53",
+      "testId": "Test 88"
+    },
+    {
+      "executionInMs": "273",
+      "testId": "Test 8"
+    }
+  ],
+  "bestCase": {
+    "executionInMs": "2",
+    "testId": "Test 29"
+  },
+  "worstCase": {
+    "executionInMs": "273",
+    "testId": "Test 8"
+  },
+  "average": 16.139240506329113
+}

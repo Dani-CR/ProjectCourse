@@ -1,0 +1,56 @@
+{
+  "testId": "Test 1898",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/javascript]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/javascript"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1898 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":3,\"plane\":{\"numberOfSeats\":0,\"name\":\"ZNXYvF22\",\"company\":{\"name\":\"Lowe and Sons\",\"id\":9},\"id\":9},\"route\":{\"departureAirport\":{\"name\":\"AmTXG\",\"location\":\"x7w6MnnQB\",\"id\":2,\"capacity\":9},\"name\":\"NSV3X\",\"id\":2,\"arrivalAirport\":{\"name\":\"oG3WIFz\",\"location\":\"00ZsMxyLp\",\"id\":9,\"capacity\":9}},\"quota\":3,\"name\":\"6J5iWJy\",\"quotaFilled\":5,\"departureDateTime\":\"2025-01-09T17:26:36.052283723Z\",\"id\":3,\"arrivalDateTime\":\"2025-01-09T17:26:36.052612117Z\",\"quotaFilledPercentage\":7}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:46 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:46 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/flight",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

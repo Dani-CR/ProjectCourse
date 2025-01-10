@@ -23,23 +23,17 @@
     ],
     "payload": "{}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
-    "timestamp": "Tue, 3 Dec 2024 20:09:05 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/list",
+    "timestamp": "Fri, 10 Jan 2025 18:00:57 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "6",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "199",
+    "numberOfWordsInResponse": "1",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "157",
-    "jsonBody": {
-      "timestamp": "2024-12-03T19:09:05.984+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/list"
-    },
+    "contentLengthInBytes": "2",
+    "jsonBody": [],
     "headers": [
       {
         "key": "cache-control",
@@ -51,7 +45,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:05 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:57 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +76,7 @@
   },
   "path": "/api/v1.0/videos/list",
   "fuzzer": "CheckSecurityHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/list",
   "contractPath": "/api/v1.0/videos/list",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

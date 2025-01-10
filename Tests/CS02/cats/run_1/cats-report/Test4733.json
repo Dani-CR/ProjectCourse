@@ -1,0 +1,60 @@
+{
+  "testId": "Test 4733",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/tiff]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [image/tiff;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/tiff"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4733 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"price\":6,\"isSold\":false,\"flightId\":8,\"ticketCode\":\"n6z8NUl1Llz\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:18 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Ticket with this code already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "image/tiff;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:17 GMT"
+      }
+    ],
+    "responseContentType": "image/tiff;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

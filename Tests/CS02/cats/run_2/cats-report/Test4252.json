@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4252",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4252 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:22 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "49",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "459",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:22.677+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id 357; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 357 (through reference chain: java.util.ArrayList[0]->com.app.entity.Ticket[\"flight\"]->com.app.entity.Flight$HibernateProxy$NnlJWLcH[\"name\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

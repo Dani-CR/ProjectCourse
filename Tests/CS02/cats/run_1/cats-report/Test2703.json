@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2703",
+  "scenario": "Insert invalid data {0} within a valid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2703 - InsertRandomValuesInBody)"
+      }
+    ],
+    "payload": "{{0},\"numberOfSeats\":300,\"companyId\":1,\"name\":\"Boeing 747\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:42 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "39",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "427",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:42.827+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Unexpected character ('{' (code 123)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('{' (code 123)): was expecting double-quote to start field name\n at [Source: (PushbackInputStream); line: 1, column: 3]",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:42 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "InsertRandomValuesInBody",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

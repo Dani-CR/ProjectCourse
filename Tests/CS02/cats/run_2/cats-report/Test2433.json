@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2433",
+  "scenario": "Send [extreme positive values] in request fields: field [id], value [REPLACE with 18446744073709551614], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2433 - ExtremePositiveNumbersInIntegerFields)"
+      }
+    ],
+    "payload": "{\"id\":18446744073709551614}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/flight/18446744073709551614",
+    "timestamp": "Thu, 9 Jan 2025 18:26:54 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "34",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "316",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:54.394+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"18446744073709551614\"",
+      "path": "//api/flight/18446744073709551614"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:53 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "ExtremePositiveNumbersInIntegerFields",
+  "fullRequestPath": "http://localhost:8080//api/flight/18446744073709551614",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

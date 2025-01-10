@@ -3,8 +3,8 @@
   "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
   "expectedResult": "Should return 4XX",
   "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -29,24 +29,20 @@
         "value": "cats/12.0.0 (Test 438 - DuplicateHeaders)"
       }
     ],
-    "payload": "{\"id\":8}",
+    "payload": "{\"id\":9}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/8",
-    "timestamp": "Wed, 4 Dec 2024 10:42:22 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/9",
+    "timestamp": "Fri, 10 Jan 2025 18:04:33 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "21",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "158",
+    "contentLengthInBytes": "0",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:22.263+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/8"
+      "notAJson": ""
     },
     "headers": [
       {
@@ -54,12 +50,12 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
-        "key": "content-type",
-        "value": "application/json;charset=UTF-8"
+        "key": "content-length",
+        "value": "0"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:21 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:33 GMT"
       },
       {
         "key": "expires",
@@ -68,10 +64,6 @@
       {
         "key": "pragma",
         "value": "no-cache"
-      },
-      {
-        "key": "transfer-encoding",
-        "value": "chunked"
       },
       {
         "key": "x-content-type-options",
@@ -86,11 +78,11 @@
         "value": "1; mode=block"
       }
     ],
-    "responseContentType": "application/json;charset=UTF-8"
+    "responseContentType": "unknown/unknown"
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "DuplicateHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/8",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/9",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

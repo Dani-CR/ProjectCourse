@@ -2,9 +2,9 @@
   "testId": "Test 477",
   "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
   "expectedResult": "Should get a [2XX] response code",
-  "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,20 @@
         "value": "cats/12.0.0 (Test 477 - NewFields)"
       }
     ],
-    "payload": "{\"id\":5,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "payload": "{\"id\":2,\"catsFuzzyField\":\"catsFuzzyField\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5?catsFuzzyField=catsFuzzyField",
-    "timestamp": "Tue, 3 Dec 2024 20:09:04 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/2?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Fri, 10 Jan 2025 18:00:56 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "27",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "158",
+    "contentLengthInBytes": "0",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:04.687+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/5"
+      "notAJson": ""
     },
     "headers": [
       {
@@ -46,12 +42,12 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
-        "key": "content-type",
-        "value": "application/json;charset=UTF-8"
+        "key": "content-length",
+        "value": "0"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:04 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:56 GMT"
       },
       {
         "key": "expires",
@@ -60,10 +56,6 @@
       {
         "key": "pragma",
         "value": "no-cache"
-      },
-      {
-        "key": "transfer-encoding",
-        "value": "chunked"
       },
       {
         "key": "x-content-type-options",
@@ -78,11 +70,11 @@
         "value": "1; mode=block"
       }
     ],
-    "responseContentType": "application/json;charset=UTF-8"
+    "responseContentType": "unknown/unknown"
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "NewFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5?catsFuzzyField=catsFuzzyField",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/2?catsFuzzyField=catsFuzzyField",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

@@ -1,0 +1,63 @@
+{
+  "testId": "Test 1",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [name], value [REPLACE with iSKdSY9AtUrLజ్ఞ\\u200cాnGh8HKsw77uIk], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [200, 201, 202, 204], actual [201], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"name\":\"iSKdSY9AtUrLజ్ఞ\\u200CాnGh8HKsw77uIk\",\"location\":\"BoczzLg3fyTK\",\"id\":7,\"capacity\":8}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:47 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "588",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "101",
+    "jsonBody": {
+      "id": 31712,
+      "name": "iSKdSY9AtUrLజ్ఞ‌ాnGh8HKsw77uIk",
+      "capacity": 8,
+      "location": "BoczzLg3fyTK"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:48 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

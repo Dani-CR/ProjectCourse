@@ -20,7 +20,7 @@
     <div class="flex-items-center">
         <img src="./assets/clock.svg" alt="timestamp">
         <span>
-				Thu, 9 Jan 2025 08:55:50 +0100
+				Fri, 10 Jan 2025 13:13:52 +0100
 			</span>
     </div>
 </div>
@@ -53,7 +53,7 @@
             <p>Timestamp</p>
         </div>
         <div class="component text">
-            <p>Thu, 9 Jan 2025 08:55:50 +0100</p>
+            <p>Fri, 10 Jan 2025 13:13:52 +0100</p>
         </div>
 
         <div class="component title">
@@ -100,7 +100,7 @@
             <p>Full Request Path</p>
         </div>
         <div class="component text">
-            <span class="rounded path details">http://localhost:8090//example/v1/hotels/%7Bid%7D</span>
+            <span class="rounded path details">http://localhost:8090/example/v1/hotels/%7Bid%7D</span>
         </div>
 
         <div class="component title border-left-bottom">
@@ -132,7 +132,7 @@
         </div>
 
         <div class="code-area" id="code-3">
-            <pre><code>curl  -X SEARCH \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/xml&quot; -H &quot;User-Agent: cats/12.0.0 (Test 533 - NonRestHttpMethods)&quot; \&#10;      \&#10;      http://localhost:8090//example/v1/hotels/%7Bid%7D&#10;</code></pre>
+            <pre><code>curl  -X SEARCH \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/xml&quot; -H &quot;User-Agent: cats/12.0.0 (Test 533 - NonRestHttpMethods)&quot; \&#10;      \&#10;      http://localhost:8090/example/v1/hotels/%7Bid%7D&#10;</code></pre>
         </div>
     </div>
 
@@ -142,7 +142,7 @@
             <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
         </div>
         <div class="code-area-outside" id="code-response">
-            <pre><code>{&#10;  &quot;responseCode&quot;: 405,&#10;  &quot;httpMethod&quot;: &quot;SEARCH&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;3&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;7&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;234&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736409350341,&#10;    &quot;status&quot;: 405,&#10;    &quot;error&quot;: &quot;Method Not Allowed&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.HttpRequestMethodNotSupportedException&quot;,&#10;    &quot;message&quot;: &quot;Request method &#39;SEARCH&#39; not supported&quot;,&#10;    &quot;path&quot;: &quot;//example/v1/hotels/%7Bid%7D&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;allow&quot;,&#10;      &quot;value&quot;: &quot;GET, PUT, DELETE&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 09 Jan 2025 07:55:50 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+            <pre><code>{&#10;  &quot;responseCode&quot;: 405,&#10;  &quot;httpMethod&quot;: &quot;SEARCH&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;3&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;7&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;233&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736511232947,&#10;    &quot;status&quot;: 405,&#10;    &quot;error&quot;: &quot;Method Not Allowed&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.HttpRequestMethodNotSupportedException&quot;,&#10;    &quot;message&quot;: &quot;Request method &#39;SEARCH&#39; not supported&quot;,&#10;    &quot;path&quot;: &quot;/example/v1/hotels/%7Bid%7D&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;allow&quot;,&#10;      &quot;value&quot;: &quot;GET, PUT, DELETE&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Fri, 10 Jan 2025 12:13:52 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
         </div>
     </div>
 

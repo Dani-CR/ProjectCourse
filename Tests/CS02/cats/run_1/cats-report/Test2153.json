@@ -1,0 +1,60 @@
+{
+  "testId": "Test 2153",
+  "scenario": "Insert zero-width chars in field names: field [quota], char [\\u202b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 409",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [409]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2153 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"duration\":9,\"routeId\":4,\"qu‫ota\":2,\"name\":\"1dXgR\",\"planeId\":6,\"departureDateTime\":\"2025-01-09T17:22:16.836241772Z\",\"arrivalDateTime\":\"2025-01-09T17:22:16.84078735Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:32 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Flight with this name already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:32 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

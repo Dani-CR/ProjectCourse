@@ -1,0 +1,21 @@
+################################################################################
+ main_driver_500
+
+ Hash: main_driver_500_5c6130af40a5c3964db6a56d6f066ff5c02a0a7d
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> GET /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:45:59 GMT\r\nConnection: close\r\n\r\n1c6\r\n{"timestamp":"2025-01-09T12:45:59.880+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Flight with id 1; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 1 (through reference chain: java.util.ArrayList[0]->com.app.entity.Ticket[\\"flight\\"]->com.app.entity.Flight$HibernateProxy$GBa1wSRP[\\"name\\"])","path":"/api/ticket"}\r\n0\r\n\r\n'
+

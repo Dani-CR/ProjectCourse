@@ -33,9 +33,9 @@ import javax.servlet.http.HttpServletResponse;
     public
     @ResponseBody
     RestErrorInfo handleDataStoreException(DataFormatException ex, WebRequest request, HttpServletResponse response) {
-<span class="nc" id="L36">        log.info(&quot;Converting Data Store exception to RestResponse : &quot; + ex.getMessage());</span>
+<span class="fc" id="L36">        log.info(&quot;Converting Data Store exception to RestResponse : &quot; + ex.getMessage());</span>
 
-<span class="nc" id="L38">        return new RestErrorInfo(ex, &quot;You messed up.&quot;);</span>
+<span class="fc" id="L38">        return new RestErrorInfo(ex, &quot;You messed up.&quot;);</span>
     }
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -43,9 +43,9 @@ import javax.servlet.http.HttpServletResponse;
     public
     @ResponseBody
     RestErrorInfo handleResourceNotFoundException(ResourceNotFoundException ex, WebRequest request, HttpServletResponse response) {
-<span class="nc" id="L46">        log.info(&quot;ResourceNotFoundException handler:&quot; + ex.getMessage());</span>
+<span class="fc" id="L46">        log.info(&quot;ResourceNotFoundException handler:&quot; + ex.getMessage());</span>
 
-<span class="nc" id="L48">        return new RestErrorInfo(ex, &quot;Sorry I couldn't find it.&quot;);</span>
+<span class="fc" id="L48">        return new RestErrorInfo(ex, &quot;Sorry I couldn't find it.&quot;);</span>
     }
 
     @Override
@@ -55,10 +55,10 @@ import javax.servlet.http.HttpServletResponse;
 
     //todo: replace with exception mapping
     public static &lt;T&gt; T checkResourceFound(final T resource) {
-<span class="nc bnc" id="L58" title="All 2 branches missed.">        if (resource == null) {</span>
-<span class="nc" id="L59">            throw new ResourceNotFoundException(&quot;resource not found&quot;);</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">        if (resource == null) {</span>
+<span class="fc" id="L59">            throw new ResourceNotFoundException(&quot;resource not found&quot;);</span>
         }
-<span class="nc" id="L61">        return resource;</span>
+<span class="fc" id="L61">        return resource;</span>
     }
 
 }

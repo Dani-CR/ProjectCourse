@@ -3,8 +3,8 @@
   "scenario": "Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. ",
   "expectedResult": "Should return 2XX",
   "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -25,24 +25,24 @@
         "value": "cats/12.0.0 (Test 314 - ExtraHeaders)"
       }
     ],
-    "payload": "{\"id\":1}",
+    "payload": "{\"id\":5}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/1",
-    "timestamp": "Tue, 3 Dec 2024 20:09:01 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/5",
+    "timestamp": "Fri, 10 Jan 2025 18:00:54 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 500,
     "httpMethod": "GET",
-    "responseTimeInMs": "16",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "45",
+    "numberOfWordsInResponse": "5",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "163",
+    "contentLengthInBytes": "155",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:01.128+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/download/1"
+      "timestamp": "2025-01-10T17:00:54.246+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No value present",
+      "path": "/api/v1.0/videos/download/5"
     },
     "headers": [
       {
@@ -50,12 +50,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:00 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:53 GMT"
       },
       {
         "key": "expires",
@@ -86,7 +90,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "ExtraHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/1",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/5",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

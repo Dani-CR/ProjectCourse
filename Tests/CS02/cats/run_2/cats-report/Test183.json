@@ -1,0 +1,68 @@
+{
+  "testId": "Test 183",
+  "scenario": "Send a request with an random negative integer body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 183 - RandomNegativeIntegerBody)"
+      }
+    ],
+    "payload": "-987698769876",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:26:12 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "35",
+    "numberOfWordsInResponse": "57",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "655",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:12.181+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot construct instance of `com.app.entity.Airport` (although at least one Creator exists): no long/Long-argument constructor/factory method to deserialize from Number value (-987698769876); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.app.entity.Airport` (although at least one Creator exists): no long/Long-argument constructor/factory method to deserialize from Number value (-987698769876)\n at [Source: (PushbackInputStream); line: 1, column: 1]",
+      "path": "//api/airport"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:11 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "RandomNegativeIntegerBody",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

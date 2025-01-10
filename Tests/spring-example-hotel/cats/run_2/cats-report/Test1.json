@@ -1,6 +1,6 @@
 {
   "testId": "Test 1",
-  "scenario": "Send [values containing abugidas chars] in request fields: field [city], value [REPLACE with gYJVyQRMbVAXLq0G1qkCHb1cజ్ఞ\\u200cా6...], is required [FALSE]",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [city], value [REPLACE with RxEmPYvuHAgMoIAHyX5జ్ఞ\\u200cాvObuFC...], is required [FALSE]",
   "expectedResult": "Should return [2XX]",
   "result": "error",
   "resultReason": "Unexpected behaviour: 400",
@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 1 - AbugidasInStringFields)"
       }
     ],
-    "payload": "city=gYJVyQRMbVAXLq0G1qkCHb1c%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BE6Hby6pmck9sbBZLCVZr3K1GkZ&name=beSftKC8&rating=4&description=Chuck+Norris+writes+code+that+optimizes+itself.&id=4",
+    "payload": "city=RxEmPYvuHAgMoIAHyX5%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEvObuFCgGZ3HjI1uMRtR&name=XIcwSFl&rating=9&description=Chuck+Norris+doesn%27t+have+disk+latency+because+the+hard+drive+knows+to+hurry+the+hell+up.&id=1",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:58:42 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:20:52 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "779",
+    "responseTimeInMs": "742",
     "numberOfWordsInResponse": "26",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "438",
+    "contentLengthInBytes": "437",
     "jsonBody": {
-      "timestamp": 1736409523236,
+      "timestamp": 1736511653504,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
       "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:43 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:53 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "AbugidasInStringFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -1,0 +1,72 @@
+{
+  "testId": "Test 1417",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 501], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1417 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":7,\"plane\":{\"numberOfSeats\":9,\"name\":\"zw5JXz\",\"company\":{\"name\":\"O'Keefe, Hauck and Bergnaum\",\"id\":0},\"id\":6},\"route\":{\"departureAirport\":{\"name\":\"XOjDA0Q\",\"location\":\"JTCR9Cy7l0\",\"id\":7,\"capacity\":3},\"name\":\"84qnJEy\",\"id\":6,\"arrivalAirport\":{\"name\":\"Dca9O6ED\",\"location\":\"uujgFSN23s\",\"id\":0,\"capacity\":8}},\"quota\":4,\"name\":\"WoofJMR\",\"quotaFilled\":6,\"departureDateTime\":\"2025-01-09T17:22:16.844913927Z\",\"id\":2,\"arrivalDateTime\":\"2025-01-09T17:22:16.845349548Z\",\"quotaFilledPercentage\":3}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:18 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "33",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "820",
+    "jsonBody": {
+      "notAJson": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 500 – Internal Server Error</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Ari"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en"
+      },
+      {
+        "key": "content-length",
+        "value": "820"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=utf-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:18 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=utf-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

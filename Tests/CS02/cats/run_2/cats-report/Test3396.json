@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3396",
+  "scenario": "Send [decimal values in integer fields] in request fields: field [arrivalAirportId], value [REPLACE with 0.07051535804868836], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3396 - DecimalNumbersInIntegerFields)"
+      }
+    ],
+    "payload": "{\"name\":\"qbmSPfj\",\"arrivalAirportId\":0.07051535804868836,\"departureAirportId\":6}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:09 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "43",
+    "numberOfWordsInResponse": "9",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "170",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:09.887+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Unable to find com.app.entity.Airport with id 6",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:08 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "DecimalNumbersInIntegerFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

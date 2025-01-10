@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AirportController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report end restler 10min</a> &gt; <a href="index.source.html" class="el_package">com.app.controller</a> &gt; <span class="el_source">AirportController.java</span></div><h1>AirportController.java</h1><pre class="source lang-java linenums">package com.app.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.entity.Airport;
+import com.app.service.impl.AirportServiceImpl;
+import com.app.util.ApiPaths;
+
+import io.swagger.v3.oas.annotations.Operation;
+
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
+
+@RestController
+@RequestMapping(ApiPaths.AirportCtrl.PATH)
+//@Api(value = ApiPaths.AirportCtrl.PATH)
+<span class="fc" id="L31">public class AirportController {</span>
+
+	@Autowired
+	AirportServiceImpl airportServiceImpl;
+
+	@PostMapping
+	@Operation(description = &quot;Create_Operation&quot;)//, responses = Airport.class)
+	public ResponseEntity&lt;?&gt; create(@Valid @RequestBody Airport airport) {
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">		if (airportServiceImpl.getByName(airport.getName()) != null) {</span>
+<span class="fc" id="L40">			return new ResponseEntity&lt;&gt;(HttpStatus.CONFLICT);</span>
+		}
+<span class="nc" id="L42">		airport = airportServiceImpl.save(airport);</span>
+<span class="nc" id="L43">		return new ResponseEntity&lt;&gt;(airport, HttpStatus.CREATED);</span>
+	}
+
+	@GetMapping(&quot;/{id}&quot;)
+	@Operation(description = &quot;Get_By_Id_Operation&quot;)//, response = Airport.class)
+	public ResponseEntity&lt;?&gt; getById(@PathVariable(value = &quot;id&quot;, required = true) Long id) {
+<span class="fc" id="L49">		Airport airport = airportServiceImpl.getById(id);</span>
+<span class="fc" id="L50">		return new ResponseEntity&lt;&gt;(airport, HttpStatus.OK);</span>
+	}
+
+	@DeleteMapping(&quot;/{id}&quot;)
+	@Operation(description = &quot;Delete_Operation&quot;)
+	public ResponseEntity&lt;?&gt; delete(@PathVariable(value = &quot;id&quot;, required = true) Long id) {
+<span class="nc" id="L56">		airportServiceImpl.delete(id);</span>
+<span class="nc" id="L57">		return new ResponseEntity&lt;&gt;(HttpStatus.OK);</span>
+	}
+
+	@PutMapping
+	@Operation(description = &quot;Update_Operation&quot;)//, response = Airport.class)
+	public ResponseEntity&lt;?&gt; update(@Valid @RequestBody Airport airport) {
+
+<span class="fc" id="L64">		airport = airportServiceImpl.update(airport);</span>
+<span class="fc" id="L65">		return new ResponseEntity&lt;&gt;(airport, HttpStatus.OK);</span>
+	}
+
+	@GetMapping
+	@Operation(description = &quot;Get_All_Operation&quot;)//, response = Airport.class, responseContainer = &quot;List&quot;)
+	public ResponseEntity&lt;?&gt; getAll() {
+<span class="fc" id="L71">		List&lt;Airport&gt; airportList = airportServiceImpl.getAll();</span>
+<span class="fc" id="L72">		return new ResponseEntity&lt;&gt;(airportList, HttpStatus.OK);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

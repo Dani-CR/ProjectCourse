@@ -2,9 +2,9 @@
   "testId": "Test 426",
   "scenario": "Send a happy flow request with undocumented HTTP method: BATCH",
   "expectedResult": "Should return 405",
-  "result": "warn",
-  "resultReason": "Unexpected Response Code: 404",
-  "resultDetails": "Unexpected response code for http method [BATCH]: expected [405], actual [404]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [BATCH] with response code [405]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -23,24 +23,28 @@
     ],
     "payload": "",
     "httpMethod": "BATCH",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%7Bid%7D",
-    "timestamp": "Wed, 4 Dec 2024 10:42:22 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 18:04:33 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 405,
     "httpMethod": "BATCH",
-    "responseTimeInMs": "8",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "165",
+    "contentLengthInBytes": "174",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:22.016+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/%7Bid%7D"
+      "timestamp": "2025-01-10T17:04:33.577+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'BATCH' not supported",
+      "path": "/api/v1.0/videos/get/%7Bid%7D"
     },
     "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
       {
         "key": "cache-control",
         "value": "no-cache, no-store, max-age=0, must-revalidate"
@@ -51,7 +55,7 @@
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:21 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:33 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "CustomHttpMethods",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/%7Bid%7D",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

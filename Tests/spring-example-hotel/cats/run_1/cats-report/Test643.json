@@ -21,15 +21,15 @@
         "value": "cats/12.0.0 (Test 643 - UnsupportedAcceptHeaders)"
       }
     ],
-    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "payload": "city=New+Christopher&name=9Vv6kXwk&rating=2&description=There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&id=7",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
-    "timestamp": "Thu, 9 Jan 2025 08:55:52 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 13:13:55 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "PUT",
-    "responseTimeInMs": "5",
+    "responseTimeInMs": "12",
     "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "0",
@@ -43,7 +43,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:52 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:55 GMT"
       },
       {
         "key": "x-application-context",
@@ -54,7 +54,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

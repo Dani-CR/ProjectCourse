@@ -1,0 +1,64 @@
+{
+  "testId": "Test 3204",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/plane/{id}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3204 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":7}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/plane/7/..%20;/",
+    "timestamp": "Thu, 9 Jan 2025 18:27:06 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "70",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "141",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:06.966+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "//api/plane/7/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:06 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//api/plane/7/..%20;/",
+  "contractPath": "/api/plane/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3600",
+  "scenario": "Remove the following fields from request: [arrivalAirport#id]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3600 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"departureAirport\":{\"name\":\"JaYXfmQ\",\"location\":\"ipXudaKoJGT\",\"id\":5,\"capacity\":6},\"name\":\"oEQCdRF\",\"id\":4,\"arrivalAirport\":{\"name\":\"DsGou\",\"location\":\"qvVl1MviCTW\",\"capacity\":2}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:13 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "42",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "586",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:13.702+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Route.arrivalAirport -> com.app.entity.Airport; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Route.arrivalAirport -> com.app.entity.Airport",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

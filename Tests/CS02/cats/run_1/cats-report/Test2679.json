@@ -1,0 +1,66 @@
+{
+  "testId": "Test 2679",
+  "scenario": "Send [empty strings] in request fields: field [id], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2679 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":3,\"name\":\"kNd3LLa\",\"company\":{\"name\":\"Klein-Miller\",\"id\":3},\"id\":\"\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:41 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "26",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "88",
+    "jsonBody": {
+      "id": 32184,
+      "name": "kNd3LLa",
+      "numberOfSeats": 3,
+      "company": {
+        "id": 3,
+        "name": "Klein-Miller"
+      }
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:42 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

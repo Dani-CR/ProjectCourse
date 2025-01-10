@@ -1,0 +1,60 @@
+{
+  "testId": "Test 4740",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/form-data; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [multipart/form-data; boundary=cats;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/form-data; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4740 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"price\":5,\"isSold\":true,\"flightId\":4,\"ticketCode\":\"YDh248TJ06GF5l\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:28 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Ticket with this code already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "multipart/form-data; boundary=cats;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:28 GMT"
+      }
+    ],
+    "responseContentType": "multipart/form-data; boundary=cats;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

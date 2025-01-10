@@ -1,6 +1,6 @@
 {
   "testId": "Test 23",
-  "scenario": "Send [decimal values in integer fields] in request fields: field [size], value [REPLACE with 0.9531643881998615], is required [TRUE]",
+  "scenario": "Send [decimal values in integer fields] in request fields: field [size], value [REPLACE with 0.2161001629624505], is required [TRUE]",
   "expectedResult": "Should return [4XX]",
   "result": "warn",
   "resultReason": "Undocumented response code: 400",
@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 23 - DecimalNumbersInIntegerFields)"
       }
     ],
-    "payload": "{\"size\":0.9531643881998615,\"page\":0}",
+    "payload": "{\"size\":0.2161001629624505,\"page\":0}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=0.9531643881998615&page=0",
-    "timestamp": "Thu, 9 Jan 2025 08:58:44 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=0.2161001629624505&page=0",
+    "timestamp": "Fri, 10 Jan 2025 13:20:54 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "GET",
-    "responseTimeInMs": "20",
+    "responseTimeInMs": "11",
     "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "378",
+    "contentLengthInBytes": "377",
     "jsonBody": {
-      "timestamp": 1736409524359,
+      "timestamp": 1736511654652,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
-      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"0.9531643881998615\"",
-      "path": "//example/v1/hotels"
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"0.2161001629624505\"",
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:44 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:54 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "DecimalNumbersInIntegerFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=0.9531643881998615&page=0",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=0.2161001629624505&page=0",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4102",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4102 - NewFields)"
+      }
+    ],
+    "payload": "{\"id\":9,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/route/9?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Thu, 9 Jan 2025 18:23:07 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "30",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "179",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:07.840+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Route entity with id 9 exists!",
+      "path": "//api/route/9"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:07 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route/{id}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080//api/route/9?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/api/route/{id}",
+  "server": "http://localhost:8080/"
+}

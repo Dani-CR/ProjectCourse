@@ -1,0 +1,21 @@
+################################################################################
+ main_driver_500
+
+ Hash: main_driver_500_295f76a8e615091ce599023091a6efe11e337fea
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /api/route HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "name":"fuzzstring",\n    "departureAirportId":1,\n    "arrivalAirportId":1}\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:43:01 GMT\r\nConnection: close\r\n\r\n10c\r\n{"timestamp":"2025-01-09T12:43:01.968+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 57; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 57","path":"/api/route"}\r\n0\r\n\r\n'
+

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2405",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PUBLISH",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [PUBLISH] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2405 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "PUBLISH",
+    "url": "http://localhost:8080//api/flight/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:26:53 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "PUBLISH",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "168",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:53.976+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'PUBLISH' not supported",
+      "path": "//api/flight/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:53 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/flight/%7Bid%7D",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

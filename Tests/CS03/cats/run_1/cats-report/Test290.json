@@ -3,8 +3,8 @@
   "scenario": "Send [zero-width characters] in request fields: field [username], value [INSERT with \\u200d], is required [FALSE]",
   "expectedResult": "Should return [2XX]",
   "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 290 - ZeroWidthCharsInValuesFields)"
       }
     ],
-    "payload": "{\"password\":\"efxf5H4Vaa5\",\"created\":\"2024-12-03T19:08:52.632892569Z\",\"modified\":\"2024-12-03T19:08:52.634283483Z\",\"videos\":[{\"size\":4.134901373661577,\"created\":\"2024-12-03T19:08:52.757663919Z\",\"modified\":\"2024-12-03T19:08:52.758412148Z\",\"id\":9,\"title\":\"yCKKn5\",\"url\":\"http://catsAMNKyE.com/cats\"},{\"size\":6.3806885196514775,\"created\":\"2024-12-03T19:08:52.763434399Z\",\"modified\":\"2024-12-03T19:08:52.764203378Z\",\"id\":4,\"title\":\"nfBbh8lEn\",\"url\":\"http://catsDxakkP.com/cats\"}],\"id\":4,\"username\":\"mirian.\\u200Dsmitham\"}",
+    "payload": "{\"password\":\"AaclzMnmIOrA\",\"created\":\"2025-01-10T17:00:39.357213965Z\",\"modified\":\"2025-01-10T17:00:39.358965847Z\",\"videos\":[{\"size\":5.085076176070661,\"created\":\"2025-01-10T17:00:39.461470302Z\",\"modified\":\"2025-01-10T17:00:39.461971913Z\",\"id\":9,\"title\":\"YTWupk\",\"url\":\"http://catsmTjVFS.com/cats\"},{\"size\":2.7923548489433947,\"created\":\"2025-01-10T17:00:39.48416438Z\",\"modified\":\"2025-01-10T17:00:39.48467363Z\",\"id\":2,\"title\":\"ja44lO\",\"url\":\"http://catstHyofQ.com/cats\"}],\"id\":8,\"username\":\"sergio.\\u200Dkautzer\"}",
     "httpMethod": "POST",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Tue, 3 Dec 2024 20:09:00 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:00:53 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 500,
     "httpMethod": "POST",
-    "responseTimeInMs": "6",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "76",
+    "numberOfWordsInResponse": "18",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "159",
+    "contentLengthInBytes": "305",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:09:00.614+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+      "timestamp": "2025-01-10T17:00:53.624+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "could not execute statement; SQL [n/a]; constraint [users.username]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
+      "path": "/api/v1.0/users/sign-up"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:00 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:53 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "ZeroWidthCharsInValuesFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

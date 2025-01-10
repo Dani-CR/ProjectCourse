@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "PayloadBodyChecker",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": null,
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /api/company HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\"id\":0}",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:44:18 GMT\r\nConnection: close\r\n\r\n10c\r\n{\"timestamp\":\"2025-01-09T12:44:18.004+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2\",\"path\":\"/api/company\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

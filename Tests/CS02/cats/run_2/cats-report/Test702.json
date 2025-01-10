@@ -1,0 +1,68 @@
+{
+  "testId": "Test 702",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 702 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":\"32728\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/airport/32728",
+    "timestamp": "Thu, 9 Jan 2025 18:26:22 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "39",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "358",
+    "jsonBody": {
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 17:26:22 GMT 2025</div><div>There was an unexpected error (type=Internal Server Error, status=500).</div><div>No class com.app.entity.Airport entity with id 32728 exists!</div></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en-US"
+      },
+      {
+        "key": "content-length",
+        "value": "358"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:21 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/airport/32728",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,140 +1,140 @@
-[12/3/2024 1:26:29PM] Generating grammar...
-[12/3/2024 1:26:29PM] Getting requests...
-[12/3/2024 1:26:30PM] Getting dependencies...
-[12/3/2024 1:26:30PM] Getting path consumers...
-[12/3/2024 1:26:30PM] Getting query consumers...
-[12/3/2024 1:26:30PM] Getting header consumers...
-[12/3/2024 1:26:30PM] Getting body consumers...
-[12/3/2024 1:26:30PM] Getting producers...
-[12/3/2024 1:26:30PM] Done processing producers
-[12/3/2024 1:26:30PM] Compute dependencies
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Generating grammar...
+[1/10/2025 6:56:25PM] Getting requests...
+[1/10/2025 6:56:25PM] Getting dependencies...
+[1/10/2025 6:56:25PM] Getting path consumers...
+[1/10/2025 6:56:25PM] Getting query consumers...
+[1/10/2025 6:56:25PM] Getting header consumers...
+[1/10/2025 6:56:25PM] Getting body consumers...
+[1/10/2025 6:56:25PM] Getting producers...
+[1/10/2025 6:56:25PM] Done processing producers
+[1/10/2025 6:56:25PM] Compute dependencies
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
-  xMsPath = None
-  method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
-  xMsPath = None
-  method = Get }
-] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+[1/10/2025 6:56:25PM[] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
+  xMsPath = None
+  method = Post }1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/list"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
   xMsPath = None
   method = Get }
-[12/3/2024 1:26:30PM] Second pass dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/list"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/upload"
   xMsPath = None
   method = Post }
-[12/3/2024 1:26:30PM] Done dependencies for request { endpoint = "/api/v1.0/users/sign-up"
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
   xMsPath = None
-  method = Post }
-[12/3/2024 1:26:30PM] Assigning equality constraints...
-[12/3/2024 1:26:30PM] Getting ordering constraints...
-[12/3/2024 1:26:30PM] Dependency analysis completed.
-[12/3/2024 1:26:30PM] Generating request primitives...
-Writing new dictionary to /home/daniela/Documents/Tests/CS03/restler/Compile/dict.json
-[12/3/2024 1:26:30PM] Generating python grammar...
-[12/3/2024 1:26:30PM] Get requests
-[12/3/2024 1:26:30PM] Done get requests
-[12/3/2024 1:26:30PM] Done generating python grammar.
-Workflow completed.  See /home/daniela/Documents/Tests/CS03/restler/Compile for REST-ler grammar.
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/download/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Second pass dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Done dependencies for request { endpoint = "/api/v1.0/videos/get/{id}"
+  xMsPath = None
+  method = Get }
+[1/10/2025 6:56:25PM] Assigning equality constraints...
+[1/10/2025 6:56:25PM] Getting ordering constraints...
+[1/10/2025 6:56:25PM] Dependency analysis completed.
+[1/10/2025 6:56:25PM] Generating request primitives...
+Writing new dictionary to /home/daniela/Documents/ProjCourse_repo/Tests/CS03/restler/Compile/dict.json
+[1/10/2025 6:56:26PM] Generating python grammar...
+[1/10/2025 6:56:26PM] Get requests
+[1/10/2025 6:56:26PM] Done get requests
+[1/10/2025 6:56:26PM] Done generating python grammar.
+Workflow completed.  See /home/daniela/Documents/ProjCourse_repo/Tests/CS03/restler/Compile for REST-ler grammar.

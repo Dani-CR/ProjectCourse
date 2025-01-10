@@ -23,23 +23,23 @@
     ],
     "payload": "{\"size\":100,\"page\":9223372036854775807}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=9223372036854775807",
-    "timestamp": "Thu, 9 Jan 2025 08:55:36 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=9223372036854775807",
+    "timestamp": "Fri, 10 Jan 2025 13:13:38 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "GET",
-    "responseTimeInMs": "6",
+    "responseTimeInMs": "61",
     "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "379",
+    "contentLengthInBytes": "378",
     "jsonBody": {
-      "timestamp": 1736409336063,
+      "timestamp": 1736511218176,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
       "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"9223372036854775807\"",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:35 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:37 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "ExtremePositiveNumbersInIntegerFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=9223372036854775807",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=9223372036854775807",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

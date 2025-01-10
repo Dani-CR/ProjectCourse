@@ -1,0 +1,68 @@
+{
+  "testId": "Test 636",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [404, 400, 422], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 636 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"5514\"\n}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/airport/5514",
+    "timestamp": "Thu, 9 Jan 2025 18:26:21 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "189",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:21.455+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Airport entity with id 5514 exists!",
+      "path": "//api/airport/5514"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:20 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/airport/5514",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

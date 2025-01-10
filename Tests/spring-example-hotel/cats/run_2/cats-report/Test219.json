@@ -23,18 +23,18 @@
     ],
     "payload": "{\"size\":100,\"page\":0}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=0",
-    "timestamp": "Thu, 9 Jan 2025 08:58:52 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=0",
+    "timestamp": "Fri, 10 Jan 2025 13:21:00 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "GET",
-    "responseTimeInMs": "5",
+    "responseTimeInMs": "4",
     "numberOfWordsInResponse": "35",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "331",
     "jsonBody": {
-      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 08:58:52 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Fri Jan 10 13:21:00 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
     },
     "headers": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:51 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:59 GMT"
       },
       {
         "key": "x-application-context",
@@ -62,7 +62,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=0",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

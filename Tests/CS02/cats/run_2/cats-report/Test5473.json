@@ -1,0 +1,56 @@
+{
+  "testId": "Test 5473",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/vnd.djvu]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/vnd.djvu"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5473 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":5}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/ticket/5",
+    "timestamp": "Thu, 9 Jan 2025 18:27:35 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:34 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/ticket/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket/5",
+  "contractPath": "/api/ticket/{id}",
+  "server": "http://localhost:8080/"
+}

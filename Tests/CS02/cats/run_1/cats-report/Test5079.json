@@ -1,0 +1,68 @@
+{
+  "testId": "Test 5079",
+  "scenario": "Send [zero-width characters] in request fields: field [flightId], value [INSERT with \\u200b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5079 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"price\":6,\"isSold\":false,\"flightId\":\"\\u200B8\",\"ticketCode\":\"n6z8NUl1Llz\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:22 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "47",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "522",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:22.976+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize value of type `java.lang.Long` from String \"​8\": not a valid Long value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Long` from String \"​8\": not a valid Long value\n at [Source: (PushbackInputStream); line: 1, column: 38] (through reference chain: com.app.DTO.TicketDTO[\"flightId\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1179",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/company/{id}̵̷̷̷̴̶̶̶̶̸̡̡̢̡̨̨̢̨̢̧̢̡̨̧̡̡̧̧̧̢̡̡̨̡̡̧̡̨̧̡̧̛̛̛̛̛͚̬̱̤̰̗͉͚̖͙͎͔͔̺̳͕̫̬͚̹͖̬̭̖̪̗͕̜̣̥̣̼͍͉̖͍̪͈̖͚̙͕̗͕̯̭̹͖̮̘̤̩̥̟̖͈̯̠̖͈̜͈̥̫͔̘̭͉͎͇̤̦̯͙̹̠̼̮͕̲̖̟̲̦̣͇̳͖̳̭͇͓̭̥͈͓͙͈̫͙͎͈̻͓͎͇̘͈͇̱̟̠̳͇̬̺̲̭̪̬̼̝̠̙̹̩̱̪͔͉͎̱͚͍̬͈̤͈͙͖̝̲̦̞̺̟̟̺͇̳͈̠̘̺̪̱̮͖̻̥̝̺̼̙̫̩̹̣̲̩̲͍̺̘͕̤͉̹̥͉̮̮̟̘̥̺̯̗̠͈̬͚̦̦͚̫̫̦̝̟̤̬̙͔̻͙͚̹̣̳̳͔̥̘̠̗̦̠͚͎̖̮̳̗̥̫͚̯̬̩̘̫̫̠̟̻̳̻͈̲̖͚͇̼̩̥̥͎̥̯͚̞̘̼̞͍̮̗͈̱͚͙̠͔̞̮̱̭͍͍̪̲̜͓͍̣̯̲̠̲̤̥̥̱̪͇̞̭͙͚͔̜̠͓͈̞͈̣̹̝̩̦̟̻̰͙̯̼̜̞̮̬̝͚̺̟͎̻̱̙̦̜̭̲̰͎̳̣̹̟̯̝͚̪̼͓͕͕̹͖̣̠͓̫͇͚͔̼͛͒͂̎̊̿̀̅̈͌͋̃̾̈̾̇͛͌̇͛̅̀̑̇̈͗͌͛̐̀͆̐̊̅̋̈́̂̈́̈́͑̓͂͂̌̈́̽͌͐̐͂͐̈́̍̂͗̂͌̓̀̅̋̋̀̈́̎̄͛̾̊͐̎̉̏͊͐̑͊͒̐̔̏̔̋̑̌͆̏̀̉͆̆́̓̆̉̀̒̆̆̉̀̂̎̈̔͗̔̔̊̎̏̑̒̐̐̆̉̍̉̀̍̏̐̃̅̐̊̾͆̐͋͊̿̉̆̾͊̀͊͒͌̀͛̎́́͂̐͂̎͛̆̉́̾̀̅͋̋̇̎́̽͒̋̓̀͂̈́̓́̎͐͊͒̎͒͌̿̿̔͐̈́͑̊̄̓̎͐̓̓̍̅͊̑̇̆́̈́̓̿̄̐̓̐͐́͛̆̈̊́͑̊̊̅͗͘͘̕̕͘̕̚̚̕͘̕̕͘̕̚̚͜͜͜͜͜͜͜͜͜͜͜͜͜͜͠͝͠͝͝͝͝͝͝͝͝͠͠͝͝͠͝͝͝͝͠͠ͅͅͅͅͅͅͅͅͅͅͅ",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1179 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":7}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/company/NOT_SET?id=7",
+    "timestamp": "Thu, 9 Jan 2025 18:22:14 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "291",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:14.391+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"NOT_SET\"",
+      "path": "//api/company/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//api/company/NOT_SET?id=7",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

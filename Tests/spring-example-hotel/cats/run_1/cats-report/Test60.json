@@ -21,10 +21,10 @@
         "value": "cats/12.0.0 (Test 60 - HttpMethods)"
       }
     ],
-    "payload": "city=Rauland&name=8DZ8pt&rating=7&description=Chuck+Norris+doesn%27t+need+a+java+compiler%2C+he+goes+straight+to+.war&id=4",
+    "payload": "city=Hodkiewiczview&name=iImvNDtD&rating=9&description=%22It+works+on+my+machine%22+always+holds+true+for+Chuck+Norris.&id=2",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:55:36 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:13:38 +0100"
   },
   "response": {
     "responseCode": 405,
@@ -32,14 +32,14 @@
     "responseTimeInMs": "17",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "222",
+    "contentLengthInBytes": "221",
     "jsonBody": {
-      "timestamp": 1736409336166,
+      "timestamp": 1736511218365,
       "status": 405,
       "error": "Method Not Allowed",
       "exception": "org.springframework.web.HttpRequestMethodNotSupportedException",
       "message": "Request method 'PUT' not supported",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:35 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:37 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "HttpMethods",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

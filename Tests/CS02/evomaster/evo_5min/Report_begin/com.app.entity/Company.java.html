@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Company.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report begin evomaster 5min</a> &gt; <a href="index.source.html" class="el_package">com.app.entity</a> &gt; <span class="el_source">Company.java</span></div><h1>Company.java</h1><pre class="source lang-java linenums">package com.app.entity;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+@Entity
+<span class="pc bnc" id="L20" title="All 22 branches missed.">@Data</span>
+@Schema(description = &quot;CompanyEntityObject&quot;)
+public class Company {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name=&quot;id&quot;)
+	@Schema(description = &quot;Company_Id&quot;)
+	private Long id;
+	
+	@Column(name = &quot;name&quot;, length = 50)
+	@Schema(description = &quot;Name_Of_Company&quot;, required = true)
+	private String name;
+	
+    /*@JoinColumn(name = &quot;company_plane_id&quot;)
+    @OneToMany(fetch = FetchType.LAZY)
+    private List&lt;Plane&gt; planes;
+    
+    @JoinColumn(name = &quot;flight_company_id&quot;)
+    @OneToMany(fetch = FetchType.LAZY)
+    private List&lt;Flight&gt; flights;*/
+	
+    public String getName() {
+<span class="nc" id="L43">    	return name;</span>
+    }
+    
+    public Long getId() {
+<span class="nc" id="L47">    	return id;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

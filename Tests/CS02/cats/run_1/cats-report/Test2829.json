@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2829",
+  "scenario": "Remove the following fields from request: [company#name]",
+  "expectedResult": "Should return [4XX] response code as required fields [were] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2829 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":3,\"name\":\"kNd3LLa\",\"company\":{\"id\":3},\"id\":9}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:46 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "282",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:46.048+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Unable to find com.app.entity.Company with id 3; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.app.entity.Company with id 3",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:45 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

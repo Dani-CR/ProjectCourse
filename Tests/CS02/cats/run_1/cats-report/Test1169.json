@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1169",
+  "scenario": "Send a happy flow request with undocumented HTTP method: POST",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [POST] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1169 - HttpMethods)"
+      }
+    ],
+    "payload": "{\"id\":7}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/company/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:22:14 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "POST",
+    "responseTimeInMs": "30",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "166",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:14.187+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'POST' not supported",
+      "path": "//api/company/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/company/%7Bid%7D",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2985",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [application/ld+json]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2985 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":3,\"name\":\"WAdGcXxa\",\"company\":{\"name\":\"Lebsack-Aufderhar\",\"id\":8},\"id\":5}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:27:03 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "282",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:03.832+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Unable to find com.app.entity.Company with id 8; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.app.entity.Company with id 8",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:02 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,72 @@
+{
+  "testId": "Test 3178",
+  "scenario": "Add an extra header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. ",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3178 - ExtraHeaders)"
+      }
+    ],
+    "payload": "{\"id\":1}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/plane/1",
+    "timestamp": "Thu, 9 Jan 2025 18:22:52 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "394",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:52.095+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Plane with id 1; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Plane with id 1 (through reference chain: com.app.entity.Plane$HibernateProxy$xNNIW8ho[\"name\"])",
+      "path": "//api/plane/1"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:51 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane/{id}",
+  "fuzzer": "ExtraHeaders",
+  "fullRequestPath": "http://localhost:8080//api/plane/1",
+  "contractPath": "/api/plane/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1937",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [application/ld+json]",
+  "expectedResult": "Should return 415",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 409",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [409]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1937 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":4,\"routeId\":6,\"quota\":5,\"name\":\"3a802\",\"planeId\":6,\"departureDateTime\":\"2025-01-09T17:26:36.043351314Z\",\"arrivalDateTime\":\"2025-01-09T17:26:36.044517929Z\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:47 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "6",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "36",
+    "jsonBody": {
+      "notAJson": "Flight with this name already exists"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "36"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:47 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

@@ -1,3 +1,4 @@
+#TODO CHANGE DIRECTORIES BCS FOLDERS HAVE BEEN MOVED
 import subprocess
 import os
 

@@ -1,0 +1,56 @@
+{
+  "testId": "Test 111",
+  "scenario": "Send [outside the boundary values] in request fields: field [capacity], value [REPLACE with 2147483647], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 409",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [409]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 111 - IntegerFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"name\":\"MmkBX\",\"location\":\"ZKHoDbKHejO\",\"id\":1,\"capacity\":2147483647}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:26:09 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:09 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/airport",
+  "fuzzer": "IntegerFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

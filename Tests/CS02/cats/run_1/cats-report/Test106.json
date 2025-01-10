@@ -1,0 +1,56 @@
+{
+  "testId": "Test 106",
+  "scenario": "Send [outside the boundary values] in request fields: field [id], value [REPLACE with -9223372036854775808], is required [FALSE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 409",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [409]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 106 - IntegerFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"name\":\"2tfA5d\",\"location\":\"BoczzLg3fyTK\",\"id\":-9223372036854775808,\"capacity\":8}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:51 +0100"
+  },
+  "response": {
+    "responseCode": 409,
+    "httpMethod": "POST",
+    "responseTimeInMs": "37",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:51 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/airport",
+  "fuzzer": "IntegerFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

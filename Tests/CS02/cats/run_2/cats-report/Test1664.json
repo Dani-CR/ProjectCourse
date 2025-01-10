@@ -1,0 +1,145 @@
+{
+  "testId": "Test 1664",
+  "scenario": "Send {\"circularRef\": {\"self\": {\"$ref\": \"#/circularRef\"}}}\n as invalid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1664 - RandomDummyInvalidJsonBody)"
+      }
+    ],
+    "payload": "{\"circularRef\": {\"self\": {\"$ref\": \"#/circularRef\"}}}\n",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:42 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "17",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1166",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:42.814+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "errors": [
+        {
+          "codes": [
+            "NotNull.flight.name",
+            "NotNull.name",
+            "NotNull.java.lang.String",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flight.name",
+                "name"
+              ],
+              "arguments": null,
+              "defaultMessage": "name",
+              "code": "name"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flight",
+          "field": "name",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        },
+        {
+          "codes": [
+            "NotNull.flight.plane",
+            "NotNull.plane",
+            "NotNull.com.app.entity.Plane",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flight.plane",
+                "plane"
+              ],
+              "arguments": null,
+              "defaultMessage": "plane",
+              "code": "plane"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flight",
+          "field": "plane",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        },
+        {
+          "codes": [
+            "NotNull.flight.route",
+            "NotNull.route",
+            "NotNull.com.app.entity.Route",
+            "NotNull"
+          ],
+          "arguments": [
+            {
+              "codes": [
+                "flight.route",
+                "route"
+              ],
+              "arguments": null,
+              "defaultMessage": "route",
+              "code": "route"
+            }
+          ],
+          "defaultMessage": "must not be null",
+          "objectName": "flight",
+          "field": "route",
+          "rejectedValue": null,
+          "bindingFailure": false,
+          "code": "NotNull"
+        }
+      ],
+      "message": "Validation failed for object='flight'. Error count: 3",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:42 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "RandomDummyInvalidJsonBody",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1168",
+  "scenario": "Send a 'happy' flow request with all fields and all headers",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1168 - HappyPath)"
+      }
+    ],
+    "payload": "{\"id\":\"32833\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/company/32833",
+    "timestamp": "Thu, 9 Jan 2025 18:26:33 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "44",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "191",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:33.131+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Company entity with id 32833 exists!",
+      "path": "//api/company/32833"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:33 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "HappyPath",
+  "fullRequestPath": "http://localhost:8080//api/company/32833",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

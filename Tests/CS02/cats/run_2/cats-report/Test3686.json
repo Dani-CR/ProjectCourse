@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3686",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3686 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"qbmSPfj\",\"arrivalAirportId\":2,\"departureAirportId\":6}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:15 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "38",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "345",
+    "jsonBody": {
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 17:27:15 GMT 2025</div><div>There was an unexpected error (type=Internal Server Error, status=500).</div><div>Unable to find com.app.entity.Airport with id 6</div></body></html>"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-language",
+        "value": "en-US"
+      },
+      {
+        "key": "content-length",
+        "value": "345"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:15 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

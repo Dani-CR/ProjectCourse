@@ -25,15 +25,15 @@
         "value": "cats/12.0.0 (Test 32 - DummyTransferEncodingHeaders)"
       }
     ],
-    "payload": "city=Lake+Eric&name=beSftKC8&rating=4&description=Chuck+Norris+writes+code+that+optimizes+itself.&id=4",
+    "payload": "city=Abshireville&name=XIcwSFl&rating=9&description=Chuck+Norris+doesn%27t+have+disk+latency+because+the+hard+drive+knows+to+hurry+the+hell+up.&id=1",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:58:44 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:20:54 +0100"
   },
   "response": {
     "responseCode": 501,
     "httpMethod": "POST",
-    "responseTimeInMs": "28",
+    "responseTimeInMs": "8",
     "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "0",
@@ -47,7 +47,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:44 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:54 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -58,7 +58,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "DummyTransferEncodingHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

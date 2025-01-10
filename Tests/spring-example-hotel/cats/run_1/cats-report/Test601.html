@@ -20,7 +20,7 @@
     <div class="flex-items-center">
         <img src="./assets/clock.svg" alt="timestamp">
         <span>
-				Thu, 9 Jan 2025 08:55:51 +0100
+				Fri, 10 Jan 2025 13:13:54 +0100
 			</span>
     </div>
 </div>
@@ -53,7 +53,7 @@
             <p>Timestamp</p>
         </div>
         <div class="component text">
-            <p>Thu, 9 Jan 2025 08:55:51 +0100</p>
+            <p>Fri, 10 Jan 2025 13:13:54 +0100</p>
         </div>
 
         <div class="component title">
@@ -100,7 +100,7 @@
             <p>Full Request Path</p>
         </div>
         <div class="component text">
-            <span class="rounded path details">http://localhost:8090//example/v1/hotels/%7Bid%7D</span>
+            <span class="rounded path details">http://localhost:8090/example/v1/hotels/%7Bid%7D</span>
         </div>
 
         <div class="component title border-left-bottom">
@@ -124,7 +124,7 @@
             <button class="copy-button" onclick="copyTabs()">Copy code</button>
         </div>
         <div class="code-area" id="code-1">
-            <pre><code>city&#61;West+Linette&amp;rating&#61;8&amp;description&#61;Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&amp;id&#61;9</code></pre>
+            <pre><code>city&#61;New+Christopher&amp;rating&#61;2&amp;description&#61;There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&amp;id&#61;7</code></pre>
         </div>
 
         <div class="code-area active" id="code-2">
@@ -132,7 +132,7 @@
         </div>
 
         <div class="code-area" id="code-3">
-            <pre><code>curl  -X PUT \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/xml&quot; -H &quot;User-Agent: cats/12.0.0 (Test 601 - RemoveFields)&quot; \&#10;      -d &#39;city&#61;West+Linette&amp;rating&#61;8&amp;description&#61;Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&amp;id&#61;9&#39; \&#10;      http://localhost:8090//example/v1/hotels/%7Bid%7D&#10;</code></pre>
+            <pre><code>curl  -X PUT \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/xml&quot; -H &quot;User-Agent: cats/12.0.0 (Test 601 - RemoveFields)&quot; \&#10;      -d &#39;city&#61;New+Christopher&amp;rating&#61;2&amp;description&#61;There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&amp;id&#61;7&#39; \&#10;      http://localhost:8090/example/v1/hotels/%7Bid%7D&#10;</code></pre>
         </div>
     </div>
 
@@ -142,7 +142,7 @@
             <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
         </div>
         <div class="code-area-outside" id="code-response">
-            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;PUT&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;35&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;20&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;370&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736409351991,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException&quot;,&#10;    &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;{id}\&quot;&quot;,&#10;    &quot;path&quot;: &quot;//example/v1/hotels/%7Bid%7D&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 09 Jan 2025 07:55:51 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;PUT&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;24&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;20&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;369&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: 1736511234725,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;exception&quot;: &quot;org.springframework.web.method.annotation.MethodArgumentTypeMismatchException&quot;,&#10;    &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;{id}\&quot;&quot;,&#10;    &quot;path&quot;: &quot;/example/v1/hotels/%7Bid%7D&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Fri, 10 Jan 2025 12:13:54 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-application-context&quot;,&#10;      &quot;value&quot;: &quot;application:test:8090&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
         </div>
     </div>
 

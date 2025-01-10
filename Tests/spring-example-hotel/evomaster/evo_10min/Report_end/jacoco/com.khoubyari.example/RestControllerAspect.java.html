@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 
     @Before(&quot;execution(public * com.khoubyari.example.api.rest.*Controller.*(..))&quot;)
     public void logBeforeRestCall(JoinPoint pjp) throws Throwable {
-<span class="nc" id="L21">        log.info(&quot;:::::AOP Before REST call:::::&quot; + pjp);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        log.info(&quot;:::::AOP Before REST call:::::&quot; + pjp);</span>
+<span class="fc" id="L22">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

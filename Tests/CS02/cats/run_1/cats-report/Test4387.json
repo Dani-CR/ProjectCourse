@@ -1,0 +1,64 @@
+{
+  "testId": "Test 4387",
+  "scenario": "Send a happy flow request with undocumented HTTP method: TRACE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [TRACE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4387 - HttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "TRACE",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:12 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "TRACE",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "17",
+    "numberOfLinesInResponse": "11",
+    "contentLengthInBytes": "169",
+    "jsonBody": {
+      "notAJson": "TRACE /error HTTP/1.1\r\naccept: application/json\r\nuser-agent: cats/12.0.0 (Test 4387 - HttpMethods)\r\nhost: localhost:8080\r\nconnection: Keep-Alive\r\naccept-encoding: gzip\r\n"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "HEAD, DELETE, POST, GET, OPTIONS, PUT"
+      },
+      {
+        "key": "content-length",
+        "value": "169"
+      },
+      {
+        "key": "content-type",
+        "value": "message/http"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:11 GMT"
+      }
+    ],
+    "responseContentType": "message/http"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

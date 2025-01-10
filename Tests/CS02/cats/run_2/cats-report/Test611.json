@@ -1,0 +1,68 @@
+{
+  "testId": "Test 611",
+  "scenario": "Send a happy flow request with undocumented HTTP method: LOCK",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [LOCK] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 611 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "LOCK",
+    "url": "http://localhost:8080//api/airport/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:26:20 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "LOCK",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "166",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:20.977+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'LOCK' not supported",
+      "path": "//api/airport/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:20 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/airport/%7Bid%7D",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

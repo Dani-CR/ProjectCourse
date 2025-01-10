@@ -1,0 +1,61 @@
+{
+  "testId": "Test 861",
+  "scenario": "Send [NULL values] in request fields: field [name], value [REPLACE], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 861 - NullValuesInFields)"
+      }
+    ],
+    "payload": "{\"name\":null,\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:27 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "47",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "24",
+    "jsonBody": {
+      "id": 32853,
+      "name": null
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:27 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "NullValuesInFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

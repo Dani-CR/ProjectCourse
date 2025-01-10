@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "InvalidValueChecker",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": "/api/airport",
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 20,
+            "replay_request": "POST /api/airport HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    \"id\":-6,\n    \"name\":\"fuzzstring\",\n    \"capacity\":1,\n    \"location\":\"fuzzstring\"}\r\n",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:27:34 GMT\r\nConnection: close\r\n\r\n110\r\n{\"timestamp\":\"2025-01-09T16:27:35.001+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"query did not return a unique result: 235; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 235\",\"path\":\"/api/airport\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

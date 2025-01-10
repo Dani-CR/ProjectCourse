@@ -1,0 +1,61 @@
+{
+  "testId": "Test 775",
+  "scenario": "Send [empty strings] in request fields: field [id], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 775 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"name\":\"BUaYS\",\"id\":\"\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:24 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "27",
+    "jsonBody": {
+      "id": 32845,
+      "name": "BUaYS"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:23 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

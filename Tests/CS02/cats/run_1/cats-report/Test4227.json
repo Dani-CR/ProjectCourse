@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4227",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [ticketCode], value [REPLACE with BK58vxJWeiHkజ్ఞ\\u200cాH3DDIkzu1z5L2], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4227 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"price\":6,\"isSold\":false,\"flightId\":8,\"ticketCode\":\"BK58vxJWeiHkజ్ఞ\\u200CాH3DDIkzu1z5L2\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:09 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "88",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "431",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:09.402+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id 8; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 8 (through reference chain: com.app.entity.Ticket[\"flight\"]->com.app.entity.Flight$HibernateProxy$iF1XBDBu[\"name\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:08 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

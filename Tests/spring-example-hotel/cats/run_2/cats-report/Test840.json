@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 840 - ZeroWidthCharsInValuesFields)"
       }
     ],
-    "payload": "{\"id\":\"\\u200C4\"}",
+    "payload": "{\"id\":\"\\u200C1\"}",
     "httpMethod": "DELETE",
-    "url": "http://localhost:8090//example/v1/hotels/%E2%80%8C4",
-    "timestamp": "Thu, 9 Jan 2025 08:59:08 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%E2%80%8C1",
+    "timestamp": "Fri, 10 Jan 2025 13:21:14 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "DELETE",
-    "responseTimeInMs": "19",
+    "responseTimeInMs": "12",
     "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "372",
+    "contentLengthInBytes": "371",
     "jsonBody": {
-      "timestamp": 1736409548715,
+      "timestamp": 1736511674507,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
-      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"‌4\"",
-      "path": "//example/v1/hotels/%E2%80%8C4"
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"‌1\"",
+      "path": "/example/v1/hotels/%E2%80%8C1"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:59:07 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:14 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "ZeroWidthCharsInValuesFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%E2%80%8C4",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%E2%80%8C1",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

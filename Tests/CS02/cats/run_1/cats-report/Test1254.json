@@ -1,0 +1,62 @@
+{
+  "testId": "Test 1254",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [404, 400, 422], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1254 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"8178\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/company/8178",
+    "timestamp": "Thu, 9 Jan 2025 18:22:15 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "61",
+    "jsonBody": {
+      "id": 8178,
+      "name": "fuzzstring",
+      "hibernateLazyInitializer": {}
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:14 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/company/8178",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

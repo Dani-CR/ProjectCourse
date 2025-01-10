@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 9 Jan 2025 18:23:12 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 4380
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 4380</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 9 Jan 2025 18:23:12 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Send [extreme positive values] in request fields: field [flight#plane#id], value [REPLACE with 18446744073709551614], is required [FALSE]</p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return [4XX]</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-warn">warn</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/ticket</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>ExtremePositiveNumbersInIntegerFields</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:8080//api/ticket</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-put details">put</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{&#10;  &quot;flight&quot;: {&#10;    &quot;duration&quot;: 2,&#10;    &quot;plane&quot;: {&#10;      &quot;numberOfSeats&quot;: 6,&#10;      &quot;name&quot;: &quot;mLehXM&quot;,&#10;      &quot;company&quot;: {&#10;        &quot;name&quot;: &quot;Waelchi Group&quot;,&#10;        &quot;id&quot;: 6&#10;      },&#10;      &quot;id&quot;: 18446744073709551614&#10;    },&#10;    &quot;route&quot;: {&#10;      &quot;departureAirport&quot;: {&#10;        &quot;name&quot;: &quot;qQtIh&quot;,&#10;        &quot;location&quot;: &quot;FHFubHWhNH9&quot;,&#10;        &quot;id&quot;: 8,&#10;        &quot;capacity&quot;: 8&#10;      },&#10;      &quot;name&quot;: &quot;qf0Xq&quot;,&#10;      &quot;id&quot;: 9,&#10;      &quot;arrivalAirport&quot;: {&#10;        &quot;name&quot;: &quot;cO9zz6z8&quot;,&#10;        &quot;location&quot;: &quot;BmfQ51Kxm&quot;,&#10;        &quot;id&quot;: 3,&#10;        &quot;capacity&quot;: 9&#10;      }&#10;    },&#10;    &quot;quota&quot;: 2,&#10;    &quot;name&quot;: &quot;aMMNQS&quot;,&#10;    &quot;quotaFilled&quot;: 9,&#10;    &quot;departureDateTime&quot;: &quot;2025-01-09T17:23:09.285202273Z&quot;,&#10;    &quot;id&quot;: 4,&#10;    &quot;arrivalDateTime&quot;: &quot;2025-01-09T17:23:09.285767054Z&quot;,&#10;    &quot;quotaFilledPercentage&quot;: 4&#10;  },&#10;  &quot;price&quot;: 8,&#10;  &quot;isSold&quot;: false,&#10;  &quot;id&quot;: 0,&#10;  &quot;ticketCode&quot;: &quot;HuWRASzGqKun&quot;&#10;}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 4380 - ExtremePositiveNumbersInIntegerFields)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X PUT \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 4380 - ExtremePositiveNumbersInIntegerFields)&quot; \&#10;      -d &#39;{&quot;flight&quot;:{&quot;duration&quot;:2,&quot;plane&quot;:{&quot;numberOfSeats&quot;:6,&quot;name&quot;:&quot;mLehXM&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Waelchi Group&quot;,&quot;id&quot;:6},&quot;id&quot;:18446744073709551614},&quot;route&quot;:{&quot;departureAirport&quot;:{&quot;name&quot;:&quot;qQtIh&quot;,&quot;location&quot;:&quot;FHFubHWhNH9&quot;,&quot;id&quot;:8,&quot;capacity&quot;:8},&quot;name&quot;:&quot;qf0Xq&quot;,&quot;id&quot;:9,&quot;arrivalAirport&quot;:{&quot;name&quot;:&quot;cO9zz6z8&quot;,&quot;location&quot;:&quot;BmfQ51Kxm&quot;,&quot;id&quot;:3,&quot;capacity&quot;:9}},&quot;quota&quot;:2,&quot;name&quot;:&quot;aMMNQS&quot;,&quot;quotaFilled&quot;:9,&quot;departureDateTime&quot;:&quot;2025-01-09T17:23:09.285202273Z&quot;,&quot;id&quot;:4,&quot;arrivalDateTime&quot;:&quot;2025-01-09T17:23:09.285767054Z&quot;,&quot;quotaFilledPercentage&quot;:4},&quot;price&quot;:8,&quot;isSold&quot;:false,&quot;id&quot;:0,&quot;ticketCode&quot;:&quot;HuWRASzGqKun&quot;}&#39; \&#10;      http://localhost:8080//api/ticket&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;PUT&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;3&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;35&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;505&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: &quot;2025-01-09T17:23:12.092+0000&quot;,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;message&quot;: &quot;JSON parse error: Numeric value (18446744073709551614) out of range of long; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Numeric value (18446744073709551614) out of range of long\n at [Source: (PushbackInputStream); line: 1, column: 115] (through reference chain: com.app.entity.Ticket[\&quot;flight\&quot;]-&gt;com.app.entity.Flight[\&quot;plane\&quot;]-&gt;com.app.entity.Plane[\&quot;id\&quot;])&quot;,&#10;    &quot;path&quot;: &quot;//api/ticket&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 09 Jan 2025 17:23:11 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test4380</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

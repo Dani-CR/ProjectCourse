@@ -2,9 +2,9 @@
   "testId": "Test 125",
   "scenario": "Replace primitive fields with array values.  Current field [created] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
   "expectedResult": "Should return [4XX]",
-  "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 125 - ReplacePrimitivesWithArraysFields)"
       }
     ],
-    "payload": "{\n  \"password\": \"efxf5H4Vaa5\",\n  \"created\": [\n    {\n      \"catsKey1\": \"catsValue1\"\n    },\n    {\n      \"catsKey2\": \"catsValue2\"\n    }\n  ],\n  \"modified\": \"2024-12-03T19:08:52.634283483Z\",\n  \"videos\": [\n    {\n      \"size\": 4.134901373661577,\n      \"created\": \"2024-12-03T19:08:52.757663919Z\",\n      \"modified\": \"2024-12-03T19:08:52.758412148Z\",\n      \"id\": 9,\n      \"title\": \"yCKKn5\",\n      \"url\": \"http://catsAMNKyE.com/cats\"\n    },\n    {\n      \"size\": 6.3806885196514775,\n      \"created\": \"2024-12-03T19:08:52.763434399Z\",\n      \"modified\": \"2024-12-03T19:08:52.764203378Z\",\n      \"id\": 4,\n      \"title\": \"nfBbh8lEn\",\n      \"url\": \"http://catsDxakkP.com/cats\"\n    }\n  ],\n  \"id\": 4,\n  \"username\": \"mirian.smitham\"\n}",
+    "payload": "{\n  \"password\": \"AaclzMnmIOrA\",\n  \"created\": [\n    {\n      \"catsKey1\": \"catsValue1\"\n    },\n    {\n      \"catsKey2\": \"catsValue2\"\n    }\n  ],\n  \"modified\": \"2025-01-10T17:00:39.358965847Z\",\n  \"videos\": [\n    {\n      \"size\": 5.085076176070661,\n      \"created\": \"2025-01-10T17:00:39.461470302Z\",\n      \"modified\": \"2025-01-10T17:00:39.461971913Z\",\n      \"id\": 9,\n      \"title\": \"YTWupk\",\n      \"url\": \"http://catsmTjVFS.com/cats\"\n    },\n    {\n      \"size\": 2.7923548489433947,\n      \"created\": \"2025-01-10T17:00:39.48416438Z\",\n      \"modified\": \"2025-01-10T17:00:39.48467363Z\",\n      \"id\": 2,\n      \"title\": \"ja44lO\",\n      \"url\": \"http://catstHyofQ.com/cats\"\n    }\n  ],\n  \"id\": 8,\n  \"username\": \"sergio.kautzer\"\n}",
     "httpMethod": "POST",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Tue, 3 Dec 2024 20:08:57 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:00:45 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "27",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "37",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "159",
+    "contentLengthInBytes": "495",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:08:57.507+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+      "timestamp": "2025-01-10T17:00:45.964+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.util.Date` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.Date` out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 3, column: 14] (through reference chain: com.streaming.domains.User[\"created\"])",
+      "path": "/api/v1.0/users/sign-up"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:08:57 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:45 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "ReplacePrimitivesWithArraysFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

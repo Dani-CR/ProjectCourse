@@ -1,0 +1,68 @@
+{
+  "testId": "Test 739",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UNPUBLISH",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [UNPUBLISH] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 739 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UNPUBLISH",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:23 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "UNPUBLISH",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "162",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:23.867+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'UNPUBLISH' not supported",
+      "path": "//api/company"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, POST"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

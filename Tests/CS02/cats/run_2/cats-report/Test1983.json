@@ -1,0 +1,64 @@
+{
+  "testId": "Test 1983",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [text/csv]",
+  "expectedResult": "Should return 415",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [415] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "text/csv"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1983 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":3,\"plane\":{\"numberOfSeats\":0,\"name\":\"ZNXYvF22\",\"company\":{\"name\":\"Lowe and Sons\",\"id\":9},\"id\":9},\"route\":{\"departureAirport\":{\"name\":\"AmTXG\",\"location\":\"x7w6MnnQB\",\"id\":2,\"capacity\":9},\"name\":\"NSV3X\",\"id\":2,\"arrivalAirport\":{\"name\":\"oG3WIFz\",\"location\":\"00ZsMxyLp\",\"id\":9,\"capacity\":9}},\"quota\":3,\"name\":\"6J5iWJy\",\"quotaFilled\":5,\"departureDateTime\":\"2025-01-09T17:26:36.052283723Z\",\"id\":3,\"arrivalDateTime\":\"2025-01-09T17:26:36.052612117Z\",\"quotaFilledPercentage\":7}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:48 +0100"
+  },
+  "response": {
+    "responseCode": 415,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "176",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:48.210+0000",
+      "status": 415,
+      "error": "Unsupported Media Type",
+      "message": "Content type 'text/csv;charset=UTF-8' not supported",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:47 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

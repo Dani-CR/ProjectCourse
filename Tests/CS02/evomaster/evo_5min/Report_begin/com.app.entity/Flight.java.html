@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Flight.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report begin evomaster 5min</a> &gt; <a href="index.source.html" class="el_package">com.app.entity</a> &gt; <span class="el_source">Flight.java</span></div><h1>Flight.java</h1><pre class="source lang-java linenums">package com.app.entity;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+@Entity
+<span class="pc bnc" id="L25" title="All 80 branches missed.">@Data</span>
+@Schema(description = &quot;FlightEntityObject&quot;)
+public class Flight {
+	@Column(name = &quot;id&quot;)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Schema(description = &quot;Flight_Id&quot;)
+	private Long id;
+	
+	@Column(name = &quot;name&quot;, length = 50)
+	@NotNull
+	@Schema(description = &quot;Name_of_Flight&quot;, required = true)
+	private String name;
+	
+	@Column(name = &quot;departure_date&quot;)
+	@Temporal(TemporalType.TIMESTAMP)
+	@Schema(description = &quot;Departure_Date_and_Time&quot;)
+	private Date departureDateTime;
+	
+	@Column(name = &quot;arrival_date&quot;)
+	@Temporal(TemporalType.TIMESTAMP)
+	@Schema(description = &quot;Arrival_Date_and_Time&quot;)
+	private Date arrivalDateTime;
+	
+	@Column(name = &quot;duration&quot;)
+	@Schema(description = &quot;Flight_Duration&quot;)
+	private Integer duration;
+	
+	@Column(name = &quot;quota&quot;)
+	@Schema(description = &quot;Flight_Quota&quot;)
+	private Integer quota;
+	
+	@Column(name = &quot;quota_filled&quot;)
+	@Schema(description = &quot;Flight_Quota_Filled&quot;)
+	private Integer quotaFilled;
+	
+	@Column(name = &quot;quota_filled_percentage&quot;)
+	@Schema(description = &quot;Flight_Quota_Percentage&quot;)
+	private Integer quotaFilledPercentage;
+	
+	@NotNull
+	@JoinColumn(name = &quot;route_flight_id&quot;)
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Route route;
+	
+	@NotNull
+	@JoinColumn(name = &quot;plane_flight_id&quot;)
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Plane plane;
+	
+	
+	/*@JoinColumn(name = &quot;flight_company_id&quot;)
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Company company;
+	
+	@JoinColumn(name = &quot;ticket_flight_id&quot;)
+	@OneToMany(fetch = FetchType.LAZY)
+	private List&lt;Ticket&gt; tickets;*/
+	
+	public Date getDepartureDateTime() {
+<span class="nc" id="L85">		return departureDateTime;</span>
+	}
+
+	public void setDepartureDateTime(Date departureDateTime) {
+<span class="nc" id="L89">		this.departureDateTime = departureDateTime;</span>
+<span class="nc" id="L90">	}</span>
+
+	public Date getArrivalDateTime() {
+<span class="nc" id="L93">		return arrivalDateTime;</span>
+	}
+
+	public void setArrivalDateTime(Date arrivalDateTime) {
+<span class="nc" id="L97">		this.arrivalDateTime = arrivalDateTime;</span>
+<span class="nc" id="L98">	}</span>
+
+	public Integer getDuration() {
+<span class="nc" id="L101">		return duration;</span>
+	}
+
+	public void setDuration(Integer duration) {
+<span class="nc" id="L105">		this.duration = duration;</span>
+<span class="nc" id="L106">	}</span>
+
+	public Route getRoute() {
+<span class="nc" id="L109">		return route;</span>
+	}
+
+	public void setRoute(Route route) {
+<span class="nc" id="L113">		this.route = route;</span>
+<span class="nc" id="L114">	}</span>
+
+	public Plane getPlane() {
+<span class="nc" id="L117">		return plane;</span>
+	}
+
+	public void setPlane(Plane plane) {
+<span class="nc" id="L121">		this.plane = plane;</span>
+<span class="nc" id="L122">	}</span>
+
+	public void setName(String name) {
+<span class="nc" id="L125">		this.name = name;</span>
+<span class="nc" id="L126">	}</span>
+
+	public void setQuota(Integer quota) {
+<span class="nc" id="L129">		this.quota = quota;</span>
+<span class="nc" id="L130">	}</span>
+
+	public void setQuotaFilled(Integer quotaFilled) {
+<span class="nc" id="L133">		this.quotaFilled = quotaFilled;</span>
+<span class="nc" id="L134">	}</span>
+
+	public void setQuotaFilledPercentage(Integer quotaFilledPercentage) {
+<span class="nc" id="L137">		this.quotaFilledPercentage = quotaFilledPercentage;</span>
+<span class="nc" id="L138">	}</span>
+
+	public String getName() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L142">		return name;</span>
+	}
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L147">		return id;</span>
+	}
+
+	public Integer getQuota() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L152">		return quota;</span>
+	}
+
+	public Integer getQuotaFilled() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L157">		return quotaFilled;</span>
+	}
+
+	public void setQuotaFilled(int i) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L162">		quotaFilled = i;</span>
+<span class="nc" id="L163">	}</span>
+
+	public int getQuotaFilledPercentage() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L167">		return quotaFilledPercentage;</span>
+	}
+
+	public void setQuotaFilledPercentage(int i) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L172">		quotaFilledPercentage = i;</span>
+<span class="nc" id="L173">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

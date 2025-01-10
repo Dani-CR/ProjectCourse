@@ -20,7 +20,7 @@
     <div class="flex-items-center">
         <img src="./assets/clock.svg" alt="timestamp">
         <span>
-				Tue, 3 Dec 2024 20:09:01 +0100
+				Fri, 10 Jan 2025 18:00:54 +0100
 			</span>
     </div>
 </div>
@@ -53,7 +53,7 @@
             <p>Timestamp</p>
         </div>
         <div class="component text">
-            <p>Tue, 3 Dec 2024 20:09:01 +0100</p>
+            <p>Fri, 10 Jan 2025 18:00:54 +0100</p>
         </div>
 
         <div class="component title">
@@ -79,7 +79,7 @@
         </div>
         <div class="component text">
             <p>
-                Response HTTP code 404: you might need to provide business context using --refData or --urlParams
+                Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]
             </p>
         </div>
         <div class="component title">
@@ -100,7 +100,7 @@
             <p>Full Request Path</p>
         </div>
         <div class="component text">
-            <span class="rounded path details">http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/-9223372036854775808</span>
+            <span class="rounded path details">http://localhost:8080/api/v1.0/videos/download/-9223372036854775808</span>
         </div>
 
         <div class="component title border-left-bottom">
@@ -132,7 +132,7 @@
         </div>
 
         <div class="code-area" id="code-3">
-            <pre><code>curl  -X GET \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 323 - IntegerFieldsLeftBoundary)&quot; \&#10;      \&#10;      http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/-9223372036854775808&#10;</code></pre>
+            <pre><code>curl  -X GET \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 323 - IntegerFieldsLeftBoundary)&quot; \&#10;      \&#10;      http://localhost:8080/api/v1.0/videos/download/-9223372036854775808&#10;</code></pre>
         </div>
     </div>
 
@@ -142,7 +142,7 @@
             <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
         </div>
         <div class="code-area-outside" id="code-response">
-            <pre><code>{&#10;  &quot;responseCode&quot;: 404,&#10;  &quot;httpMethod&quot;: &quot;GET&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;19&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;4&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;182&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: &quot;2024-12-03T19:09:01.420+0000&quot;,&#10;    &quot;status&quot;: 404,&#10;    &quot;error&quot;: &quot;Not Found&quot;,&#10;    &quot;message&quot;: &quot;No message available&quot;,&#10;    &quot;path&quot;: &quot;/swagger-ui.html/api/v1.0/videos/download/-9223372036854775808&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;cache-control&quot;,&#10;      &quot;value&quot;: &quot;no-cache, no-store, max-age&#61;0, must-revalidate&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Tue, 03 Dec 2024 19:09:01 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;expires&quot;,&#10;      &quot;value&quot;: &quot;0&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;pragma&quot;,&#10;      &quot;value&quot;: &quot;no-cache&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-content-type-options&quot;,&#10;      &quot;value&quot;: &quot;nosniff&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-frame-options&quot;,&#10;      &quot;value&quot;: &quot;DENY&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-xss-protection&quot;,&#10;      &quot;value&quot;: &quot;1; mode&#61;block&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+            <pre><code>{&#10;  &quot;responseCode&quot;: 500,&#10;  &quot;httpMethod&quot;: &quot;GET&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;26&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;5&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;174&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: &quot;2025-01-10T17:00:54.430+0000&quot;,&#10;    &quot;status&quot;: 500,&#10;    &quot;error&quot;: &quot;Internal Server Error&quot;,&#10;    &quot;message&quot;: &quot;No value present&quot;,&#10;    &quot;path&quot;: &quot;/api/v1.0/videos/download/-9223372036854775808&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;cache-control&quot;,&#10;      &quot;value&quot;: &quot;no-cache, no-store, max-age&#61;0, must-revalidate&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Fri, 10 Jan 2025 17:00:54 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;expires&quot;,&#10;      &quot;value&quot;: &quot;0&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;pragma&quot;,&#10;      &quot;value&quot;: &quot;no-cache&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-content-type-options&quot;,&#10;      &quot;value&quot;: &quot;nosniff&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-frame-options&quot;,&#10;      &quot;value&quot;: &quot;DENY&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;x-xss-protection&quot;,&#10;      &quot;value&quot;: &quot;1; mode&#61;block&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
         </div>
     </div>
 

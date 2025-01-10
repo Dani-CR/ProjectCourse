@@ -1,9 +1,9 @@
 {
   "SwaggerSpecFilePath": [
-    "/home/daniela/Documents/Tests/CS03/restler/../swagger-specification.json"
+    "/home/daniela/Documents/ProjCourse_repo/Tests/CS03/restler/../swagger-specification.json"
   ],
-  "GrammarOutputDirectoryPath": "/home/daniela/Documents/Tests/CS03/restler/Compile",
-  "CustomDictionaryFilePath": "/home/daniela/Documents/Tests/CS03/restler/Compile/defaultDict.json",
+  "GrammarOutputDirectoryPath": "/home/daniela/Documents/ProjCourse_repo/Tests/CS03/restler/Compile",
+  "CustomDictionaryFilePath": "/home/daniela/Documents/ProjCourse_repo/Tests/CS03/restler/Compile/defaultDict.json",
   "IncludeOptionalParameters": true,
   "UseHeaderExamples": true,
   "UsePathExamples": false,

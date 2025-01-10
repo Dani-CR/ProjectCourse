@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1308",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/ld+json]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [406, 415], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/ld+json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1308 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":8}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/company/8",
+    "timestamp": "Thu, 9 Jan 2025 18:22:16 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "183",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:16.112+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Company entity with id 8 exists!",
+      "path": "//api/company/8"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/ld+json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:15 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/ld+json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/company/8",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

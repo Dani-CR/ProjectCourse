@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1723",
+  "scenario": "Replace object fields with array values.  Current field [plane#company] [REPLACE with [{\"catsKey1\":\"catsValue1\",\"cat...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1723 - ReplaceObjectsWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"duration\": 7,\n  \"plane\": {\n    \"numberOfSeats\": 9,\n    \"name\": \"zw5JXz\",\n    \"company\": [\n      {\n        \"catsKey1\": \"catsValue1\",\n        \"catsKey2\": 20\n      },\n      {\n        \"catsKey3\": 40\n      }\n    ],\n    \"id\": 6\n  },\n  \"route\": {\n    \"departureAirport\": {\n      \"name\": \"XOjDA0Q\",\n      \"location\": \"JTCR9Cy7l0\",\n      \"id\": 7,\n      \"capacity\": 3\n    },\n    \"name\": \"84qnJEy\",\n    \"id\": 6,\n    \"arrivalAirport\": {\n      \"name\": \"Dca9O6ED\",\n      \"location\": \"uujgFSN23s\",\n      \"id\": 0,\n      \"capacity\": 8\n    }\n  },\n  \"quota\": 4,\n  \"name\": \"WoofJMR\",\n  \"quotaFilled\": 6,\n  \"departureDateTime\": \"2025-01-09T17:22:16.844913927Z\",\n  \"id\": 2,\n  \"arrivalDateTime\": \"2025-01-09T17:22:16.845349548Z\",\n  \"quotaFilledPercentage\": 3\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:25 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "528",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:25.539+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `com.app.entity.Company` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.app.entity.Company` out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 6, column: 16] (through reference chain: com.app.entity.Flight[\"plane\"]->com.app.entity.Plane[\"company\"])",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:24 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "ReplaceObjectsWithArraysFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

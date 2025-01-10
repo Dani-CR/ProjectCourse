@@ -3,8 +3,8 @@
   "scenario": "Send [zero-width characters] in request fields: field [id], value [INSERT with \\u200d], is required [TRUE]",
   "expectedResult": "Should return [2XX]",
   "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 417 - ZeroWidthCharsInValuesFields)"
       }
     ],
-    "payload": "{\"id\":\"\\u200D5\"}",
+    "payload": "{\"id\":\"\\u200D2\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/%E2%80%8D5",
-    "timestamp": "Wed, 4 Dec 2024 10:42:21 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/%E2%80%8D2",
+    "timestamp": "Fri, 10 Jan 2025 18:04:33 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "GET",
-    "responseTimeInMs": "16",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "172",
+    "contentLengthInBytes": "303",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:21.800+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/download/%E2%80%8D5"
+      "timestamp": "2025-01-10T17:04:33.434+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"‍2\"",
+      "path": "/api/v1.0/videos/download/%E2%80%8D2"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:21 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:33 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "ZeroWidthCharsInValuesFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/%E2%80%8D5",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/%E2%80%8D2",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

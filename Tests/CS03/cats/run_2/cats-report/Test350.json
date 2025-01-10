@@ -3,8 +3,8 @@
   "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
   "expectedResult": "Should get a [2XX] response code",
   "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 350 - NewFields)"
       }
     ],
-    "payload": "{\"id\":5,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "payload": "{\"id\":2,\"catsFuzzyField\":\"catsFuzzyField\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/5?catsFuzzyField=catsFuzzyField",
-    "timestamp": "Wed, 4 Dec 2024 10:42:20 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/2?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Fri, 10 Jan 2025 18:04:32 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 500,
     "httpMethod": "GET",
-    "responseTimeInMs": "29",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "5",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "163",
+    "contentLengthInBytes": "155",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:20.408+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/download/5"
+      "timestamp": "2025-01-10T17:04:32.179+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No value present",
+      "path": "/api/v1.0/videos/download/2"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:19 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:32 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "NewFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/5?catsFuzzyField=catsFuzzyField",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/2?catsFuzzyField=catsFuzzyField",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

@@ -2,9 +2,9 @@
   "testId": "Test 525",
   "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/vnd.djvu]",
   "expectedResult": "Should return 406",
-  "result": "success",
-  "resultReason": null,
-  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,15 +21,15 @@
         "value": "cats/12.0.0 (Test 525 - UnsupportedAcceptHeaders)"
       }
     ],
-    "payload": "{\"id\":5}",
+    "payload": "{\"id\":2}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
-    "timestamp": "Tue, 3 Dec 2024 20:09:05 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/2",
+    "timestamp": "Fri, 10 Jan 2025 18:00:57 +0100"
   },
   "response": {
-    "responseCode": 406,
+    "responseCode": 200,
     "httpMethod": "GET",
-    "responseTimeInMs": "25",
+    "responseTimeInMs": "7",
     "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "0",
@@ -47,7 +47,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:05 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:57 GMT"
       },
       {
         "key": "expires",
@@ -74,7 +74,7 @@
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/5",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/2",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3276",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [404, 400, 422], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3276 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"-7092\"\n}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/plane/-7092",
+    "timestamp": "Thu, 9 Jan 2025 18:22:53 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "187",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:53.690+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Plane entity with id -7092 exists!",
+      "path": "//api/plane/-7092"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:53 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/plane/-7092",
+  "contractPath": "/api/plane/{id}",
+  "server": "http://localhost:8080/"
+}

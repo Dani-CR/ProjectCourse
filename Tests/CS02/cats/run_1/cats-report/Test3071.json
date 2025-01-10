@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3071",
+  "scenario": "Insert zero-width chars in field names: field [numberOfSeats], char [\\u200c]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3071 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"number‌OfSeats\":3,\"name\":\"kNd3LLa\",\"company\":{\"name\":\"Klein-Miller\",\"id\":3},\"id\":9}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:50 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "282",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:50.858+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Unable to find com.app.entity.Company with id 3; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.app.entity.Company with id 3",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:50 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

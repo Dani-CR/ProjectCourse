@@ -19,6 +19,7 @@ services:
     restart: on-failure
     ports:
       - "8080:8080"
+      - "6302:6302"
     environment:
       MYSQL_HOST: docker-mysql
       MYSQL_DATABASE: ticketdb

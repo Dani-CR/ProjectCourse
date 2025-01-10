@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2184",
+  "scenario": "Insert zero-width chars in field names: field [route#departureAirport#id], char [\\u202b]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2184 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"duration\":7,\"plane\":{\"numberOfSeats\":9,\"name\":\"zw5JXz\",\"company\":{\"name\":\"O'Keefe, Hauck and Bergnaum\",\"i‫d\":0},\"i‫d\":6},\"route\":{\"departureAirport\":{\"name\":\"XOjDA0Q\",\"location\":\"JTCR9Cy7l0\",\"i‫d\":7,\"capacity\":3},\"name\":\"84qnJEy\",\"i‫d\":6,\"arrivalAirport\":{\"name\":\"Dca9O6ED\",\"location\":\"uujgFSN23s\",\"i‫d\":0,\"capacity\":8}},\"quota\":4,\"name\":\"WoofJMR\",\"quotaFilled\":6,\"departureDateTime\":\"2025-01-09T17:22:16.844913927Z\",\"i‫d\":2,\"arrivalDateTime\":\"2025-01-09T17:22:16.845349548Z\",\"quotaFilledPercentage\":3}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:33 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "46",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "593",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:33.511+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : com.app.entity.Flight.route -> com.app.entity.Route; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : com.app.entity.Flight.route -> com.app.entity.Route",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:32 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

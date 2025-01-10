@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2518",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [404, 400, 422], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2518 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"-2206\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/flight/-2206",
+    "timestamp": "Thu, 9 Jan 2025 18:22:38 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "410",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:38.353+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id -2206; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id -2206 (through reference chain: com.app.entity.Flight$HibernateProxy$iF1XBDBu[\"name\"])",
+      "path": "//api/flight/-2206"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:37 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/flight/-2206",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

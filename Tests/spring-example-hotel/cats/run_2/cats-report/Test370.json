@@ -23,23 +23,23 @@
     ],
     "payload": "",
     "httpMethod": "DEBUG",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
-    "timestamp": "Thu, 9 Jan 2025 08:58:56 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 13:21:03 +0100"
   },
   "response": {
     "responseCode": 405,
     "httpMethod": "DEBUG",
-    "responseTimeInMs": "19",
+    "responseTimeInMs": "6",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "233",
+    "contentLengthInBytes": "232",
     "jsonBody": {
-      "timestamp": 1736409536999,
+      "timestamp": 1736511663553,
       "status": 405,
       "error": "Method Not Allowed",
       "exception": "org.springframework.web.HttpRequestMethodNotSupportedException",
       "message": "Request method 'DEBUG' not supported",
-      "path": "//example/v1/hotels/%7Bid%7D"
+      "path": "/example/v1/hotels/%7Bid%7D"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:02 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "CustomHttpMethods",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

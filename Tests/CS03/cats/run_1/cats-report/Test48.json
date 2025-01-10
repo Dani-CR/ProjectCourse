@@ -2,9 +2,9 @@
   "testId": "Test 48",
   "scenario": "Send a happy flow request with undocumented HTTP method: HEAD",
   "expectedResult": "Should return 405",
-  "result": "warn",
-  "resultReason": "Unexpected Response Code: 404",
-  "resultDetails": "Unexpected response code for http method [HEAD]: expected [405], actual [404]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [HEAD] with response code [405]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -23,11 +23,11 @@
     ],
     "payload": "",
     "httpMethod": "HEAD",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Tue, 3 Dec 2024 20:08:54 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:00:42 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 405,
     "httpMethod": "HEAD",
     "responseTimeInMs": "9",
     "numberOfWordsInResponse": "0",
@@ -38,6 +38,10 @@
     },
     "headers": [
       {
+        "key": "allow",
+        "value": "POST"
+      },
+      {
         "key": "cache-control",
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
@@ -47,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:08:54 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:42 GMT"
       },
       {
         "key": "expires",
@@ -78,7 +82,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "HttpMethods",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

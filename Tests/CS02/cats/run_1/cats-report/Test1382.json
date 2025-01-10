@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1382",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1382 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":7,\"plane\":{\"numberOfSeats\":9,\"name\":\"zw5JXz\",\"company\":{\"name\":\"O'Keefe, Hauck and Bergnaum\",\"id\":0},\"id\":6},\"route\":{\"departureAirport\":{\"name\":\"XOjDA0Q\",\"location\":\"JTCR9Cy7l0\",\"id\":7,\"capacity\":3},\"name\":\"84qnJEy\",\"id\":6,\"arrivalAirport\":{\"name\":\"Dca9O6ED\",\"location\":\"uujgFSN23s\",\"id\":0,\"capacity\":8}},\"quota\":4,\"name\":\"WoofJMR\",\"quotaFilled\":6,\"departureDateTime\":\"2025-01-09T17:22:16.844913927Z\",\"id\":2,\"arrivalDateTime\":\"2025-01-09T17:22:16.845349548Z\",\"quotaFilledPercentage\":3}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:17 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "53",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "427",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:17.893+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Route with id 6; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Route with id 6 (through reference chain: com.app.entity.Flight[\"route\"]->com.app.entity.Route$HibernateProxy$pz1lN5pw[\"name\"])",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:17 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

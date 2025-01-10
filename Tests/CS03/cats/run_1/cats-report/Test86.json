@@ -2,9 +2,9 @@
   "testId": "Test 86",
   "scenario": "Send a happy flow request with undocumented HTTP method: REPORT",
   "expectedResult": "Should return 405",
-  "result": "warn",
-  "resultReason": "Unexpected Response Code: 404",
-  "resultDetails": "Unexpected response code for http method [REPORT]: expected [405], actual [404]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [REPORT] with response code [405]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,26 +21,30 @@
         "value": "cats/12.0.0 (Test 86 - NonRestHttpMethods)"
       }
     ],
-    "payload": "{\"password\":\"efxf5H4Vaa5\",\"created\":\"2024-12-03T19:08:52.632892569Z\",\"modified\":\"2024-12-03T19:08:52.634283483Z\",\"videos\":[{\"size\":4.134901373661577,\"created\":\"2024-12-03T19:08:52.757663919Z\",\"modified\":\"2024-12-03T19:08:52.758412148Z\",\"id\":9,\"title\":\"yCKKn5\",\"url\":\"http://catsAMNKyE.com/cats\"},{\"size\":6.3806885196514775,\"created\":\"2024-12-03T19:08:52.763434399Z\",\"modified\":\"2024-12-03T19:08:52.764203378Z\",\"id\":4,\"title\":\"nfBbh8lEn\",\"url\":\"http://catsDxakkP.com/cats\"}],\"id\":4,\"username\":\"mirian.smitham\"}",
+    "payload": "{\"password\":\"AaclzMnmIOrA\",\"created\":\"2025-01-10T17:00:39.357213965Z\",\"modified\":\"2025-01-10T17:00:39.358965847Z\",\"videos\":[{\"size\":5.085076176070661,\"created\":\"2025-01-10T17:00:39.461470302Z\",\"modified\":\"2025-01-10T17:00:39.461971913Z\",\"id\":9,\"title\":\"YTWupk\",\"url\":\"http://catsmTjVFS.com/cats\"},{\"size\":2.7923548489433947,\"created\":\"2025-01-10T17:00:39.48416438Z\",\"modified\":\"2025-01-10T17:00:39.48467363Z\",\"id\":2,\"title\":\"ja44lO\",\"url\":\"http://catstHyofQ.com/cats\"}],\"id\":8,\"username\":\"sergio.kautzer\"}",
     "httpMethod": "REPORT",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Tue, 3 Dec 2024 20:08:56 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:00:44 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 405,
     "httpMethod": "REPORT",
-    "responseTimeInMs": "8",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "159",
+    "contentLengthInBytes": "169",
     "jsonBody": {
-      "timestamp": "2024-12-03T19:08:56.255+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+      "timestamp": "2025-01-10T17:00:44.382+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'REPORT' not supported",
+      "path": "/api/v1.0/users/sign-up"
     },
     "headers": [
+      {
+        "key": "allow",
+        "value": "POST"
+      },
       {
         "key": "cache-control",
         "value": "no-cache, no-store, max-age=0, must-revalidate"
@@ -51,7 +55,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:08:56 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:43 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "NonRestHttpMethods",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

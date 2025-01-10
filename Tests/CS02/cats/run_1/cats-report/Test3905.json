@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3905",
+  "scenario": "Insert zero-width chars in field names: field [arrivalAirport#id], char [\\u200f]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3905 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"departureAirport\":{\"name\":\"DhAyy\",\"location\":\"nQ5fIkyPCsZ\",\"i‏d\":1,\"capacity\":7},\"name\":\"wtgnwSk\",\"i‏d\":2,\"arrivalAirport\":{\"name\":\"qf0ED\",\"location\":\"YJTMM3vgcm\",\"i‏d\":6,\"capacity\":4}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:23:04 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "42",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "586",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:04.991+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Route.arrivalAirport -> com.app.entity.Airport; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Route.arrivalAirport -> com.app.entity.Airport",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:04 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

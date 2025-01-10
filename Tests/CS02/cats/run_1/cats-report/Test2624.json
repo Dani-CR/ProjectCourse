@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2624",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [name], value [REPLACE with ov06ll6NyaiO1MzfyJkWrXSRpజ్ఞ\\u200cా...], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2624 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":300,\"companyId\":1,\"name\":\"ov06ll6NyaiO1MzfyJkWrXSRpజ్ఞ\\u200CాKERt4srEwDu5xiYVRMEWZRkVZ\"}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:40 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "94",
+    "numberOfWordsInResponse": "16",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "249",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:40.619+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:39 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

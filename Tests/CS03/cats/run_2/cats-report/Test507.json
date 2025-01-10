@@ -1,10 +1,10 @@
 {
   "testId": "Test 507",
-  "scenario": "Send [strings in numeric fields] in request fields: field [id], value [REPLACE with fuzzNxtk], is required [TRUE]",
+  "scenario": "Send [strings in numeric fields] in request fields: field [id], value [REPLACE with fuzzUCjY], is required [TRUE]",
   "expectedResult": "Should return [4XX]",
-  "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 401, 403, 404]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 507 - StringsInNumericFields)"
       }
     ],
-    "payload": "{\"id\":\"fuzzNxtk\"}",
+    "payload": "{\"id\":\"fuzzUCjY\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/fuzzNxtk",
-    "timestamp": "Wed, 4 Dec 2024 10:42:23 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/get/fuzzUCjY",
+    "timestamp": "Fri, 10 Jan 2025 18:04:34 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "GET",
-    "responseTimeInMs": "14",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "165",
+    "contentLengthInBytes": "300",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:23.708+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/videos/get/fuzzNxtk"
+      "timestamp": "2025-01-10T17:04:34.758+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"fuzzUCjY\"",
+      "path": "/api/v1.0/videos/get/fuzzUCjY"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:22 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:34 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/videos/get/{id}",
   "fuzzer": "StringsInNumericFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/get/fuzzNxtk",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/get/fuzzUCjY",
   "contractPath": "/api/v1.0/videos/get/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

@@ -1,0 +1,32 @@
+#spring-boot-hotel evomaster 10min logs
+
+* Covered targets: 14; time per test: 40.0ms (6.1 actions); since last improvement: 573s
+* Starting to apply minimization phase
+* Recomputing full coverage for 10 tests
+13:02:47.358 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: PUT:/example/v1/hotels/{id}
+13:02:47.364 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/example/v1/hotels/{id}
+13:02:47.490 [main] WARN  o.e.core.search.service.Minimizer - Different status code 406 returned from original 200, ie, 200 != 406 for endpoint: GET:/example/v1/hotels/{id}
+* Recomputing coverage did lose many targets, more than the threshold 20.0%: from 14 to 8, i.e., lost 6
+* Missing targets:
+* HTTP_SUCCESS:PUT:/example/v1/hotels/{id}
+* HTTP_SUCCESS:DELETE:/example/v1/hotels/{id}
+* HTTP_SUCCESS:GET:/example/v1/hotels/{id}
+* 200:GET:/example/v1/hotels/{id}
+* 204:DELETE:/example/v1/hotels/{id}
+* 204:PUT:/example/v1/hotels/{id}
+* No test to minimize
+* Minimization phase took 0 seconds
+* Evaluated tests: 31120
+* Evaluated actions: 171242
+* Needed budget: 9%
+* Passed time (seconds): 600
+* Execution time per test (ms): Avg=18.49 , min=0.00 , max=1713.00
+* Execution time per action (ms): Avg=3.37 , min=0.00 , max=316.50
+* Computation overhead between tests (ms): Avg=0.78 , min=0.00 , max=789.00
+* Going to save 7 tests to generated_tests
+13:02:47.633 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Unhandled type for body payload: application/xml
+* Potential faults: 0
+* Successfully executed (HTTP code 2xx) 1 endpoints out of 5 (20%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

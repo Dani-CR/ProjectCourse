@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4342",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4342 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"flight\": {\n    \"duration\": 2,\n    \"plane\": {\n      \"numberOfSeats\": 1,\n      \"name\": \"8umLP2\",\n      \"company\": {\n        \"name\": \"White Group\",\n        \"id\": \"4\"\n      },\n      \"id\": \"2\"\n    },\n    \"route\": {\n      \"departureAirport\": {\n        \"name\": \"ACKHLr\",\n        \"location\": \"yXO66PwBbF\",\n        \"id\": \"8\",\n        \"capacity\": 9\n      },\n      \"name\": \"NGEqKJ\",\n      \"id\": \"7\",\n      \"arrivalAirport\": {\n        \"name\": \"obHWIRXo\",\n        \"location\": \"L6TlvKK09\",\n        \"id\": \"7\",\n        \"capacity\": 3\n      }\n    },\n    \"quota\": 5,\n    \"name\": \"oHfcJ\",\n    \"quotaFilled\": 4,\n    \"departureDateTime\": \"2025-01-09T17:27:22.237190233Z\",\n    \"id\": \"9\",\n    \"arrivalDateTime\": \"2025-01-09T17:27:22.237773674Z\",\n    \"quotaFilledPercentage\": 7\n  },\n  \"price\": 2,\n  \"isSold\": true,\n  \"id\": \"7\",\n  \"ticketCode\": \"tx4oR9uttx4oR\"\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:27:23 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "9",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "170",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:23.841+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Unable to find com.app.entity.Flight with id 9",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:23 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

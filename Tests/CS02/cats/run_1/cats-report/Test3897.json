@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3897",
+  "scenario": "Insert zero-width chars in field names: field [departureAirport], char [\\u200d]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3897 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"departur‍eAirport\":{\"name\":\"DhAyy\",\"location\":\"nQ5fIkyPCsZ\",\"id\":1,\"capacity\":7},\"name\":\"wtgnwSk\",\"id\":2,\"arrivalAirport\":{\"name\":\"qf0ED\",\"location\":\"YJTMM3vgcm\",\"id\":6,\"capacity\":4}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:23:04 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "440",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:04.843+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Airport with id 6; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Airport with id 6 (through reference chain: com.app.entity.Route[\"arrivalAirport\"]->com.app.entity.Airport$HibernateProxy$UjsuFMsf[\"name\"])",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:04 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

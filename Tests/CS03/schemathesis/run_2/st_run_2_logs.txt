@@ -1,0 +1,77 @@
+#CS03 schemathesis run_2 logs
+
+======================= Schemathesis test session starts =======================
+Schema location: file:///home/daniela/Documents/ProjCourse_repo/Tests/CS03/schemathesis/run_2/../../swagger-specification.json
+Base URL: http://localhost:8080
+Specification version: Swagger 2.0
+Random seed: 107242602949460428716964675282370849868
+Workers: 1
+Collected API operations: 5
+Collected API links: 0
+API probing: SUCCESS
+Schema analysis: SKIP
+
+POST /api/v1.0/users/sign-up F                                            [ 20%]
+GET /api/v1.0/videos/download/{id} F                                      [ 40%]
+GET /api/v1.0/videos/get/{id} .                                           [ 60%]
+GET /api/v1.0/videos/list .                                               [ 80%]
+POST /api/v1.0/videos/upload F                                            [100%]
+
+=================================== FAILURES ===================================
+_________________________ POST /api/v1.0/users/sign-up _________________________
+1. Test Case ID: wP0BLC
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-10T17:13:33.744+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/api/v1.0/users/sign-up"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{}' http://localhost:8080/api/v1.0/users/sign-up
+
+______________________ GET /api/v1.0/videos/download/{id} ______________________
+1. Test Case ID: mj3Fx2
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-10T17:13:34.073+0000","status":500,"error":"Internal Server Error","message":"No value present","path":"/api/v1.0/videos/download/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/v1.0/videos/download/0
+
+_________________________ POST /api/v1.0/videos/upload _________________________
+1. Test Case ID: fFClYS
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-10T17:13:36.109+0000","status":500,"error":"Internal Server Error","message":"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement","path":"/api/v1.0/videos/upload"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: multipart/form-data; boundary=fdb0ba8c6c0e570503fd1767c52c26d8' -d '--05f8d147cbbce26166054cdd3006315d
+Content-Disposition: form-data; name="file"; filename="file"
+
+
+--05f8d147cbbce26166054cdd3006315d--
+' http://localhost:8080/api/v1.0/videos/upload
+
+=================================== SUMMARY ====================================
+
+Performed checks:
+    not_a_server_error                    101 / 129 passed          FAILED 
+
+Note: Use the 'X-Schemathesis-TestCaseId' header to correlate test case ids from failure messages with server logs for debugging.
+
+Note: To replicate these test failures, rerun with `--hypothesis-seed=107242602949460428716964675282370849868`
+
+Compressed report size: 12 KB
+Report is saved to ./run_2.tar.gz
+
+========================= 2 passed, 3 failed in 3.91s ==========================

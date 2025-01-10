@@ -1,0 +1,68 @@
+{
+  "testId": "Test 772",
+  "scenario": "Send [empty strings] in request fields: field [name], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 772 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"name\":\"\",\"id\":3}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:22:06 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "22",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "273",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:06.710+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "query did not return a unique result: 155; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 155",
+      "path": "//api/company"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:06 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

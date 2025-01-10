@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1471",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1471 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"duration\": 7,\n  \"plane\": {\n    \"numberOfSeats\": 9,\n    \"name\": \"zw5JXz\",\n    \"company\": {\n      \"name\": \"O'Keefe, Hauck and Bergnaum\",\n      \"id\": \"0\"\n    },\n    \"id\": \"6\"\n  },\n  \"route\": {\n    \"departureAirport\": {\n      \"name\": \"XOjDA0Q\",\n      \"location\": \"JTCR9Cy7l0\",\n      \"id\": \"7\",\n      \"capacity\": 3\n    },\n    \"name\": \"84qnJEy\",\n    \"id\": \"6\",\n    \"arrivalAirport\": {\n      \"name\": \"Dca9O6ED\",\n      \"location\": \"uujgFSN23s\",\n      \"id\": \"0\",\n      \"capacity\": 8\n    }\n  },\n  \"quota\": 4,\n  \"name\": \"WoofJMR\",\n  \"quotaFilled\": 6,\n  \"departureDateTime\": \"2025-01-09T17:22:16.844913927Z\",\n  \"id\": \"2\",\n  \"arrivalDateTime\": \"2025-01-09T17:22:16.845349548Z\",\n  \"quotaFilledPercentage\": 3\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:20 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "60",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "427",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:20.447+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Route with id 6; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Route with id 6 (through reference chain: com.app.entity.Flight[\"route\"]->com.app.entity.Route$HibernateProxy$pz1lN5pw[\"name\"])",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:19 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

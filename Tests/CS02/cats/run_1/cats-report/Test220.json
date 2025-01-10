@@ -1,0 +1,68 @@
+{
+  "testId": "Test 220",
+  "scenario": "Send [outside the boundary values] in request fields: field [name], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 220 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"name\":\"\",\"location\":\"BoczzLg3fyTK\",\"id\":7,\"capacity\":8}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:55 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "68",
+    "numberOfWordsInResponse": "22",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "273",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:21:55.433+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "query did not return a unique result: 137; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 137",
+      "path": "//api/airport"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:55 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3567",
+  "scenario": "Send {\"\u0000\":\"\u0000\"}\n as invalid json request body",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3567 - RandomDummyInvalidJsonBody)"
+      }
+    ],
+    "payload": "{\"\u0000\":\"\u0000\"}\n",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:13 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "POST",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "49",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "469",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:13.125+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 0)): has to be escaped using backslash to be included in name; nested exception is com.fasterxml.jackson.core.JsonParseException: Illegal unquoted character ((CTRL-CHAR, code 0)): has to be escaped using backslash to be included in name\n at [Source: (PushbackInputStream); line: 1, column: 4]",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "RandomDummyInvalidJsonBody",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,61 @@
+{
+  "testId": "Test 729",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [name], value [REPLACE with B84xUlGtbXHjMy0Zజ్ఞ\\u200cాEgpx42Oi0...], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [200, 201, 202, 204], actual [201], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 729 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"name\":\"B84xUlGtbXHjMy0Zజ్ఞ\\u200CాEgpx42Oi0aPyKM4d\",\"id\":5}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:23 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "121",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "69",
+    "jsonBody": {
+      "id": 32833,
+      "name": "B84xUlGtbXHjMy0Zజ్ఞ‌ాEgpx42Oi0aPyKM4d"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

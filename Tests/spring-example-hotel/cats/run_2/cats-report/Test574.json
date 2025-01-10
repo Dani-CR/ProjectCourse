@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 574 - RandomResources)"
       }
     ],
-    "payload": "city=Beershire&name=CGUZA&rating=0&description=Chuck+Norris+breaks+RSA+128-bit+encrypted+codes+in+milliseconds.&id=1",
+    "payload": "city=New+Roland&name=da1qMd&rating=6&description=Chuck+Norris%27s+beard+can+type+140+wpm.&id=4",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/3317701409212385842",
-    "timestamp": "Thu, 9 Jan 2025 08:59:02 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/X0OLC0MdUqwsKFUySuEMeftI0xrrjc",
+    "timestamp": "Fri, 10 Jan 2025 13:21:09 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "PUT",
-    "responseTimeInMs": "28",
-    "numberOfWordsInResponse": "26",
+    "responseTimeInMs": "34",
+    "numberOfWordsInResponse": "20",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "458",
+    "contentLengthInBytes": "417",
     "jsonBody": {
-      "timestamp": 1736409542955,
+      "timestamp": 1736511669146,
       "status": 400,
       "error": "Bad Request",
-      "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
-      "message": "Could not unmarshal to [class com.khoubyari.example.domain.Hotel]: null; nested exception is javax.xml.bind.UnmarshalException\n - with linked exception:\n[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.]",
-      "path": "//example/v1/hotels/3317701409212385842"
+      "exception": "org.springframework.web.method.annotation.MethodArgumentTypeMismatchException",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: \"X0OLC0MdUqwsKFUySuEMeftI0xrrjc\"",
+      "path": "/example/v1/hotels/X0OLC0MdUqwsKFUySuEMeftI0xrrjc"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:59:02 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:08 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "RandomResources",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/3317701409212385842",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/X0OLC0MdUqwsKFUySuEMeftI0xrrjc",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

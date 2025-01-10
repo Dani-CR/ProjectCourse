@@ -1,0 +1,21 @@
+#CS03 evomaster 10min logs
+
+* Covered targets: 17; time per test: 85.7ms (5.1 actions); since last improvement: 582s
+* Starting to apply minimization phase
+* Recomputing full coverage for 8 tests
+* Analyzing 1 tests with size greater than 1
+* Minimization progress: 1/1
+* Minimization phase took 0 seconds
+* Evaluated tests: 8466
+* Evaluated actions: 46634
+* Needed budget: 74%
+* Passed time (seconds): 600
+* Execution time per test (ms): Avg=68.70 , min=1.00 , max=1018.00
+* Execution time per action (ms): Avg=12.41 , min=1.00 , max=203.60
+* Computation overhead between tests (ms): Avg=2.19 , min=0.00 , max=801.00
+* Going to save 8 tests to generated_tests
+* Potential faults: 3
+* Successfully executed (HTTP code 2xx) 3 endpoints out of 5 (60%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

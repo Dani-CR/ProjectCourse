@@ -1,6 +1,6 @@
 {
   "testId": "Test 377",
-  "scenario": "Send [decimal values in integer fields] in request fields: field [id], value [REPLACE with 0.6539530244276943], is required [TRUE]",
+  "scenario": "Send [decimal values in integer fields] in request fields: field [id], value [REPLACE with 0.9230369630795443], is required [TRUE]",
   "expectedResult": "Should return [4XX]",
   "result": "error",
   "resultReason": "Not found",
@@ -21,15 +21,15 @@
         "value": "cats/12.0.0 (Test 377 - DecimalNumbersInIntegerFields)"
       }
     ],
-    "payload": "{\"id\":0.6539530244276943}",
+    "payload": "{\"id\":0.9230369630795443}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels/0.6539530244276943",
-    "timestamp": "Thu, 9 Jan 2025 08:58:57 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/0.9230369630795443",
+    "timestamp": "Fri, 10 Jan 2025 13:21:03 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "GET",
-    "responseTimeInMs": "42",
+    "responseTimeInMs": "50",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "69",
@@ -44,7 +44,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:03 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -59,7 +59,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "DecimalNumbersInIntegerFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/0.6539530244276943",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/0.9230369630795443",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

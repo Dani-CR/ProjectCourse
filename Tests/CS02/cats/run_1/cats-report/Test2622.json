@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2622",
+  "scenario": "Check that previously deleted resource is not available",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected Response Code: 500",
+  "resultDetails": "Request succeeded unexpectedly for http method [GET]: expected [404, 410], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2622 - CheckDeletedResourcesNotAvailable)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080///api/flight/6879",
+    "timestamp": "Thu, 9 Jan 2025 18:22:40 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "408",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:40.431+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id 6879; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 6879 (through reference chain: com.app.entity.Flight$HibernateProxy$iF1XBDBu[\"name\"])",
+      "path": "///api/flight/6879"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:39 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "CheckDeletedResourcesNotAvailable",
+  "fullRequestPath": "http://localhost:8080///api/flight/6879",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

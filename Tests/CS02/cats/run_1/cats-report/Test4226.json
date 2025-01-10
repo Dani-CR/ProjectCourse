@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4226",
+  "scenario": "Check that previously deleted resource is not available",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected Response Code: 500",
+  "resultDetails": "Request succeeded unexpectedly for http method [GET]: expected [404, 410], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4226 - CheckDeletedResourcesNotAvailable)"
+      }
+    ],
+    "payload": "{}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080///api/route/3290",
+    "timestamp": "Thu, 9 Jan 2025 18:23:09 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "31",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "404",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:09.253+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Route with id 3290; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Route with id 3290 (through reference chain: com.app.entity.Route$HibernateProxy$pz1lN5pw[\"name\"])",
+      "path": "///api/route/3290"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:08 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route/{id}",
+  "fuzzer": "CheckDeletedResourcesNotAvailable",
+  "fullRequestPath": "http://localhost:8080///api/route/3290",
+  "contractPath": "/api/route/{id}",
+  "server": "http://localhost:8080/"
+}

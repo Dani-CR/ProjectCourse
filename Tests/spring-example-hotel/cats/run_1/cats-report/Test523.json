@@ -23,13 +23,13 @@
     ],
     "payload": "{\"id\":6,\"catsFuzzyField\":\"catsFuzzyField\"}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels/6?catsFuzzyField=catsFuzzyField",
-    "timestamp": "Thu, 9 Jan 2025 08:55:50 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/6?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Fri, 10 Jan 2025 13:13:52 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "GET",
-    "responseTimeInMs": "16",
+    "responseTimeInMs": "13",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "69",
@@ -44,7 +44,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:50 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:52 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -59,7 +59,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "NewFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/6?catsFuzzyField=catsFuzzyField",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/6?catsFuzzyField=catsFuzzyField",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

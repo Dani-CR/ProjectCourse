@@ -2,9 +2,9 @@
   "testId": "Test 122",
   "scenario": "Replace array fields with simple object values.  Current field [videos] [REPLACE with {\"catsKey1\":\"catsValue1\",\"cats...]",
   "expectedResult": "Should return [4XX]",
-  "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 122 - ReplaceArraysWithSimpleObjectsFields)"
       }
     ],
-    "payload": "{\n  \"password\": \"mh2hwjiuZ\",\n  \"created\": \"2024-12-04T09:42:09.970946424Z\",\n  \"modified\": \"2024-12-04T09:42:09.97726664Z\",\n  \"videos\": {\n    \"catsKey1\": \"catsValue1\",\n    \"catsKey2\": 20\n  },\n  \"id\": 4,\n  \"username\": \"kirk.grady\"\n}",
+    "payload": "{\n  \"password\": \"esPnS67PxEJ\",\n  \"created\": \"2025-01-10T17:04:16.013306056Z\",\n  \"modified\": \"2025-01-10T17:04:16.014379671Z\",\n  \"videos\": {\n    \"catsKey1\": \"catsValue1\",\n    \"catsKey2\": 20\n  },\n  \"id\": 5,\n  \"username\": \"laurie.bergnaum\"\n}",
     "httpMethod": "POST",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Wed, 4 Dec 2024 10:42:15 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:04:22 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "29",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "18",
+    "numberOfWordsInResponse": "37",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "159",
+    "contentLengthInBytes": "502",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:15.287+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+      "timestamp": "2025-01-10T17:04:22.759+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.util.HashSet` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashSet` out of START_OBJECT token\n at [Source: (PushbackInputStream); line: 5, column: 13] (through reference chain: com.streaming.domains.User[\"videos\"])",
+      "path": "/api/v1.0/users/sign-up"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:14 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:22 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "ReplaceArraysWithSimpleObjectsFields",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

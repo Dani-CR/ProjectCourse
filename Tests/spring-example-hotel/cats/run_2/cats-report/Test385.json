@@ -21,25 +21,25 @@
         "value": "cats/12.0.0 (Test 385 - DummyContentTypeHeaders)"
       }
     ],
-    "payload": "city=Beershire&name=CGUZA&rating=0&description=Chuck+Norris+breaks+RSA+128-bit+encrypted+codes+in+milliseconds.&id=1",
+    "payload": "city=New+Roland&name=da1qMd&rating=6&description=Chuck+Norris%27s+beard+can+type+140+wpm.&id=4",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
-    "timestamp": "Thu, 9 Jan 2025 08:58:57 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 13:21:03 +0100"
   },
   "response": {
     "responseCode": 415,
     "httpMethod": "PUT",
-    "responseTimeInMs": "62",
+    "responseTimeInMs": "13",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "242",
+    "contentLengthInBytes": "241",
     "jsonBody": {
-      "timestamp": 1736409537469,
+      "timestamp": 1736511663928,
       "status": 415,
       "error": "Unsupported Media Type",
       "exception": "org.springframework.web.HttpMediaTypeNotSupportedException",
       "message": "Content type 'application/cats' not supported",
-      "path": "//example/v1/hotels/%7Bid%7D"
+      "path": "/example/v1/hotels/%7Bid%7D"
     },
     "headers": [
       {
@@ -48,7 +48,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:03 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -63,7 +63,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "DummyContentTypeHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

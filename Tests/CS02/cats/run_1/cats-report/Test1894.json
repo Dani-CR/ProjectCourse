@@ -1,0 +1,56 @@
+{
+  "testId": "Test 1894",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/form-data; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/form-data; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1894 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"duration\":7,\"plane\":{\"numberOfSeats\":9,\"name\":\"zw5JXz\",\"company\":{\"name\":\"O'Keefe, Hauck and Bergnaum\",\"id\":0},\"id\":6},\"route\":{\"departureAirport\":{\"name\":\"XOjDA0Q\",\"location\":\"JTCR9Cy7l0\",\"id\":7,\"capacity\":3},\"name\":\"84qnJEy\",\"id\":6,\"arrivalAirport\":{\"name\":\"Dca9O6ED\",\"location\":\"uujgFSN23s\",\"id\":0,\"capacity\":8}},\"quota\":4,\"name\":\"WoofJMR\",\"quotaFilled\":6,\"departureDateTime\":\"2025-01-09T17:22:16.844913927Z\",\"id\":2,\"arrivalDateTime\":\"2025-01-09T17:22:16.845349548Z\",\"quotaFilledPercentage\":3}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:28 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "18",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:27 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/flight",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

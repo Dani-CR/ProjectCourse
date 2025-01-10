@@ -1,0 +1,396 @@
+#CS02 schemathesis run_2
+
+======================= Schemathesis test session starts =======================
+Schema location: file:///home/daniela/Documents/ProjCourse_repo/Tests/CS02/schemathesis/run_2/../../my_openapi.json
+Base URL: http://localhost:8080
+Specification version: Open API 3.0.1
+Random seed: 33339533198450215255155793199029561160
+Workers: 1
+Collected API operations: 30
+Collected API links: 0
+API probing: SUCCESS
+Schema analysis: SKIP
+
+GET /api/ticket F                                                         [  3%]
+PUT /api/ticket F                                                         [  6%]
+POST /api/ticket F                                                        [ 10%]
+GET /api/route F                                                          [ 13%]
+PUT /api/route F                                                          [ 16%]
+POST /api/route F                                                         [ 20%]
+GET /api/plane F                                                          [ 23%]
+PUT /api/plane F                                                          [ 26%]
+POST /api/plane F                                                         [ 30%]
+GET /api/flight F                                                         [ 33%]
+PUT /api/flight F                                                         [ 36%]
+POST /api/flight F                                                        [ 40%]
+GET /api/company .                                                        [ 43%]
+PUT /api/company .                                                        [ 46%]
+POST /api/company F                                                       [ 50%]
+GET /api/airport .                                                        [ 53%]
+PUT /api/airport .                                                        [ 56%]
+POST /api/airport F                                                       [ 60%]
+GET /api/ticket/{id} F                                                    [ 63%]
+DELETE /api/ticket/{id} F                                                 [ 66%]
+GET /api/route/{id} F                                                     [ 70%]
+DELETE /api/route/{id} F                                                  [ 73%]
+GET /api/plane/{id} F                                                     [ 76%]
+DELETE /api/plane/{id} F                                                  [ 80%]
+GET /api/flight/{id} F                                                    [ 83%]
+DELETE /api/flight/{id} F                                                 [ 86%]
+GET /api/company/{id} F                                                   [ 90%]
+DELETE /api/company/{id} F                                                [ 93%]
+GET /api/airport/{id} F                                                   [ 96%]
+DELETE /api/airport/{id} F                                                [100%]
+
+=================================== FAILURES ===================================
+_______________________________ GET /api/ticket ________________________________
+1. Test Case ID: SMnUNL
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:23.464+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Flight with id 357; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 357 (through reference chain: java.util.ArrayList[0]->com.app.entity.Ticket[\"flight\"]->com.app.entity.Flight$HibernateProxy$jo2Oohkf[\"name\"])","path":"/api/ticket"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/ticket
+
+_______________________________ PUT /api/ticket ________________________________
+1. Test Case ID: MQg2bU
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:24.685+0000","status":500,"error":"Internal Server Error","message":"No message available","path":"/api/ticket"}`
+
+Reproduce with: 
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"ticketCode": ""}' http://localhost:8080/api/ticket
+
+_______________________________ POST /api/ticket _______________________________
+1. Test Case ID: F012Xr
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:25.121+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 25; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 25","path":"/api/ticket"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"flightId": 0, "ticketCode": ""}' http://localhost:8080/api/ticket
+
+________________________________ GET /api/route ________________________________
+1. Test Case ID: rjdidI
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:25.318+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Airport with id 520; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Airport with id 520 (through reference chain: java.util.ArrayList[0]->com.app.entity.Route[\"departureAirport\"]->com.app.entity.Airport$HibernateProxy$2BucFY7f[\"name\"])","path":"/api/route"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/route
+
+________________________________ PUT /api/route ________________________________
+1. Test Case ID: 8Irnhn
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:26.340+0000","status":500,"error":"Internal Server Error","message":"org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Route.arrivalAirport -> com.app.entity.Airport; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.en // Output truncated...`
+
+Reproduce with: 
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"name": "", "arrivalAirport": {"name": ""}}' http://localhost:8080/api/route
+
+_______________________________ POST /api/route ________________________________
+1. Test Case ID: OVY5Ne
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:26.770+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 97; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 97","path":"/api/route"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"arrivalAirportId": 0, "departureAirportId": 0, "name": ""}' http://localhost:8080/api/route
+
+________________________________ GET /api/plane ________________________________
+1. Test Case ID: xrnSMi
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:26.866+0000","status":500,"error":"Internal Server Error","message":"Unable to find com.app.entity.Company with id 1; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.app.entity.Company with id 1","path":"/api/plane"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/plane
+
+________________________________ PUT /api/plane ________________________________
+1. Test Case ID: vrAcZS
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:29.139+0000","status":500,"error":"Internal Server Error","message":"org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Plane.company -> com.app.entity.Company; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.app.entity.Pl // Output truncated...`
+
+Reproduce with: 
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"name": "", "company": {"name": ""}}' http://localhost:8080/api/plane
+
+_______________________________ POST /api/plane ________________________________
+1. Test Case ID: UULTj4
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:29.199+0000","status":500,"error":"Internal Server Error","message":"Unable to find com.app.entity.Company with id 1; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.app.entity.Company with id 1","path":"/api/plane"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"name": "Boeing 747", "numberOfSeats": 300, "companyId": 1}' http://localhost:8080/api/plane
+
+_______________________________ GET /api/flight ________________________________
+1. Test Case ID: eqRQeb
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:29.660+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: (was java.lang.NullPointerException); nested exception is com.fasterxml.jackson.databind.JsonMappingException: (was java.lang.NullPointerException) (through reference chain: java.util.ArrayList[0]->com.app.entity.Flight[\"quotaFilledPercentage\"])","path":"/api/flight"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/flight
+
+_______________________________ PUT /api/flight ________________________________
+1. Test Case ID: rqA57J
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:30.487+0000","status":500,"error":"Internal Server Error","message":"org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : com.app.entity.Flight.plane -> com.app.entity.Plane; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operat // Output truncated...`
+
+Reproduce with: 
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"name": "", "plane": {"name": ""}, "route": {"name": ""}}' http://localhost:8080/api/flight
+
+_______________________________ POST /api/flight _______________________________
+1. Test Case ID: WEVSfF
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:31.073+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 33; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 33","path":"/api/flight"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"name": "", "planeId": 0, "routeId": 0}' http://localhost:8080/api/flight
+
+______________________________ POST /api/company _______________________________
+1. Test Case ID: hbLaId
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:35.572+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 205; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 205","path":"/api/company"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"name": ""}' http://localhost:8080/api/company
+
+______________________________ POST /api/airport _______________________________
+1. Test Case ID: AIKw26
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:40.143+0000","status":500,"error":"Internal Server Error","message":"query did not return a unique result: 169; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 169","path":"/api/airport"}`
+
+Reproduce with: 
+
+    curl -X POST -H 'Content-Type: application/json' -d '{"name": ""}' http://localhost:8080/api/airport
+
+_____________________________ GET /api/ticket/{id} _____________________________
+1. Test Case ID: hUnCOu
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:40.393+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Ticket with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Ticket with id 0 (through reference chain: com.app.entity.Ticket$HibernateProxy$XTIa4E7G[\"ticketCode\"])","path":"/api/ticket/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/ticket/0
+
+___________________________ DELETE /api/ticket/{id} ____________________________
+1. Test Case ID: L9YgB3
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:40.588+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Ticket entity with id 0 exists!","path":"/api/ticket/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/ticket/0
+
+_____________________________ GET /api/route/{id} ______________________________
+1. Test Case ID: CY76iJ
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:40.799+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Route with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Route with id 0 (through reference chain: com.app.entity.Route$HibernateProxy$kx8Up8gw[\"name\"])","path":"/api/route/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/route/0
+
+____________________________ DELETE /api/route/{id} ____________________________
+1. Test Case ID: lPsOJg
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:41.188+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Route entity with id 0 exists!","path":"/api/route/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/route/0
+
+_____________________________ GET /api/plane/{id} ______________________________
+1. Test Case ID: RzIOeu
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:41.727+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Plane with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Plane with id 0 (through reference chain: com.app.entity.Plane$HibernateProxy$LbdJwrYC[\"name\"])","path":"/api/plane/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/plane/0
+
+____________________________ DELETE /api/plane/{id} ____________________________
+1. Test Case ID: BCM1P5
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:42.077+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Plane entity with id 0 exists!","path":"/api/plane/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/plane/0
+
+_____________________________ GET /api/flight/{id} _____________________________
+1. Test Case ID: yMnJva
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:42.398+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Flight with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 0 (through reference chain: com.app.entity.Flight$HibernateProxy$jo2Oohkf[\"name\"])","path":"/api/flight/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/flight/0
+
+___________________________ DELETE /api/flight/{id} ____________________________
+1. Test Case ID: oAZmdB
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:42.645+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Flight entity with id 0 exists!","path":"/api/flight/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/flight/0
+
+____________________________ GET /api/company/{id} _____________________________
+1. Test Case ID: iP0x7R
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:43.118+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Company with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Company with id 0 (through reference chain: com.app.entity.Company$HibernateProxy$ZMj7kx26[\"name\"])","path":"/api/company/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/company/0
+
+___________________________ DELETE /api/company/{id} ___________________________
+1. Test Case ID: 0C5G9R
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:43.472+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Company entity with id 0 exists!","path":"/api/company/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/company/0
+
+____________________________ GET /api/airport/{id} _____________________________
+1. Test Case ID: CbWyOS
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:43.986+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Airport with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Airport with id 0 (through reference chain: com.app.entity.Airport$HibernateProxy$2BucFY7f[\"name\"])","path":"/api/airport/0"}`
+
+Reproduce with: 
+
+    curl -X GET http://localhost:8080/api/airport/0
+
+___________________________ DELETE /api/airport/{id} ___________________________
+1. Test Case ID: o6Ey12
+
+- Server error
+
+[500] Internal Server Error:
+
+    `{"timestamp":"2025-01-09T17:37:44.264+0000","status":500,"error":"Internal Server Error","message":"No class com.app.entity.Airport entity with id 0 exists!","path":"/api/airport/0"}`
+
+Reproduce with: 
+
+    curl -X DELETE http://localhost:8080/api/airport/0
+
+=================================== SUMMARY ====================================
+
+Performed checks:
+    not_a_server_error                    289 / 532 passed          FAILED 
+
+Note: Use the 'X-Schemathesis-TestCaseId' header to correlate test case ids from failure messages with server logs for debugging.
+
+Note: To replicate these test failures, rerun with `--hypothesis-seed=33339533198450215255155793199029561160`
+
+Compressed report size: 250 KB
+Report is saved to ./st_run_2.tar.gz
+
+======================== 4 passed, 26 failed in 22.08s =========================

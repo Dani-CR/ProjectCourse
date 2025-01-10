@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4614",
+  "scenario": "Replace primitive fields with array values.  Current field [flight#quota] [REPLACE with [{\"catsKey1\":\"catsValue1\"},{\"c...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4614 - ReplacePrimitivesWithArraysFields)"
+      }
+    ],
+    "payload": "{\n  \"flight\": {\n    \"duration\": 2,\n    \"plane\": {\n      \"numberOfSeats\": 6,\n      \"name\": \"mLehXM\",\n      \"company\": {\n        \"name\": \"Waelchi Group\",\n        \"id\": 6\n      },\n      \"id\": 0\n    },\n    \"route\": {\n      \"departureAirport\": {\n        \"name\": \"qQtIh\",\n        \"location\": \"FHFubHWhNH9\",\n        \"id\": 8,\n        \"capacity\": 8\n      },\n      \"name\": \"qf0Xq\",\n      \"id\": 9,\n      \"arrivalAirport\": {\n        \"name\": \"cO9zz6z8\",\n        \"location\": \"BmfQ51Kxm\",\n        \"id\": 3,\n        \"capacity\": 9\n      }\n    },\n    \"quota\": [\n      {\n        \"catsKey1\": \"catsValue1\"\n      },\n      {\n        \"catsKey2\": \"catsValue2\"\n      }\n    ],\n    \"name\": \"aMMNQS\",\n    \"quotaFilled\": 9,\n    \"departureDateTime\": \"2025-01-09T17:23:09.285202273Z\",\n    \"id\": 4,\n    \"arrivalDateTime\": \"2025-01-09T17:23:09.285767054Z\",\n    \"quotaFilledPercentage\": 4\n  },\n  \"price\": 8,\n  \"isSold\": false,\n  \"id\": 0,\n  \"ticketCode\": \"HuWRASzGqKun\"\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:16 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "24",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "519",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:16.908+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.lang.Integer` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Integer` out of START_ARRAY token\n at [Source: (PushbackInputStream); line: 29, column: 14] (through reference chain: com.app.entity.Ticket[\"flight\"]->com.app.entity.Flight[\"quota\"])",
+      "path": "//api/ticket"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:16 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "ReplacePrimitivesWithArraysFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

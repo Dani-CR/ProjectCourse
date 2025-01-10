@@ -6,8 +6,8 @@
 
 
 configs:  {} # remove this {} when specifying properties
-#   bbSwaggerUrl: "file:///home/daniela/Documents/Tests/CS03/swagger-specification.json"
-#   bbTargetUrl: "http://localhost:8080/swagger-ui.html"
+#   bbSwaggerUrl: "file:///home/daniela/Documents/ProjCourse_repo/Tests/CS03/swagger-specification.json"
+#   bbTargetUrl: "http://localhost:8080"
 #   blackBox: true
 #   configPath: "em.yaml"
 #   endpointFocus: null

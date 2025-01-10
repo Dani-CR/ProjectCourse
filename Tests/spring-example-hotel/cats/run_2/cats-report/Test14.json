@@ -23,28 +23,28 @@
     ],
     "payload": "",
     "httpMethod": "VIEW",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:58:43 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:20:54 +0100"
   },
   "response": {
     "responseCode": 405,
     "httpMethod": "VIEW",
-    "responseTimeInMs": "17",
+    "responseTimeInMs": "11",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "223",
+    "contentLengthInBytes": "222",
     "jsonBody": {
-      "timestamp": 1736409524016,
+      "timestamp": 1736511654354,
       "status": 405,
       "error": "Method Not Allowed",
       "exception": "org.springframework.web.HttpRequestMethodNotSupportedException",
       "message": "Request method 'VIEW' not supported",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
         "key": "allow",
-        "value": "GET, POST"
+        "value": "POST, GET"
       },
       {
         "key": "content-type",
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:43 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:53 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "CustomHttpMethods",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -1,0 +1,21 @@
+################################################################################
+ main_driver_500
+
+ Hash: main_driver_500_20bba9e7951cbdca2b6ef75b7b4a196b933cc6f8
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> PUT /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    "id":1,\n    "name":"fuzzstring",\n    "departureDateTime":"2019-06-26T20:20:39+00:00",\n    "arrivalDateTime":"2019-06-26T20:20:39+00:00",\n    "duration":1,\n    "quota":1,\n    "quotaFilled":1,\n    "quotaFilledPercentage":1,\n    "route":\n        {\n            "id":1,\n            "name":"fuzzstring",\n            "departureAirport":\n                {\n                    "id":1,\n                    "name":"fuzzstring",\n                    "capacity":1,\n                    "location":"fuzzstring"\n                }\n            ,\n            "arrivalAirport":\n                {\n                    "id":1,\n                    "name":"fuzzstring",\n                    "capacity":1,\n                    "location":"fuzzstring"\n                }\n        }\n    ,\n    "plane":\n        {\n            "id":1,\n            "name":"fuzzstring",\n            "numberOfSeats":1,\n            "company":\n                {\n                    "id":1,\n                    "name":"fuzzstring"\n                }\n        }\n    }\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:26:01 GMT\r\nConnection: close\r\n\r\n1aa\r\n{"timestamp":"2025-01-09T16:26:02.142+0000","status":500,"error":"Internal Server Error","message":"Could not write JSON: Unable to find com.app.entity.Route with id 1; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Route with id 1 (through reference chain: com.app.entity.Flight[\\"route\\"]->com.app.entity.Route$HibernateProxy$KDdXdlw8[\\"name\\"])","path":"/api/flight"}\r\n0\r\n\r\n'
+

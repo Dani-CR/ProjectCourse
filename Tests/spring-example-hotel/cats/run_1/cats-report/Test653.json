@@ -21,20 +21,20 @@
         "value": "cats/12.0.0 (Test 653 - UnsupportedAcceptHeaders)"
       }
     ],
-    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "payload": "city=New+Christopher&name=9Vv6kXwk&rating=2&description=There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&id=7",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
-    "timestamp": "Thu, 9 Jan 2025 08:55:53 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
+    "timestamp": "Fri, 10 Jan 2025 13:13:55 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "PUT",
-    "responseTimeInMs": "11",
+    "responseTimeInMs": "4",
     "numberOfWordsInResponse": "35",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "331",
     "jsonBody": {
-      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 08:55:53 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Fri Jan 10 13:13:55 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
     },
     "headers": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:52 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:55 GMT"
       },
       {
         "key": "x-application-context",
@@ -62,7 +62,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

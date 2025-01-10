@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "main_driver",
+    "reproducible": true,
+    "verb": "PUT",
+    "endpoint": "/api/ticket",
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    \"id\":1,\n    \"ticketCode\":\"fuzzstring\",\n    \"flight\":\n        {\n            \"id\":1,\n            \"name\":\"fuzzstring\",\n            \"departureDateTime\":\"2019-06-26T20:20:39+00:00\",\n            \"arrivalDateTime\":\"2019-06-26T20:20:39+00:00\",\n            \"duration\":1,\n            \"quota\":1,\n            \"quotaFilled\":1,\n            \"quotaFilledPercentage\":1,\n            \"route\":\n                {\n                    \"id\":1,\n                    \"name\":\"fuzzstring\",\n                    \"departureAirport\":\n                        {\n                            \"id\":1,\n                            \"name\":\"fuzzstring\",\n                            \"capacity\":1,\n                            \"location\":\"fuzzstring\"\n                        }\n                    ,\n                    \"arrivalAirport\":\n                        {\n                            \"id\":1,\n                            \"name\":\"fuzzstring\",\n                            \"capacity\":1,\n                            \"location\":\"fuzzstring\"\n                        }\n                }\n            ,\n            \"plane\":\n                {\n                    \"id\":1,\n                    \"name\":\"fuzzstring\",\n                    \"numberOfSeats\":1,\n                    \"company\":\n                        {\n                            \"id\":1,\n                            \"name\":\"fuzzstring\"\n                        }\n                }\n        }\n    ,\n    \"price\":1,\n    \"isSold\":true}\r\n",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:23:44 GMT\r\nConnection: close\r\n\r\na9\r\n{\"timestamp\":\"2025-01-09T16:23:44.542+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"Unable to find com.app.entity.Flight with id 1\",\"path\":\"/api/ticket\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

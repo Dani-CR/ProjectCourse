@@ -2,9 +2,9 @@
   "testId": "Test 51",
   "scenario": "Insert invalid data [{}] within a valid json request body",
   "expectedResult": "Should return 4XX",
-  "result": "error",
-  "resultReason": "Not found",
-  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 201, 401, 403, 404]",
   "resultIgnoreDetails": null,
   "request": {
     "headers": [
@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 51 - InsertRandomValuesInBody)"
       }
     ],
-    "payload": "{[{}],\"password\":\"mh2hwjiuZ\",\"created\":\"2024-12-04T09:42:09.970946424Z\",\"modified\":\"2024-12-04T09:42:09.97726664Z\",\"videos\":[{\"size\":1.0829374277488435,\"created\":\"2024-12-04T09:42:10.085716874Z\",\"modified\":\"2024-12-04T09:42:10.086362715Z\",\"id\":4,\"title\":\"Y3uRxJu\",\"url\":\"http://catsUuJpnX.com/cats\"},{\"size\":1.423153483832974,\"created\":\"2024-12-04T09:42:10.091557451Z\",\"modified\":\"2024-12-04T09:42:10.092142256Z\",\"id\":5,\"title\":\"PPH749seO\",\"url\":\"http://catsUgJjaj.com/cats\"}],\"id\":4,\"username\":\"kirk.grady\"}",
+    "payload": "{[{}],\"password\":\"esPnS67PxEJ\",\"created\":\"2025-01-10T17:04:16.013306056Z\",\"modified\":\"2025-01-10T17:04:16.014379671Z\",\"videos\":[{\"size\":9.89613473559266,\"created\":\"2025-01-10T17:04:16.082217648Z\",\"modified\":\"2025-01-10T17:04:16.083226332Z\",\"id\":1,\"title\":\"MZmj4uvcC\",\"url\":\"http://catsovvOBu.com/cats\"},{\"size\":4.761413001850084,\"created\":\"2025-01-10T17:04:16.088638552Z\",\"modified\":\"2025-01-10T17:04:16.089408538Z\",\"id\":3,\"title\":\"7Ow2NqBvF\",\"url\":\"http://catswVoSjs.com/cats\"}],\"id\":5,\"username\":\"laurie.bergnaum\"}",
     "httpMethod": "POST",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
-    "timestamp": "Wed, 4 Dec 2024 10:42:12 +0100"
+    "url": "http://localhost:8080/api/v1.0/users/sign-up",
+    "timestamp": "Fri, 10 Jan 2025 18:04:19 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "6",
-    "numberOfWordsInResponse": "4",
+    "responseTimeInMs": "34",
+    "numberOfWordsInResponse": "39",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "159",
+    "contentLengthInBytes": "437",
     "jsonBody": {
-      "timestamp": "2024-12-04T09:42:12.510+0000",
-      "status": 404,
-      "error": "Not Found",
-      "message": "No message available",
-      "path": "/swagger-ui.html/api/v1.0/users/sign-up"
+      "timestamp": "2025-01-10T17:04:19.273+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Unexpected character ('[' (code 91)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('[' (code 91)): was expecting double-quote to start field name\n at [Source: (PushbackInputStream); line: 1, column: 3]",
+      "path": "/api/v1.0/users/sign-up"
     },
     "headers": [
       {
@@ -46,12 +46,16 @@
         "value": "no-cache, no-store, max-age=0, must-revalidate"
       },
       {
+        "key": "connection",
+        "value": "close"
+      },
+      {
         "key": "content-type",
         "value": "application/json;charset=UTF-8"
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:11 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:19 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +86,7 @@
   },
   "path": "/api/v1.0/users/sign-up",
   "fuzzer": "InsertRandomValuesInBody",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/users/sign-up",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/users/sign-up",
   "contractPath": "/api/v1.0/users/sign-up",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

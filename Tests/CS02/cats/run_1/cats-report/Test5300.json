@@ -1,0 +1,68 @@
+{
+  "testId": "Test 5300",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UNSUBSCRIBE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [UNSUBSCRIBE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5300 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UNSUBSCRIBE",
+    "url": "http://localhost:8080//api/ticket/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:23:24 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "UNSUBSCRIBE",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "172",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:23:24.929+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'UNSUBSCRIBE' not supported",
+      "path": "//api/ticket/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:24 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket/{id}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/ticket/%7Bid%7D",
+  "contractPath": "/api/ticket/{id}",
+  "server": "http://localhost:8080/"
+}

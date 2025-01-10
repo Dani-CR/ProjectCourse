@@ -1,0 +1,68 @@
+{
+  "testId": "Test 4118",
+  "scenario": "Send a happy flow request with undocumented HTTP method: ACL",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [ACL] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4118 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "ACL",
+    "url": "http://localhost:8080//api/route/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:27:20 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "ACL",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "163",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:20.955+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'ACL' not supported",
+      "path": "//api/route/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:20 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route/{id}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/route/%7Bid%7D",
+  "contractPath": "/api/route/{id}",
+  "server": "http://localhost:8080/"
+}

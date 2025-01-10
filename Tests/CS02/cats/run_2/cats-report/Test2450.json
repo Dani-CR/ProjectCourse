@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2450",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/flight/{id}/?/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [GET]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2450 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":7}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/flight/7/?/",
+    "timestamp": "Thu, 9 Jan 2025 18:26:54 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "399",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:54.714+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Flight with id 7; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Flight with id 7 (through reference chain: com.app.entity.Flight$HibernateProxy$NnlJWLcH[\"name\"])",
+      "path": "//api/flight/7/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:54 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//api/flight/7/?/",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

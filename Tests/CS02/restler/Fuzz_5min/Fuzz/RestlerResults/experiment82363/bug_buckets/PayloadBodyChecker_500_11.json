@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "PayloadBodyChecker",
+    "reproducible": true,
+    "verb": "PUT",
+    "endpoint": null,
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "PUT /api/ticket HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\"id\":1,\"ticketCode\":\"fuzzstring\",\"flight\":{ \"fuzz\" : false },\"price\":1,\"isSold\":true}",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 12:41:49 GMT\r\nConnection: close\r\n\r\nf1\r\n{\"timestamp\":\"2025-01-09T12:41:49.891+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!\",\"path\":\"/api/ticket\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

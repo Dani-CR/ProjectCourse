@@ -1,0 +1,68 @@
+{
+  "testId": "Test 5314",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 5314 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"0\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/ticket/0",
+    "timestamp": "Thu, 9 Jan 2025 18:27:33 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "404",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:33.332+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Ticket with id 0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Ticket with id 0 (through reference chain: com.app.entity.Ticket$HibernateProxy$rk56zjGG[\"ticketCode\"])",
+      "path": "//api/ticket/0"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:33 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ticket/{id}",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:8080//api/ticket/0",
+  "contractPath": "/api/ticket/{id}",
+  "server": "http://localhost:8080/"
+}

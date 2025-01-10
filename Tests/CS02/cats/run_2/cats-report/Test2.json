@@ -1,0 +1,63 @@
+{
+  "testId": "Test 2",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [name], value [REPLACE with RqQস্র\\u200cুwYdI], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 201",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [200, 201, 202, 204], actual [201], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"name\":\"RqQস্র\\u200CুwYdI\",\"location\":\"ZKHoDbKHejO\",\"id\":1,\"capacity\":9}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:26:05 +0100"
+  },
+  "response": {
+    "responseCode": 201,
+    "httpMethod": "POST",
+    "responseTimeInMs": "40",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "82",
+    "jsonBody": {
+      "id": 32729,
+      "name": "RqQস্র‌ুwYdI",
+      "capacity": 9,
+      "location": "ZKHoDbKHejO"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:05 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

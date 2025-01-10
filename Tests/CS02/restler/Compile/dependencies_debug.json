@@ -1,0 +1,4578 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "capacity",
+        "AccessPathParts": {
+          "path": [
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "location",
+        "AccessPathParts": {
+          "path": [
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "capacity",
+        "AccessPathParts": {
+          "path": [
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "location",
+        "AccessPathParts": {
+          "path": [
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "airport"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/airport/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "airport"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "airport",
+        "PathContainerName": "airport",
+        "CandidateTypeNames": [
+          "airport"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "company"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/company/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "company"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "company",
+        "PathContainerName": "company",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalDateTime",
+            "fullPath": {
+              "path": [
+                "arrivalDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "arrivalDateTime",
+        "AccessPathParts": {
+          "path": [
+            "arrivalDateTime"
+          ]
+        },
+        "ResourceName": "arrivalDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureDateTime",
+            "fullPath": {
+              "path": [
+                "departureDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "departureDateTime",
+        "AccessPathParts": {
+          "path": [
+            "departureDateTime"
+          ]
+        },
+        "ResourceName": "departureDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "duration",
+            "fullPath": {
+              "path": [
+                "duration"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "duration",
+        "AccessPathParts": {
+          "path": [
+            "duration"
+          ]
+        },
+        "ResourceName": "duration",
+        "ProducerParameterName": "duration",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "planeId",
+            "fullPath": {
+              "path": [
+                "planeId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "planeId",
+        "AccessPathParts": {
+          "path": [
+            "planeId"
+          ]
+        },
+        "ResourceName": "planeId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quota",
+            "fullPath": {
+              "path": [
+                "quota"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "quota",
+        "AccessPathParts": {
+          "path": [
+            "quota"
+          ]
+        },
+        "ResourceName": "quota",
+        "ProducerParameterName": "quota",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "routeId",
+            "fullPath": {
+              "path": [
+                "routeId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "routeId",
+        "AccessPathParts": {
+          "path": [
+            "routeId"
+          ]
+        },
+        "ResourceName": "routeId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalDateTime",
+            "fullPath": {
+              "path": [
+                "arrivalDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "arrivalDateTime",
+        "AccessPathParts": {
+          "path": [
+            "arrivalDateTime"
+          ]
+        },
+        "ResourceName": "arrivalDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureDateTime",
+            "fullPath": {
+              "path": [
+                "departureDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "departureDateTime",
+        "AccessPathParts": {
+          "path": [
+            "departureDateTime"
+          ]
+        },
+        "ResourceName": "departureDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "duration",
+            "fullPath": {
+              "path": [
+                "duration"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "duration",
+        "AccessPathParts": {
+          "path": [
+            "duration"
+          ]
+        },
+        "ResourceName": "duration",
+        "ProducerParameterName": "duration",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "plane",
+            "fullPath": {
+              "path": [
+                "plane"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "plane",
+        "AccessPathParts": {
+          "path": [
+            "plane"
+          ]
+        },
+        "ResourceName": "plane",
+        "ProducerParameterName": "plane",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "company",
+            "fullPath": {
+              "path": [
+                "plane",
+                "company"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "plane/company",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "company"
+          ]
+        },
+        "ResourceName": "company",
+        "ProducerParameterName": "company",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "plane",
+                "company",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "plane/company/id",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "company",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "plane",
+                "company",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "plane/company/name",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "company",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "plane",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "plane/id",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "plane",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "plane/name",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "numberOfSeats",
+            "fullPath": {
+              "path": [
+                "plane",
+                "numberOfSeats"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "plane/numberOfSeats",
+        "AccessPathParts": {
+          "path": [
+            "plane",
+            "numberOfSeats"
+          ]
+        },
+        "ResourceName": "numberOfSeats",
+        "ProducerParameterName": "seats",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quota",
+            "fullPath": {
+              "path": [
+                "quota"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "quota",
+        "AccessPathParts": {
+          "path": [
+            "quota"
+          ]
+        },
+        "ResourceName": "quota",
+        "ProducerParameterName": "quota",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quotaFilled",
+            "fullPath": {
+              "path": [
+                "quotaFilled"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "quotaFilled",
+        "AccessPathParts": {
+          "path": [
+            "quotaFilled"
+          ]
+        },
+        "ResourceName": "quotaFilled",
+        "ProducerParameterName": "filled",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quotaFilledPercentage",
+            "fullPath": {
+              "path": [
+                "quotaFilledPercentage"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "quotaFilledPercentage",
+        "AccessPathParts": {
+          "path": [
+            "quotaFilledPercentage"
+          ]
+        },
+        "ResourceName": "quotaFilledPercentage",
+        "ProducerParameterName": "percentage",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "route",
+            "fullPath": {
+              "path": [
+                "route"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "route",
+        "AccessPathParts": {
+          "path": [
+            "route"
+          ]
+        },
+        "ResourceName": "route",
+        "ProducerParameterName": "route",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalAirport",
+            "fullPath": {
+              "path": [
+                "route",
+                "arrivalAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "route/arrivalAirport",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "arrivalAirport"
+          ]
+        },
+        "ResourceName": "arrivalAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "route",
+                "arrivalAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "route/arrivalAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "arrivalAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "route",
+                "arrivalAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "route/arrivalAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "arrivalAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "route",
+                "arrivalAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "route/arrivalAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "arrivalAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "route",
+                "arrivalAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "route/arrivalAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "arrivalAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureAirport",
+            "fullPath": {
+              "path": [
+                "route",
+                "departureAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "route/departureAirport",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "departureAirport"
+          ]
+        },
+        "ResourceName": "departureAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "route",
+                "departureAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "route/departureAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "departureAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "route",
+                "departureAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "route/departureAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "departureAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "route",
+                "departureAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "route/departureAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "departureAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "route",
+                "departureAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "route/departureAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "departureAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "route",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "route/id",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "route",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "route/name",
+        "AccessPathParts": {
+          "path": [
+            "route",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "flight"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/flight/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "flight"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "PathContainerName": "flight",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "companyId",
+            "fullPath": {
+              "path": [
+                "companyId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "companyId",
+        "AccessPathParts": {
+          "path": [
+            "companyId"
+          ]
+        },
+        "ResourceName": "companyId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "numberOfSeats",
+            "fullPath": {
+              "path": [
+                "numberOfSeats"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "numberOfSeats",
+        "AccessPathParts": {
+          "path": [
+            "numberOfSeats"
+          ]
+        },
+        "ResourceName": "numberOfSeats",
+        "ProducerParameterName": "seats",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "company",
+            "fullPath": {
+              "path": [
+                "company"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "company",
+        "AccessPathParts": {
+          "path": [
+            "company"
+          ]
+        },
+        "ResourceName": "company",
+        "ProducerParameterName": "company",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "company",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "company/id",
+        "AccessPathParts": {
+          "path": [
+            "company",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "company",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "company/name",
+        "AccessPathParts": {
+          "path": [
+            "company",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "numberOfSeats",
+            "fullPath": {
+              "path": [
+                "numberOfSeats"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "numberOfSeats",
+        "AccessPathParts": {
+          "path": [
+            "numberOfSeats"
+          ]
+        },
+        "ResourceName": "numberOfSeats",
+        "ProducerParameterName": "seats",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "plane"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/plane/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "plane"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "PathContainerName": "plane",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalAirportId",
+            "fullPath": {
+              "path": [
+                "arrivalAirportId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "arrivalAirportId",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirportId"
+          ]
+        },
+        "ResourceName": "arrivalAirportId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureAirportId",
+            "fullPath": {
+              "path": [
+                "departureAirportId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "departureAirportId",
+        "AccessPathParts": {
+          "path": [
+            "departureAirportId"
+          ]
+        },
+        "ResourceName": "departureAirportId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalAirport",
+            "fullPath": {
+              "path": [
+                "arrivalAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "arrivalAirport",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirport"
+          ]
+        },
+        "ResourceName": "arrivalAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "arrivalAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "arrivalAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "arrivalAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "arrivalAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "arrivalAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "arrivalAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "arrivalAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "arrivalAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "arrivalAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureAirport",
+            "fullPath": {
+              "path": [
+                "departureAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "departureAirport",
+        "AccessPathParts": {
+          "path": [
+            "departureAirport"
+          ]
+        },
+        "ResourceName": "departureAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "departureAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "departureAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "departureAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "departureAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "departureAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "departureAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "departureAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "departureAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "departureAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "departureAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "departureAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "departureAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "name",
+        "AccessPathParts": {
+          "path": [
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "route"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/route/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "route"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "route",
+        "PathContainerName": "route",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "flightId",
+            "fullPath": {
+              "path": [
+                "flightId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "flightId",
+        "AccessPathParts": {
+          "path": [
+            "flightId"
+          ]
+        },
+        "ResourceName": "flightId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "isSold",
+            "fullPath": {
+              "path": [
+                "isSold"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "isSold",
+        "AccessPathParts": {
+          "path": [
+            "isSold"
+          ]
+        },
+        "ResourceName": "isSold",
+        "ProducerParameterName": "sold",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "price",
+            "fullPath": {
+              "path": [
+                "price"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "price",
+        "AccessPathParts": {
+          "path": [
+            "price"
+          ]
+        },
+        "ResourceName": "price",
+        "ProducerParameterName": "price",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "ticketCode",
+            "fullPath": {
+              "path": [
+                "ticketCode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "ticketCode",
+        "AccessPathParts": {
+          "path": [
+            "ticketCode"
+          ]
+        },
+        "ResourceName": "ticketCode",
+        "ProducerParameterName": "code",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "flight",
+            "fullPath": {
+              "path": [
+                "flight"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "flight",
+        "AccessPathParts": {
+          "path": [
+            "flight"
+          ]
+        },
+        "ResourceName": "flight",
+        "ProducerParameterName": "flight",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalDateTime",
+            "fullPath": {
+              "path": [
+                "flight",
+                "arrivalDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/arrivalDateTime",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "arrivalDateTime"
+          ]
+        },
+        "ResourceName": "arrivalDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureDateTime",
+            "fullPath": {
+              "path": [
+                "flight",
+                "departureDateTime"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/departureDateTime",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "departureDateTime"
+          ]
+        },
+        "ResourceName": "departureDateTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "DateTime"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "duration",
+            "fullPath": {
+              "path": [
+                "flight",
+                "duration"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/duration",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "duration"
+          ]
+        },
+        "ResourceName": "duration",
+        "ProducerParameterName": "duration",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "plane",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/plane",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane"
+          ]
+        },
+        "ResourceName": "plane",
+        "ProducerParameterName": "plane",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "company",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "company"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "flight/plane/company",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "company"
+          ]
+        },
+        "ResourceName": "company",
+        "ProducerParameterName": "company",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "company",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "flight/plane/company/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "company",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "company",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "company",
+        "BodyContainerName": "company",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "company"
+        ],
+        "AccessPath": "flight/plane/company/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "company",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "flight/plane/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "flight/plane/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "numberOfSeats",
+            "fullPath": {
+              "path": [
+                "flight",
+                "plane",
+                "numberOfSeats"
+              ]
+            }
+          }
+        },
+        "ContainerName": "plane",
+        "BodyContainerName": "plane",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "plane"
+        ],
+        "AccessPath": "flight/plane/numberOfSeats",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "plane",
+            "numberOfSeats"
+          ]
+        },
+        "ResourceName": "numberOfSeats",
+        "ProducerParameterName": "seats",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quota",
+            "fullPath": {
+              "path": [
+                "flight",
+                "quota"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/quota",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "quota"
+          ]
+        },
+        "ResourceName": "quota",
+        "ProducerParameterName": "quota",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quotaFilled",
+            "fullPath": {
+              "path": [
+                "flight",
+                "quotaFilled"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/quotaFilled",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "quotaFilled"
+          ]
+        },
+        "ResourceName": "quotaFilled",
+        "ProducerParameterName": "filled",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "quotaFilledPercentage",
+            "fullPath": {
+              "path": [
+                "flight",
+                "quotaFilledPercentage"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/quotaFilledPercentage",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "quotaFilledPercentage"
+          ]
+        },
+        "ResourceName": "quotaFilledPercentage",
+        "ProducerParameterName": "percentage",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "route",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route"
+              ]
+            }
+          }
+        },
+        "ContainerName": "flight",
+        "BodyContainerName": "flight",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "flight"
+        ],
+        "AccessPath": "flight/route",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route"
+          ]
+        },
+        "ResourceName": "route",
+        "ProducerParameterName": "route",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "arrivalAirport",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "arrivalAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "flight/route/arrivalAirport",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "arrivalAirport"
+          ]
+        },
+        "ResourceName": "arrivalAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "arrivalAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/arrivalAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "arrivalAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "arrivalAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/arrivalAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "arrivalAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "arrivalAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/arrivalAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "arrivalAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "arrivalAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "arrivalAirport",
+        "BodyContainerName": "arrivalAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "arrival__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/arrivalAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "arrivalAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "departureAirport",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "departureAirport"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "flight/route/departureAirport",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "departureAirport"
+          ]
+        },
+        "ResourceName": "departureAirport",
+        "ProducerParameterName": "airport",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "capacity",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "departureAirport",
+                "capacity"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/departureAirport/capacity",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "departureAirport",
+            "capacity"
+          ]
+        },
+        "ResourceName": "capacity",
+        "ProducerParameterName": "capacity",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "departureAirport",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/departureAirport/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "departureAirport",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "location",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "departureAirport",
+                "location"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/departureAirport/location",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "departureAirport",
+            "location"
+          ]
+        },
+        "ResourceName": "location",
+        "ProducerParameterName": "location",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "departureAirport",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "departureAirport",
+        "BodyContainerName": "departureAirport",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "departure__airport",
+          "airport"
+        ],
+        "AccessPath": "flight/route/departureAirport/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "departureAirport",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "flight/route/id",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "name",
+            "fullPath": {
+              "path": [
+                "flight",
+                "route",
+                "name"
+              ]
+            }
+          }
+        },
+        "ContainerName": "route",
+        "BodyContainerName": "route",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "route"
+        ],
+        "AccessPath": "flight/route/name",
+        "AccessPathParts": {
+          "path": [
+            "flight",
+            "route",
+            "name"
+          ]
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "id",
+            "fullPath": {
+              "path": [
+                "id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "id",
+        "AccessPathParts": {
+          "path": [
+            "id"
+          ]
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "isSold",
+            "fullPath": {
+              "path": [
+                "isSold"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "isSold",
+        "AccessPathParts": {
+          "path": [
+            "isSold"
+          ]
+        },
+        "ResourceName": "isSold",
+        "ProducerParameterName": "sold",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "price",
+            "fullPath": {
+              "path": [
+                "price"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "price",
+        "AccessPathParts": {
+          "path": [
+            "price"
+          ]
+        },
+        "ResourceName": "price",
+        "ProducerParameterName": "price",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "ticketCode",
+            "fullPath": {
+              "path": [
+                "ticketCode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPath": "ticketCode",
+        "AccessPathParts": {
+          "path": [
+            "ticketCode"
+          ]
+        },
+        "ResourceName": "ticketCode",
+        "ProducerParameterName": "code",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "ticket"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/ticket/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "ticket"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "ticket",
+        "PathContainerName": "ticket",
+        "CandidateTypeNames": [
+          "ticket"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  }
+]

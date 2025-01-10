@@ -23,18 +23,18 @@
     ],
     "payload": "{}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
-    "timestamp": "Tue, 3 Dec 2024 20:09:07 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/list",
+    "timestamp": "Fri, 10 Jan 2025 18:00:59 +0100"
   },
   "response": {
-    "responseCode": 404,
+    "responseCode": 406,
     "httpMethod": "GET",
-    "responseTimeInMs": "29",
-    "numberOfWordsInResponse": "33",
+    "responseTimeInMs": "43",
+    "numberOfWordsInResponse": "35",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "306",
+    "contentLengthInBytes": "331",
     "jsonBody": {
-      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Tue Dec 03 19:09:07 GMT 2024</div><div>There was an unexpected error (type=Not Found, status=404).</div><div>No message available</div></body></html>"
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Fri Jan 10 17:00:59 GMT 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
     },
     "headers": [
       {
@@ -47,7 +47,7 @@
       },
       {
         "key": "content-length",
-        "value": "306"
+        "value": "331"
       },
       {
         "key": "content-type",
@@ -55,7 +55,7 @@
       },
       {
         "key": "date",
-        "value": "Tue, 03 Dec 2024 19:09:06 GMT"
+        "value": "Fri, 10 Jan 2025 17:00:58 GMT"
       },
       {
         "key": "expires",
@@ -82,7 +82,7 @@
   },
   "path": "/api/v1.0/videos/list",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/list",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/list",
   "contractPath": "/api/v1.0/videos/list",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

@@ -1,0 +1,56 @@
+{
+  "testId": "Test 2532",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [404, 400, 422], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2532 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"7127\"\n}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/flight/7127",
+    "timestamp": "Thu, 9 Jan 2025 18:22:38 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:37 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/flight/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/flight/7127",
+  "contractPath": "/api/flight/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Cats</title>
+</head>
+<body>
+<div class="banner-component">
+    <div class="flex-items-center">
+        <img src="./assets/clock-wise.svg" alt="version">
+        <span class="left">
+				Generated with CATS 12.0.0
+			</span>
+    </div>
+    <div class="flex-items-center">
+        <img src="./assets/clock.svg" alt="timestamp">
+        <span>
+				Thu, 9 Jan 2025 18:22:34 +0100
+			</span>
+    </div>
+</div>
+<header>
+    <div class="logo">
+        <img class="logo-white" src="./assets/cats-logo-dark.svg" alt="White Logo">
+        <img class="logo-dark" src="./assets/cats-logo-white.svg" alt="Dark Logo">
+    </div>
+    <div class="theme-toggle">
+        <button id="theme-toggle"  style="display: none;">
+            <img class="theme-icon-light" src="./assets/white-mode-icon.svg" alt="Light Theme Icon">
+            <img class="theme-icon-dark" src="./assets/dark-mode-icon.svg" alt="Dark Theme Icon">
+        </button>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-container page-text">
+        <a href="index.html" class="anchor-tag">All Tests</a>&nbsp&nbsp/&nbsp&nbspTest 2294
+    </div>
+
+    <div class="table-container">
+        <div class="component title border-left-top">
+            <p>Test ID</p>
+        </div>
+        <div class="component text border-right-top">
+            <p>Test 2294</p>
+        </div>
+
+        <div class="component title">
+            <p>Timestamp</p>
+        </div>
+        <div class="component text">
+            <p>Thu, 9 Jan 2025 18:22:34 +0100</p>
+        </div>
+
+        <div class="component title">
+            <p>Scenario</p>
+        </div>
+        <div class="component text">
+            <p>Send [zero-width characters] in request fields: field [departureDateTime], value [INSERT with \u200c], is required [FALSE]</p>
+        </div>
+        <div class="component title">
+            <p>Expected Result</p>
+        </div>
+        <div class="component text">
+            <p>Should return [2XX]</p>
+        </div>
+        <div class="component title">
+            <p>Result</p>
+        </div>
+        <div class="component text">
+            <label class="test-result result-error">error</label>
+        </div>
+        <div class="component title">
+            <p>Result Details</p>
+        </div>
+        <div class="component text">
+            <p>
+                Unexpected behaviour: expected [200, 201, 202, 204], actual [400]
+            </p>
+        </div>
+        <div class="component title">
+            <p>Contract Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">/api/flight</span>
+        </div>
+
+        <div class="component title">
+            <p>Fuzzer</p>
+        </div>
+        <div class="component text">
+            <p>ZeroWidthCharsInValuesFields</p>
+        </div>
+
+        <div class="component title">
+            <p>Full Request Path</p>
+        </div>
+        <div class="component text">
+            <span class="rounded path details">http://localhost:8080//api/flight</span>
+        </div>
+
+        <div class="component title border-left-bottom">
+            <p>Http Method</p>
+        </div>
+        <div class="component text border-right-bottom">
+            <span class="active rounded rounded-put details">put</span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <div class="tabs">
+            <div class="tabs-and-title">
+                <div class="component section-title">Request Details</div>
+                <div class="all-tabs">
+                    <div class="component tab active" onclick="showCode(1)">Payload</div>
+                    <div class="component tab" onclick="showCode(2)">Headers</div>
+                    <div class="component tab" onclick="showCode(3)">cURL</div>
+                </div>
+            </div>
+            <button class="copy-button" onclick="copyTabs()">Copy code</button>
+        </div>
+        <div class="code-area" id="code-1">
+            <pre><code>{&#10;  &quot;duration&quot;: 7,&#10;  &quot;plane&quot;: {&#10;    &quot;numberOfSeats&quot;: 9,&#10;    &quot;name&quot;: &quot;zw5JXz&quot;,&#10;    &quot;company&quot;: {&#10;      &quot;name&quot;: &quot;O&#39;Keefe, Hauck and Bergnaum&quot;,&#10;      &quot;id&quot;: 0&#10;    },&#10;    &quot;id&quot;: 6&#10;  },&#10;  &quot;route&quot;: {&#10;    &quot;departureAirport&quot;: {&#10;      &quot;name&quot;: &quot;XOjDA0Q&quot;,&#10;      &quot;location&quot;: &quot;JTCR9Cy7l0&quot;,&#10;      &quot;id&quot;: 7,&#10;      &quot;capacity&quot;: 3&#10;    },&#10;    &quot;name&quot;: &quot;84qnJEy&quot;,&#10;    &quot;id&quot;: 6,&#10;    &quot;arrivalAirport&quot;: {&#10;      &quot;name&quot;: &quot;Dca9O6ED&quot;,&#10;      &quot;location&quot;: &quot;uujgFSN23s&quot;,&#10;      &quot;id&quot;: 0,&#10;      &quot;capacity&quot;: 8&#10;    }&#10;  },&#10;  &quot;quota&quot;: 4,&#10;  &quot;name&quot;: &quot;WoofJMR&quot;,&#10;  &quot;quotaFilled&quot;: 6,&#10;  &quot;departureDateTime&quot;: &quot;2025-01-09T17:2‌2:16.844913927Z&quot;,&#10;  &quot;id&quot;: 2,&#10;  &quot;arrivalDateTime&quot;: &quot;2025-01-09T17:22:16.845349548Z&quot;,&#10;  &quot;quotaFilledPercentage&quot;: 3&#10;}</code></pre>
+        </div>
+
+        <div class="code-area active" id="code-2">
+            <pre><code>[&#10;  {&#10;    &quot;key&quot;: &quot;Accept&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;Content-Type&quot;,&#10;    &quot;value&quot;: &quot;application/json&quot;&#10;  },&#10;  {&#10;    &quot;key&quot;: &quot;User-Agent&quot;,&#10;    &quot;value&quot;: &quot;cats/12.0.0 (Test 2294 - ZeroWidthCharsInValuesFields)&quot;&#10;  }&#10;]</code></pre>
+        </div>
+
+        <div class="code-area" id="code-3">
+            <pre><code>curl  -X PUT \&#10;      -H &quot;Accept: application/json&quot; -H &quot;Content-Type: application/json&quot; -H &quot;User-Agent: cats/12.0.0 (Test 2294 - ZeroWidthCharsInValuesFields)&quot; \&#10;      -d &#39;{&quot;duration&quot;:7,&quot;plane&quot;:{&quot;numberOfSeats&quot;:9,&quot;name&quot;:&quot;zw5JXz&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;O&#39;Keefe, Hauck and Bergnaum&quot;,&quot;id&quot;:0},&quot;id&quot;:6},&quot;route&quot;:{&quot;departureAirport&quot;:{&quot;name&quot;:&quot;XOjDA0Q&quot;,&quot;location&quot;:&quot;JTCR9Cy7l0&quot;,&quot;id&quot;:7,&quot;capacity&quot;:3},&quot;name&quot;:&quot;84qnJEy&quot;,&quot;id&quot;:6,&quot;arrivalAirport&quot;:{&quot;name&quot;:&quot;Dca9O6ED&quot;,&quot;location&quot;:&quot;uujgFSN23s&quot;,&quot;id&quot;:0,&quot;capacity&quot;:8}},&quot;quota&quot;:4,&quot;name&quot;:&quot;WoofJMR&quot;,&quot;quotaFilled&quot;:6,&quot;departureDateTime&quot;:&quot;2025-01-09T17:2\u200C2:16.844913927Z&quot;,&quot;id&quot;:2,&quot;arrivalDateTime&quot;:&quot;2025-01-09T17:22:16.845349548Z&quot;,&quot;quotaFilledPercentage&quot;:3}&#39; \&#10;      http://localhost:8080//api/flight&#10;</code></pre>
+        </div>
+    </div>
+
+    <div class='section-response'>
+        <div class="tabs-header">
+            <div class="component section-title">Response</div>
+            <button class="copy-button copy-button-response" onclick="copyResponse()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-response">
+            <pre><code>{&#10;  &quot;responseCode&quot;: 400,&#10;  &quot;httpMethod&quot;: &quot;PUT&quot;,&#10;  &quot;responseTimeInMs&quot;: &quot;2&quot;,&#10;  &quot;numberOfWordsInResponse&quot;: &quot;89&quot;,&#10;  &quot;numberOfLinesInResponse&quot;: &quot;1&quot;,&#10;  &quot;contentLengthInBytes&quot;: &quot;1038&quot;,&#10;  &quot;jsonBody&quot;: {&#10;    &quot;timestamp&quot;: &quot;2025-01-09T17:22:34.811+0000&quot;,&#10;    &quot;status&quot;: 400,&#10;    &quot;error&quot;: &quot;Bad Request&quot;,&#10;    &quot;message&quot;: &quot;JSON parse error: Cannot deserialize value of type &#96;java.util.Date&#96; from String \&quot;2025-01-09T17:2‌2:16.844913927Z\&quot;: not a valid representation (error: Failed to parse Date value &#39;2025-01-09T17:2‌2:16.844913927Z&#39;: Cannot parse date \&quot;2025-01-09T17:2‌2:16.844913927Z\&quot;: while it seems to fit format &#39;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ&#39;, parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type &#96;java.util.Date&#96; from String \&quot;2025-01-09T17:2‌2:16.844913927Z\&quot;: not a valid representation (error: Failed to parse Date value &#39;2025-01-09T17:2‌2:16.844913927Z&#39;: Cannot parse date \&quot;2025-01-09T17:2‌2:16.844913927Z\&quot;: while it seems to fit format &#39;yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ&#39;, parsing fails (leniency? null))\n at [Source: (PushbackInputStream); line: 1, column: 382] (through reference chain: com.app.entity.Flight[\&quot;departureDateTime\&quot;])&quot;,&#10;    &quot;path&quot;: &quot;//api/flight&quot;&#10;  },&#10;  &quot;headers&quot;: [&#10;    {&#10;      &quot;key&quot;: &quot;connection&quot;,&#10;      &quot;value&quot;: &quot;close&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;content-type&quot;,&#10;      &quot;value&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;date&quot;,&#10;      &quot;value&quot;: &quot;Thu, 09 Jan 2025 17:22:33 GMT&quot;&#10;    },&#10;    {&#10;      &quot;key&quot;: &quot;transfer-encoding&quot;,&#10;      &quot;value&quot;: &quot;chunked&quot;&#10;    }&#10;  ],&#10;  &quot;responseContentType&quot;: &quot;application/json;charset&#61;UTF-8&quot;&#10;}</code></pre>
+        </div>
+    </div>
+
+    <div>
+        <div class="tabs-header">
+            <div class="component section-title">CATS Replay</div>
+            <button class="copy-button copy-button-cats-replay" onclick="copyCatsReplay()">Copy code</button>
+        </div>
+        <div class="code-area-outside" id="code-cats-replay">
+            <pre><code>cats replay Test2294</code></pre>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+#CS02 evomaster 10min logs
+
+
+* Covered targets: 133; time per test: 77.8ms (6.0 actions); since last improvement: 132s
+* Starting to apply minimization phase
+* Recomputing full coverage for 58 tests
+18:09:49.783 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/route/{id}
+18:09:49.810 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/flight/{id}
+18:09:49.866 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/ticket
+18:09:49.867 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/company/{id}
+18:09:49.939 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/company
+18:09:49.999 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/flight
+18:09:50.098 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/company
+18:09:50.143 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: GET:/api/airport/{id}
+18:09:50.188 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/ticket/{id}
+18:09:50.197 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/ticket
+18:09:50.359 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/company
+18:09:50.426 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/plane/{id}
+18:09:50.426 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/airport
+18:09:50.512 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/airport
+18:09:50.637 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/airport/{id}
+18:09:50.681 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 409, ie, 409 != 500 for endpoint: POST:/api/airport
+18:09:50.836 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/route
+18:09:50.907 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/plane
+18:09:50.983 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 409, ie, 409 != 500 for endpoint: POST:/api/ticket
+18:09:51.003 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 409, ie, 409 != 500 for endpoint: POST:/api/flight
+18:09:51.082 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/flight
+18:09:51.082 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 409, ie, 409 != 500 for endpoint: POST:/api/route
+18:09:51.118 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 409, ie, 409 != 500 for endpoint: POST:/api/company
+* Analyzing 8 tests with size greater than 1
+* Minimization progress: 8/8
+* Minimization phase took 1 seconds
+* Evaluated tests: 8920
+* Evaluated actions: 48802
+* Needed budget: 99%
+* Passed time (seconds): 601
+* Execution time per test (ms): Avg=66.44 , min=2.00 , max=1392.00
+* Execution time per action (ms): Avg=12.38 , min=2.00 , max=154.67
+* Computation overhead between tests (ms): Avg=0.81 , min=0.00 , max=34.00
+* Going to save 47 tests to generated_tests
+* Potential faults: 26
+* Successfully executed (HTTP code 2xx) 12 endpoints out of 30 (40%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

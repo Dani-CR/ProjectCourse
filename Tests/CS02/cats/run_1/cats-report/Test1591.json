@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1591",
+  "scenario": "Send a happy flow request with undocumented HTTP method: COPY",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [COPY] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1591 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "COPY",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:22:23 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "COPY",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "156",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:23.516+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'COPY' not supported",
+      "path": "//api/flight"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, POST"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

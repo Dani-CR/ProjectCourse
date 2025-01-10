@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1175",
+  "scenario": "Send [outside the boundary values] in request fields: field [id], value [REPLACE with 9223372036854775807], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1175 - IntegerFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"id\":9223372036854775807}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/company/9223372036854775807",
+    "timestamp": "Thu, 9 Jan 2025 18:22:14 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "29",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "456",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:14.309+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Company with id 9223372036854775807; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Company with id 9223372036854775807 (through reference chain: com.app.entity.Company$HibernateProxy$RCU7FuZf[\"name\"])",
+      "path": "//api/company/9223372036854775807"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:13 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company/{id}",
+  "fuzzer": "IntegerFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:8080//api/company/9223372036854775807",
+  "contractPath": "/api/company/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -21,15 +21,15 @@
         "value": "cats/12.0.0 (Test 362 - CheckSecurityHeaders)"
       }
     ],
-    "payload": "{\"id\":4}",
+    "payload": "{\"id\":1}",
     "httpMethod": "DELETE",
-    "url": "http://localhost:8090//example/v1/hotels/4",
-    "timestamp": "Thu, 9 Jan 2025 08:58:56 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/1",
+    "timestamp": "Fri, 10 Jan 2025 13:21:03 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "DELETE",
-    "responseTimeInMs": "8",
+    "responseTimeInMs": "28",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "69",
@@ -44,7 +44,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:56 GMT"
+        "value": "Fri, 10 Jan 2025 12:21:02 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -59,7 +59,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "CheckSecurityHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/4",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/1",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

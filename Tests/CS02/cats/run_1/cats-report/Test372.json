@@ -1,0 +1,64 @@
+{
+  "testId": "Test 372",
+  "scenario": "Send a happy flow request with a [unsupported] Content-Type header, value [text/csv]",
+  "expectedResult": "Should return 415",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [415] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "text/csv"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 372 - UnsupportedContentTypesHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"oKFgYB\",\"location\":\"7m6WuJtvEnR\",\"id\":6,\"capacity\":1}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/airport",
+    "timestamp": "Thu, 9 Jan 2025 18:21:58 +0100"
+  },
+  "response": {
+    "responseCode": 415,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "177",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:21:58.413+0000",
+      "status": 415,
+      "error": "Unsupported Media Type",
+      "message": "Content type 'text/csv;charset=UTF-8' not supported",
+      "path": "//api/airport"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:21:58 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport",
+  "fuzzer": "UnsupportedContentTypesHeaders",
+  "fullRequestPath": "http://localhost:8080//api/airport",
+  "contractPath": "/api/airport",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,56 @@
+{
+  "testId": "Test 2901",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/x-www-form-urlencoded]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2901 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":3,\"name\":\"kNd3LLa\",\"company\":{\"name\":\"Klein-Miller\",\"id\":3},\"id\":9}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:47 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:47 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/plane",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

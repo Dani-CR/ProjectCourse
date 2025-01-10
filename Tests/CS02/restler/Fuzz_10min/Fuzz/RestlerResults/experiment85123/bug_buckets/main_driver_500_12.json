@@ -1,0 +1,16 @@
+{
+    "status_code": "500",
+    "checker_name": "main_driver",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": "/api/flight",
+    "status_text": "",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /api/flight HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Type: application/json\r\n\r\n{\n    \"name\":\"fuzzstring\",\n    \"departureDateTime\":\"2019-06-26T20:20:39+00:00\",\n    \"arrivalDateTime\":\"2019-06-26T20:20:39+00:00\",\n    \"duration\":1,\n    \"quota\":1,\n    \"planeId\":1,\n    \"routeId\":1}\r\n",
+            "response": "HTTP/1.1 500 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Thu, 09 Jan 2025 16:27:00 GMT\r\nConnection: close\r\n\r\n111\r\n{\"timestamp\":\"2025-01-09T16:27:01.091+0000\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"query did not return a unique result: 2214; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2214\",\"path\":\"/api/flight\"}\r\n0\r\n\r\n"
+        }
+    ]
+}

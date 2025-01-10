@@ -41,3 +41,5 @@ Note: To replicate these test failures, rerun with `--hypothesis-seed=2083788801
 Compressed report size: 38 KB
 Report is saved to ./run_1.tar.gz
 
+========================= 4 passed, 1 failed in 14.69s =========================
+

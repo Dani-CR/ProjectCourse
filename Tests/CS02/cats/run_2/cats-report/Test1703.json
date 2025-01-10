@@ -1,0 +1,92 @@
+{
+  "testId": "Test 1703",
+  "scenario": "Remove the following fields from request: [id]",
+  "expectedResult": "Should return [2XX] response code as required fields [were not] removed",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1703 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"duration\":3,\"plane\":{\"numberOfSeats\":0,\"name\":\"ZNXYvF22\",\"company\":{\"name\":\"Lowe and Sons\",\"id\":9},\"id\":9},\"route\":{\"departureAirport\":{\"name\":\"AmTXG\",\"location\":\"x7w6MnnQB\",\"id\":2,\"capacity\":9},\"name\":\"NSV3X\",\"id\":2,\"arrivalAirport\":{\"name\":\"oG3WIFz\",\"location\":\"00ZsMxyLp\",\"id\":9,\"capacity\":9}},\"quota\":3,\"name\":\"6J5iWJy\",\"quotaFilled\":5,\"departureDateTime\":\"2025-01-09T17:26:36.052283723Z\",\"arrivalDateTime\":\"2025-01-09T17:26:36.052612117Z\",\"quotaFilledPercentage\":7}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/flight",
+    "timestamp": "Thu, 9 Jan 2025 18:26:43 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "3",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "479",
+    "jsonBody": {
+      "id": 33039,
+      "name": "6J5iWJy",
+      "departureDateTime": "2025-01-09T17:26:36.052+0000",
+      "arrivalDateTime": "2025-01-09T17:26:36.052+0000",
+      "duration": 3,
+      "quota": 3,
+      "quotaFilled": 5,
+      "quotaFilledPercentage": 7,
+      "route": {
+        "id": 2,
+        "name": "NSV3X",
+        "departureAirport": {
+          "id": 2,
+          "name": "AmTXG",
+          "capacity": 9,
+          "location": "x7w6MnnQB"
+        },
+        "arrivalAirport": {
+          "id": 9,
+          "name": "oG3WIFz",
+          "capacity": 9,
+          "location": "00ZsMxyLp"
+        }
+      },
+      "plane": {
+        "id": 9,
+        "name": "ZNXYvF22",
+        "numberOfSeats": 0,
+        "company": {
+          "id": 9,
+          "name": "Lowe and Sons"
+        }
+      }
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:43 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/flight",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/flight",
+  "contractPath": "/api/flight",
+  "server": "http://localhost:8080/"
+}

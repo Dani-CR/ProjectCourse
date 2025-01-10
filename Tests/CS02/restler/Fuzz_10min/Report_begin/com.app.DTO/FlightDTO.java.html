@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FlightDTO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report start restler 10min</a> &gt; <a href="index.source.html" class="el_package">com.app.DTO</a> &gt; <span class="el_source">FlightDTO.java</span></div><h1>FlightDTO.java</h1><pre class="source lang-java linenums">package com.app.DTO;
+
+import java.util.Date;
+
+import javax.validation.constraints.NotNull;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+<span class="nc bnc" id="L10" title="All 62 branches missed.">@Data</span>
+@Schema(description = &quot;FlightDTO for Flight Creation&quot;)
+public class FlightDTO {
+
+    @Schema(description = &quot;Name of the Flight&quot;, required = true)
+    @NotNull
+    private String name;
+
+    public Date getDepartureDateTime() {
+<span class="nc" id="L19">		return departureDateTime;</span>
+	}
+
+	public void setDepartureDateTime(Date departureDateTime) {
+<span class="nc" id="L23">		this.departureDateTime = departureDateTime;</span>
+<span class="nc" id="L24">	}</span>
+
+	public Date getArrivalDateTime() {
+<span class="nc" id="L27">		return arrivalDateTime;</span>
+	}
+
+	public void setArrivalDateTime(Date arrivalDateTime) {
+<span class="nc" id="L31">		this.arrivalDateTime = arrivalDateTime;</span>
+<span class="nc" id="L32">	}</span>
+
+	public Integer getDuration() {
+<span class="nc" id="L35">		return duration;</span>
+	}
+
+	public void setDuration(Integer duration) {
+<span class="nc" id="L39">		this.duration = duration;</span>
+<span class="nc" id="L40">	}</span>
+
+	public Integer getQuota() {
+<span class="nc" id="L43">		return quota;</span>
+	}
+
+	public void setQuota(Integer quota) {
+<span class="nc" id="L47">		this.quota = quota;</span>
+<span class="nc" id="L48">	}</span>
+
+	public String getName() {
+<span class="nc" id="L51">		return name;</span>
+	}
+
+	public void setName(String name) {
+<span class="nc" id="L55">		this.name = name;</span>
+<span class="nc" id="L56">	}</span>
+
+	public Long getPlaneId() {
+<span class="nc" id="L59">		return planeId;</span>
+	}
+
+	public void setPlaneId(Long planeId) {
+<span class="nc" id="L63">		this.planeId = planeId;</span>
+<span class="nc" id="L64">	}</span>
+
+	public Long getRouteId() {
+<span class="nc" id="L67">		return routeId;</span>
+	}
+
+	public void setRouteId(Long routeId) {
+<span class="nc" id="L71">		this.routeId = routeId;</span>
+<span class="nc" id="L72">	}</span>
+
+	@Schema(description = &quot;Departure Date and Time&quot;, example = &quot;2024-12-25T10:30:00&quot;)
+    private Date departureDateTime;
+
+    @Schema(description = &quot;Arrival Date and Time&quot;, example = &quot;2024-12-25T14:30:00&quot;)
+    private Date arrivalDateTime;
+
+    @Schema(description = &quot;Flight Duration in Minutes&quot;)
+    private Integer duration;
+
+    @Schema(description = &quot;Flight Quota&quot;)
+    private Integer quota;
+
+    @Schema(description = &quot;ID of the Plane&quot;, required = true)
+    @NotNull
+    private Long planeId;
+
+    @Schema(description = &quot;ID of the Route&quot;, required = true)
+    @NotNull
+    private Long routeId;
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

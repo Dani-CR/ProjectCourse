@@ -23,23 +23,23 @@
     ],
     "payload": "{\"size\":-2147483648,\"page\":0}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=-2147483648&page=0",
-    "timestamp": "Thu, 9 Jan 2025 08:58:47 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=-2147483648&page=0",
+    "timestamp": "Fri, 10 Jan 2025 13:20:56 +0100"
   },
   "response": {
     "responseCode": 500,
     "httpMethod": "GET",
-    "responseTimeInMs": "66",
+    "responseTimeInMs": "47",
     "numberOfWordsInResponse": "10",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "199",
+    "contentLengthInBytes": "198",
     "jsonBody": {
-      "timestamp": 1736409527599,
+      "timestamp": 1736511656448,
       "status": 500,
       "error": "Internal Server Error",
       "exception": "java.lang.IllegalArgumentException",
       "message": "Page size must not be less than one!",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:47 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:55 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "IntegerFieldsLeftBoundary",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=-2147483648&page=0",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=-2147483648&page=0",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

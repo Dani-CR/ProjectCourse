@@ -1,0 +1,69 @@
+#CS02 Evomaster 5min
+
+* Covered targets: 131; time per test: 55.1ms (5.4 actions); since last improvement: 188s
+* Starting to apply minimization phase
+* Recomputing full coverage for 57 tests
+17:55:14.753 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/ticket
+17:55:14.810 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/route/{id}
+17:55:14.992 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/company/{id}
+17:55:15.016 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/airport
+17:55:15.073 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/ticket/{id}
+17:55:15.158 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/ticket
+17:55:15.168 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/flight/{id}
+17:55:15.253 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/flight
+17:55:15.326 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/airport/{id}
+17:55:15.412 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: DELETE:/api/plane/{id}
+17:55:15.479 [main] WARN  o.e.core.search.service.Minimizer - Different status code 500 returned from original 200, ie, 200 != 500 for endpoint: GET:/api/plane/{id}
+17:55:15.531 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/flight
+17:55:15.607 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/plane
+17:55:15.614 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/company
+17:55:15.739 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/route
+17:55:15.740 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 201, ie, 201 != 409 for endpoint: POST:/api/company
+17:55:15.842 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/flight
+17:55:15.912 [main] WARN  o.e.core.search.service.Minimizer - Different status code 409 returned from original 500, ie, 500 != 409 for endpoint: POST:/api/ticket
+* Recomputing coverage did lose many targets, more than the threshold 20.0%: from 131 to 103, i.e., lost 28
+* Missing targets:
+* HTTP_FAULT:POST:/api/ticket
+* HTTP_SUCCESS:DELETE:/api/route/{id}
+* 500:POST:/api/ticket
+* PotentialFault F100:HTTP Status 500 POST:/api/ticket
+* HTTP_SUCCESS:DELETE:/api/company/{id}
+* 201:POST:/api/airport
+* HTTP_SUCCESS:POST:/api/airport
+* HTTP_SUCCESS:DELETE:/api/ticket/{id}
+* HTTP_SUCCESS:DELETE:/api/flight/{id}
+* HTTP_SUCCESS:DELETE:/api/airport/{id}
+* HTTP_SUCCESS:DELETE:/api/plane/{id}
+* HTTP_SUCCESS:GET:/api/plane/{id}
+* 500:POST:/api/flight
+* HTTP_FAULT:POST:/api/flight
+* PotentialFault F100:HTTP Status 500 POST:/api/flight
+* HTTP_SUCCESS:POST:/api/plane
+* 201:POST:/api/company
+* HTTP_SUCCESS:POST:/api/company
+* HTTP_SUCCESS:POST:/api/route
+* 200:GET:/api/plane/{id}
+* 200:DELETE:/api/route/{id}
+* 200:DELETE:/api/company/{id}
+* 200:DELETE:/api/airport/{id}
+* 200:DELETE:/api/flight/{id}
+* 200:DELETE:/api/ticket/{id}
+* 201:POST:/api/plane
+* 200:DELETE:/api/plane/{id}
+* 201:POST:/api/route
+* Analyzing 7 tests with size greater than 1
+* Minimization progress: 7/7
+* Minimization phase took 1 seconds
+* Evaluated tests: 4923
+* Evaluated actions: 27026
+* Needed budget: 98%
+* Passed time (seconds): 301
+* Execution time per test (ms): Avg=60.02 , min=2.00 , max=1171.00
+* Execution time per action (ms): Avg=11.26 , min=2.00 , max=292.75
+* Computation overhead between tests (ms): Avg=0.90 , min=0.00 , max=35.00
+* Going to save 44 tests to generated_tests
+* Potential faults: 24
+* Successfully executed (HTTP code 2xx) 11 endpoints out of 30 (37%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

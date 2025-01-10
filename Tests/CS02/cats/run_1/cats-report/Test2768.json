@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2768",
+  "scenario": "Send a happy flow request with undocumented HTTP method: ACL",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [ACL] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2768 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "ACL",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:22:44 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "ACL",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "154",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:44.899+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'ACL' not supported",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, PUT, POST"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:44 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

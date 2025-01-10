@@ -21,20 +21,20 @@
         "value": "cats/12.0.0 (Test 191 - UnsupportedAcceptHeaders)"
       }
     ],
-    "payload": "city=Lake+Eric&name=beSftKC8&rating=4&description=Chuck+Norris+writes+code+that+optimizes+itself.&id=4",
+    "payload": "city=Abshireville&name=XIcwSFl&rating=9&description=Chuck+Norris+doesn%27t+have+disk+latency+because+the+hard+drive+knows+to+hurry+the+hell+up.&id=1",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:58:52 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:21:00 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "POST",
-    "responseTimeInMs": "24",
+    "responseTimeInMs": "20",
     "numberOfWordsInResponse": "35",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "331",
     "jsonBody": {
-      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 08:58:52 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Fri Jan 10 13:21:00 CET 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
     },
     "headers": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:58:51 GMT"
+        "value": "Fri, 10 Jan 2025 12:20:59 GMT"
       },
       {
         "key": "x-application-context",
@@ -62,7 +62,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -23,22 +23,22 @@
     ],
     "payload": "{\"id\":6}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels/6/..%20;/",
-    "timestamp": "Thu, 9 Jan 2025 08:55:48 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/6/..%20;/",
+    "timestamp": "Fri, 10 Jan 2025 13:13:51 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "GET",
-    "responseTimeInMs": "30",
+    "responseTimeInMs": "46",
     "numberOfWordsInResponse": "4",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "132",
+    "contentLengthInBytes": "131",
     "jsonBody": {
-      "timestamp": 1736409348362,
+      "timestamp": 1736511231091,
       "status": 404,
       "error": "Not Found",
       "message": "No message available",
-      "path": "//example/v1/hotels/6/..%20;/"
+      "path": "/example/v1/hotels/6/..%20;/"
     },
     "headers": [
       {
@@ -47,7 +47,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:47 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:50 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -62,7 +62,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "InvalidReferencesFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/6/..%20;/",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/6/..%20;/",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 626",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [404, 400, 422], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 626 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"id\": \"-7523\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080//api/airport/-7523",
+    "timestamp": "Thu, 9 Jan 2025 18:22:03 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "28",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "414",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:03.339+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not write JSON: Unable to find com.app.entity.Airport with id -7523; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unable to find com.app.entity.Airport with id -7523 (through reference chain: com.app.entity.Airport$HibernateProxy$UjsuFMsf[\"name\"])",
+      "path": "//api/airport/-7523"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:02 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080//api/airport/-7523",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

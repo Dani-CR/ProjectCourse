@@ -23,23 +23,23 @@
     ],
     "payload": "",
     "httpMethod": "POST",
-    "url": "http://localhost:8090//example/v1/hotels",
-    "timestamp": "Thu, 9 Jan 2025 08:55:35 +0100"
+    "url": "http://localhost:8090/example/v1/hotels",
+    "timestamp": "Fri, 10 Jan 2025 13:13:37 +0100"
   },
   "response": {
     "responseCode": 400,
     "httpMethod": "POST",
-    "responseTimeInMs": "22",
+    "responseTimeInMs": "19",
     "numberOfWordsInResponse": "9",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "402",
+    "contentLengthInBytes": "401",
     "jsonBody": {
-      "timestamp": 1736409335287,
+      "timestamp": 1736511217244,
       "status": 400,
       "error": "Bad Request",
       "exception": "org.springframework.http.converter.HttpMessageNotReadableException",
       "message": "Required request body is missing: public void com.khoubyari.example.api.rest.HotelController.createHotel(com.khoubyari.example.domain.Hotel,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
-      "path": "//example/v1/hotels"
+      "path": "/example/v1/hotels"
     },
     "headers": [
       {
@@ -52,7 +52,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:34 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:36 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -67,7 +67,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "EmptyJsonBody",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

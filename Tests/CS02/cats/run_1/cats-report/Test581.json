@@ -1,0 +1,68 @@
+{
+  "testId": "Test 581",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/airport/{id}/?/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 500",
+  "resultDetails": "Request failed unexpectedly for http method [DELETE]: expected [4XX, 2XX], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 581 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"id\":0}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/airport/0/?/",
+    "timestamp": "Thu, 9 Jan 2025 18:22:02 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "184",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:02.232+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Airport entity with id 0 exists!",
+      "path": "//api/airport/0/"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:01 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080//api/airport/0/?/",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

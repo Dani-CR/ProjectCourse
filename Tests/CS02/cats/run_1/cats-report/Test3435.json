@@ -1,0 +1,73 @@
+{
+  "testId": "Test 3435",
+  "scenario": "Send [empty strings] in request fields: field [id], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3435 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"departureAirport\":{\"name\":\"DhAyy\",\"location\":\"nQ5fIkyPCsZ\",\"id\":1,\"capacity\":7},\"name\":\"wtgnwSk\",\"id\":\"\",\"arrivalAirport\":{\"name\":\"qf0ED\",\"location\":\"YJTMM3vgcm\",\"id\":6,\"capacity\":4}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:22:56 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "188",
+    "jsonBody": {
+      "id": 32245,
+      "name": "wtgnwSk",
+      "departureAirport": {
+        "id": 1,
+        "name": "DhAyy",
+        "capacity": 7,
+        "location": "nQ5fIkyPCsZ"
+      },
+      "arrivalAirport": {
+        "id": 6,
+        "name": "qf0ED",
+        "capacity": 4,
+        "location": "YJTMM3vgcm"
+      }
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:56 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

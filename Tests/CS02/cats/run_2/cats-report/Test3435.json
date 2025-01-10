@@ -1,0 +1,73 @@
+{
+  "testId": "Test 3435",
+  "scenario": "Send [empty strings] in request fields: field [id], value [REPLACE with ], is required [FALSE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3435 - EmptyStringsInFields)"
+      }
+    ],
+    "payload": "{\"departureAirport\":{\"name\":\"JaYXfmQ\",\"location\":\"ipXudaKoJGT\",\"id\":5,\"capacity\":6},\"name\":\"oEQCdRF\",\"id\":\"\",\"arrivalAirport\":{\"name\":\"DsGou\",\"location\":\"qvVl1MviCTW\",\"id\":6,\"capacity\":2}}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:10 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "191",
+    "jsonBody": {
+      "id": 33261,
+      "name": "oEQCdRF",
+      "departureAirport": {
+        "id": 5,
+        "name": "JaYXfmQ",
+        "capacity": 6,
+        "location": "ipXudaKoJGT"
+      },
+      "arrivalAirport": {
+        "id": 6,
+        "name": "DsGou",
+        "capacity": 2,
+        "location": "qvVl1MviCTW"
+      }
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:10 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "EmptyStringsInFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}

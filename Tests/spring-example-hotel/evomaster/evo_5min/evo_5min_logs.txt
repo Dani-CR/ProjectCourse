@@ -1,18 +1,32 @@
-* Covered targets: 5; time per test: 5.9ms (5.2 actions); since last improvement: 298s
+#spring-boot-hotel evomaster 5min logs
+
+* Covered targets: 14; time per test: 14.5ms (5.2 actions); since last improvement: 287s
 * Starting to apply minimization phase
-* Recomputing full coverage for 5 tests
+* Recomputing full coverage for 10 tests
+12:47:43.657 [main] WARN  o.e.core.search.service.Minimizer - Different status code 406 returned from original 200, ie, 200 != 406 for endpoint: GET:/example/v1/hotels/{id}
+12:47:43.669 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: PUT:/example/v1/hotels/{id}
+12:47:43.673 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/example/v1/hotels/{id}
+* Recomputing coverage did lose many targets, more than the threshold 20.0%: from 14 to 8, i.e., lost 6
+* Missing targets:
+* HTTP_SUCCESS:GET:/example/v1/hotels/{id}
+* HTTP_SUCCESS:PUT:/example/v1/hotels/{id}
+* HTTP_SUCCESS:DELETE:/example/v1/hotels/{id}
+* 200:GET:/example/v1/hotels/{id}
+* 204:DELETE:/example/v1/hotels/{id}
+* 204:PUT:/example/v1/hotels/{id}
 * No test to minimize
 * Minimization phase took 0 seconds
-* Evaluated tests: 40226
-* Evaluated actions: 221444
-* Needed budget: 1%
+* Evaluated tests: 14844
+* Evaluated actions: 81427
+* Needed budget: 14%
 * Passed time (seconds): 300
-* Execution time per test (ms): Avg=6.87 , min=0.00 , max=1119.00
-* Execution time per action (ms): Avg=1.27 , min=0.00 , max=373.00
-* Computation overhead between tests (ms): Avg=0.59 , min=0.00 , max=755.00
-* Going to save 5 tests to generated_tests
-19:44:42.232 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Unhandled type for body payload: application/xml
+* Execution time per test (ms): Avg=19.39 , min=1.00 , max=1537.00
+* Execution time per action (ms): Avg=3.53 , min=0.50 , max=479.50
+* Computation overhead between tests (ms): Avg=0.81 , min=0.00 , max=437.00
+* Going to save 7 tests to generated_tests
+12:47:43.760 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Unhandled type for body payload: application/xml
 * Potential faults: 0
-* Successfully executed (HTTP code 2xx) 0 endpoints out of 5 (0%)
+* Successfully executed (HTTP code 2xx) 1 endpoints out of 5 (20%)
 * EvoMaster process has completed successfully
 * Use --help and visit http://www.evomaster.org to learn more about available options
+

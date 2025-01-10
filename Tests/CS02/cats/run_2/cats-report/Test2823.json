@@ -1,0 +1,68 @@
+{
+  "testId": "Test 2823",
+  "scenario": "Remove the following fields from request: [name]",
+  "expectedResult": "Should return [4XX] response code as required fields [were] removed",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 2823 - RemoveFields)"
+      }
+    ],
+    "payload": "{\"numberOfSeats\":300,\"companyId\":1}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/plane",
+    "timestamp": "Thu, 9 Jan 2025 18:27:01 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "30",
+    "numberOfWordsInResponse": "16",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "252",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:01.194+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction",
+      "path": "//api/plane"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:00 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane",
+  "fuzzer": "RemoveFields",
+  "fullRequestPath": "http://localhost:8080//api/plane",
+  "contractPath": "/api/plane",
+  "server": "http://localhost:8080/"
+}

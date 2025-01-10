@@ -21,15 +21,15 @@
         "value": "cats/12.0.0 (Test 582 - RandomResources)"
       }
     ],
-    "payload": "{\n  \"id\": \"1407\"\n}",
+    "payload": "{\n  \"id\": \"-1004\"\n}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels/1407",
-    "timestamp": "Thu, 9 Jan 2025 08:55:51 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/-1004",
+    "timestamp": "Fri, 10 Jan 2025 13:13:54 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "GET",
-    "responseTimeInMs": "12",
+    "responseTimeInMs": "24",
     "numberOfWordsInResponse": "7",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "69",
@@ -44,7 +44,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:51 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:53 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -59,7 +59,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "RandomResources",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/1407",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/-1004",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

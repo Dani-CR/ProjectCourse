@@ -21,10 +21,10 @@
         "value": "cats/12.0.0 (Test 403 - UnsupportedAcceptHeaders)"
       }
     ],
-    "payload": "{\"id\":5}",
+    "payload": "{\"id\":2}",
     "httpMethod": "GET",
-    "url": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/5",
-    "timestamp": "Wed, 4 Dec 2024 10:42:21 +0100"
+    "url": "http://localhost:8080/api/v1.0/videos/download/2",
+    "timestamp": "Fri, 10 Jan 2025 18:04:32 +0100"
   },
   "response": {
     "responseCode": 406,
@@ -47,7 +47,7 @@
       },
       {
         "key": "date",
-        "value": "Wed, 04 Dec 2024 09:42:20 GMT"
+        "value": "Fri, 10 Jan 2025 17:04:32 GMT"
       },
       {
         "key": "expires",
@@ -74,7 +74,7 @@
   },
   "path": "/api/v1.0/videos/download/{id}",
   "fuzzer": "UnsupportedAcceptHeaders",
-  "fullRequestPath": "http://localhost:8080/swagger-ui.html/api/v1.0/videos/download/5",
+  "fullRequestPath": "http://localhost:8080/api/v1.0/videos/download/2",
   "contractPath": "/api/v1.0/videos/download/{id}",
-  "server": "http://localhost:8080/swagger-ui.html"
+  "server": "http://localhost:8080"
 }

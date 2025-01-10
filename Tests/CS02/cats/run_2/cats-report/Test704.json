@@ -1,0 +1,56 @@
+{
+  "testId": "Test 704",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/plain]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/plain"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 704 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"id\":\"32728\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/airport/32728",
+    "timestamp": "Thu, 9 Jan 2025 18:26:22 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:21 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/airport/32728",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

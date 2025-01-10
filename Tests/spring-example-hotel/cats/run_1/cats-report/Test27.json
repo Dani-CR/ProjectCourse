@@ -23,13 +23,13 @@
     ],
     "payload": "{\"size\":100,\"page\":0}",
     "httpMethod": "GET",
-    "url": "http://localhost:8090//example/v1/hotels?size=100&page=0",
-    "timestamp": "Thu, 9 Jan 2025 08:55:34 +0100"
+    "url": "http://localhost:8090/example/v1/hotels?size=100&page=0",
+    "timestamp": "Fri, 10 Jan 2025 13:13:36 +0100"
   },
   "response": {
     "responseCode": 406,
     "httpMethod": "GET",
-    "responseTimeInMs": "9",
+    "responseTimeInMs": "5",
     "numberOfWordsInResponse": "0",
     "numberOfLinesInResponse": "1",
     "contentLengthInBytes": "0",
@@ -43,7 +43,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:34 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:36 GMT"
       },
       {
         "key": "x-application-context",
@@ -54,7 +54,7 @@
   },
   "path": "/example/v1/hotels",
   "fuzzer": "DummyAcceptHeaders",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels?size=100&page=0",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels?size=100&page=0",
   "contractPath": "/example/v1/hotels",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

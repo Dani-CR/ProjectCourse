@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ticket.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report end evomaster 5min</a> &gt; <a href="index.source.html" class="el_package">com.app.entity</a> &gt; <span class="el_source">Ticket.java</span></div><h1>Ticket.java</h1><pre class="source lang-java linenums">package com.app.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+@Entity
+<span class="pc bnc" id="L19" title="All 36 branches missed.">@Data</span>
+@Schema(description = &quot;TicketEntityObject&quot;)
+public class Ticket {
+	@Column(name = &quot;id&quot;)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Schema(description = &quot;Ticket_Id&quot;)
+<span class="fc" id="L26">	private Long id;</span>
+	
+	@Column(name = &quot;ticket_code&quot;)
+	@NotNull
+	@Schema(description = &quot;Code_of_Ticket&quot;, required = true)
+	private String ticketCode;
+	
+	@JoinColumn(name = &quot;flight_ticket_id&quot;)
+	@ManyToOne(fetch = FetchType.LAZY)
+	private Flight flight;
+	
+	@Column(name = &quot;price&quot;)
+	@Schema(description = &quot;Price_of_Ticket&quot;)
+	private Integer price;
+	
+	@Column(name = &quot;is_sold&quot;)
+	@Schema(description = &quot;Is_Ticket_Sold&quot;)
+	private Boolean isSold; //   0: Cancelled, 1: Sold
+	
+	public void setTicketCode(String ticketCode) {
+<span class="fc" id="L46">		this.ticketCode = ticketCode;</span>
+<span class="fc" id="L47">	}</span>
+
+	public void setFlight(Flight flight) {
+<span class="fc" id="L50">		this.flight = flight;</span>
+<span class="fc" id="L51">	}</span>
+
+	public void setPrice(Integer price) {
+<span class="fc" id="L54">		this.price = price;</span>
+<span class="fc" id="L55">	}</span>
+
+	public void setIsSold(Boolean isSold) {
+<span class="fc" id="L58">		this.isSold = isSold;</span>
+<span class="fc" id="L59">	}</span>
+
+	public String getTicketCode() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L63">		return ticketCode;</span>
+	}
+
+	public boolean getIsSold() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L68">		return isSold;</span>
+	}
+
+	public Flight getFlight() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L73">		return flight;</span>
+	}
+
+	public int getPrice() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L78">		return price;</span>
+	}
+
+	public void setPrice(int newPrice) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L83">		price = newPrice;</span>
+<span class="fc" id="L84">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

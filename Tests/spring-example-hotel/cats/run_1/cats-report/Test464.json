@@ -21,24 +21,24 @@
         "value": "cats/12.0.0 (Test 464 - InvalidReferencesFields)"
       }
     ],
-    "payload": "city=West+Linette&name=At8pX&rating=8&description=Chuck+Norris+does+not+use+revision+control+software.+None+of+his+code+has+ever+needed+revision.&id=9",
+    "payload": "city=New+Christopher&name=9Vv6kXwk&rating=2&description=There+is+no+Esc+key+on+Chuck+Norris%27+keyboard%2C+because+no+one+escapes+Chuck+Norris.&id=7",
     "httpMethod": "PUT",
-    "url": "http://localhost:8090//example/v1/hotels/%7Bid%7D..%0d/",
-    "timestamp": "Thu, 9 Jan 2025 08:55:47 +0100"
+    "url": "http://localhost:8090/example/v1/hotels/%7Bid%7D..%0d/",
+    "timestamp": "Fri, 10 Jan 2025 13:13:50 +0100"
   },
   "response": {
     "responseCode": 404,
     "httpMethod": "PUT",
-    "responseTimeInMs": "10",
+    "responseTimeInMs": "9",
     "numberOfWordsInResponse": "4",
     "numberOfLinesInResponse": "1",
-    "contentLengthInBytes": "137",
+    "contentLengthInBytes": "136",
     "jsonBody": {
-      "timestamp": 1736409348001,
+      "timestamp": 1736511230732,
       "status": 404,
       "error": "Not Found",
       "message": "No message available",
-      "path": "//example/v1/hotels/%7Bid%7D..%0d/"
+      "path": "/example/v1/hotels/%7Bid%7D..%0d/"
     },
     "headers": [
       {
@@ -47,7 +47,7 @@
       },
       {
         "key": "date",
-        "value": "Thu, 09 Jan 2025 07:55:47 GMT"
+        "value": "Fri, 10 Jan 2025 12:13:50 GMT"
       },
       {
         "key": "transfer-encoding",
@@ -62,7 +62,7 @@
   },
   "path": "/example/v1/hotels/{id}",
   "fuzzer": "InvalidReferencesFields",
-  "fullRequestPath": "http://localhost:8090//example/v1/hotels/%7Bid%7D..%0d/",
+  "fullRequestPath": "http://localhost:8090/example/v1/hotels/%7Bid%7D..%0d/",
   "contractPath": "/example/v1/hotels/{id}",
-  "server": "http://localhost:8090/"
+  "server": "http://localhost:8090"
 }

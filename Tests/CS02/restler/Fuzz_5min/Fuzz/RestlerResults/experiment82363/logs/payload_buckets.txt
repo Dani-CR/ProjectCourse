@@ -1,0 +1,136 @@
+PUT /api/ticket
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/+route{...}
+	{'id': 0, 'ticketCode': 'fuzzstring', 'flight': {'plane': {'id': 0, 'name': 'fuzzstring', 'numberOfSeats': 0, 'company': {'id': 0, 'name': 'fuzzstring'}}}, 'price': 0, 'isSold': False}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/+++id/+++name/+++capacity/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'id': 0, 'name': 'Verona2London', 'departureAirport': {'location': 'Verona'}, 'arrivalAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++name/++departureAirport{...}/++arrivalAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'id': 0}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++id/++departureAirport{...}/++arrivalAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'name': 'Verona2London'}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/+++id/+++name/+++location/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'id': 0, 'name': 'Verona2London', 'departureAirport': {'id': 0, 'name': 'Valerio Catullo', 'capacity': 100, 'location': 'Verona'}, 'arrivalAirport': {'capacity': 1000}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++id/++name/++arrivalAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'departureAirport': {'id': 0, 'name': 'Valerio Catullo', 'capacity': 100, 'location': 'Verona'}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/+route{...}/+++name
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'plane': {'id': 2, 'name': 'Smallplane', 'numberOfSeats': 10, 'company': {'id': 1}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++id/++name/+++id/+++capacity/+++location/++arrivalAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'departureAirport': {'name': 'Valerio Catullo'}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++id/++name/++departureAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'arrivalAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/++id/++name/+++name/+++capacity/+++location/++arrivalAirport{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'route': {'departureAirport': {'id': 0}}}, 'price': 1, 'isSold': True}
+
+	StructMissing_/+id/+name/+departureDateTime/+arrivalDateTime/+duration/+quota/+quotaFilled/+quotaFilledPercentage/+route{...}/+plane{...}
+	{'id': 1, 'ticketCode': 'fuzzstring', 'flight': {'fuzz': False}, 'price': 1, 'isSold': True}
+
+POST /api/ticket
+	Other
+	{'ticketCode': 'fuzzstring', 'price': 0, 'isSold': False, 'flightId': 0}
+
+	TypeMismatch_isSold
+	{'ticketCode': 'fuzzstring', 'price': 0, 'isSold': 0, 'flightId': 0}
+
+PUT /api/route
+	StructMissing_/id/name/departureAirport{...}/+id/+name/+location
+	{'arrivalAirport': {'capacity': 100}}
+
+	StructMissing_/id/name/+id/+name/+location/arrivalAirport{...}
+	{'departureAirport': {'capacity': 1000}}
+
+	StructMissing_/id/name/departureAirport{...}/+id/+capacity/+location
+	{'arrivalAirport': {'name': 'London Gatwick'}}
+
+	StructMissing_/+id/+capacity/+location
+	{'id': 124, 'name': 'None', 'departureAirport': {'name': 'London Gatwick'}, 'arrivalAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}}
+
+	StructMissing_/+id/+name/+location
+	{'id': 1, 'name': 'None', 'departureAirport': {'capacity': 1000}, 'arrivalAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}}
+
+	StructMissing_/+id/+name/+capacity
+	{'id': 1, 'name': 'fuzzstring', 'departureAirport': {'location': 'London'}, 'arrivalAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}}
+
+	StructMissing_/id/name/departureAirport{...}/+id/+name/+capacity
+	{'arrivalAirport': {'location': 'London'}}
+
+	StructMissing_/id/name/+id/+name/+capacity/arrivalAirport{...}
+	{'departureAirport': {'location': 'London'}}
+
+	StructMissing_/id/name/+id/+capacity/+location/arrivalAirport{...}
+	{'departureAirport': {'name': 'London Gatwick'}}
+
+	StructMissing_/id/name/departureAirport{...}/+id/+name/+capacity/+location
+	{'arrivalAirport': {'fuzz': False}}
+
+	StructMissing_/+id/+name/+capacity/+location
+	{'id': 1, 'name': 'false', 'departureAirport': {'id': 1, 'name': 'London Gatwick', 'capacity': 1000, 'location': 'London'}, 'arrivalAirport': {'fuzz': False}}
+
+	StructMissing_/id/name/+id/+name/+capacity/+location/arrivalAirport{...}
+	{'departureAirport': {'fuzz': False}}
+
+	StructMissing_/+id/+name/+capacity/+location/+name/+capacity/+location
+	{'id': 155, 'name': 'None', 'departureAirport': {'fuzz': False}, 'arrivalAirport': {'id': 1}}
+
+	StructMissing_/+name/+capacity/+location/+id/+name/+capacity/+location
+	{'id': 163, 'name': 'None', 'departureAirport': {'id': 1}, 'arrivalAirport': {'fuzz': False}}
+
+POST /api/route
+	Other
+	{'name': 'fuzzstring', 'departureAirportId': 0, 'arrivalAirportId': 0}
+
+	TypeMismatch_name
+	{'name': 0, 'departureAirportId': 0, 'arrivalAirportId': 0}
+
+POST /api/plane
+	Other
+	{'name': 'fuzzstring', 'numberOfSeats': 0, 'companyId': 0}
+
+	StructMissing_/name/companyId
+	{'numberOfSeats': 0}
+
+	StructMissing_/numberOfSeats/companyId
+	{'name': 'fuzzstring'}
+
+	StructMissing_/name/numberOfSeats
+	{'companyId': 0}
+
+	StructMissing_/name/numberOfSeats/companyId
+	{'fuzz': False}
+
+	TypeMismatch_name
+	{'name': 0, 'numberOfSeats': 0, 'companyId': 0}
+
+POST /api/company
+	Other
+	{'id': 0, 'name': 'fuzzstring'}
+
+	StructMissing_/id
+	{'name': 'fuzzstring'}
+
+	StructMissing_/name
+	{'id': 0}
+
+	TypeMismatch_name
+	{'id': 0, 'name': False}
+
+	StructMissing_/id/name
+	{'fuzz': False}
+
+POST /api/airport
+	Other
+	{'id': 0, 'name': 'fuzzstring', 'capacity': 0, 'location': 'fuzzstring'}
+
+	StructMissing_/id/capacity/location
+	{'name': 'fuzzstring'}
+
+	TypeMismatch_name
+	{'name': 0}
+

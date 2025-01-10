@@ -1,0 +1,64 @@
+{
+  "testId": "Test 974",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "warn",
+  "resultReason": "Response content type not matching the contract",
+  "resultDetails": "Response content type not matching the contract: expected [application/json], actual [text/html;charset=UTF-8]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 974 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"name\":\"BUaYS\",\"id\":6}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:26:29 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "16",
+    "numberOfWordsInResponse": "35",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "331",
+    "jsonBody": {
+      "notAJson": "<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Thu Jan 09 17:26:29 GMT 2025</div><div>There was an unexpected error (type=Not Acceptable, status=406).</div><div>Could not find acceptable representation</div></body></html>"
+    },
+    "headers": [
+      {
+        "key": "content-language",
+        "value": "en-US"
+      },
+      {
+        "key": "content-length",
+        "value": "331"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:29 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

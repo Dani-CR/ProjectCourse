@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3255",
+  "scenario": "Send a happy flow request with undocumented HTTP method: BIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [BIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3255 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "BIND",
+    "url": "http://localhost:8080//api/plane/%7Bid%7D",
+    "timestamp": "Thu, 9 Jan 2025 18:27:07 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "BIND",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "164",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:07.874+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'BIND' not supported",
+      "path": "//api/plane/%7Bid%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET, DELETE"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:06 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/plane/{id}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080//api/plane/%7Bid%7D",
+  "contractPath": "/api/plane/{id}",
+  "server": "http://localhost:8080/"
+}

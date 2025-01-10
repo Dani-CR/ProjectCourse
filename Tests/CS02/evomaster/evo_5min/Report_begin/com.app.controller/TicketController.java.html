@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TicketController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report begin evomaster 5min</a> &gt; <a href="index.source.html" class="el_package">com.app.controller</a> &gt; <span class="el_source">TicketController.java</span></div><h1>TicketController.java</h1><pre class="source lang-java linenums">package com.app.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.DTO.TicketDTO;
+import com.app.entity.Flight;
+import com.app.entity.Ticket;
+import com.app.service.impl.FlightServiceImpl;
+import com.app.service.impl.TicketServiceImpl;
+import com.app.util.ApiPaths;
+
+import io.swagger.v3.oas.annotations.Operation;
+
+//import io.swagger.annotations.ApiOperation;
+
+@RestController
+@RequestMapping(ApiPaths.TicketCtrl.PATH)
+<span class="fc" id="L32">public class TicketController {</span>
+
+	@Autowired
+	TicketServiceImpl ticketServiceImpl;
+	@Autowired
+	private FlightServiceImpl flightServiceImpl;
+
+	@PostMapping
+	@Operation(description = &quot;Create Operation&quot;)//, response = Ticket.class)
+	public ResponseEntity&lt;?&gt; create(@Valid @RequestBody TicketDTO ticketDTO) {
+		// Check if a ticket with the same code already exists
+<span class="nc bnc" id="L43" title="All 2 branches missed.">        if (ticketServiceImpl.getByCode(ticketDTO.getTicketCode()) != null) {</span>
+<span class="nc" id="L44">            return new ResponseEntity&lt;&gt;(&quot;Ticket with this code already exists&quot;, HttpStatus.CONFLICT);</span>
+        }
+
+        // Fetch the Flight entity
+<span class="nc" id="L48">        Flight flight = flightServiceImpl.getById(ticketDTO.getFlightId());</span>
+
+        // Map DTO to Ticket entity
+<span class="nc" id="L51">        Ticket ticket = new Ticket();</span>
+<span class="nc" id="L52">        ticket.setTicketCode(ticketDTO.getTicketCode());</span>
+<span class="nc" id="L53">        ticket.setPrice(ticketDTO.getPrice());</span>
+<span class="nc" id="L54">        ticket.setIsSold(ticketDTO.getIsSold());</span>
+<span class="nc" id="L55">        ticket.setFlight(flight);</span>
+
+        // Save the Ticket
+<span class="nc" id="L58">        ticket = ticketServiceImpl.save(ticket);</span>
+<span class="nc" id="L59">        return new ResponseEntity&lt;&gt;(ticket, HttpStatus.CREATED);</span>
+	}
+
+	@GetMapping(&quot;/{id}&quot;)
+	@Operation(description = &quot;Get By Id Operation&quot;)//, response = Ticket.class)
+	public ResponseEntity&lt;?&gt; getById(@PathVariable(value = &quot;id&quot;, required = true) Long id) {
+<span class="nc" id="L65">		Ticket ticket = ticketServiceImpl.getById(id);</span>
+<span class="nc" id="L66">		return new ResponseEntity&lt;&gt;(ticket, HttpStatus.OK);</span>
+	}
+
+	@DeleteMapping(&quot;/{id}&quot;)
+	@Operation(description = &quot;Delete Operation&quot;)
+	public ResponseEntity&lt;?&gt; delete(@PathVariable(value = &quot;id&quot;, required = true) Long id) {
+<span class="nc" id="L72">		ticketServiceImpl.delete(id);</span>
+<span class="nc" id="L73">		return new ResponseEntity&lt;&gt;(HttpStatus.OK);</span>
+	}
+
+	@PutMapping
+	@Operation(description = &quot;Update Operation&quot;)//, response = Ticket.class)
+	public ResponseEntity&lt;?&gt; update(@Valid @RequestBody Ticket ticket) {
+<span class="nc" id="L79">		ticket = ticketServiceImpl.update(ticket);</span>
+<span class="nc" id="L80">		return new ResponseEntity&lt;&gt;(ticket, HttpStatus.OK);</span>
+	}
+
+	@GetMapping
+	@Operation(description = &quot;Get All Operation&quot;)//, response = Ticket.class, responseContainer = &quot;List&quot;)
+	public ResponseEntity&lt;?&gt; getAll() {
+<span class="nc" id="L86">		List&lt;Ticket&gt; ticketList = ticketServiceImpl.getAll();</span>
+<span class="nc" id="L87">		return new ResponseEntity&lt;&gt;(ticketList, HttpStatus.OK);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 604",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 604 - NewFields)"
+      }
+    ],
+    "payload": "{\"id\":\"32728\",\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "DELETE",
+    "url": "http://localhost:8080//api/airport/32728?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Thu, 9 Jan 2025 18:26:20 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "DELETE",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "10",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "191",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:26:20.923+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "No class com.app.entity.Airport entity with id 32728 exists!",
+      "path": "//api/airport/32728"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:26:19 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/airport/{id}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080//api/airport/32728?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/api/airport/{id}",
+  "server": "http://localhost:8080/"
+}

@@ -1,0 +1,56 @@
+{
+  "testId": "Test 4772",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/csv]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/csv"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 4772 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"flight\":{\"duration\":2,\"plane\":{\"numberOfSeats\":6,\"name\":\"mLehXM\",\"company\":{\"name\":\"Waelchi Group\",\"id\":6},\"id\":0},\"route\":{\"departureAirport\":{\"name\":\"qQtIh\",\"location\":\"FHFubHWhNH9\",\"id\":8,\"capacity\":8},\"name\":\"qf0Xq\",\"id\":9,\"arrivalAirport\":{\"name\":\"cO9zz6z8\",\"location\":\"BmfQ51Kxm\",\"id\":3,\"capacity\":9}},\"quota\":2,\"name\":\"aMMNQS\",\"quotaFilled\":9,\"departureDateTime\":\"2025-01-09T17:23:09.285202273Z\",\"id\":4,\"arrivalDateTime\":\"2025-01-09T17:23:09.285767054Z\",\"quotaFilledPercentage\":4},\"price\":8,\"isSold\":false,\"id\":0,\"ticketCode\":\"HuWRASzGqKun\"}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/ticket",
+    "timestamp": "Thu, 9 Jan 2025 18:23:18 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:23:18 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/ticket",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080//api/ticket",
+  "contractPath": "/api/ticket",
+  "server": "http://localhost:8080/"
+}

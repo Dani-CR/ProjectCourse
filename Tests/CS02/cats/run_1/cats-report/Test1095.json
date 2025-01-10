@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1095",
+  "scenario": "Insert zero-width chars in field names: field [name], char [\\u202e]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [4XX] response code",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 413, 414, 422, 431], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1095 - ZeroWidthCharsInNamesFields)"
+      }
+    ],
+    "payload": "{\"na‮me\":\"q2V2g\",\"id\":3}",
+    "httpMethod": "POST",
+    "url": "http://localhost:8080//api/company",
+    "timestamp": "Thu, 9 Jan 2025 18:22:12 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "POST",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "22",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "269",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:22:12.907+0000",
+      "status": 500,
+      "error": "Internal Server Error",
+      "message": "query did not return a unique result: 9; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 9",
+      "path": "//api/company"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:22:12 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/company",
+  "fuzzer": "ZeroWidthCharsInNamesFields",
+  "fullRequestPath": "http://localhost:8080//api/company",
+  "contractPath": "/api/company",
+  "server": "http://localhost:8080/"
+}

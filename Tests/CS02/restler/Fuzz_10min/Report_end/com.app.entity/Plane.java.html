@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Plane.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report end restler 10min</a> &gt; <a href="index.source.html" class="el_package">com.app.entity</a> &gt; <span class="el_source">Plane.java</span></div><h1>Plane.java</h1><pre class="source lang-java linenums">package com.app.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+@Entity
+<span class="pc bnc" id="L19" title="All 38 branches missed.">@Data</span>
+@Schema(description = &quot;PlaneEntityObject&quot;)
+public class Plane {
+	@Column(name = &quot;id&quot;)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Schema(description = &quot;Plane_Id&quot;)
+<span class="fc" id="L26">	private Long id;</span>
+	
+	@Column(name = &quot;name&quot;, length = 20)
+	@NotNull
+	@Schema(description = &quot;Name_of_Plane&quot;, required = true)
+	private String name;
+	
+	@Column(name = &quot;number_seat&quot;)
+	@Schema(description = &quot;Number_Of_Seats&quot;)
+	private Integer numberOfSeats;
+	
+	@JoinColumn(name = &quot;company_plane_id&quot;)
+	@ManyToOne
+	private Company company;
+	
+	public Integer getNumberOfSeats() {
+<span class="fc" id="L42">		return numberOfSeats;</span>
+	}
+
+	public void setNumberOfSeats(Integer numberOfSeats) {
+<span class="fc" id="L46">		this.numberOfSeats = numberOfSeats;</span>
+<span class="fc" id="L47">	}</span>
+
+	public Company getCompany() {
+<span class="fc" id="L50">		return company;</span>
+	}
+
+	public void setCompany(Company company) {
+<span class="fc" id="L54">		this.company = company;</span>
+<span class="fc" id="L55">	}</span>
+
+	public void setName(String name) {
+<span class="fc" id="L58">		this.name = name;</span>
+<span class="fc" id="L59">	}</span>
+
+	public String getName() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L63">		return name;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Airport.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Report end evomaster 10min</a> &gt; <a href="index.source.html" class="el_package">com.app.entity</a> &gt; <span class="el_source">Airport.java</span></div><h1>Airport.java</h1><pre class="source lang-java linenums">package com.app.entity;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
+
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+@Entity
+<span class="pc bnc" id="L21" title="All 38 branches missed.">@Data</span>
+@Schema(description = &quot;AirportEntityObject&quot;)
+public class Airport {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = &quot;id&quot;)
+	@Schema(description = &quot;Airport Id&quot;)
+<span class="fc" id="L29">	private Long id;</span>
+	
+	@Column(name = &quot;name&quot;, length = 50)
+	@NotNull
+	@Schema(description = &quot;Name of Airport&quot;, required = true)
+	private String name;	
+	
+	@Column(name = &quot;capacity&quot;)
+	@Schema(description = &quot;Capacity of Airport&quot;)
+<span class="fc" id="L38">	private Integer capacity;</span>
+	
+	@Column(name = &quot;location&quot;, length = 100)
+	@Schema(description = &quot;Location of Airport&quot;)
+<span class="fc" id="L42">	private String location;</span>
+	
+	/*@JoinColumn(name = &quot;departure_airport_id&quot;)
+	@OneToMany//(fetch = FetchType.LAZY)
+	private List&lt;Route&gt; departureRoutes;
+	
+	@JoinColumn(name = &quot;arrival_airport_id&quot;)
+	@OneToMany//(fetch = FetchType.LAZY)
+	private List&lt;Route&gt; arrivalRoutes;*/
+
+	public String getName() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L54">		return name;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

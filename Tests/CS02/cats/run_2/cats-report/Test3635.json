@@ -1,0 +1,68 @@
+{
+  "testId": "Test 3635",
+  "scenario": "Replace primitive fields with object values.  Current field [id] [REPLACE with {\"catsKey1\":\"catsValue1\",\"cats...]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 3635 - ReplacePrimitivesWithObjectsFields)"
+      }
+    ],
+    "payload": "{\n  \"departureAirport\": {\n    \"name\": \"JaYXfmQ\",\n    \"location\": \"ipXudaKoJGT\",\n    \"id\": 5,\n    \"capacity\": 6\n  },\n  \"name\": \"oEQCdRF\",\n  \"id\": {\n    \"catsKey1\": \"catsValue1\",\n    \"catsKey2\": 20\n  },\n  \"arrivalAirport\": {\n    \"name\": \"DsGou\",\n    \"location\": \"qvVl1MviCTW\",\n    \"id\": 6,\n    \"capacity\": 2\n  }\n}",
+    "httpMethod": "PUT",
+    "url": "http://localhost:8080//api/route",
+    "timestamp": "Thu, 9 Jan 2025 18:27:14 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "PUT",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "37",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "473",
+    "jsonBody": {
+      "timestamp": "2025-01-09T17:27:14.071+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize instance of `java.lang.Long` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Long` out of START_OBJECT token\n at [Source: (PushbackInputStream); line: 9, column: 9] (through reference chain: com.app.entity.Route[\"id\"])",
+      "path": "//api/route"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 09 Jan 2025 17:27:14 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/route",
+  "fuzzer": "ReplacePrimitivesWithObjectsFields",
+  "fullRequestPath": "http://localhost:8080//api/route",
+  "contractPath": "/api/route",
+  "server": "http://localhost:8080/"
+}
