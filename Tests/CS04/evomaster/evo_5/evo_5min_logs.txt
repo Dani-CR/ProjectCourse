@@ -1,0 +1,41 @@
+# logs evo 5min cs04 petclinic
+
+* Covered targets: 115; time per test: 22.4ms (5.6 actions); since last improvement: 2s
+* Starting to apply minimization phase
+* Recomputing full coverage for 74 tests
+18:24:19.102 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets/{petId}
+18:24:19.164 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/pets/{petId}
+18:24:19.247 [main] WARN  o.e.core.search.service.Minimizer - Different status code 204 returned from original 404, ie, 404 != 204 for endpoint: DELETE:/petclinic/api/vets/{vetId}
+18:24:19.258 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/vets/{vetId}
+18:24:19.386 [main] WARN  o.e.core.search.service.Minimizer - Different status code 200 returned from original 404, ie, 404 != 200 for endpoint: GET:/petclinic/api/specialties/{specialtyId}
+18:24:19.550 [main] WARN  o.e.core.search.service.Minimizer - Different status code 204 returned from original 404, ie, 404 != 204 for endpoint: DELETE:/petclinic/api/pettypes/{petTypeId}
+18:24:19.553 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/owners/{ownerId}
+18:24:19.553 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets
+18:24:19.553 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/specialties/{specialtyId}
+18:24:19.657 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/pettypes/{petTypeId}
+18:24:19.711 [main] WARN  o.e.core.search.service.Minimizer - Different status code 204 returned from original 404, ie, 404 != 204 for endpoint: DELETE:/petclinic/api/specialties/{specialtyId}
+18:24:19.749 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/specialties/{specialtyId}
+18:24:19.870 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/visits/{visitId}
+18:24:19.947 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets
+18:24:19.969 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/visits
+18:24:20.107 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pettypes/{petTypeId}
+18:24:20.115 [main] WARN  o.e.core.search.service.Minimizer - Different status code 200 returned from original 404, ie, 404 != 200 for endpoint: GET:/petclinic/api/specialties/{specialtyId}
+18:24:20.138 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/specialties/{specialtyId}
+18:24:20.199 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/owners/{ownerId}
+* Analyzing 8 tests with size greater than 1
+* Minimization progress: 8/8
+* Minimization phase took 1 seconds
+* Evaluated tests: 12013
+* Evaluated actions: 66069
+* Needed budget: 98%
+* Passed time (seconds): 301
+* Execution time per test (ms): Avg=22.75 , min=0.00 , max=969.00
+* Execution time per action (ms): Avg=4.27 , min=0.00 , max=858.00
+* Computation overhead between tests (ms): Avg=2.22 , min=0.00 , max=79.00
+* Going to save 66 tests to generated_tests
+18:24:20.879 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Currently no assertions are generated for response type: text/html;charset=UTF-8
+* Potential faults: 6
+* Successfully executed (HTTP code 2xx) 21 endpoints out of 47 (45%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

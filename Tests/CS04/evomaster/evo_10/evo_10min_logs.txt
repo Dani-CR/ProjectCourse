@@ -1,0 +1,73 @@
+# logs evomaster 10min, cs04 petclinic 
+
+* Covered targets: 114; time per test: 14.3ms (5.6 actions); since last improvement: 327s
+* Starting to apply minimization phase
+* Recomputing full coverage for 73 tests
+18:41:18.094 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/vets/{vetId}
+18:41:18.132 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/pettypes/{petTypeId}
+18:41:18.159 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/vets/{vetId}
+18:41:18.204 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: PUT:/petclinic/api/pettypes/{petTypeId}
+18:41:18.210 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/specialties/{specialtyId}
+18:41:18.278 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/pets/{petId}
+18:41:18.278 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets
+18:41:18.286 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pettypes/{petTypeId}
+18:41:18.373 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: PUT:/petclinic/api/specialties/{specialtyId}
+18:41:18.380 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/specialties/{specialtyId}
+18:41:18.429 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/visits
+18:41:18.434 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets/{petId}
+18:41:18.517 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/visits/{visitId}
+18:41:18.554 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: PUT:/petclinic/api/vets/{vetId}
+18:41:18.598 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 204, ie, 204 != 404 for endpoint: DELETE:/petclinic/api/owners/{ownerId}
+18:41:18.605 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/pets
+18:41:18.679 [main] WARN  o.e.core.search.service.Minimizer - Different status code 404 returned from original 200, ie, 200 != 404 for endpoint: GET:/petclinic/api/owners/{ownerId}
+* Recomputing coverage did lose many targets, more than the threshold 20.0%: from 114 to 82, i.e., lost 32
+* Missing targets:
+* HTTP_SUCCESS:GET:/petclinic/api/vets/{vetId}
+* HTTP_SUCCESS:DELETE:/petclinic/api/pettypes/{petTypeId}
+* HTTP_SUCCESS:DELETE:/petclinic/api/vets/{vetId}
+* HTTP_SUCCESS:PUT:/petclinic/api/pettypes/{petTypeId}
+* HTTP_SUCCESS:GET:/petclinic/api/specialties/{specialtyId}
+* HTTP_SUCCESS:DELETE:/petclinic/api/pets/{petId}
+* HTTP_SUCCESS:GET:/petclinic/api/pettypes/{petTypeId}
+* HTTP_SUCCESS:PUT:/petclinic/api/specialties/{specialtyId}
+* HTTP_SUCCESS:DELETE:/petclinic/api/specialties/{specialtyId}
+* 200:GET:/petclinic/api/visits
+* HTTP_SUCCESS:GET:/petclinic/api/visits
+* HTTP_SUCCESS:GET:/petclinic/api/pets/{petId}
+* HTTP_SUCCESS:GET:/petclinic/api/visits/{visitId}
+* HTTP_SUCCESS:PUT:/petclinic/api/vets/{vetId}
+* HTTP_SUCCESS:DELETE:/petclinic/api/owners/{ownerId}
+* 200:GET:/petclinic/api/pets
+* HTTP_SUCCESS:GET:/petclinic/api/pets
+* HTTP_SUCCESS:GET:/petclinic/api/owners/{ownerId}
+* 200:GET:/petclinic/api/pets/{petId}
+* 200:GET:/petclinic/api/visits/{visitId}
+* 204:DELETE:/petclinic/api/vets/{vetId}
+* 204:DELETE:/petclinic/api/pets/{petId}
+* 200:GET:/petclinic/api/owners/{ownerId}
+* 204:DELETE:/petclinic/api/specialties/{specialtyId}
+* 204:PUT:/petclinic/api/pettypes/{petTypeId}
+* 204:PUT:/petclinic/api/specialties/{specialtyId}
+* 200:GET:/petclinic/api/pettypes/{petTypeId}
+* 204:DELETE:/petclinic/api/pettypes/{petTypeId}
+* 200:GET:/petclinic/api/specialties/{specialtyId}
+* 200:GET:/petclinic/api/vets/{vetId}
+* 204:DELETE:/petclinic/api/owners/{ownerId}
+* 204:PUT:/petclinic/api/vets/{vetId}
+* Analyzing 3 tests with size greater than 1
+* Minimization progress: 3/3
+* Minimization phase took 0 seconds
+* Evaluated tests: 32446
+* Evaluated actions: 178398
+* Needed budget: 76%
+* Passed time (seconds): 600
+* Execution time per test (ms): Avg=16.55 , min=0.00 , max=1135.00
+* Execution time per action (ms): Avg=3.09 , min=0.00 , max=1135.00
+* Computation overhead between tests (ms): Avg=1.94 , min=0.00 , max=408.00
+* Going to save 57 tests to generated_tests
+18:41:18.991 [main] WARN  o.e.c.o.service.HttpWsTestCaseWriter - Currently no assertions are generated for response type: text/html;charset=UTF-8
+* Potential faults: 6
+* Successfully executed (HTTP code 2xx) 13 endpoints out of 47 (28%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+
