@@ -15,7 +15,7 @@
          "url":"http://www.apache.org/licenses/LICENSE-2.0"
       }
    },
-   "host":"localhost:8080",
+   "host":"localhost:9966",
    "basePath":"/petclinic",
    "tags":[
       {
