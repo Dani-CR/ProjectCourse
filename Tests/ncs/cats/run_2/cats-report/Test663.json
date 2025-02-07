@@ -1,0 +1,56 @@
+{
+  "testId": "Test 663",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/java-archive]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/java-archive"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 663 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"a\":9.672019076237632,\"x\":3.8900358952709304}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+    "timestamp": "Thu, 6 Feb 2025 02:10:48 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "GET",
+    "responseTimeInMs": "17",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:48 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/gammq/{a}/{x}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+  "contractPath": "/api/gammq/{a}/{x}",
+  "server": "http://localhost:8080"
+}

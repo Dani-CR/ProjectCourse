@@ -1,0 +1,60 @@
+{
+  "testId": "Test 894",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 894 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"s\":\"bPE\",\"i\":1}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/notypevar/1/bPE",
+    "timestamp": "Thu, 6 Feb 2025 02:32:35 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:35 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/notypevar/{i}/{s}",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080/api/notypevar/1/bPE",
+  "contractPath": "/api/notypevar/{i}/{s}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 590",
+  "scenario": "Add a duplicate header inside the request: name [Cats-Fuzzy-Header], value [Cats-Fuzzy-Header]. All other details are similar to a happy flow",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Cats-Fuzzy-Header",
+        "value": "Cats-Fuzzy-Header"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 590 - DuplicateHeaders)"
+      }
+    ],
+    "payload": "{\"dayname\":\"jiI50Hoix\",\"monthname\":\"Brp54ID65ZUf\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/dateparse/jiI50Hoix/Brp54ID65ZUf",
+    "timestamp": "Thu, 6 Feb 2025 02:30:32 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:32 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/dateparse/{dayname}/{monthname}",
+  "fuzzer": "DuplicateHeaders",
+  "fullRequestPath": "http://localhost:8080/api/dateparse/jiI50Hoix/Brp54ID65ZUf",
+  "contractPath": "/api/dateparse/{dayname}/{monthname}",
+  "server": "http://localhost:8080"
+}

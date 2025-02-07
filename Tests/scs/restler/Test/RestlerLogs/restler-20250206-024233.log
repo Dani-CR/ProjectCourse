@@ -1,0 +1,32 @@
+Restler Information: 0 : Starting task Test...
+    DateTime=2025-02-06T01:42:33.2746653Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2025-02-06T01:42:35.5433942Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2025-02-06T01:42:35.5438537Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0154870 with exit code 0x0: 'python3 --version'
+    DateTime=2025-02-06T01:42:35.5779580Z
+Restler Information: 0 : (63777) python3 --version exited with code: 0
+    DateTime=2025-02-06T01:42:35.5860682Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2025-02-06T01:42:35.6020858Z
+Restler Information: 0 : Process execution terminated in 00:00:00.9836421 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2025-02-06T01:42:36.5866534Z
+Restler Information: 0 : (63780) python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2025-02-06T01:42:36.5871055Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-06T01:42:36.6021393Z
+Restler Information: 0 : Process execution terminated in 00:00:00.4717722 with exit code 0x0: 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-06T01:42:37.0740581Z
+Restler Information: 0 : (63783) dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Test/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/scs/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2025-02-06T01:42:37.0743294Z
+Restler Information: 0 : Request coverage (successful / total): 11 / 11
+    DateTime=2025-02-06T01:42:37.1897369Z
+Restler Information: 0 : Attempted requests: 11 / 11
+    DateTime=2025-02-06T01:42:37.1898116Z
+Restler Information: 0 : No bugs were found.
+    DateTime=2025-02-06T01:42:37.1928628Z
+Restler Information: 0 : Task Test succeeded.
+    DateTime=2025-02-06T01:42:37.2189814Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-02-06T01:42:37.4771857Z

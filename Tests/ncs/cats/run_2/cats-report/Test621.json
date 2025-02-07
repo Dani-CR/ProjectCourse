@@ -1,0 +1,68 @@
+{
+  "testId": "Test 621",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/gammq/{a}/{x}%09",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 621 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"a\":9.672019076237632,\"x\":3.8900358952709304}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/gammq/9.672019076237632/NOT_SET?x=3.8900358952709304",
+    "timestamp": "Thu, 6 Feb 2025 02:10:47 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "308",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:10:47.915+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"NOT_SET\"",
+      "path": "/api/gammq/9.672019076237632/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:47 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/gammq/{a}/{x}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/gammq/9.672019076237632/NOT_SET?x=3.8900358952709304",
+  "contractPath": "/api/gammq/{a}/{x}",
+  "server": "http://localhost:8080"
+}

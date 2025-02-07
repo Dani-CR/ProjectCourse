@@ -1,0 +1,60 @@
+{
+  "testId": "Test 893",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [s], value [REPLACE with 60fmlস্র\\u200cুKE3a06], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 893 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"s\":\"60fmlস্র\\u200CুKE3a06\",\"i\":3}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/notypevar/3/60fml%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%81KE3a06",
+    "timestamp": "Thu, 6 Feb 2025 02:30:38 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "28",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:37 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/notypevar/{i}/{s}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080/api/notypevar/3/60fml%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%81KE3a06",
+  "contractPath": "/api/notypevar/{i}/{s}",
+  "server": "http://localhost:8080"
+}

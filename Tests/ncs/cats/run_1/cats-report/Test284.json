@@ -1,0 +1,68 @@
+{
+  "testId": "Test 284",
+  "scenario": "Send [strings in numeric fields] in request fields: field [x], value [REPLACE with fuzzKbzQ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 284 - StringsInNumericFields)"
+      }
+    ],
+    "payload": "{\"x\":\"fuzzKbzQ\",\"n\":4}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/expint/4/fuzzKbzQ",
+    "timestamp": "Thu, 6 Feb 2025 02:08:32 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "45",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "295",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:08:32.085+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"fuzzKbzQ\"",
+      "path": "/api/expint/4/fuzzKbzQ"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:31 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/expint/{n}/{x}",
+  "fuzzer": "StringsInNumericFields",
+  "fullRequestPath": "http://localhost:8080/api/expint/4/fuzzKbzQ",
+  "contractPath": "/api/expint/{n}/{x}",
+  "server": "http://localhost:8080"
+}

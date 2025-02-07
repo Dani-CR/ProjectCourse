@@ -1,0 +1,68 @@
+{
+  "testId": "Test 654",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PROPFIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [PROPFIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 654 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "PROPFIND",
+    "url": "http://localhost:8080/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:30:34 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "PROPFIND",
+    "responseTimeInMs": "58",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "192",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:34.343+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'PROPFIND' not supported",
+      "path": "/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:33 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/dateparse/{dayname}/{monthname}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D",
+  "contractPath": "/api/dateparse/{dayname}/{monthname}",
+  "server": "http://localhost:8080"
+}

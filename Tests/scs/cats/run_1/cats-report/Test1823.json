@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1823",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/title/{sex}.././/{title}",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1823 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"sex\":\"Rs0HM\",\"title\":\"WfWWWfWWW\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/title/NOT_SET//WfWWWfWWW?sex=Rs0HM",
+    "timestamp": "Thu, 6 Feb 2025 02:30:53 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {
+      "notAJson": "-1"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "2"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:53 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/title/{sex}/{title}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/title/NOT_SET//WfWWWfWWW?sex=Rs0HM",
+  "contractPath": "/api/title/{sex}/{title}",
+  "server": "http://localhost:8080"
+}

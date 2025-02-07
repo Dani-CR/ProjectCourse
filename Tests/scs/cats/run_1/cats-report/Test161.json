@@ -1,0 +1,64 @@
+{
+  "testId": "Test 161",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [image/vnd.microsoft.icon]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "image/vnd.microsoft.icon"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 161 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"arg2\":4.881546352283095,\"op\":\"nwT\",\"arg1\":3.8194091378575545}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/calc/nwT/3.8194091378575545/4.881546352283095",
+    "timestamp": "Thu, 6 Feb 2025 02:30:18 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "3",
+    "jsonBody": {
+      "notAJson": "0.0"
+    },
+    "headers": [
+      {
+        "key": "content-disposition",
+        "value": "inline;filename=f.txt"
+      },
+      {
+        "key": "content-length",
+        "value": "3"
+      },
+      {
+        "key": "content-type",
+        "value": "image/vnd.microsoft.icon;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:18 GMT"
+      }
+    ],
+    "responseContentType": "image/vnd.microsoft.icon;charset=UTF-8"
+  },
+  "path": "/api/calc/{op}/{arg1}/{arg2}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/calc/nwT/3.8194091378575545/4.881546352283095",
+  "contractPath": "/api/calc/{op}/{arg1}/{arg2}",
+  "server": "http://localhost:8080"
+}

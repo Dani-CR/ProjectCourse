@@ -1,0 +1,64 @@
+{
+  "testId": "Test 680",
+  "scenario": "Send [outside the boundary values] in request fields: field [dayname], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 680 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"dayname\":\"\",\"monthname\":\"Brp54ID65ZUf\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/dateparse//Brp54ID65ZUf",
+    "timestamp": "Thu, 6 Feb 2025 02:30:34 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "148",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:34.876+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/dateparse//Brp54ID65ZUf"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:34 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/dateparse/{dayname}/{monthname}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/dateparse//Brp54ID65ZUf",
+  "contractPath": "/api/dateparse/{dayname}/{monthname}",
+  "server": "http://localhost:8080"
+}

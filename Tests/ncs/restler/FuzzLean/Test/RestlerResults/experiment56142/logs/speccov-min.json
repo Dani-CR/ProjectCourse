@@ -1,0 +1,57 @@
+{
+    "1d81ff7d0d33ce6189b28f834a02abb8999ec7ad_1": {
+        "verb": "GET",
+        "endpoint": "/api/remainder/{a}/{b}",
+        "valid": 1,
+        "matching_prefix": [],
+        "request": "GET /api/remainder/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 200 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n27\r\n{\"resultAsInt\":0,\"resultAsDouble\":null}\r\n0\r\n\r\n"
+    },
+    "288803efaa77bf1bfd4113f7338baf6c8737118c_1": {
+        "verb": "GET",
+        "endpoint": "/api/fisher/{m}/{n}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "request": "GET /api/fisher/1/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n38\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.5328886540720141}\r\n0\r\n\r\n"
+    },
+    "68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f_1": {
+        "verb": "GET",
+        "endpoint": "/api/bessj/{n}/{x}",
+        "valid": 0,
+        "matching_prefix": [],
+        "request": "GET /api/bessj/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 400 \r\nContent-Length: 0\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\nConnection: close\r\n\r\n"
+    },
+    "68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f_2": {
+        "verb": "GET",
+        "endpoint": "/api/bessj/{n}/{x}",
+        "valid": 0,
+        "matching_prefix": [],
+        "request": "GET /api/bessj/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 400 \r\nContent-Length: 0\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\nConnection: close\r\n\r\n"
+    },
+    "9a5f6a6fb067fc86158b17243123553fe5beb5cf_1": {
+        "verb": "GET",
+        "endpoint": "/api/gammq/{a}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "request": "GET /api/gammq/1.23/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n38\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.3805323260910082}\r\n0\r\n\r\n"
+    },
+    "b022daf2ffa2da4b1f2960fd7f636d20ee553494_1": {
+        "verb": "GET",
+        "endpoint": "/api/triangle/{a}/{b}/{c}",
+        "valid": 1,
+        "matching_prefix": [],
+        "request": "GET /api/triangle/1/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 200 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n27\r\n{\"resultAsInt\":3,\"resultAsDouble\":null}\r\n0\r\n\r\n"
+    },
+    "f0d09615dff69b894c8ba06f066dcebf1ea7fc45_1": {
+        "verb": "GET",
+        "endpoint": "/api/expint/{n}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "request": "GET /api/expint/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\n\r\n",
+        "response": "HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n39\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.15108114631929428}\r\n0\r\n\r\n"
+    }}

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1656",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/text2txt/{word1}/{word2};.json/{word3}",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1656 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"word1\":\"3rc1kkP\",\"word3\":\"I61QyL5po\",\"word2\":\"SOKYwTlx6\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/text2txt/3rc1kkP/NOT_SET/I61QyL5po?word2=SOKYwTlx6",
+    "timestamp": "Thu, 6 Feb 2025 02:32:49 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:48 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/text2txt/{word1}/{word2}/{word3}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/text2txt/3rc1kkP/NOT_SET/I61QyL5po?word2=SOKYwTlx6",
+  "contractPath": "/api/text2txt/{word1}/{word2}/{word3}",
+  "server": "http://localhost:8080"
+}

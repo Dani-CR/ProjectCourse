@@ -1,0 +1,64 @@
+{
+  "testId": "Test 1717",
+  "scenario": "Send [outside the boundary values] in request fields: field [word2], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1717 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"word1\":\"3rc1kkP\",\"word3\":\"I61QyL5po\",\"word2\":\"\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/text2txt/3rc1kkP//I61QyL5po",
+    "timestamp": "Thu, 6 Feb 2025 02:32:50 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "152",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:50.196+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/text2txt/3rc1kkP//I61QyL5po"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:49 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/text2txt/{word1}/{word2}/{word3}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/text2txt/3rc1kkP//I61QyL5po",
+  "contractPath": "/api/text2txt/{word1}/{word2}/{word3}",
+  "server": "http://localhost:8080"
+}

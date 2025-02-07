@@ -1,0 +1,68 @@
+{
+  "testId": "Test 322",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UNBIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [UNBIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 322 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UNBIND",
+    "url": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:24 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "UNBIND",
+    "responseTimeInMs": "5",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "189",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:24.691+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'UNBIND' not supported",
+      "path": "/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:24 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

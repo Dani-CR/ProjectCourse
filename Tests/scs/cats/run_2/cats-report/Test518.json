@@ -1,0 +1,64 @@
+{
+  "testId": "Test 518",
+  "scenario": "Send [outside the boundary values] in request fields: field [s], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 518 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"s\":\"\",\"i\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/costfuns/2/",
+    "timestamp": "Thu, 6 Feb 2025 02:32:28 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "136",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:28.631+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/costfuns/2/"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:27 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/costfuns/{i}/{s}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/costfuns/2/",
+  "contractPath": "/api/costfuns/{i}/{s}",
+  "server": "http://localhost:8080"
+}

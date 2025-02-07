@@ -1,0 +1,68 @@
+{
+  "testId": "Test 716",
+  "scenario": "Send a happy flow request with undocumented HTTP method: VERIFY",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [VERIFY] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 716 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "VERIFY",
+    "url": "http://localhost:8080/api/remainder/%7Ba%7D/%7Bb%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:10:49 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "VERIFY",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "176",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:10:49.589+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'VERIFY' not supported",
+      "path": "/api/remainder/%7Ba%7D/%7Bb%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:48 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/remainder/{a}/{b}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/remainder/%7Ba%7D/%7Bb%7D",
+  "contractPath": "/api/remainder/{a}/{b}",
+  "server": "http://localhost:8080"
+}

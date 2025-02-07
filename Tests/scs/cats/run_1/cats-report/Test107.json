@@ -1,0 +1,68 @@
+{
+  "testId": "Test 107",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/calc/{op}/{arg1}/{arg2}.json",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 107 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"arg2\":4.881546352283095,\"op\":\"nwT\",\"arg1\":3.8194091378575545}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/calc/nwT/3.8194091378575545/NOT_SET?arg2=4.881546352283095",
+    "timestamp": "Thu, 6 Feb 2025 02:30:15 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "14",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "302",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:15.845+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'double'; nested exception is java.lang.NumberFormatException: For input string: \"NOT_SET\"",
+      "path": "/api/calc/nwT/3.8194091378575545/NOT_SET"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:15 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/calc/{op}/{arg1}/{arg2}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/calc/nwT/3.8194091378575545/NOT_SET?arg2=4.881546352283095",
+  "contractPath": "/api/calc/{op}/{arg1}/{arg2}",
+  "server": "http://localhost:8080"
+}

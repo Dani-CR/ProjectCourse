@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1002",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PROPFIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [PROPFIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1002 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "PROPFIND",
+    "url": "http://localhost:8080/api/triangle/%7Ba%7D/%7Bb%7D/%7Bc%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:08:45 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "PROPFIND",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "185",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:08:45.499+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'PROPFIND' not supported",
+      "path": "/api/triangle/%7Ba%7D/%7Bb%7D/%7Bc%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:44 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/triangle/{a}/{b}/{c}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/triangle/%7Ba%7D/%7Bb%7D/%7Bc%7D",
+  "contractPath": "/api/triangle/{a}/{b}/{c}",
+  "server": "http://localhost:8080"
+}

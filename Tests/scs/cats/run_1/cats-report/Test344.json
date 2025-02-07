@@ -1,0 +1,64 @@
+{
+  "testId": "Test 344",
+  "scenario": "Send [outside the boundary values] in request fields: field [site], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 344 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"val\":\"boQIcr\",\"site\":\"\",\"name\":\"ML8qazIi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/",
+    "timestamp": "Thu, 6 Feb 2025 02:30:24 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "148",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:24.810+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/cookie/ML8qazIi/boQIcr/"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:24 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,47 @@
+{
+  "0": {},
+  "400": {
+    "114dbcc5-4ac9-4fa7-954d-01ffee43583f": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/bessj/1/1.23",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "",
+            "content": "",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "d68acb81-a7ef-4925-8e11-c79b27137121": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/bessj/1/1.23",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "",
+            "content": "",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  }
+}

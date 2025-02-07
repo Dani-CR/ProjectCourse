@@ -1,0 +1,60 @@
+{
+  "testId": "Test 393",
+  "scenario": "Send [zero-width characters] in request fields: field [site], value [INSERT with \\u200b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 393 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"val\":\"boQIcr\",\"site\":\"7dFn\\u200BjRbK\",\"name\":\"ML8qazIi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/7dFn%E2%80%8BjRbK",
+    "timestamp": "Thu, 6 Feb 2025 02:30:27 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "9",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:26 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/7dFn%E2%80%8BjRbK",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

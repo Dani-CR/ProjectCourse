@@ -1,0 +1,65 @@
+{
+  "testId": "Test 547",
+  "scenario": "Send a happy flow request and check the following Security Headers: [X-Frame-Options/Content-Security-Policy, Cache-Control, X-Content-Type-Options, X-XSS-Protection]",
+  "expectedResult": "Should return 2XX and all the above security headers within the response",
+  "result": "error",
+  "resultReason": "Missing recommended security headers",
+  "resultDetails": "Missing recommended Security Headers: [Cache-Control=.*no-store.*, X-Content-Type-Options=nosniff, X-Frame-Options=DENY, Content-Security-Policy=frame-ancestors 'none']",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 547 - CheckSecurityHeaders)"
+      }
+    ],
+    "payload": "{\"a\":0.8027946491479943,\"x\":7.6304189486805685}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/gammq/0.8027946491479943/7.6304189486805685",
+    "timestamp": "Thu, 6 Feb 2025 02:08:36 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "8",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "58",
+    "jsonBody": {
+      "resultAsInt": null,
+      "resultAsDouble": 2.737122745754698E-4
+    },
+    "headers": [
+      {
+        "key": "content-disposition",
+        "value": "inline;filename=f.txt"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:36 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/gammq/{a}/{x}",
+  "fuzzer": "CheckSecurityHeaders",
+  "fullRequestPath": "http://localhost:8080/api/gammq/0.8027946491479943/7.6304189486805685",
+  "contractPath": "/api/gammq/{a}/{x}",
+  "server": "http://localhost:8080"
+}

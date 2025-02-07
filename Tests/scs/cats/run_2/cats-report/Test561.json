@@ -1,0 +1,60 @@
+{
+  "testId": "Test 561",
+  "scenario": "Send [zero-width characters] in request fields: field [s], value [INSERT with \\u200f], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 561 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"s\":\"Y\\u200FV4\",\"i\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/costfuns/2/Y%E2%80%8FV4",
+    "timestamp": "Thu, 6 Feb 2025 02:32:29 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {
+      "notAJson": "10"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "2"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:28 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/costfuns/{i}/{s}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/costfuns/2/Y%E2%80%8FV4",
+  "contractPath": "/api/costfuns/{i}/{s}",
+  "server": "http://localhost:8080"
+}

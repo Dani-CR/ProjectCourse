@@ -1,0 +1,64 @@
+{
+  "testId": "Test 1224",
+  "scenario": "Send [outside the boundary values] in request fields: field [z], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1224 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"w\":\"Mri\",\"x\":\"G3\",\"y\":\"uc\",\"z\":\"\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/ordered4/Mri/G3//uc",
+    "timestamp": "Thu, 6 Feb 2025 02:30:44 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "144",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:44.682+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/ordered4/Mri/G3//uc"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:44 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/ordered4/Mri/G3//uc",
+  "contractPath": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "server": "http://localhost:8080"
+}

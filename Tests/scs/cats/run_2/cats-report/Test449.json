@@ -1,0 +1,64 @@
+{
+  "testId": "Test 449",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/costfuns/{i}/.. ;//{s}",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 449 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"s\":\"YV4\",\"i\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/costfuns/2/..%20;//YV4",
+    "timestamp": "Thu, 6 Feb 2025 02:32:27 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "147",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:27.244+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/costfuns/2/..%20;//YV4"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:26 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/costfuns/{i}/{s}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/costfuns/2/..%20;//YV4",
+  "contractPath": "/api/costfuns/{i}/{s}",
+  "server": "http://localhost:8080"
+}

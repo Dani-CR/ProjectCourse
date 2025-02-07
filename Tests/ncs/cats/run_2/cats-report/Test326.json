@@ -1,0 +1,68 @@
+{
+  "testId": "Test 326",
+  "scenario": "Send [zero-width characters] in request fields: field [x], value [INSERT with \\u200c], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 326 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"x\":\"4.004948\\u200C356239012\",\"n\":0}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/expint/0/4.004948%E2%80%8C356239012",
+    "timestamp": "Thu, 6 Feb 2025 02:10:40 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "325",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:10:40.418+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"4.004948‌356239012\"",
+      "path": "/api/expint/0/4.004948%E2%80%8C356239012"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:39 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/expint/{n}/{x}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/expint/0/4.004948%E2%80%8C356239012",
+  "contractPath": "/api/expint/{n}/{x}",
+  "server": "http://localhost:8080"
+}

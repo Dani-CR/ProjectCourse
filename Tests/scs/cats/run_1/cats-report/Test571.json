@@ -1,0 +1,60 @@
+{
+  "testId": "Test 571",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [dayname], value [REPLACE with bPpekplko400স্র\\u200cুYTaI5AlwTqKwh], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 571 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"dayname\":\"bPpekplko400স্র\\u200CুYTaI5AlwTqKwh\",\"monthname\":\"Brp54ID65ZUf\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/dateparse/bPpekplko400%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%81YTaI5AlwTqKwh/Brp54ID65ZUf",
+    "timestamp": "Thu, 6 Feb 2025 02:30:32 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "55",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:31 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/dateparse/{dayname}/{monthname}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080/api/dateparse/bPpekplko400%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%81YTaI5AlwTqKwh/Brp54ID65ZUf",
+  "contractPath": "/api/dateparse/{dayname}/{monthname}",
+  "server": "http://localhost:8080"
+}

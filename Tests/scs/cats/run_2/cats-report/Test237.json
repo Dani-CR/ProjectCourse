@@ -1,0 +1,68 @@
+{
+  "testId": "Test 237",
+  "scenario": "Send a happy flow request with undocumented HTTP method: PATCH",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [PATCH] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 237 - HttpMethods)"
+      }
+    ],
+    "payload": "{\"val\":\"18AC\",\"site\":\"W1PkM0\",\"name\":\"uiJiKFzU\"}",
+    "httpMethod": "PATCH",
+    "url": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:23 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "PATCH",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "188",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:23.104+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'PATCH' not supported",
+      "path": "/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:22 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

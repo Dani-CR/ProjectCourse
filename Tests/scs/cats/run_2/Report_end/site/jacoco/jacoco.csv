@@ -1,0 +1,14 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Cookie,30,28,10,2,7,7,7,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Ordered4,48,20,21,7,7,4,12,4,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Costfuns,7,96,4,16,3,22,5,7,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Regex,9,95,3,3,4,13,4,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Text2Txt,31,45,14,8,8,12,12,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,NotyPevar,7,46,2,6,3,12,3,3,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Calc,48,58,11,11,12,14,12,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,FileSuffix,57,28,21,1,17,8,12,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Title,83,29,39,3,22,7,22,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,Pat,113,103,19,13,18,22,12,7,1,2
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs.imp,DateParse,17,93,19,19,14,23,20,1,1,1
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs,ScsApplication,0,32,0,0,0,13,0,4,0,4
+evomaster-benchmark-cs-rest-artificial-scs,org.restscs,ScsRest,0,86,0,0,0,23,0,12,0,12

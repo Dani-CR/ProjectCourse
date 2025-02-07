@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1786",
+  "scenario": "Send a happy flow request with undocumented HTTP method: BATCH",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [BATCH] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1786 - CustomHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "BATCH",
+    "url": "http://localhost:8080/api/title/%7Bsex%7D/%7Btitle%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:30:52 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "BATCH",
+    "responseTimeInMs": "23",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "177",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:52.727+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'BATCH' not supported",
+      "path": "/api/title/%7Bsex%7D/%7Btitle%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:52 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/title/{sex}/{title}",
+  "fuzzer": "CustomHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/title/%7Bsex%7D/%7Btitle%7D",
+  "contractPath": "/api/title/{sex}/{title}",
+  "server": "http://localhost:8080"
+}

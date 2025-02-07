@@ -1,0 +1,68 @@
+{
+  "testId": "Test 475",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [404, 400, 422], actual [400], documented response codes: [200, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 475 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"x\": \"0S8r4BAuT7qGlBPG2B\",\n  \"m\": \"4034\",\n  \"n\": \"1643\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/fisher/4034/1643/0S8r4BAuT7qGlBPG2B",
+    "timestamp": "Thu, 6 Feb 2025 02:08:35 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "323",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:08:35.291+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: \"0S8r4BAuT7qGlBPG2B\"",
+      "path": "/api/fisher/4034/1643/0S8r4BAuT7qGlBPG2B"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:35 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/fisher/{m}/{n}/{x}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080/api/fisher/4034/1643/0S8r4BAuT7qGlBPG2B",
+  "contractPath": "/api/fisher/{m}/{n}/{x}",
+  "server": "http://localhost:8080"
+}

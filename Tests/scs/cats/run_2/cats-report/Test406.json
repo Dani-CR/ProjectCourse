@@ -1,0 +1,60 @@
+{
+  "testId": "Test 406",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [s], value [REPLACE with 4GO6JGeGNvhpixস্র\\u200cু8YYGRc0ZMMK...], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 406 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"s\":\"4GO6JGeGNvhpixস্র\\u200Cু8YYGRc0ZMMK8f4\",\"i\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/costfuns/2/4GO6JGeGNvhpix%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%818YYGRc0ZMMK8f4",
+    "timestamp": "Thu, 6 Feb 2025 02:32:25 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {
+      "notAJson": "10"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "2"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:25 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/costfuns/{i}/{s}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080/api/costfuns/2/4GO6JGeGNvhpix%E0%A6%B8%E0%A7%8D%E0%A6%B0%E2%80%8C%E0%A7%818YYGRc0ZMMK8f4",
+  "contractPath": "/api/costfuns/{i}/{s}",
+  "server": "http://localhost:8080"
+}

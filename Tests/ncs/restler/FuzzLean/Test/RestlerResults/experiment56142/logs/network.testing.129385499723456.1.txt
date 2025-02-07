@@ -1,0 +1,192 @@
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 1d81ff7d0d33ce6189b28f834a02abb8999ec7ad
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'remainder'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.270: Sending: 'GET /api/remainder/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: c014146e-047c-4700-b301-5cd9b650ef7f\r\n\r\n'
+
+2025-02-06 00:31:13.460: Received: 'HTTP/1.1 200 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n27\r\n{"resultAsInt":0,"resultAsDouble":null}\r\n0\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-2
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 288803efaa77bf1bfd4113f7338baf6c8737118c
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'fisher'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.507: Sending: 'GET /api/fisher/1/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 8f9f051d-d4cd-4c78-8589-b056f42bed56\r\n\r\n'
+
+2025-02-06 00:31:13.540: Received: 'HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n38\r\n{"resultAsInt":null,"resultAsDouble":0.5328886540720141}\r\n0\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'bessj'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.586: Sending: 'GET /api/bessj/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 736ab420-fa59-4689-bede-3dd0d1c3f63a\r\n\r\n'
+
+2025-02-06 00:31:13.598: Received: 'HTTP/1.1 400 \r\nContent-Length: 0\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\nConnection: close\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-3
+
+	Request: 1 (Remaining candidate combinations: 1)
+	Request hash: 68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'bessj'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.632: Sending: 'GET /api/bessj/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: d5e9962a-ae65-48e7-a681-4b9c4b2637b4\r\n\r\n'
+
+2025-02-06 00:31:13.637: Empty response received.  Re-creating connection and re-trying.
+2025-02-06 00:31:13.643: Sending: 'GET /api/bessj/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: d5e9962a-ae65-48e7-a681-4b9c4b2637b4\r\n\r\n'
+
+2025-02-06 00:31:13.654: Received: 'HTTP/1.1 400 \r\nContent-Length: 0\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\nConnection: close\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-4
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: 9a5f6a6fb067fc86158b17243123553fe5beb5cf
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'gammq'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.745: Sending: 'GET /api/gammq/1.23/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: a5bdd91a-708d-492d-aa18-921875c897be\r\n\r\n'
+
+2025-02-06 00:31:13.785: Empty response received.  Re-creating connection and re-trying.
+2025-02-06 00:31:13.790: Sending: 'GET /api/gammq/1.23/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: a5bdd91a-708d-492d-aa18-921875c897be\r\n\r\n'
+
+2025-02-06 00:31:13.802: Received: 'HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n38\r\n{"resultAsInt":null,"resultAsDouble":0.3805323260910082}\r\n0\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-5
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: b022daf2ffa2da4b1f2960fd7f636d20ee553494
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'triangle'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.830: Sending: 'GET /api/triangle/1/1/1 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: ee694219-9a08-468e-b1f6-1c3d5456f2bf\r\n\r\n'
+
+2025-02-06 00:31:13.843: Received: 'HTTP/1.1 200 \r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n27\r\n{"resultAsInt":3,"resultAsDouble":null}\r\n0\r\n\r\n'
+
+
+Generation-1: Rendering Sequence-6
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: f0d09615dff69b894c8ba06f066dcebf1ea7fc45
+
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'expint'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: [token_auth_method, token_refresh_interval, ...]
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:31:13.877: Sending: 'GET /api/expint/1/1.23 HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8080\r\nContent-Length: 0\r\nUser-Agent: restler/9.3.1\r\nx-restler-sequence-id: 56d53903-ea48-4d60-82b6-21e3d33d831a\r\n\r\n'
+
+2025-02-06 00:31:13.891: Received: 'HTTP/1.1 200 \r\nContent-Disposition: inline;filename=f.txt\r\nContent-Type: application/json;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nDate: Wed, 05 Feb 2025 23:31:13 GMT\r\n\r\n39\r\n{"resultAsInt":null,"resultAsDouble":0.15108114631929428}\r\n0\r\n\r\n'
+

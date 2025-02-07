@@ -1,0 +1,56 @@
+{
+  "testId": "Test 505",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [multipart/alternative; boundary=cats]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "multipart/alternative; boundary=cats"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 505 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"x\":1.9451295582294303,\"m\":2,\"n\":8}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/fisher/2/8/1.9451295582294303",
+    "timestamp": "Thu, 6 Feb 2025 02:08:35 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:35 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/fisher/{m}/{n}/{x}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/fisher/2/8/1.9451295582294303",
+  "contractPath": "/api/fisher/{m}/{n}/{x}",
+  "server": "http://localhost:8080"
+}

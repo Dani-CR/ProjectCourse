@@ -1,0 +1,56 @@
+{
+  "testId": "Test 834",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/octet-stream]",
+  "expectedResult": "Should return 406",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [406] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/octet-stream"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 834 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"a\":7,\"b\":2}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/remainder/7/2",
+    "timestamp": "Thu, 6 Feb 2025 02:08:43 +0100"
+  },
+  "response": {
+    "responseCode": 406,
+    "httpMethod": "GET",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:42 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/remainder/{a}/{b}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/remainder/7/2",
+  "contractPath": "/api/remainder/{a}/{b}",
+  "server": "http://localhost:8080"
+}

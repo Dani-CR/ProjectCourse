@@ -1,0 +1,68 @@
+{
+  "testId": "Test 872",
+  "scenario": "Send [zero-width characters] in request fields: field [a], value [INSERT with \\u200c], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 872 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"a\":\"\\u200C6\",\"b\":8}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/remainder/%E2%80%8C6/8",
+    "timestamp": "Thu, 6 Feb 2025 02:10:52 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "297",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:10:52.373+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"‌6\"",
+      "path": "/api/remainder/%E2%80%8C6/8"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:51 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/remainder/{a}/{b}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/remainder/%E2%80%8C6/8",
+  "contractPath": "/api/remainder/{a}/{b}",
+  "server": "http://localhost:8080"
+}

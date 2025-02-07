@@ -1,0 +1,68 @@
+{
+  "testId": "Test 99",
+  "scenario": "Send a happy flow request with undocumented HTTP method: UPDATEREDIRECTREF",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [UPDATEREDIRECTREF] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 99 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "UPDATEREDIRECTREF",
+    "url": "http://localhost:8080/api/bessj/%7Bn%7D/%7Bx%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:10:33 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "UPDATEREDIRECTREF",
+    "responseTimeInMs": "7",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "183",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:10:33.924+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'UPDATEREDIRECTREF' not supported",
+      "path": "/api/bessj/%7Bn%7D/%7Bx%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:33 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/bessj/{n}/{x}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/bessj/%7Bn%7D/%7Bx%7D",
+  "contractPath": "/api/bessj/{n}/{x}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,64 @@
+{
+  "testId": "Test 750",
+  "scenario": "Send a happy flow request with a [dummy] Transfer-Encoding header, value [cats]",
+  "expectedResult": "Should return 400|501",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [501] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Transfer-Encoding",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 750 - DummyTransferEncodingHeaders)"
+      }
+    ],
+    "payload": "{\"file\":\"xfiZiPRT\",\"directory\":\"AcriRItRAlBu\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/filesuffix/AcriRItRAlBu/xfiZiPRT",
+    "timestamp": "Thu, 6 Feb 2025 02:30:36 +0100"
+  },
+  "response": {
+    "responseCode": 501,
+    "httpMethod": "GET",
+    "responseTimeInMs": "19",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:35 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/filesuffix/{directory}/{file}",
+  "fuzzer": "DummyTransferEncodingHeaders",
+  "fullRequestPath": "http://localhost:8080/api/filesuffix/AcriRItRAlBu/xfiZiPRT",
+  "contractPath": "/api/filesuffix/{directory}/{file}",
+  "server": "http://localhost:8080"
+}

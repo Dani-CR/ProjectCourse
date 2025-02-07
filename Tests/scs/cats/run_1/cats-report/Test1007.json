@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1007",
+  "scenario": "Send [strings in numeric fields] in request fields: field [i], value [REPLACE with fuzzJjrD], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1007 - StringsInNumericFields)"
+      }
+    ],
+    "payload": "{\"s\":\"w88k\",\"i\":\"fuzzJjrD\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/notypevar/fuzzJjrD/w88k",
+    "timestamp": "Thu, 6 Feb 2025 02:30:41 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "302",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:41.569+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"fuzzJjrD\"",
+      "path": "/api/notypevar/fuzzJjrD/w88k"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:40 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/notypevar/{i}/{s}",
+  "fuzzer": "StringsInNumericFields",
+  "fullRequestPath": "http://localhost:8080/api/notypevar/fuzzJjrD/w88k",
+  "contractPath": "/api/notypevar/{i}/{s}",
+  "server": "http://localhost:8080"
+}

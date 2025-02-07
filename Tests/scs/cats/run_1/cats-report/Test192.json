@@ -1,0 +1,68 @@
+{
+  "testId": "Test 192",
+  "scenario": "Send [zero-width characters] in request fields: field [arg2], value [INSERT with \\u202b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 400",
+  "resultDetails": "Unexpected behaviour: expected [200, 201, 202, 204], actual [400]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 192 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"arg2\":\"4.881546\\u202B352283095\",\"op\":\"nwT\",\"arg1\":3.8194091378575545}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/calc/nwT/3.8194091378575545/4.881546%E2%80%AB352283095",
+    "timestamp": "Thu, 6 Feb 2025 02:30:21 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "334",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:21.450+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'double'; nested exception is java.lang.NumberFormatException: For input string: \"4.881546‫352283095\"",
+      "path": "/api/calc/nwT/3.8194091378575545/4.881546%E2%80%AB352283095"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:20 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/calc/{op}/{arg1}/{arg2}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/calc/nwT/3.8194091378575545/4.881546%E2%80%AB352283095",
+  "contractPath": "/api/calc/{op}/{arg1}/{arg2}",
+  "server": "http://localhost:8080"
+}

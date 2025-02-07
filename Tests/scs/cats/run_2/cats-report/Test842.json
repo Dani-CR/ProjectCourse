@@ -1,0 +1,64 @@
+{
+  "testId": "Test 842",
+  "scenario": "Send [outside the boundary values] in request fields: field [directory], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 842 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"file\":\"bIFtdAw\",\"directory\":\"\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/filesuffix//bIFtdAw",
+    "timestamp": "Thu, 6 Feb 2025 02:32:35 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "27",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "144",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:35.191+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/filesuffix//bIFtdAw"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:34 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/filesuffix/{directory}/{file}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/filesuffix//bIFtdAw",
+  "contractPath": "/api/filesuffix/{directory}/{file}",
+  "server": "http://localhost:8080"
+}

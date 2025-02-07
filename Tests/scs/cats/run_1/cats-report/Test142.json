@@ -1,0 +1,64 @@
+{
+  "testId": "Test 142",
+  "scenario": "Send [outside the boundary values] in request fields: field [op], value [REPLACE with ], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Not found",
+  "resultDetails": "Response HTTP code 404: you might need to provide business context using --refData or --urlParams",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 142 - StringFieldsLeftBoundary)"
+      }
+    ],
+    "payload": "{\"arg2\":4.881546352283095,\"op\":\"\",\"arg1\":3.8194091378575545}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/calc//3.8194091378575545/4.881546352283095",
+    "timestamp": "Thu, 6 Feb 2025 02:30:18 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "167",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:18.205+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/calc//3.8194091378575545/4.881546352283095"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:17 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/calc/{op}/{arg1}/{arg2}",
+  "fuzzer": "StringFieldsLeftBoundary",
+  "fullRequestPath": "http://localhost:8080/api/calc//3.8194091378575545/4.881546352283095",
+  "contractPath": "/api/calc/{op}/{arg1}/{arg2}",
+  "server": "http://localhost:8080"
+}

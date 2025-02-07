@@ -1,0 +1,64 @@
+{
+  "testId": "Test 565",
+  "scenario": "Send a happy flow request with a [dummy] Content-Length header, value [cats]",
+  "expectedResult": "Should return 400",
+  "result": "error",
+  "resultReason": "Unexpected behaviour: 500",
+  "resultDetails": "Unexpected behaviour: expected [400, 501], actual [500]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Content-Length",
+        "value": "cats"
+      },
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 565 - DummyContentLengthHeaders)"
+      }
+    ],
+    "payload": "{\"a\":9.672019076237632,\"x\":3.8900358952709304}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+    "timestamp": "Thu, 6 Feb 2025 02:10:47 +0100"
+  },
+  "response": {
+    "responseCode": 500,
+    "httpMethod": "GET",
+    "responseTimeInMs": "10",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:46 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/gammq/{a}/{x}",
+  "fuzzer": "DummyContentLengthHeaders",
+  "fullRequestPath": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+  "contractPath": "/api/gammq/{a}/{x}",
+  "server": "http://localhost:8080"
+}

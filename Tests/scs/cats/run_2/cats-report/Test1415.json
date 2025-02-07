@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1415",
+  "scenario": "Send [zero-width characters] in request fields: field [txt], value [INSERT with \\u202b], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1415 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"txt\":\"qK\\u202BLnP\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/pat/qK%E2%80%ABLnP",
+    "timestamp": "Thu, 6 Feb 2025 02:32:45 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "4",
+    "jsonBody": {
+      "notAJson": "none"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "4"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:44 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/pat/{txt}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/pat/qK%E2%80%ABLnP",
+  "contractPath": "/api/pat/{txt}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1899",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/xml]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/xml"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1899 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"sex\":\"D0GD\",\"title\":\"o3ldo\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/title/D0GD/o3ldo",
+    "timestamp": "Thu, 6 Feb 2025 02:32:52 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "1",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "2",
+    "jsonBody": {
+      "notAJson": "-1"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "2"
+      },
+      {
+        "key": "content-type",
+        "value": "application/xml;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:52 GMT"
+      }
+    ],
+    "responseContentType": "application/xml;charset=UTF-8"
+  },
+  "path": "/api/title/{sex}/{title}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/title/D0GD/o3ldo",
+  "contractPath": "/api/title/{sex}/{title}",
+  "server": "http://localhost:8080"
+}

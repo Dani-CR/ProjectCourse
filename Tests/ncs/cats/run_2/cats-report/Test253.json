@@ -1,0 +1,65 @@
+{
+  "testId": "Test 253",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 253 - NewFields)"
+      }
+    ],
+    "payload": "{\"x\":4.004948356239012,\"n\":0,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/expint/0/4.004948356239012?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Thu, 6 Feb 2025 02:10:38 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "15",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "58",
+    "jsonBody": {
+      "resultAsInt": null,
+      "resultAsDouble": 0.004550678019462457
+    },
+    "headers": [
+      {
+        "key": "content-disposition",
+        "value": "inline;filename=f.txt"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:38 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/expint/{n}/{x}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080/api/expint/0/4.004948356239012?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/api/expint/{n}/{x}",
+  "server": "http://localhost:8080"
+}

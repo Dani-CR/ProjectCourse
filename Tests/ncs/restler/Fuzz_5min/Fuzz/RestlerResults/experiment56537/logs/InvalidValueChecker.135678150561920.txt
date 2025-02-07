@@ -1,0 +1,309 @@
+Testing request: /api/bessj/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/bessj/1/1.23 GET, combination 1
+Testing request: /api/expint/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/expint/1/1.23 GET, combination 1
+Testing request: /api/fisher/1/1/1.23 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_number
+Tested 300 combinations for request /api/fisher/1/1/1.23 GET, combination 1
+Testing request: /api/gammq/1.23/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_number
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/gammq/1.23/1.23 GET, combination 1
+Testing request: /api/remainder/1/1 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 200 combinations for request /api/remainder/1/1 GET, combination 1
+Testing request: /api/triangle/1/1/1 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_int
+Tested 300 combinations for request /api/triangle/1/1/1 GET, combination 1
+Testing request: /api/expint/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/expint/1/1.23 GET, combination 1
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_number
+Tested 300 combinations for request /api/fisher/1/1/1.23 GET, combination 1
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_number
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/gammq/1.23/1.23 GET, combination 1
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/remainder/1/1 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 200 combinations for request /api/remainder/1/1 GET, combination 1
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_int
+Tested 300 combinations for request /api/triangle/1/1/1 GET, combination 1
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/bessj/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/bessj/1/1.23 GET, combination 1
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/bessj/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/expint/1/1.23 GET, combination 1
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_number
+Tested 300 combinations for request /api/fisher/1/1/1.23 GET, combination 1
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/fisher/1/1/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_number
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/gammq/1.23/1.23 GET, combination 1
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/gammq/1.23/1.23 GET
+Testing request: /api/remainder/1/1 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Tested 200 combinations for request /api/remainder/1/1 GET, combination 1
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/remainder/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Found 3 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_int
+Fuzzing request block 11, type: restler_fuzzable_int
+Tested 300 combinations for request /api/triangle/1/1/1 GET, combination 1
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/triangle/1/1/1 GET
+Testing request: /api/expint/1/1.23 GET
+Found 2 fuzzable blocks.
+Budget: 100 values per parameter.
+Fuzzing request block 7, type: restler_fuzzable_int
+Fuzzing request block 9, type: restler_fuzzable_number
+Tested 200 combinations for request /api/expint/1/1.23 GET, combination 1
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET
+Testing request: /api/expint/1/1.23 GET

@@ -1,0 +1,35 @@
+#logs schemathesis run 1 scs
+
+======================= Schemathesis test session starts =======================
+Schema location: file:///home/daniela/Documents/ProjectCourse2/Tests/scs/schemathesis/run_1/../../swagger.json
+Base URL: http://localhost:8080
+Specification version: Swagger 2.0
+Random seed: 208222141224362851203081756488774953970
+Workers: 1
+Collected API operations: 11
+Collected API links: 0
+API probing: SUCCESS
+Schema analysis: SKIP
+
+GET /api/calc/{op}/{arg1}/{arg2} .                                        [  9%]
+GET /api/cookie/{name}/{val}/{site} .                                     [ 18%]
+GET /api/costfuns/{i}/{s} .                                               [ 27%]
+GET /api/dateparse/{dayname}/{monthname} .                                [ 36%]
+GET /api/filesuffix/{directory}/{file} .                                  [ 45%]
+GET /api/notypevar/{i}/{s} .                                              [ 54%]
+GET /api/ordered4/{w}/{x}/{z}/{y} .                                       [ 63%]
+GET /api/pat/{txt} .                                                      [ 72%]
+GET /api/pat/{txt}/{pat} .                                                [ 81%]
+GET /api/text2txt/{word1}/{word2}/{word3} .                               [ 90%]
+GET /api/title/{sex}/{title} .                                            [100%]
+
+=================================== SUMMARY ====================================
+
+Performed checks:
+    not_a_server_error                    1100 / 1100 passed          PASSED 
+
+Compressed report size: 73 KB
+Report is saved to ./run_1.tar.gz
+
+============================= 11 passed in 11.30s ==============================
+

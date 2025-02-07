@@ -1,0 +1,68 @@
+{
+  "testId": "Test 117",
+  "scenario": "Send [strings in numeric fields] in request fields: field [n], value [REPLACE with fuzzeoQy], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "warn",
+  "resultReason": "Undocumented response code: 400",
+  "resultDetails": "Response does NOT match expected result. Response code is from a list of expected codes for this FUZZER, but it is undocumented: expected [400, 413, 414, 422, 431], actual [400], documented response codes: [200, 401, 403, 404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 117 - StringsInNumericFields)"
+      }
+    ],
+    "payload": "{\"x\":8.40090973166033,\"n\":\"fuzzeoQy\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/bessj/fuzzeoQy/8.40090973166033",
+    "timestamp": "Thu, 6 Feb 2025 02:08:27 +0100"
+  },
+  "response": {
+    "responseCode": 400,
+    "httpMethod": "GET",
+    "responseTimeInMs": "54",
+    "numberOfWordsInResponse": "20",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "310",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:08:27.692+0000",
+      "status": 400,
+      "error": "Bad Request",
+      "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"fuzzeoQy\"",
+      "path": "/api/bessj/fuzzeoQy/8.40090973166033"
+    },
+    "headers": [
+      {
+        "key": "connection",
+        "value": "close"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:26 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/bessj/{n}/{x}",
+  "fuzzer": "StringsInNumericFields",
+  "fullRequestPath": "http://localhost:8080/api/bessj/fuzzeoQy/8.40090973166033",
+  "contractPath": "/api/bessj/{n}/{x}",
+  "server": "http://localhost:8080"
+}

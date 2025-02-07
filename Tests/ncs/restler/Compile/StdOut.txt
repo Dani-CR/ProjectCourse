@@ -1,0 +1,164 @@
+[2/6/2025 12:29:43 AM] Generating grammar...
+[2/6/2025 12:29:44 AM] Getting requests...
+[2/6/2025 12:29:44 AM] Getting dependencies...
+[2/6/2025 12:29:44 AM] Getting path consumers...
+[2/6/2025 12:29:44 AM] Getting query consumers...
+[2/6/2025 12:29:44 AM] Getting header consumers...
+[2/6/2025 12:29:44 AM] Getting body consumers...
+[2/6/2025 12:29:44 AM] Getting producers...
+[2/6/2025 12:29:45 AM] Done processing producers
+[2/6/2025 12:29:45 AM] Compute dependencies
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+] Done dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/bessj/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/expint/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/fisher/{m}/{n}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/gammq/{a}/{x}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/remainder/{a}/{b}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Second pass dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Done dependencies for request { endpoint = "/api/triangle/{a}/{b}/{c}"
+  xMsPath = None
+  method = Get }
+[2/6/2025 12:29:45 AM] Assigning equality constraints...
+[2/6/2025 12:29:45 AM] Getting ordering constraints...
+[2/6/2025 12:29:45 AM] Dependency analysis completed.
+[2/6/2025 12:29:45 AM] Generating request primitives...
+Writing new dictionary to /home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json
+[2/6/2025 12:29:45 AM] Generating python grammar...
+[2/6/2025 12:29:45 AM] Get requests
+[2/6/2025 12:29:45 AM] Done get requests
+[2/6/2025 12:29:45 AM] Done generating python grammar.
+Workflow completed.  See /home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile for REST-ler grammar.

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1580",
+  "scenario": "Send [values containing abugidas chars] in request fields: field [word3], value [REPLACE with 7mZp8OP7WC7e10jZజ్ఞ\\u200cాK1a3L8Se5...], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1580 - AbugidasInStringFields)"
+      }
+    ],
+    "payload": "{\"word1\":\"HzUfwCS\",\"word3\":\"7mZp8OP7WC7e10jZజ్ఞ\\u200CాK1a3L8Se5Unu8epwV\",\"word2\":\"HbTuB4\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/text2txt/HzUfwCS/HbTuB4/7mZp8OP7WC7e10jZ%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEK1a3L8Se5Unu8epwV",
+    "timestamp": "Thu, 6 Feb 2025 02:30:49 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "21",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:49 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/text2txt/{word1}/{word2}/{word3}",
+  "fuzzer": "AbugidasInStringFields",
+  "fullRequestPath": "http://localhost:8080/api/text2txt/HzUfwCS/HbTuB4/7mZp8OP7WC7e10jZ%E0%B0%9C%E0%B1%8D%E0%B0%9E%E2%80%8C%E0%B0%BEK1a3L8Se5Unu8epwV",
+  "contractPath": "/api/text2txt/{word1}/{word2}/{word3}",
+  "server": "http://localhost:8080"
+}

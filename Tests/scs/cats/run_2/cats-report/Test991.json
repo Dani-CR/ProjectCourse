@@ -1,0 +1,68 @@
+{
+  "testId": "Test 991",
+  "scenario": "Send a happy flow request with undocumented HTTP method: REPORT",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [REPORT] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 991 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "{\"s\":\"bPE\",\"i\":1}",
+    "httpMethod": "REPORT",
+    "url": "http://localhost:8080/api/notypevar/%7Bi%7D/%7Bs%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:38 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "REPORT",
+    "responseTimeInMs": "18",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "176",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:38.421+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'REPORT' not supported",
+      "path": "/api/notypevar/%7Bi%7D/%7Bs%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:37 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/notypevar/{i}/{s}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/notypevar/%7Bi%7D/%7Bs%7D",
+  "contractPath": "/api/notypevar/{i}/{s}",
+  "server": "http://localhost:8080"
+}

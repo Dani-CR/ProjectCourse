@@ -1,0 +1,34 @@
+Restler Information: 0 : Starting task FuzzLean...
+    DateTime=2025-02-05T23:31:47.9434483Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2025-02-05T23:31:49.2098249Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2025-02-05T23:31:49.2100122Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0316393 with exit code 0x0: 'python3 --version'
+    DateTime=2025-02-05T23:31:49.2643397Z
+Restler Information: 0 : (56180) python3 --version exited with code: 0
+    DateTime=2025-02-05T23:31:49.2713371Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2025-02-05T23:31:49.2915649Z
+Restler Information: 0 : Process execution terminated in 00:01:07.6854883 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2025-02-05T23:32:56.9772911Z
+Restler Information: 0 : (56183) python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule    --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2025-02-05T23:32:56.9776990Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-05T23:32:56.9997185Z
+Restler Information: 0 : Process execution terminated in 00:00:05.6749925 with exit code 0x0: 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-05T23:33:02.6749082Z
+Restler Information: 0 : (56202) dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/FuzzLean/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2025-02-05T23:33:02.6750707Z
+Restler Information: 0 : Request coverage (successful / total): 5 / 6
+    DateTime=2025-02-05T23:33:02.8839521Z
+Restler Information: 0 : Attempted requests: 6 / 6
+    DateTime=2025-02-05T23:33:02.8840318Z
+Restler Information: 0 : No bugs were found.
+    DateTime=2025-02-05T23:33:02.8868875Z
+Restler Information: 0 : See 'coverage_failures_to_investigate.txt' to investigate API coverage.
+    DateTime=2025-02-05T23:33:03.0657674Z
+Restler Information: 0 : Task FuzzLean succeeded.
+    DateTime=2025-02-05T23:33:03.0832843Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-02-05T23:33:03.5495946Z

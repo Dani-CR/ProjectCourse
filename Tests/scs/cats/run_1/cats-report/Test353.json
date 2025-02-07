@@ -1,0 +1,60 @@
+{
+  "testId": "Test 353",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/pdf]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/pdf"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 353 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"val\":\"boQIcr\",\"site\":\"7dFnjRbK\",\"name\":\"ML8qazIi\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/7dFnjRbK",
+    "timestamp": "Thu, 6 Feb 2025 02:30:25 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "13",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/pdf;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:24 GMT"
+      }
+    ],
+    "responseContentType": "application/pdf;charset=UTF-8"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/cookie/ML8qazIi/boQIcr/7dFnjRbK",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

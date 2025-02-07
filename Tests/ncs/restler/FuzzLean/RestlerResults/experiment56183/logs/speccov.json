@@ -1,0 +1,215 @@
+{
+    "1d81ff7d0d33ce6189b28f834a02abb8999ec7ad_1": {
+        "verb": "GET",
+        "endpoint": "/api/remainder/{a}/{b}",
+        "verb_endpoint": "GET /api/remainder/{a}/{b}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 0,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:31:49",
+            "request_verb": "GET",
+            "request_uri": "/api/remainder/1/1",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Transfer-Encoding: chunked",
+                "Date: Wed, 05 Feb 2025 23:31:49 GMT"
+            ],
+            "response_body": "27\r\n{\"resultAsInt\":0,\"resultAsDouble\":null}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "288803efaa77bf1bfd4113f7338baf6c8737118c_1": {
+        "verb": "GET",
+        "endpoint": "/api/fisher/{m}/{n}/{x}",
+        "verb_endpoint": "GET /api/fisher/{m}/{n}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 1,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:31:55",
+            "request_verb": "GET",
+            "request_uri": "/api/fisher/1/1/1.23",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Disposition: inline;filename=f.txt",
+                "Content-Type: application/json;charset=UTF-8",
+                "Transfer-Encoding: chunked",
+                "Date: Wed, 05 Feb 2025 23:31:54 GMT"
+            ],
+            "response_body": "38\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.5328886540720141}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f_1": {
+        "verb": "GET",
+        "endpoint": "/api/bessj/{n}/{x}",
+        "verb_endpoint": "GET /api/bessj/{n}/{x}",
+        "valid": 0,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "400",
+        "status_text": "",
+        "error_message": "",
+        "request_order": 2,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:32:06",
+            "request_verb": "GET",
+            "request_uri": "/api/bessj/1/1.23",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "400",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Length: 0",
+                "Date: Wed, 05 Feb 2025 23:32:06 GMT",
+                "Connection: close"
+            ],
+            "response_body": ""
+        },
+        "tracked_parameters": {}
+    },
+    "9a5f6a6fb067fc86158b17243123553fe5beb5cf_1": {
+        "verb": "GET",
+        "endpoint": "/api/gammq/{a}/{x}",
+        "verb_endpoint": "GET /api/gammq/{a}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 3,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:32:18",
+            "request_verb": "GET",
+            "request_uri": "/api/gammq/1.23/1.23",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Disposition: inline;filename=f.txt",
+                "Content-Type: application/json;charset=UTF-8",
+                "Transfer-Encoding: chunked",
+                "Date: Wed, 05 Feb 2025 23:32:18 GMT"
+            ],
+            "response_body": "38\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.3805323260910082}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "b022daf2ffa2da4b1f2960fd7f636d20ee553494_1": {
+        "verb": "GET",
+        "endpoint": "/api/triangle/{a}/{b}/{c}",
+        "verb_endpoint": "GET /api/triangle/{a}/{b}/{c}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 4,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:32:27",
+            "request_verb": "GET",
+            "request_uri": "/api/triangle/1/1/1",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Transfer-Encoding: chunked",
+                "Date: Wed, 05 Feb 2025 23:32:27 GMT"
+            ],
+            "response_body": "27\r\n{\"resultAsInt\":3,\"resultAsDouble\":null}\r\n0"
+        },
+        "tracked_parameters": {}
+    },
+    "f0d09615dff69b894c8ba06f066dcebf1ea7fc45_1": {
+        "verb": "GET",
+        "endpoint": "/api/expint/{n}/{x}",
+        "verb_endpoint": "GET /api/expint/{n}/{x}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 5,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-05 23:32:45",
+            "request_verb": "GET",
+            "request_uri": "/api/expint/1/1.23",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Disposition: inline;filename=f.txt",
+                "Content-Type: application/json;charset=UTF-8",
+                "Transfer-Encoding: chunked",
+                "Date: Wed, 05 Feb 2025 23:32:45 GMT"
+            ],
+            "response_body": "39\r\n{\"resultAsInt\":null,\"resultAsDouble\":0.15108114631929428}\r\n0"
+        },
+        "tracked_parameters": {}
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1014",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/x-shockwave-flash]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/x-shockwave-flash"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1014 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"s\":\"w88k\",\"i\":3}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/notypevar/3/w88k",
+    "timestamp": "Thu, 6 Feb 2025 02:30:41 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "2"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/x-shockwave-flash;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:40 GMT"
+      }
+    ],
+    "responseContentType": "application/x-shockwave-flash;charset=UTF-8"
+  },
+  "path": "/api/notypevar/{i}/{s}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/notypevar/3/w88k",
+  "contractPath": "/api/notypevar/{i}/{s}",
+  "server": "http://localhost:8080"
+}

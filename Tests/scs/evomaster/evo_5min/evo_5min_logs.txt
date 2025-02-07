@@ -1,0 +1,20 @@
+#logs evomaster 5min scs
+
+* Covered targets: 22; time per test: 4.9ms (5.3 actions); since last improvement: 297s
+* Starting to apply minimization phase
+* Recomputing full coverage for 11 tests
+* No test to minimize
+* Minimization phase took 0 seconds
+* Evaluated tests: 44632
+* Evaluated actions: 246648
+* Needed budget: 3%
+* Passed time (seconds): 300
+* Execution time per test (ms): Avg=6.07 , min=0.00 , max=1191.00
+* Execution time per action (ms): Avg=1.11 , min=0.00 , max=238.20
+* Computation overhead between tests (ms): Avg=0.65 , min=0.00 , max=169.00
+* Going to save 11 tests to generated_tests
+* Potential faults: 0
+* Successfully executed (HTTP code 2xx) 11 endpoints out of 11 (100%)
+* EvoMaster process has completed successfully
+* Use --help and visit http://www.evomaster.org to learn more about available options
+

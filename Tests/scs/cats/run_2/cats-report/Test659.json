@@ -1,0 +1,68 @@
+{
+  "testId": "Test 659",
+  "scenario": "Send a happy flow request with undocumented HTTP method: BIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [BIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 659 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "BIND",
+    "url": "http://localhost:8080/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:31 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "BIND",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "188",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:31.816+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'BIND' not supported",
+      "path": "/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:30 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/dateparse/{dayname}/{monthname}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/dateparse/%7Bdayname%7D/%7Bmonthname%7D",
+  "contractPath": "/api/dateparse/{dayname}/{monthname}",
+  "server": "http://localhost:8080"
+}

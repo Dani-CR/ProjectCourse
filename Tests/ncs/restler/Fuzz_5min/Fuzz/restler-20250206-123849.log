@@ -1,0 +1,32 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2025-02-05T23:38:50.0052169Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2025-02-05T23:38:52.2583255Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2025-02-05T23:38:52.2587012Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0273124 with exit code 0x0: 'python3 --version'
+    DateTime=2025-02-05T23:38:52.2967742Z
+Restler Information: 0 : (56534) python3 --version exited with code: 0
+    DateTime=2025-02-05T23:38:52.3033521Z
+Restler Information: 0 : Launching 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2025-02-05T23:38:52.3222013Z
+Restler Information: 0 : Process execution terminated in 00:05:02.9789063 with exit code 0x0: 'python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2025-02-05T23:43:55.3022271Z
+Restler Information: 0 : (56537) python3 -B "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/grammar.py" --custom_mutations "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --set_version 9.3.1    --no_ssl   --settings "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 0.084000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap exited with code: 0
+    DateTime=2025-02-05T23:43:55.3027277Z
+Restler Information: 0 : Launching 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-05T23:43:55.3215335Z
+Restler Information: 0 : Process execution terminated in 00:00:28.6677577 with exit code 0x0: 'dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2025-02-05T23:44:23.9895498Z
+Restler Information: 0 : (56799) dotnet "/home/daniela/Documents/Tools/Restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz" --output_dir "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Fuzz_5min/Fuzz/ResponseBuckets" --dictionary_file "/home/daniela/Documents/ProjectCourse2/Tests/ncs/restler/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2025-02-05T23:44:23.9906766Z
+Restler Information: 0 : Request coverage (successful / total): 6 / 6
+    DateTime=2025-02-05T23:44:24.3209372Z
+Restler Information: 0 : Attempted requests: 6 / 6
+    DateTime=2025-02-05T23:44:24.3210401Z
+Restler Information: 0 : No bugs were found.
+    DateTime=2025-02-05T23:44:24.3259107Z
+Restler Information: 0 : Task Fuzz succeeded.
+    DateTime=2025-02-05T23:44:24.3374281Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2025-02-05T23:44:25.8766205Z

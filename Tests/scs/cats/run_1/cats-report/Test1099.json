@@ -1,0 +1,64 @@
+{
+  "testId": "Test 1099",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/ordered4/{w}/?//{x}/{z}/{y}",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1099 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"w\":\"Mri\",\"x\":\"G3\",\"y\":\"uc\",\"z\":\"96\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/ordered4/Mri/?//G3/96/uc",
+    "timestamp": "Thu, 6 Feb 2025 02:30:43 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "138",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:30:43.343+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/ordered4/Mri/"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:42 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/ordered4/Mri/?//G3/96/uc",
+  "contractPath": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "server": "http://localhost:8080"
+}

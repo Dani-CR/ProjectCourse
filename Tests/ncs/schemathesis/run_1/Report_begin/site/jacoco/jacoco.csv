@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,Bessj,438,0,28,0,65,0,18,0,4,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,TriangleClassification,67,0,28,0,11,0,16,0,2,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,Expint,213,0,30,0,38,0,17,0,2,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,Fisher,238,0,16,0,39,0,10,0,2,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,Remainder,118,0,24,0,26,0,14,0,2,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs.imp,Gammq,302,0,26,0,48,0,18,0,5,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs,Dto,3,0,0,0,1,0,1,0,1,0
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs,NcsRest,167,3,16,0,33,1,14,1,6,1
+evomaster-benchmark-cs-rest-artificial-ncs,org.restncs,NcsApplication,0,32,0,0,0,13,0,4,0,4

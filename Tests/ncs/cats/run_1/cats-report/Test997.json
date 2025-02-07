@@ -1,0 +1,61 @@
+{
+  "testId": "Test 997",
+  "scenario": "Add new field inside the request: name [catsFuzzyField], value [catsFuzzyField]. All other details are similar to a happy flow",
+  "expectedResult": "Should get a [2XX] response code",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 997 - NewFields)"
+      }
+    ],
+    "payload": "{\"a\":2,\"b\":9,\"c\":5,\"catsFuzzyField\":\"catsFuzzyField\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/triangle/2/9/5?catsFuzzyField=catsFuzzyField",
+    "timestamp": "Thu, 6 Feb 2025 02:08:45 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "4",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "39",
+    "jsonBody": {
+      "resultAsInt": 0,
+      "resultAsDouble": null
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:44 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/triangle/{a}/{b}/{c}",
+  "fuzzer": "NewFields",
+  "fullRequestPath": "http://localhost:8080/api/triangle/2/9/5?catsFuzzyField=catsFuzzyField",
+  "contractPath": "/api/triangle/{a}/{b}/{c}",
+  "server": "http://localhost:8080"
+}

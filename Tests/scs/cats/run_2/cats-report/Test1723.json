@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1723",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [application/octet-stream]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/octet-stream"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1723 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"word1\":\"3rc1kkP\",\"word3\":\"I61QyL5po\",\"word2\":\"SOKYwTlx6\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/text2txt/3rc1kkP/SOKYwTlx6/I61QyL5po",
+    "timestamp": "Thu, 6 Feb 2025 02:32:50 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "content-type",
+        "value": "text/plain;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:49 GMT"
+      }
+    ],
+    "responseContentType": "text/plain;charset=UTF-8"
+  },
+  "path": "/api/text2txt/{word1}/{word2}/{word3}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/text2txt/3rc1kkP/SOKYwTlx6/I61QyL5po",
+  "contractPath": "/api/text2txt/{word1}/{word2}/{word3}",
+  "server": "http://localhost:8080"
+}

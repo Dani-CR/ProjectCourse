@@ -1,0 +1,64 @@
+{
+  "testId": "Test 32",
+  "scenario": "Send [extreme positive values] in request fields: field [arg1], value [REPLACE with 3.5953862697246314E+308], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 32 - ExtremePositiveNumbersInDecimalFields)"
+      }
+    ],
+    "payload": "{\"arg2\":9.248477352205533,\"op\":\"j2IxrD\",\"arg1\":3.5953862697246314E+308}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/calc/j2IxrD/3.5953862697246314E%2B308/9.248477352205533",
+    "timestamp": "Thu, 6 Feb 2025 02:32:15 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "6",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "3",
+    "jsonBody": {
+      "notAJson": "0.0"
+    },
+    "headers": [
+      {
+        "key": "content-disposition",
+        "value": "inline;filename=f.txt"
+      },
+      {
+        "key": "content-length",
+        "value": "3"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:14 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/calc/{op}/{arg1}/{arg2}",
+  "fuzzer": "ExtremePositiveNumbersInDecimalFields",
+  "fullRequestPath": "http://localhost:8080/api/calc/j2IxrD/3.5953862697246314E%2B308/9.248477352205533",
+  "contractPath": "/api/calc/{op}/{arg1}/{arg2}",
+  "server": "http://localhost:8080"
+}

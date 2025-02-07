@@ -1,0 +1,184 @@
+Random seed: 12345
+Setting fuzzing schemes: directed-smoke-test
+2025-02-06 00:31:49.555: Going to fuzz a set with 6 requests
+2025-02-06 00:31:49.555: Request-0: Value Combinations: 2
+2025-02-06 00:31:49.555: Request-1: Value Combinations: 2
+2025-02-06 00:31:49.555: Request-2: Value Combinations: 2
+2025-02-06 00:31:49.555: Request-3: Value Combinations: 2
+2025-02-06 00:31:49.555: Request-4: Value Combinations: 2
+2025-02-06 00:31:49.555: Request-5: Value Combinations: 2
+2025-02-06 00:31:49.555: Avg. Value Combinations per Request: 2
+2025-02-06 00:31:49.555: Median Value Combinations per Request: 2.0
+2025-02-06 00:31:49.555: Min Value Combinations per Request: 2
+2025-02-06 00:31:49.555: Max Value Combinations per Request: 2
+2025-02-06 00:31:49.555: Total dependencies: 0
+
+2025-02-06 00:31:49.556: Generation: 1 / Sequences Collection Size: 6 
+(After directed-smoke-test Extend)
+
+Rendering request 0 from scratch
+
+2025-02-06 00:31:55.504: Request 0
+2025-02-06 00:31:55.504: Endpoint - /api/remainder/{a}/{b}
+2025-02-06 00:31:55.504: Hex Def - 1d81ff7d0d33ce6189b28f834a02abb8999ec7ad
+2025-02-06 00:31:55.504: Sequence length that satisfies dependencies: 1
+2025-02-06 00:31:55.504: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'remainder'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 1 from scratch
+
+2025-02-06 00:32:06.358: Request 1
+2025-02-06 00:32:06.359: Endpoint - /api/fisher/{m}/{n}/{x}
+2025-02-06 00:32:06.359: Hex Def - 288803efaa77bf1bfd4113f7338baf6c8737118c
+2025-02-06 00:32:06.359: Sequence length that satisfies dependencies: 1
+2025-02-06 00:32:06.359: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'fisher'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 2 from scratch
+
+2025-02-06 00:32:18.865: Request 2
+2025-02-06 00:32:18.865: Endpoint - /api/bessj/{n}/{x}
+2025-02-06 00:32:18.865: Hex Def - 68ee2b113e7beeaf62b67ff417c79e5ee5d7c98f
+2025-02-06 00:32:18.865: Sequence length that satisfies dependencies: 1
+2025-02-06 00:32:18.865: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'bessj'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 3 from scratch
+
+2025-02-06 00:32:27.117: Request 3
+2025-02-06 00:32:27.117: Endpoint - /api/gammq/{a}/{x}
+2025-02-06 00:32:27.117: Hex Def - 9a5f6a6fb067fc86158b17243123553fe5beb5cf
+2025-02-06 00:32:27.117: Sequence length that satisfies dependencies: 1
+2025-02-06 00:32:27.117: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'gammq'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 4 from scratch
+
+2025-02-06 00:32:45.724: Request 4
+2025-02-06 00:32:45.724: Endpoint - /api/triangle/{a}/{b}/{c}
+2025-02-06 00:32:45.724: Hex Def - b022daf2ffa2da4b1f2960fd7f636d20ee553494
+2025-02-06 00:32:45.724: Sequence length that satisfies dependencies: 1
+2025-02-06 00:32:45.724: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'triangle'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 5 from scratch
+
+2025-02-06 00:32:56.948: Request 5
+2025-02-06 00:32:56.948: Endpoint - /api/expint/{n}/{x}
+2025-02-06 00:32:56.948: Hex Def - f0d09615dff69b894c8ba06f066dcebf1ea7fc45
+2025-02-06 00:32:56.948: Sequence length that satisfies dependencies: 1
+2025-02-06 00:32:56.948: Rendering VALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'expint'
+		- restler_static_string: '/'
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '/'
+		- restler_fuzzable_number: '1.23'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8080\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+2025-02-06 00:32:56.948: Generation: 1 / Sequences Collection Size: 5 
+(After directed-smoke-test Render)
+
+2025-02-06 00:32:56.948: Final Swagger spec coverage: 5 / 6
+2025-02-06 00:32:56.948: Rendered requests: 6 / 6
+2025-02-06 00:32:56.948: Rendered requests with "valid" status codes: 5 / 6
+2025-02-06 00:32:56.948: Num fully valid requests (no resource creation failures): 5
+2025-02-06 00:32:56.948: Num requests not rendered due to invalid sequence re-renders: 0
+2025-02-06 00:32:56.948: Num invalid requests caused by failed resource creations: 0
+2025-02-06 00:32:56.948: Total Creations of Dyn Objects: 0
+2025-02-06 00:32:56.948: Total Requests Sent: {'gc': 0, 'main_driver': 7, 'LeakageRuleChecker': 0, 'ResourceHierarchyChecker': 0, 'UseAfterFreeChecker': 0, 'InvalidDynamicObjectChecker': 0, 'PayloadBodyChecker': 0, 'ExamplesChecker': 0, 'InvalidValueChecker': 0}
+2025-02-06 00:32:56.948: Bug Buckets: {}
+
+Testing completed -- below are the final stats:
+
+2025-02-06 00:32:56.953: Final Swagger spec coverage: 5 / 6
+2025-02-06 00:32:56.953: Rendered requests: 6 / 6
+2025-02-06 00:32:56.953: Rendered requests with "valid" status codes: 5 / 6
+2025-02-06 00:32:56.953: Num fully valid requests (no resource creation failures): 5
+2025-02-06 00:32:56.953: Num requests not rendered due to invalid sequence re-renders: 0
+2025-02-06 00:32:56.953: Num invalid requests caused by failed resource creations: 0
+2025-02-06 00:32:56.953: Total Creations of Dyn Objects: 0
+2025-02-06 00:32:56.953: Total Requests Sent: {'gc': 0, 'main_driver': 7, 'LeakageRuleChecker': 0, 'ResourceHierarchyChecker': 0, 'UseAfterFreeChecker': 0, 'InvalidDynamicObjectChecker': 0, 'PayloadBodyChecker': 0, 'ExamplesChecker': 0, 'InvalidValueChecker': 0}
+2025-02-06 00:32:56.953: Bug Buckets: {}

@@ -1,0 +1,60 @@
+{
+  "testId": "Test 888",
+  "scenario": "Send [zero-width characters] in request fields: field [directory], value [INSERT with \\u200d], is required [TRUE]",
+  "expectedResult": "Should return [2XX]",
+  "result": "warn",
+  "resultReason": "Not matching response schema",
+  "resultDetails": "Response does NOT match expected result. Response code [200] is documented, but response body does NOT match the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 888 - ZeroWidthCharsInValuesFields)"
+      }
+    ],
+    "payload": "{\"file\":\"bIFtdAw\",\"directory\":\"Z2WUKv\\u200DsRlmXc\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/filesuffix/Z2WUKv%E2%80%8DsRlmXc/bIFtdAw",
+    "timestamp": "Thu, 6 Feb 2025 02:32:35 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "1",
+    "jsonBody": {
+      "notAJson": "0"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "1"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:35 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/filesuffix/{directory}/{file}",
+  "fuzzer": "ZeroWidthCharsInValuesFields",
+  "fullRequestPath": "http://localhost:8080/api/filesuffix/Z2WUKv%E2%80%8DsRlmXc/bIFtdAw",
+  "contractPath": "/api/filesuffix/{directory}/{file}",
+  "server": "http://localhost:8080"
+}

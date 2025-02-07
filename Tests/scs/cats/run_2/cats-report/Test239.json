@@ -1,0 +1,60 @@
+{
+  "testId": "Test 239",
+  "scenario": "Send a happy flow request with undocumented HTTP method: TRACE",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [TRACE] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 239 - HttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "TRACE",
+    "url": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:23 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "TRACE",
+    "responseTimeInMs": "3",
+    "numberOfWordsInResponse": "0",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "0",
+    "jsonBody": {
+      "notAJson": ""
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "HEAD, DELETE, POST, GET, OPTIONS, PUT"
+      },
+      {
+        "key": "content-length",
+        "value": "0"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:22 GMT"
+      }
+    ],
+    "responseContentType": "unknown/unknown"
+  },
+  "path": "/api/cookie/{name}/{val}/{site}",
+  "fuzzer": "HttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/cookie/%7Bname%7D/%7Bval%7D/%7Bsite%7D",
+  "contractPath": "/api/cookie/{name}/{val}/{site}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,65 @@
+{
+  "testId": "Test 570",
+  "scenario": "Send a request for every unique example",
+  "expectedResult": "Should return 2XX",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response matches expected result. Response code [200] is documented and response body matches the corresponding schema.",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 570 - ExamplesFields)"
+      }
+    ],
+    "payload": "{\n  \"a\": 9.672019076237632,\n  \"x\": 3.8900358952709304\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+    "timestamp": "Thu, 6 Feb 2025 02:10:47 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "41",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "56",
+    "jsonBody": {
+      "resultAsInt": null,
+      "resultAsDouble": 0.9905279605732694
+    },
+    "headers": [
+      {
+        "key": "content-disposition",
+        "value": "inline;filename=f.txt"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:46 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/gammq/{a}/{x}",
+  "fuzzer": "ExamplesFields",
+  "fullRequestPath": "http://localhost:8080/api/gammq/9.672019076237632/3.8900358952709304",
+  "contractPath": "/api/gammq/{a}/{x}",
+  "server": "http://localhost:8080"
+}

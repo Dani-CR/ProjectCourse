@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1404",
+  "scenario": "Send a happy flow request with a [unsupported] Accept header, value [text/html]",
+  "expectedResult": "Should return 406",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [406, 415], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "text/html"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1404 - UnsupportedAcceptHeaders)"
+      }
+    ],
+    "payload": "{\"txt\":\"qKLnP\"}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/pat/qKLnP",
+    "timestamp": "Thu, 6 Feb 2025 02:32:44 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "4",
+    "jsonBody": {
+      "notAJson": "none"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "4"
+      },
+      {
+        "key": "content-type",
+        "value": "text/html;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:44 GMT"
+      }
+    ],
+    "responseContentType": "text/html;charset=UTF-8"
+  },
+  "path": "/api/pat/{txt}",
+  "fuzzer": "UnsupportedAcceptHeaders",
+  "fullRequestPath": "http://localhost:8080/api/pat/qKLnP",
+  "contractPath": "/api/pat/{txt}",
+  "server": "http://localhost:8080"
+}

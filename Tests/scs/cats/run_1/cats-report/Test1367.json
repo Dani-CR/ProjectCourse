@@ -1,0 +1,60 @@
+{
+  "testId": "Test 1367",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [404, 400, 422], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1367 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"txt\": \"RgxvZ\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/pat/RgxvZ",
+    "timestamp": "Thu, 6 Feb 2025 02:30:46 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "28",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "4",
+    "jsonBody": {
+      "notAJson": "none"
+    },
+    "headers": [
+      {
+        "key": "content-length",
+        "value": "4"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:30:46 GMT"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/pat/{txt}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080/api/pat/RgxvZ",
+  "contractPath": "/api/pat/{txt}",
+  "server": "http://localhost:8080"
+}

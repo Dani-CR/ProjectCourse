@@ -1,0 +1,387 @@
+{
+    "08aa50b2ea291b1a5b85a1f8e983b2f2250f8fa0_1": {
+        "verb": "GET",
+        "endpoint": "/api/calc/{op}/{arg1}/{arg2}",
+        "verb_endpoint": "GET /api/calc/{op}/{arg1}/{arg2}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 0,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:07",
+            "request_verb": "GET",
+            "request_uri": "/api/calc/fuzzstring/1.23/1.23",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Disposition: inline;filename=f.txt",
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 3",
+                "Date: Thu, 06 Feb 2025 01:43:07 GMT"
+            ],
+            "response_body": "0.0"
+        },
+        "tracked_parameters": {}
+    },
+    "0d80ce7a4400f17f1ca1606a018fbfe92a413bf7_1": {
+        "verb": "GET",
+        "endpoint": "/api/pat/{txt}",
+        "verb_endpoint": "GET /api/pat/{txt}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 1,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:16",
+            "request_verb": "GET",
+            "request_uri": "/api/pat/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 4",
+                "Date: Thu, 06 Feb 2025 01:43:15 GMT"
+            ],
+            "response_body": "none"
+        },
+        "tracked_parameters": {}
+    },
+    "0dcf6c445a6e08c0269edc51a7f4e385ae94f25b_1": {
+        "verb": "GET",
+        "endpoint": "/api/filesuffix/{directory}/{file}",
+        "verb_endpoint": "GET /api/filesuffix/{directory}/{file}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 2,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:17",
+            "request_verb": "GET",
+            "request_uri": "/api/filesuffix/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 1",
+                "Date: Thu, 06 Feb 2025 01:43:17 GMT"
+            ],
+            "response_body": "0"
+        },
+        "tracked_parameters": {}
+    },
+    "43f0b35c1ed6717d7a0524172d63c42816438e60_1": {
+        "verb": "GET",
+        "endpoint": "/api/text2txt/{word1}/{word2}/{word3}",
+        "verb_endpoint": "GET /api/text2txt/{word1}/{word2}/{word3}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 3,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:20",
+            "request_verb": "GET",
+            "request_uri": "/api/text2txt/fuzzstring/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 0",
+                "Date: Thu, 06 Feb 2025 01:43:19 GMT"
+            ],
+            "response_body": ""
+        },
+        "tracked_parameters": {}
+    },
+    "828f8e8008f275fc897eb71255f5fd56d0b8a4d1_1": {
+        "verb": "GET",
+        "endpoint": "/api/ordered4/{w}/{x}/{z}/{y}",
+        "verb_endpoint": "GET /api/ordered4/{w}/{x}/{z}/{y}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 4,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:24",
+            "request_verb": "GET",
+            "request_uri": "/api/ordered4/fuzzstring/fuzzstring/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 9",
+                "Date: Thu, 06 Feb 2025 01:43:23 GMT"
+            ],
+            "response_body": "unordered"
+        },
+        "tracked_parameters": {}
+    },
+    "849ce1b9917614a99569ede6c1ec20914371754c_1": {
+        "verb": "GET",
+        "endpoint": "/api/costfuns/{i}/{s}",
+        "verb_endpoint": "GET /api/costfuns/{i}/{s}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 5,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:30",
+            "request_verb": "GET",
+            "request_uri": "/api/costfuns/1/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 2",
+                "Date: Thu, 06 Feb 2025 01:43:29 GMT"
+            ],
+            "response_body": "10"
+        },
+        "tracked_parameters": {}
+    },
+    "8d5f231f7abeb95f84aea281f31c668fd57788a4_1": {
+        "verb": "GET",
+        "endpoint": "/api/dateparse/{dayname}/{monthname}",
+        "verb_endpoint": "GET /api/dateparse/{dayname}/{monthname}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 6,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:35",
+            "request_verb": "GET",
+            "request_uri": "/api/dateparse/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 1",
+                "Date: Thu, 06 Feb 2025 01:43:35 GMT"
+            ],
+            "response_body": "0"
+        },
+        "tracked_parameters": {}
+    },
+    "9bdee85141e9160063e61bb831dd6116b1e51c2a_1": {
+        "verb": "GET",
+        "endpoint": "/api/cookie/{name}/{val}/{site}",
+        "verb_endpoint": "GET /api/cookie/{name}/{val}/{site}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 7,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:38",
+            "request_verb": "GET",
+            "request_uri": "/api/cookie/fuzzstring/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 1",
+                "Date: Thu, 06 Feb 2025 01:43:38 GMT"
+            ],
+            "response_body": "0"
+        },
+        "tracked_parameters": {}
+    },
+    "b7c315161866324ac76b5446e3c77495cdeeb281_1": {
+        "verb": "GET",
+        "endpoint": "/api/notypevar/{i}/{s}",
+        "verb_endpoint": "GET /api/notypevar/{i}/{s}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 8,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:42",
+            "request_verb": "GET",
+            "request_uri": "/api/notypevar/1/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 1",
+                "Date: Thu, 06 Feb 2025 01:43:42 GMT"
+            ],
+            "response_body": "0"
+        },
+        "tracked_parameters": {}
+    },
+    "db6d348baf2d69b6abe2b7456a401ecfb9d3bbee_1": {
+        "verb": "GET",
+        "endpoint": "/api/pat/{txt}/{pat}",
+        "verb_endpoint": "GET /api/pat/{txt}/{pat}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 9,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:47",
+            "request_verb": "GET",
+            "request_uri": "/api/pat/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 1",
+                "Date: Thu, 06 Feb 2025 01:43:47 GMT"
+            ],
+            "response_body": "1"
+        },
+        "tracked_parameters": {}
+    },
+    "fa5945511dd47be28a9200e5702b44835c785559_1": {
+        "verb": "GET",
+        "endpoint": "/api/title/{sex}/{title}",
+        "verb_endpoint": "GET /api/title/{sex}/{title}",
+        "valid": 1,
+        "matching_prefix": [],
+        "invalid_due_to_sequence_failure": 0,
+        "invalid_due_to_resource_failure": 0,
+        "invalid_due_to_parser_failure": 0,
+        "invalid_due_to_500": 0,
+        "status_code": "200",
+        "status_text": "",
+        "error_message": null,
+        "request_order": 10,
+        "sample_request": {
+            "request_sent_timestamp": null,
+            "response_received_timestamp": "2025-02-06 01:43:50",
+            "request_verb": "GET",
+            "request_uri": "/api/title/fuzzstring/fuzzstring",
+            "request_headers": [
+                "Accept: application/json",
+                "Host: localhost:8080"
+            ],
+            "request_body": null,
+            "response_status_code": "200",
+            "response_status_text": "",
+            "response_headers": [
+                "Content-Type: application/json;charset=UTF-8",
+                "Content-Length: 2",
+                "Date: Thu, 06 Feb 2025 01:43:50 GMT"
+            ],
+            "response_body": "-1"
+        },
+        "tracked_parameters": {}
+    }}

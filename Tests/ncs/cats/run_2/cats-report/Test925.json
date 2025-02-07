@@ -1,0 +1,61 @@
+{
+  "testId": "Test 925",
+  "scenario": "Send [outside the boundary values] in request fields: field [c], value [REPLACE with 2147483647], is required [TRUE]",
+  "expectedResult": "Should return [4XX]",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [400, 413, 414, 422, 431], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 925 - IntegerFieldsRightBoundary)"
+      }
+    ],
+    "payload": "{\"a\":2,\"b\":6,\"c\":2147483647}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/triangle/2/6/2147483647",
+    "timestamp": "Thu, 6 Feb 2025 02:10:53 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "12",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "39",
+    "jsonBody": {
+      "resultAsInt": 0,
+      "resultAsDouble": null
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:52 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/triangle/{a}/{b}/{c}",
+  "fuzzer": "IntegerFieldsRightBoundary",
+  "fullRequestPath": "http://localhost:8080/api/triangle/2/6/2147483647",
+  "contractPath": "/api/triangle/{a}/{b}/{c}",
+  "server": "http://localhost:8080"
+}

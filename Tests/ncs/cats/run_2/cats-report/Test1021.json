@@ -1,0 +1,61 @@
+{
+  "testId": "Test 1021",
+  "scenario": "Send random values in path variables",
+  "expectedResult": "Should return 4XX",
+  "result": "error",
+  "resultReason": "Unexpected response code: 200",
+  "resultDetails": "Response does NOT match expected result. Response code is NOT from a list of expected codes for this FUZZER: expected [404, 400, 422], actual [200]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1021 - RandomResources)"
+      }
+    ],
+    "payload": "{\n  \"a\": \"4282\",\n  \"b\": \"7307\",\n  \"c\": \"-955\"\n}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/triangle/4282/7307/-955",
+    "timestamp": "Thu, 6 Feb 2025 02:10:54 +0100"
+  },
+  "response": {
+    "responseCode": 200,
+    "httpMethod": "GET",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "1",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "39",
+    "jsonBody": {
+      "resultAsInt": 0,
+      "resultAsDouble": null
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:10:54 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/triangle/{a}/{b}/{c}",
+  "fuzzer": "RandomResources",
+  "fullRequestPath": "http://localhost:8080/api/triangle/4282/7307/-955",
+  "contractPath": "/api/triangle/{a}/{b}/{c}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,68 @@
+{
+  "testId": "Test 1200",
+  "scenario": "Send a happy flow request with undocumented HTTP method: REBIND",
+  "expectedResult": "Should return 405",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Request failed as expected for http method [REBIND] with response code [405]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 1200 - NonRestHttpMethods)"
+      }
+    ],
+    "payload": "",
+    "httpMethod": "REBIND",
+    "url": "http://localhost:8080/api/ordered4/%7Bw%7D/%7Bx%7D/%7Bz%7D/%7By%7D",
+    "timestamp": "Thu, 6 Feb 2025 02:32:41 +0100"
+  },
+  "response": {
+    "responseCode": 405,
+    "httpMethod": "REBIND",
+    "responseTimeInMs": "2",
+    "numberOfWordsInResponse": "7",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "191",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:32:41.723+0000",
+      "status": 405,
+      "error": "Method Not Allowed",
+      "message": "Request method 'REBIND' not supported",
+      "path": "/api/ordered4/%7Bw%7D/%7Bx%7D/%7Bz%7D/%7By%7D"
+    },
+    "headers": [
+      {
+        "key": "allow",
+        "value": "GET"
+      },
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:32:41 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "fuzzer": "NonRestHttpMethods",
+  "fullRequestPath": "http://localhost:8080/api/ordered4/%7Bw%7D/%7Bx%7D/%7Bz%7D/%7By%7D",
+  "contractPath": "/api/ordered4/{w}/{x}/{z}/{y}",
+  "server": "http://localhost:8080"
+}

@@ -1,0 +1,64 @@
+{
+  "testId": "Test 70",
+  "scenario": "Fuzz path parameters for HTTP methods with bodies. Current path: /api/bessj/{n}/{x}/.. ;/",
+  "expectedResult": "Should return [2XX, 4XX]",
+  "result": "success",
+  "resultReason": null,
+  "resultDetails": "Response code expected: [404]",
+  "resultIgnoreDetails": null,
+  "request": {
+    "headers": [
+      {
+        "key": "Accept",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "User-Agent",
+        "value": "cats/12.0.0 (Test 70 - InvalidReferencesFields)"
+      }
+    ],
+    "payload": "{\"x\":8.40090973166033,\"n\":6}",
+    "httpMethod": "GET",
+    "url": "http://localhost:8080/api/bessj/6/8.40090973166033/..%20;/",
+    "timestamp": "Thu, 6 Feb 2025 02:08:26 +0100"
+  },
+  "response": {
+    "responseCode": 404,
+    "httpMethod": "GET",
+    "responseTimeInMs": "11",
+    "numberOfWordsInResponse": "4",
+    "numberOfLinesInResponse": "1",
+    "contentLengthInBytes": "157",
+    "jsonBody": {
+      "timestamp": "2025-02-06T01:08:26.059+0000",
+      "status": 404,
+      "error": "Not Found",
+      "message": "No message available",
+      "path": "/api/bessj/6/8.40090973166033/..%20;/"
+    },
+    "headers": [
+      {
+        "key": "content-type",
+        "value": "application/json;charset=UTF-8"
+      },
+      {
+        "key": "date",
+        "value": "Thu, 06 Feb 2025 01:08:25 GMT"
+      },
+      {
+        "key": "transfer-encoding",
+        "value": "chunked"
+      }
+    ],
+    "responseContentType": "application/json;charset=UTF-8"
+  },
+  "path": "/api/bessj/{n}/{x}",
+  "fuzzer": "InvalidReferencesFields",
+  "fullRequestPath": "http://localhost:8080/api/bessj/6/8.40090973166033/..%20;/",
+  "contractPath": "/api/bessj/{n}/{x}",
+  "server": "http://localhost:8080"
+}

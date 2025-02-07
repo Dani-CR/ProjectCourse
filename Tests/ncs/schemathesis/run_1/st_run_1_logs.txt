@@ -1,0 +1,30 @@
+#logs schemathesis run_1 ncs
+
+======================== Schemathesis test session starts ========================
+Schema location: file:///home/daniela/Documents/ProjectCourse2/Tests/ncs/schemathesis/run_1/../../swagger.json
+Base URL: http://localhost:8080
+Specification version: Swagger 2.0
+Random seed: 332639277847107766591990049597830612550
+Workers: 1
+Collected API operations: 6
+Collected API links: 0
+API probing: SUCCESS
+Schema analysis: SKIP
+
+GET /api/bessj/{n}/{x} .                                                    [ 16%]
+GET /api/expint/{n}/{x} .                                                   [ 33%]
+GET /api/fisher/{m}/{n}/{x} .                                               [ 50%]
+GET /api/gammq/{a}/{x} .                                                    [ 66%]
+GET /api/remainder/{a}/{b} .                                                [ 83%]
+GET /api/triangle/{a}/{b}/{c} .                                             [100%]
+
+==================================== SUMMARY =====================================
+
+Performed checks:
+    not_a_server_error                    600 / 600 passed          PASSED 
+
+Compressed report size: 36 KB
+Report is saved to ./run_1.tar.gz
+
+=============================== 6 passed in 9.45s ================================
+
