@@ -1,3 +1,0 @@
-.. automodule:: safrs.db
-    :members:
-
