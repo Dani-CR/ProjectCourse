@@ -2,14 +2,16 @@
 
 This repository presents the actual applications used for the fuzzing project and the Tests runned on them.
 One application (spring-hotel) is not in the repository since it has been forked from another github repo. To go to the application visit the [repo](https://github.com/Dani-CR/spring-hotel) in which there is the code to run it.
-The other applications where originally downloaded from the github repo [api_case_studies](https://github.com/SeUniVr/api_case_studies), from which the names were kept, but then modified to run properly in this project. Specifically, the CS02 was substancially modified due to problems in the orginal schema and structure.
+The other applications where originally downloaded from the github repo [api_case_studies](https://github.com/SeUniVr/api_case_studies), from which the names were kept, but then modified to run properly in this project; and from the github repo [EMB](https://github.com/WebFuzzing/EMB). Specifically, the CS02 was substancially modified due to problems in the orginal schema and structure and the pom.xml of ncs and scs were changed to fit the structure of this repository.
 
 ## Structure
-4 API applications used:
+6 API applications used:
 - CS02 (airline) --> requires maven, docker compose, java 8;
 - CS03 (streaming) --> requires gradlew 4.8.1, docker compose, java 8;
-- CSO4 (petclinic) --> requires maven docker compose, java 8;
+- CSO4 (petclinic) --> requires maven, docker compose, java 8;
 - spring-hotel --> requires JDK 1.8, maven 3.X.
+- ncs --> requires maven, java 8;
+- scs --> requires maven,, java 8;
 
 4 Fuzzing Tools:
 - [Restler](https://github.com/microsoft/restler-fuzzer) (version which required python 3.8.1 and .NET 6) 
@@ -40,7 +42,7 @@ Flow of execution for each test:
 6. End application.
 
 ### Replicate experiment
-Inside each folder of the APIs there are README.md files which have been used to understand how to run the applications, for any doubt read it.
+Inside each folder of the APIs there are README.md files which have been used to understand how to run the applications, use it in case of doubts.
 
 #### Start application
 The following are the instructions to start each application alonside with jacoco for the code coverage:
@@ -57,6 +59,11 @@ The following are the instructions to start each application alonside with jacoc
 
       mvn clean package // to create the application jar
       java -javaagent:./jacoco_0_8_7_runtime.jar=destfile=./target/jacoco.exec,output=file -jar -Dspring.profiles.active=test target/spring-boot-rest-example-0.5.0.war
+
+- ncs and scs: same as for spring-hotel
+
+      mvn clean package
+      java -javaagent:./jacoco_0_8_7_runtime.jar=destfile=./target/jacoco.exec,output=file -jar target/<file_sut.jar>
   
 ### Start fuzzer
 
@@ -65,7 +72,7 @@ The following are the instructions to start each application alonside with jacoc
 
         <path_to_restler_bin/restler.exe> compile --api_spec <path_to_schema.json_or_.yaml>
       
-  - Test/Fuzz-lean/Fuzz (a sub folder will be created “Test”/””/”” in the current path) [the time_budget is needed only for Fuzz mode)
+  - Test/Fuzz-lean/Fuzz (a sub folder will be created “Test”/””/”” in the current path) [the time_budget is needed only for Fuzz mode, 0.084 = 5min and 0.167 = 10min)
 
         <path to restler_bin/restler.exe> test/fuzz-lean/fuzz --grammar_file <path_to_./Compile/grammar.py> --dictionary_file <path_to_./Compile/dict.json> --settings <path_to_./Compile/engine_settings.json> --no_ssl --time_budget 0.084
     
@@ -96,7 +103,7 @@ The following are the instructions to start each application alonside with jacoc
    1) Create the jacoco.exe file fisrt, which has binary information saved about the execution.Insert the absolute path to the jacococli.jar downloaded in <abs_path_to_jacococli.jar>, for destfile then insert the path you want your file to be created into, for the port insert the one which jacoco agent is listening into (it'll be eighter 6300, 6301, or 6302);
    2) Insert the absolute path in which you have the build folder of the application, same for the source folder of the application, the –html and –name are up to you to chose: those are respectively the path where to insert the folder report and the name of that folder.
 
-- for spring-hotel: this application has the generation of the report inside its maven cycle, so when the fuzzer finishes, to create th jacoco.exec the applications has just to stop and the file will be created inside the target folder of the application, the go indie that folder and run th following command to create the report (which will be saved in target/site folder):
+- for spring-hotel, ncs and scs: these applications have the generation of the report inside its maven cycle, so when the fuzzer finishes, to create th jacoco.exec the applications has just to stop and the file will be created inside the target folder of the application, the go indie that folder and run th following command to create the report (which will be saved in target/site folder):
 
       mvn jacoco:report
   
